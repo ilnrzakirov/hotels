@@ -23,6 +23,5 @@ def location(message):
         geolocator = Nominatim(user_agent='hotel')
         city = geolocator.reverse(f'{latitude}, {longitude}')
         print(city)
-        print("latitude: %s; longitude: %s" % (message.location.latitude, message.location.longitude))
 
 bot.polling()
