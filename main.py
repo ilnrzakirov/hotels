@@ -21,7 +21,16 @@ def location(message):
         latitude = message.location.latitude
         longitude = message.location.longitude
         geolocator = Nominatim(user_agent='hotel')
-        city = geolocator.reverse(f'{latitude}, {longitude}')
+        loc = geolocator.reverse(f'{latitude}, {longitude}', exactly_one=True)
+        address = loc.raw['address']
+        city = address.get('city', '')
+        if city == '':
+            city = address.get('town', '')
         print(city)
+
+
+def navigaton():
+    pass
+
 
 bot.polling()
