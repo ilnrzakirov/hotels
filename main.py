@@ -27,6 +27,8 @@ def location(message):
             city = address.get('town', '')
         print(city)
         navigaton(message, city)
+    else:
+        bot.send_message(message.chat.id, "Не удается загрузить геоданные")
 
 
 def navigaton(message, city: str):
