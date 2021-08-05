@@ -9,11 +9,10 @@ bot = telebot.TeleBot("1875127679:AAFuKvDtEgDMPDzdr8gyiD2lGFZ6R1srYhc", parse_mo
 
 @bot.message_handler(commands=['start'])
 def start_bot(message):
-    bot.reply_to(message, "Для продолжения работы бота требуется доступ к геопозиции")
     keyboard = types.ReplyKeyboardMarkup(row_width=1, resize_keyboard=True)
     button_geo = types.KeyboardButton(text="Отправить местоположение", request_location=True)
     keyboard.add(button_geo)
-    bot.send_message(message.chat.id, "Отправить местоположение", reply_markup=keyboard)
+    bot.send_message(message.chat.id, "Для продолжения работы бота требуется доступ к геопозиции", reply_markup=keyboard)
 
 @bot.message_handler(content_types=["location"])
 def location(message):
@@ -27,10 +26,20 @@ def location(message):
         if city == '':
             city = address.get('town', '')
         print(city)
+        navigaton(message, city)
 
 
-def navigaton():
-    pass
+def navigaton(message, city: str):
+    keyboard = types.ReplyKeyboardMarkup(row_width=1, resize_keyboard=True)
+    button_low = types.KeyboardButton(text="Топ самых дешевых отелей")
+    button_high = types.KeyboardButton(text="Топ самых дорогих отелей")
+    button_user = types.KeyboardButton(text="Гибкий поиск")
+    keyboard.add(button_low, button_high, button_user)
+    bot.send_message(message.chat.id, "Выберите метод поиска",
+                     reply_markup=keyboard)
+
+
+
 
 
 bot.polling()
