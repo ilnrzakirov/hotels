@@ -7,8 +7,10 @@ class ProfileForm(forms.ModelForm):
         model = Profile
         fields = (
             'extr_id',
-            'name'
+            'name',
+            'city',
         )
         widgets = {
             'name' : forms.TextInput,
+            'city' : forms.TextInput,
         }

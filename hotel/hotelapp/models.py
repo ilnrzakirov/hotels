@@ -7,6 +7,10 @@ class Profile(models.Model):
     name = models.TextField(
         verbose_name='User name'
     )
+    city = models.TextField(
+        verbose_name='Location',
+        default='None',
+    )
     def __str__(self):
         return  f'{self.extr_id} {self.name}'
 
