@@ -131,3 +131,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 #Настройки телеграм чат бот
 
 TOKEN = config('TOKEN')
+
+API_KEY = config('API_TOKEN')

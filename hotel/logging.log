@@ -1,0 +1,156 @@
+2021-08-14T19:55:35.707982+0300, ERROR, An error has been caught in function 'city_for_geo', process 'MainProcess' (6588), thread 'WorkerThread1' (16108):
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 908, in _bootstrap
+    self._bootstrap_inner()
+    |    -> <function Thread._bootstrap_inner at 0x000001D8C61B75E0>
+    -> <WorkerThread(WorkerThread1, started daemon 16108)>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 950, in _bootstrap_inner
+    self.run()
+    |    -> <function WorkerThread.run at 0x000001D8C924A5E0>
+    -> <WorkerThread(WorkerThread1, started daemon 16108)>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    |     |       -> {}
+    |     -> (<telebot.types.CallbackQuery object at 0x000001D8C9E8ECD0>,)
+    -> <function Command.handle.<locals>.city_for_geo at 0x000001D8C9E65310>
+
+> File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 73, in city_for_geo
+    navigaton(call.message)
+    |         |    -> <telebot.types.Message object at 0x000001D8C9E8EBB0>
+    |         -> <telebot.types.CallbackQuery object at 0x000001D8C9E8ECD0>
+    -> <function Command.handle.<locals>.navigaton at 0x000001D8C9E659D0>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 99, in navigaton
+    button_low = InlineKeyboardButton(text="Топ самых дешевых отелей", callback_data= '/lowprice')
+
+NameError: name 'InlineKeyboardButton' is not defined
+2021-08-14T19:55:47.757402+0300, ERROR, An error has been caught in function 'city_for_geo', process 'MainProcess' (6588), thread 'WorkerThread1' (16108):
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 908, in _bootstrap
+    self._bootstrap_inner()
+    |    -> <function Thread._bootstrap_inner at 0x000001D8C61B75E0>
+    -> <WorkerThread(WorkerThread1, started daemon 16108)>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 950, in _bootstrap_inner
+    self.run()
+    |    -> <function WorkerThread.run at 0x000001D8C924A5E0>
+    -> <WorkerThread(WorkerThread1, started daemon 16108)>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    |     |       -> {}
+    |     -> (<telebot.types.CallbackQuery object at 0x000001D8C9E70370>,)
+    -> <function Command.handle.<locals>.city_for_geo at 0x000001D8C9E65310>
+
+> File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 73, in city_for_geo
+    navigaton(call.message)
+    |         |    -> <telebot.types.Message object at 0x000001D8C9E70E50>
+    |         -> <telebot.types.CallbackQuery object at 0x000001D8C9E70370>
+    -> <function Command.handle.<locals>.navigaton at 0x000001D8C9E659D0>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 99, in navigaton
+    button_low = InlineKeyboardButton(text="Топ самых дешевых отелей", callback_data= '/lowprice')
+
+NameError: name 'InlineKeyboardButton' is not defined
+2021-08-15T13:44:23.081069+0300, ERROR, An error has been caught in function 'run', process 'MainProcess' (5404), thread 'WorkerThread1' (12976):
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 908, in _bootstrap
+    self._bootstrap_inner()
+    |    -> <function Thread._bootstrap_inner at 0x000001A57DB475E0>
+    -> <WorkerThread(WorkerThread1, started daemon 12976)>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 950, in _bootstrap_inner
+    self.run()
+    |    -> <function WorkerThread.run at 0x000001A500C07700>
+    -> <WorkerThread(WorkerThread1, started daemon 12976)>
+
+> File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    |     |       -> {}
+    |     -> (<telebot.types.Message object at 0x000001A50182CEE0>,)
+    -> <function Command.handle.<locals>.location at 0x000001A501824700>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 69, in location
+    bot.send_message(message.chat.id, "Выберите город", reply_markup=keyboard)
+    |   |            |       |    |                                  -> <telebot.types.InlineKeyboardMarkup object at 0x000001A50182CFD0>
+    |   |            |       |    -> 158572669
+    |   |            |       -> <telebot.types.Chat object at 0x000001A50182CF40>
+    |   |            -> <telebot.types.Message object at 0x000001A50182CEE0>
+    |   -> <function TeleBot.send_message at 0x000001A500E39AF0>
+    -> <telebot.TeleBot object at 0x000001A500F884F0>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\__init__.py", line 919, in send_message
+    apihelper.send_message(
+    |         -> <function send_message at 0x000001A500E25CA0>
+    -> <module 'telebot.apihelper' from 'C:\\Users\\Ilnur\\PycharmProjects\\python_django\\venv\\lib\\site-packages\\telebot\\apihel...
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\apihelper.py", line 257, in send_message
+    return _make_request(token, method_url, params=payload, method='post')
+           |             |      |                  -> {'chat_id': '158572669', 'text': 'Выберите город', 'reply_markup': '{"inline_keyboard": [[{"text": "\\u041f\\u043e\\u0438\\u0...
+           |             |      -> 'sendMessage'
+           |             -> '1875127679:AAFuKvDtEgDMPDzdr8gyiD2lGFZ6R1srYhc'
+           -> <function _make_request at 0x000001A500C461F0>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\apihelper.py", line 145, in _make_request
+    json_result = _check_result(method_name, result)
+                  |             |            -> <Response [403]>
+                  |             -> 'sendMessage'
+                  -> <function _check_result at 0x000001A500C46160>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\apihelper.py", line 172, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+          |                    |            |       -> {'ok': False, 'error_code': 403, 'description': 'Forbidden: bot was blocked by the user'}
+          |                    |            -> <Response [403]>
+          |                    -> 'sendMessage'
+          -> <class 'telebot.apihelper.ApiTelegramException'>
+
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 403. Description: Forbidden: bot was blocked by the user
+2021-08-15T16:03:13.997558+0300, ERROR, An error has been caught in function 'lowprice', process 'MainProcess' (6916), thread 'WorkerThread2' (2424):
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 908, in _bootstrap
+    self._bootstrap_inner()
+    |    -> <function Thread._bootstrap_inner at 0x00000256A46E75E0>
+    -> <WorkerThread(WorkerThread2, started daemon 2424)>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 950, in _bootstrap_inner
+    self.run()
+    |    -> <function WorkerThread.run at 0x00000256A7777700>
+    -> <WorkerThread(WorkerThread2, started daemon 2424)>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    |     |       -> {}
+    |     -> (<telebot.types.CallbackQuery object at 0x00000256A83C7DC0>,)
+    -> <function Command.handle.<locals>.lowprice at 0x00000256A8399670>
+
+> File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 121, in lowprice
+    get_lowprice(call)
+    |            -> <telebot.types.CallbackQuery object at 0x00000256A83C7DC0>
+    -> <function get_lowprice at 0x00000256A7B03040>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\lowprice.py", line 24, in get_lowprice
+    json.dump(response, file, indent=4)
+    |    |    |         -> <_io.TextIOWrapper name='data.txt' mode='w' encoding='cp1251'>
+    |    |    -> <Response [200]>
+    |    -> <function dump at 0x00000256A6C2B670>
+    -> <module 'json' from 'C:\\Users\\Ilnur\\AppData\\Local\\Programs\\Python\\Python39\\lib\\json\\__init__.py'>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\json\__init__.py", line 179, in dump
+    for chunk in iterable:
+                 -> <generator object _make_iterencode.<locals>._iterencode at 0x00000256A84286D0>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\json\encoder.py", line 438, in _iterencode
+    o = _default(o)
+        |        -> <Response [200]>
+        -> <bound method JSONEncoder.default of <json.encoder.JSONEncoder object at 0x00000256A83A9B80>>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+
+TypeError: Object of type Response is not JSON serializable

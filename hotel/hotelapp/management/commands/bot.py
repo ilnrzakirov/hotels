@@ -6,23 +6,26 @@ from telebot import types
 from loguru import logger
 
 from hotelapp.models import Profile, Message
+from hotelapp.lowprice import get_lowprice
 
 logger.add("logging.log", format="{time}, {level}, {message}", level="DEBUG")
 
 
+@logger.catch()
 def registration(message, city=None):
     p, flag = Profile.objects.get_or_create(
         extr_id=message.chat.id,
-        #city = city,
+        # city = city,
         defaults={
-            'city' : city,
-            'name' : message.chat.username,
+            'city': city,
+            'name': message.chat.username,
         }
     )
     Message(
         profile=p,
         text=message.text
     ).save()
+
 
 @logger.catch()
 class Command(BaseCommand):
@@ -67,15 +70,18 @@ class Command(BaseCommand):
             else:
                 bot.send_message(message.chat.id, "Не удается загрузить геоданные")
 
-        @bot.callback_query_handler(func=lambda call : call.data == '/city')
+        @bot.callback_query_handler(func=lambda call: call.data == '/city')
         @logger.catch()
         def city_for_geo(call):
             navigaton(call.message)
 
-        @bot.callback_query_handler(func=lambda call : call.data == '/user_city')
+        @bot.callback_query_handler(func=lambda call: call.data == '/user_city')
         @logger.catch()
         def user_city(call):
-            bot.send_message(call.message.chat.id, "Название города: ")
+            bot.send_message(call.message.chat.id, "Введите название города, "
+                                                   "допускается добавлять в поиск название страны, региона итд."
+                                                   " Например (Россия Москва) ")
+
             @bot.message_handler(content_types=['text'])
             def get_city(message):
                 city = message.text
@@ -89,8 +95,9 @@ class Command(BaseCommand):
                         city = address.get('town', '')
                         if city == '':
                             city = address.get('village', '')
-                    bot.send_message(call.message.chat.id, f'Город для поиска - {city}, {address.get("country")} что бы изменить город '
-                                                           f'просто наберите название города еще раз')
+                    bot.send_message(call.message.chat.id,
+                                     f'Город для поиска - {city}, {address.get("country")} что бы изменить город '
+                                     f'просто наберите название города еще раз')
                     Profile.objects.filter(extr_id=call.message.chat.id).update(city=city)
                     navigaton(message)
                 else:
@@ -99,7 +106,7 @@ class Command(BaseCommand):
         @logger.catch()
         def navigaton(message):
             keyboard = types.InlineKeyboardMarkup(row_width=1)
-            button_low = types.InlineKeyboardButton(text="Топ самых дешевых отелей", callback_data= '/lowprice')
+            button_low = types.InlineKeyboardButton(text="Топ самых дешевых отелей", callback_data='/lowprice')
             button_high = types.InlineKeyboardButton(text="Топ самых дорогих отелей", callback_data='/highprice')
             button_user = types.InlineKeyboardButton(text="Гибкий поиск", callback_data='/bestdeal')
             keyboard.row(button_low)
@@ -108,13 +115,12 @@ class Command(BaseCommand):
             bot.send_message(message.chat.id, "Выберите метод поиска",
                              reply_markup=keyboard)
 
-
-        @bot.callback_query_handler(func=lambda call : call.data == '/lowprice')
+        @bot.callback_query_handler(func=lambda call: call.data == '/lowprice')
         @logger.catch()
         def lowprice(call):
-            pass
+            get_lowprice(call)
 
-        @bot.callback_query_handler(func=lambda call : call.data == '/highprice')
+        @bot.callback_query_handler(func=lambda call: call.data == '/highprice')
         @logger.catch()
         def highprice(call):
             pass
@@ -123,6 +129,5 @@ class Command(BaseCommand):
         @logger.catch()
         def bestdeal(call):
             pass
-
 
         bot.polling()
