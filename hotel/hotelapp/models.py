@@ -11,6 +11,10 @@ class Profile(models.Model):
         verbose_name='Location',
         default='None',
     )
+    city_id = models.IntegerField(
+        verbose_name='City ID',
+        default=0
+    )
     def __str__(self):
         return  f'{self.extr_id} {self.name}'
 

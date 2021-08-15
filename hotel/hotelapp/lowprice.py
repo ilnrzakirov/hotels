@@ -24,6 +24,17 @@ def get_lowprice(call: telebot.types.CallbackQuery):
         json.dump(data, file, indent=4, ensure_ascii=False)
 
 
+    for item in data['suggestions']:
+        if item['group'] == 'CITY_GROUP':
+            for i_item in item['entities']:
+                city = Profile.objects.get(extr_id=call.message.chat.id).city
+                if i_item['type'] == "CITY" and i_item['name'] == city:
+                    Profile.objects.filter(extr_id=call.message.chat.id).update(city_id=int(i_item['destinationId']))
+                elif i_item['type'] == "CITY" and city in i_item['name']:
+                    Profile.objects.filter(extr_id=call.message.chat.id).update(city_id=int(i_item['destinationId']))
+
+
+
 
 
 

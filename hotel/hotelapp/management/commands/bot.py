@@ -12,13 +12,15 @@ logger.add("logging.log", format="{time}, {level}, {message}", level="DEBUG")
 
 
 @logger.catch()
-def registration(message, city=None):
+def registration(message, city=None, city_id=0):
     p, flag = Profile.objects.get_or_create(
         extr_id=message.chat.id,
         # city = city,
+#        city_id= city_id,
         defaults={
             'city': city,
             'name': message.chat.username,
+            'city_id' : city_id,
         }
     )
     Message(

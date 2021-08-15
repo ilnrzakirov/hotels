@@ -9,6 +9,7 @@ class ProfileForm(forms.ModelForm):
             'extr_id',
             'name',
             'city',
+            'city_id',
         )
         widgets = {
             'name' : forms.TextInput,

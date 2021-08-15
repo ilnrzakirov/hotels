@@ -154,3 +154,38 @@ Traceback (most recent call last):
     raise TypeError(f'Object of type {o.__class__.__name__} '
 
 TypeError: Object of type Response is not JSON serializable
+2021-08-15T17:54:33.544974+0300, ERROR, An error has been caught in function 'lowprice', process 'MainProcess' (10668), thread 'WorkerThread1' (5656):
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 908, in _bootstrap
+    self._bootstrap_inner()
+    |    -> <function Thread._bootstrap_inner at 0x0000029F767275E0>
+    -> <WorkerThread(WorkerThread1, started daemon 5656)>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 950, in _bootstrap_inner
+    self.run()
+    |    -> <function WorkerThread.run at 0x0000029F797D9790>
+    -> <WorkerThread(WorkerThread1, started daemon 5656)>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    |     |       -> {}
+    |     -> (<telebot.types.CallbackQuery object at 0x0000029F7A425A00>,)
+    -> <function Command.handle.<locals>.lowprice at 0x0000029F7A3F9670>
+
+> File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 123, in lowprice
+    get_lowprice(call)
+    |            -> <telebot.types.CallbackQuery object at 0x0000029F7A425A00>
+    -> <function get_lowprice at 0x0000029F7A35C040>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\lowprice.py", line 31, in get_lowprice
+    Profile.objects.get(extr_id=call.message.chat.id).update(city_id=int(i_item['destinationId']))
+    |       |                   |    |       |    |                      -> {'geoId': '6337833', 'destinationId': '1806849', 'landmarkCityDestinationId': None, 'type': 'CITY', 'redirectPage': 'DEFAULT_...
+    |       |                   |    |       |    -> 158572669
+    |       |                   |    |       -> <telebot.types.Chat object at 0x0000029F7A3F23D0>
+    |       |                   |    -> <telebot.types.Message object at 0x0000029F7A425940>
+    |       |                   -> <telebot.types.CallbackQuery object at 0x0000029F7A425A00>
+    |       -> <django.db.models.manager.ManagerDescriptor object at 0x0000029F79712580>
+    -> <class 'hotelapp.models.Profile'>
+
+AttributeError: 'Profile' object has no attribute 'update'
