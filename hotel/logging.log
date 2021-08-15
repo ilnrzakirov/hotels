@@ -189,3 +189,32 @@ Traceback (most recent call last):
     -> <class 'hotelapp.models.Profile'>
 
 AttributeError: 'Profile' object has no attribute 'update'
+2021-08-15T18:19:07.548129+0300, ERROR, An error has been caught in function 'get_lowprice', process 'MainProcess' (6056), thread 'WorkerThread1' (8136):
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 908, in _bootstrap
+    self._bootstrap_inner()
+    |    -> <function Thread._bootstrap_inner at 0x0000020FA06E75E0>
+    -> <WorkerThread(WorkerThread1, started daemon 8136)>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 950, in _bootstrap_inner
+    self.run()
+    |    -> <function WorkerThread.run at 0x0000020FA3799790>
+    -> <WorkerThread(WorkerThread1, started daemon 8136)>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    |     |       -> {}
+    |     -> (<telebot.types.CallbackQuery object at 0x0000020FA4431E20>,)
+    -> <function Command.handle.<locals>.lowprice at 0x0000020FA43B99D0>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 123, in lowprice
+    get_lowprice(call)
+    |            -> <telebot.types.CallbackQuery object at 0x0000020FA4431E20>
+    -> <function get_lowprice at 0x0000020FA3B263A0>
+
+> File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\lowprice.py", line 36, in get_lowprice
+    get_city_id()
+    -> <function get_city_id at 0x0000020FA3B26160>
+
+TypeError: get_city_id() missing 1 required positional argument: 'call'

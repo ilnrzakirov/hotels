@@ -7,6 +7,8 @@ from loguru import logger
 
 from hotelapp.models import Profile, Message
 from hotelapp.lowprice import get_lowprice
+from hotelapp.highprice import get_highprice
+from hotelapp.bestdeal import get_bestdeal
 
 logger.add("logging.log", format="{time}, {level}, {message}", level="DEBUG")
 
@@ -125,11 +127,11 @@ class Command(BaseCommand):
         @bot.callback_query_handler(func=lambda call: call.data == '/highprice')
         @logger.catch()
         def highprice(call):
-            pass
+            get_highprice(call)
 
-        @bot.callback_query_handler(func=lambda call: call.data == '/highprice')
+        @bot.callback_query_handler(func=lambda call: call.data == '/bestdeal')
         @logger.catch()
         def bestdeal(call):
-            pass
+            get_bestdeal(call)
 
         bot.polling()

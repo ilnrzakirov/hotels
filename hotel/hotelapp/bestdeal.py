@@ -6,8 +6,9 @@ from .hotel_api import get_city_id
 
 url = "https://hotels4.p.rapidapi.com/locations/search"
 
+
 @logger.catch()
-def get_lowprice(call: telebot.types.CallbackQuery):
+def get_bestdeal(call: telebot.types.CallbackQuery):
     get_city_id(call)
 
 
