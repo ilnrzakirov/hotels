@@ -196,7 +196,7 @@ class Command(BaseCommand):
             try:
                 if int(message.text):
                     Profile.objects.filter(extr_id=message.chat.id).update(dist_max=int(message.text))
-                    bot.send_message(message.chat.id, "Подождите это может занять некоторое время")
+                    bot.send_message(message.chat.id, "Подождите, это займет некоторое время")
                     logger.info("run get_result")
                     get_result_list_for_best(message)
                 else:
@@ -291,18 +291,22 @@ class Command(BaseCommand):
             city = message.text
             geolocator = Nominatim(user_agent='hotel')
             if geolocator.geocode(city):
-                loc = geolocator.geocode(city, exactly_one=True)
-                loc = geolocator.reverse(f'{loc.latitude}, {loc.longitude}', exactly_one=True)
+                loc = geolocator.geocode(city, exactly_one=True, language="ru")
+                logger.info(f'{loc}')
+                loc = geolocator.reverse(f'{loc.latitude}, {loc.longitude}', exactly_one=True, language="en")
+                logger.info(f'{loc.raw}')
                 address = loc.raw['address']
                 city = address.get('city', '')
                 if city == '':
                     city = address.get('town', '')
                     if city == '':
                         city = address.get('village', '')
+                        if city == '':
+                            city = address.get('state', '').split()[0]
                 Profile.objects.filter(extr_id=message.chat.id).update(city=city)
+                bot.send_message(message.chat.id, "Подождите, это займет некоторое время")
                 rst_dct = get_city_id(message)
                 keyboard = create_keyboard(message, rst_dct)
-                bot.send_message(message.chat.id, "Подождите, это займет некоторое время")
                 bot.send_message(message.chat.id, "Найденные города: ", reply_markup=keyboard)
             else:
                 bot.send_message(message.chat.id, "Такого города не существует, попробуйте еще раз")

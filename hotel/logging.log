@@ -2065,3 +2065,2296 @@ AttributeError: 'CallbackQuery' object has no attribute 'chat'
 2021-08-24T17:37:22.575217+0300, DEBUG, Количество отелей: 3 func: get_page_size
 2021-08-24T17:37:22.720821+0300, INFO, This is get list
 2021-08-24T17:37:22.724812+0300, INFO, GET requests
+2021-08-24T17:49:00.251267+0300, ERROR, An error has been caught in function 'start_bot', process 'MainProcess' (16248), thread 'WorkerThread2' (15924):
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\django\db\models\query.py", line 581, in get_or_create
+    return self.get(**kwargs), False
+           │    │     └ {'extr_id': 243661831}
+           │    └ <function QuerySet.get at 0x0000026A9C655700>
+           └ <QuerySet [<Profile: 158572669 IlnurZakirov>, <Profile: 171103742 yabulat>]>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\django\db\models\query.py", line 435, in get
+    raise self.model.DoesNotExist(
+          │    │     └ <class 'hotelapp.models.Profile.DoesNotExist'>
+          │    └ <class 'hotelapp.models.Profile'>
+          └ <QuerySet [<Profile: 158572669 IlnurZakirov>, <Profile: 171103742 yabulat>]>
+
+hotelapp.models.Profile.DoesNotExist: Profile matching query does not exist.
+
+
+During handling of the above exception, another exception occurred:
+
+
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+           │    │      │       │    └ [243661831, 'dinislamlatypov', None, 0, 0, 999, 0.0, 9999999.0, 1]
+           │    │      │       └ 'INSERT INTO "hotelapp_profile" ("extr_id", "name", "city", "city_id", "dist_min", "dist_max", "price_min", "price_max", "pag...
+           │    │      └ <function SQLiteCursorWrapper.execute at 0x0000026A9CC9CF70>
+           │    └ <django.db.backends.sqlite3.base.SQLiteCursorWrapper object at 0x0000026A9DA2E3A0>
+           └ <django.db.backends.utils.CursorDebugWrapper object at 0x0000026A9DA26F40>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+           │        │      │       │     │      └ [243661831, 'dinislamlatypov', None, 0, 0, 999, 0.0, 9999999.0, 1]
+           │        │      │       │     └ 'INSERT INTO "hotelapp_profile" ("extr_id", "name", "city", "city_id", "dist_min", "dist_max", "price_min", "price_max", "pag...
+           │        │      │       └ <django.db.backends.sqlite3.base.SQLiteCursorWrapper object at 0x0000026A9DA2E3A0>
+           │        │      └ <method 'execute' of 'sqlite3.Cursor' objects>
+           │        └ <class 'sqlite3.Cursor'>
+           └ <module 'sqlite3.dbapi2' from 'C:\\Users\\Ilnur\\AppData\\Local\\Programs\\Python\\Python39\\lib\\sqlite3\\dbapi2.py'>
+
+sqlite3.IntegrityError: NOT NULL constraint failed: hotelapp_profile.city
+
+
+The above exception was the direct cause of the following exception:
+
+
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 908, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x0000026A99CF75E0>
+    └ <WorkerThread(WorkerThread2, started daemon 15924)>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 950, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x0000026A9CD7BEE0>
+    └ <WorkerThread(WorkerThread2, started daemon 15924)>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<telebot.types.Message object at 0x0000026A9D9BF9D0>,)
+    └ <function Command.handle.<locals>.start_bot at 0x0000026A9D9B20D0>
+
+> File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 61, in start_bot
+    registration(message)
+    │            └ <telebot.types.Message object at 0x0000026A9D9BF9D0>
+    └ <function registration at 0x0000026A9D921040>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 26, in registration
+    p, flag = Profile.objects.get_or_create(
+              │       └ <django.db.models.manager.ManagerDescriptor object at 0x0000026A9CCB9DC0>
+              └ <class 'hotelapp.models.Profile'>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+                   │    │               │      │       └ {'extr_id': 243661831, 'defaults': {'city': None, 'name': 'dinislamlatypov', 'city_id': 0}}
+                   │    │               │      └ ()
+                   │    │               └ 'get_or_create'
+                   │    └ <function BaseManager.get_queryset at 0x0000026A9C65A550>
+                   └ <django.db.models.manager.Manager object at 0x0000026A9D9390A0>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\django\db\models\query.py", line 588, in get_or_create
+    return self.create(**params), True
+           │    │        └ {'extr_id': 243661831, 'city': None, 'name': 'dinislamlatypov', 'city_id': 0}
+           │    └ <function QuerySet.create at 0x0000026A9C655790>
+           └ <QuerySet [<Profile: 158572669 IlnurZakirov>, <Profile: 171103742 yabulat>]>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\django\db\models\query.py", line 453, in create
+    obj.save(force_insert=True, using=self.db)
+    │   │                             │    └ <property object at 0x0000026A9C653360>
+    │   │                             └ <QuerySet [<Profile: 158572669 IlnurZakirov>, <Profile: 171103742 yabulat>]>
+    │   └ <function Model.save at 0x0000026A9C6C65E0>
+    └ <Profile: 243661831 dinislamlatypov>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\django\db\models\base.py", line 726, in save
+    self.save_base(using=using, force_insert=force_insert,
+    │    │               │                   └ True
+    │    │               └ 'default'
+    │    └ <function Model.save_base at 0x0000026A9C6C6670>
+    └ <Profile: 243661831 dinislamlatypov>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\django\db\models\base.py", line 763, in save_base
+    updated = self._save_table(
+              │    └ <function Model._save_table at 0x0000026A9C6C6790>
+              └ <Profile: 243661831 dinislamlatypov>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\django\db\models\base.py", line 868, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+              │    │          │   │              │      │       │                 └ False
+              │    │          │   │              │      │       └ [<django.db.models.fields.BigAutoField: id>]
+              │    │          │   │              │      └ [<django.db.models.fields.PositiveIntegerField: extr_id>, <django.db.models.fields.TextField: name>, <django.db.models.fields...
+              │    │          │   │              └ 'default'
+              │    │          │   └ <property object at 0x0000026A9C66FE00>
+              │    │          └ <class 'hotelapp.models.Profile'>
+              │    └ <function Model._do_insert at 0x0000026A9C6C68B0>
+              └ <Profile: 243661831 dinislamlatypov>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\django\db\models\base.py", line 906, in _do_insert
+    return manager._insert(
+           │       └ <function BaseManager._get_queryset_methods.<locals>.create_method.<locals>.manager_method at 0x0000026A9C65A820>
+           └ <django.db.models.manager.Manager object at 0x0000026A9DA26CD0>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+                   │    │               │      │       └ {'fields': [<django.db.models.fields.PositiveIntegerField: extr_id>, <django.db.models.fields.TextField: name>, <django.db.mo...
+                   │    │               │      └ ([<Profile: 243661831 dinislamlatypov>],)
+                   │    │               └ '_insert'
+                   │    └ <function BaseManager.get_queryset at 0x0000026A9C65A550>
+                   └ <django.db.models.manager.Manager object at 0x0000026A9DA26CD0>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\django\db\models\query.py", line 1270, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           │     │                  │                  └ [<django.db.models.fields.BigAutoField: id>]
+           │     │                  └ 'default'
+           │     └ <function Query.get_compiler at 0x0000026A9C5E4C10>
+           └ <django.db.models.sql.subqueries.InsertQuery object at 0x0000026A9DA26E50>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1416, in execute_sql
+    cursor.execute(sql, params)
+    │      │       │    └ [243661831, 'dinislamlatypov', None, 0, 0, 999, 0.0, 9999999.0, 1]
+    │      │       └ 'INSERT INTO "hotelapp_profile" ("extr_id", "name", "city", "city_id", "dist_min", "dist_max", "price_min", "price_max", "pag...
+    │      └ <function CursorDebugWrapper.execute at 0x0000026A9C62A670>
+    └ <django.db.backends.utils.CursorDebugWrapper object at 0x0000026A9DA26F40>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\django\db\backends\utils.py", line 98, in execute
+    return super().execute(sql, params)
+                           │    └ [243661831, 'dinislamlatypov', None, 0, 0, 999, 0.0, 9999999.0, 1]
+                           └ 'INSERT INTO "hotelapp_profile" ("extr_id", "name", "city", "city_id", "dist_min", "dist_max", "price_min", "price_max", "pag...
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\django\db\backends\utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+           │    │                      │    │                            │    └ <function CursorWrapper._execute at 0x0000026A9C62A550>
+           │    │                      │    │                            └ <django.db.backends.utils.CursorDebugWrapper object at 0x0000026A9DA26F40>
+           │    │                      │    └ [243661831, 'dinislamlatypov', None, 0, 0, 999, 0.0, 9999999.0, 1]
+           │    │                      └ 'INSERT INTO "hotelapp_profile" ("extr_id", "name", "city", "city_id", "dist_min", "dist_max", "price_min", "price_max", "pag...
+           │    └ <function CursorWrapper._execute_with_wrappers at 0x0000026A9C62A4C0>
+           └ <django.db.backends.utils.CursorDebugWrapper object at 0x0000026A9DA26F40>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\django\db\backends\utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           │        │    │       │     └ {'connection': <django.db.backends.sqlite3.base.DatabaseWrapper object at 0x0000026A9D9F8850>, 'cursor': <django.db.backends....
+           │        │    │       └ False
+           │        │    └ [243661831, 'dinislamlatypov', None, 0, 0, 999, 0.0, 9999999.0, 1]
+           │        └ 'INSERT INTO "hotelapp_profile" ("extr_id", "name", "city", "city_id", "dist_min", "dist_max", "price_min", "price_max", "pag...
+           └ <bound method CursorWrapper._execute of <django.db.backends.utils.CursorDebugWrapper object at 0x0000026A9DA26F40>>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+           │    │      │       │    └ [243661831, 'dinislamlatypov', None, 0, 0, 999, 0.0, 9999999.0, 1]
+           │    │      │       └ 'INSERT INTO "hotelapp_profile" ("extr_id", "name", "city", "city_id", "dist_min", "dist_max", "price_min", "price_max", "pag...
+           │    │      └ <function SQLiteCursorWrapper.execute at 0x0000026A9CC9CF70>
+           │    └ <django.db.backends.sqlite3.base.SQLiteCursorWrapper object at 0x0000026A9DA2E3A0>
+           └ <django.db.backends.utils.CursorDebugWrapper object at 0x0000026A9DA26F40>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\django\db\utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+          │            │              │               └ IntegrityError('NOT NULL constraint failed: hotelapp_profile.city')
+          │            │              └ <traceback object at 0x0000026A9DA37880>
+          │            └ <method 'with_traceback' of 'BaseException' objects>
+          └ IntegrityError('NOT NULL constraint failed: hotelapp_profile.city')
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+           │    │      │       │    └ [243661831, 'dinislamlatypov', None, 0, 0, 999, 0.0, 9999999.0, 1]
+           │    │      │       └ 'INSERT INTO "hotelapp_profile" ("extr_id", "name", "city", "city_id", "dist_min", "dist_max", "price_min", "price_max", "pag...
+           │    │      └ <function SQLiteCursorWrapper.execute at 0x0000026A9CC9CF70>
+           │    └ <django.db.backends.sqlite3.base.SQLiteCursorWrapper object at 0x0000026A9DA2E3A0>
+           └ <django.db.backends.utils.CursorDebugWrapper object at 0x0000026A9DA26F40>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+           │        │      │       │     │      └ [243661831, 'dinislamlatypov', None, 0, 0, 999, 0.0, 9999999.0, 1]
+           │        │      │       │     └ 'INSERT INTO "hotelapp_profile" ("extr_id", "name", "city", "city_id", "dist_min", "dist_max", "price_min", "price_max", "pag...
+           │        │      │       └ <django.db.backends.sqlite3.base.SQLiteCursorWrapper object at 0x0000026A9DA2E3A0>
+           │        │      └ <method 'execute' of 'sqlite3.Cursor' objects>
+           │        └ <class 'sqlite3.Cursor'>
+           └ <module 'sqlite3.dbapi2' from 'C:\\Users\\Ilnur\\AppData\\Local\\Programs\\Python\\Python39\\lib\\sqlite3\\dbapi2.py'>
+
+django.db.utils.IntegrityError: NOT NULL constraint failed: hotelapp_profile.city
+2021-08-24T17:49:08.787446+0300, ERROR, An error has been caught in function 'callback_query', process 'MainProcess' (16248), thread 'WorkerThread1' (11348):
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\django\db\models\query.py", line 581, in get_or_create
+    return self.get(**kwargs), False
+           │    │     └ {'extr_id': 243661831}
+           │    └ <function QuerySet.get at 0x0000026A9C655700>
+           └ <QuerySet [<Profile: 158572669 IlnurZakirov>, <Profile: 171103742 yabulat>]>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\django\db\models\query.py", line 435, in get
+    raise self.model.DoesNotExist(
+          │    │     └ <class 'hotelapp.models.Profile.DoesNotExist'>
+          │    └ <class 'hotelapp.models.Profile'>
+          └ <QuerySet [<Profile: 158572669 IlnurZakirov>, <Profile: 171103742 yabulat>]>
+
+hotelapp.models.Profile.DoesNotExist: Profile matching query does not exist.
+
+
+During handling of the above exception, another exception occurred:
+
+
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+           │    │      │       │    └ [243661831, 'dinislamlatypov', None, 0, 0, 999, 0.0, 9999999.0, 1]
+           │    │      │       └ 'INSERT INTO "hotelapp_profile" ("extr_id", "name", "city", "city_id", "dist_min", "dist_max", "price_min", "price_max", "pag...
+           │    │      └ <function SQLiteCursorWrapper.execute at 0x0000026A9CC9CF70>
+           │    └ <django.db.backends.sqlite3.base.SQLiteCursorWrapper object at 0x0000026A9DB475E0>
+           └ <django.db.backends.utils.CursorDebugWrapper object at 0x0000026A9DB40EB0>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+           │        │      │       │     │      └ [243661831, 'dinislamlatypov', None, 0, 0, 999, 0.0, 9999999.0, 1]
+           │        │      │       │     └ 'INSERT INTO "hotelapp_profile" ("extr_id", "name", "city", "city_id", "dist_min", "dist_max", "price_min", "price_max", "pag...
+           │        │      │       └ <django.db.backends.sqlite3.base.SQLiteCursorWrapper object at 0x0000026A9DB475E0>
+           │        │      └ <method 'execute' of 'sqlite3.Cursor' objects>
+           │        └ <class 'sqlite3.Cursor'>
+           └ <module 'sqlite3.dbapi2' from 'C:\\Users\\Ilnur\\AppData\\Local\\Programs\\Python\\Python39\\lib\\sqlite3\\dbapi2.py'>
+
+sqlite3.IntegrityError: NOT NULL constraint failed: hotelapp_profile.city
+
+
+The above exception was the direct cause of the following exception:
+
+
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 908, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x0000026A99CF75E0>
+    └ <WorkerThread(WorkerThread1, started daemon 11348)>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 950, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x0000026A9CD7BEE0>
+    └ <WorkerThread(WorkerThread1, started daemon 11348)>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<telebot.types.CallbackQuery object at 0x0000026A9D9BFAF0>,)
+    └ <function Command.handle.<locals>.callback_query at 0x0000026A9D9B24C0>
+
+> File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 78, in callback_query
+    registration(call.message)
+    │            │    └ <telebot.types.Message object at 0x0000026A9DA38130>
+    │            └ <telebot.types.CallbackQuery object at 0x0000026A9D9BFAF0>
+    └ <function registration at 0x0000026A9D921040>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 26, in registration
+    p, flag = Profile.objects.get_or_create(
+              │       └ <django.db.models.manager.ManagerDescriptor object at 0x0000026A9CCB9DC0>
+              └ <class 'hotelapp.models.Profile'>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+                   │    │               │      │       └ {'extr_id': 243661831, 'defaults': {'city': None, 'name': 'dinislamlatypov', 'city_id': 0}}
+                   │    │               │      └ ()
+                   │    │               └ 'get_or_create'
+                   │    └ <function BaseManager.get_queryset at 0x0000026A9C65A550>
+                   └ <django.db.models.manager.Manager object at 0x0000026A9D9390A0>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\django\db\models\query.py", line 588, in get_or_create
+    return self.create(**params), True
+           │    │        └ {'extr_id': 243661831, 'city': None, 'name': 'dinislamlatypov', 'city_id': 0}
+           │    └ <function QuerySet.create at 0x0000026A9C655790>
+           └ <QuerySet [<Profile: 158572669 IlnurZakirov>, <Profile: 171103742 yabulat>]>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\django\db\models\query.py", line 453, in create
+    obj.save(force_insert=True, using=self.db)
+    │   │                             │    └ <property object at 0x0000026A9C653360>
+    │   │                             └ <QuerySet [<Profile: 158572669 IlnurZakirov>, <Profile: 171103742 yabulat>]>
+    │   └ <function Model.save at 0x0000026A9C6C65E0>
+    └ <Profile: 243661831 dinislamlatypov>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\django\db\models\base.py", line 726, in save
+    self.save_base(using=using, force_insert=force_insert,
+    │    │               │                   └ True
+    │    │               └ 'default'
+    │    └ <function Model.save_base at 0x0000026A9C6C6670>
+    └ <Profile: 243661831 dinislamlatypov>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\django\db\models\base.py", line 763, in save_base
+    updated = self._save_table(
+              │    └ <function Model._save_table at 0x0000026A9C6C6790>
+              └ <Profile: 243661831 dinislamlatypov>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\django\db\models\base.py", line 868, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+              │    │          │   │              │      │       │                 └ False
+              │    │          │   │              │      │       └ [<django.db.models.fields.BigAutoField: id>]
+              │    │          │   │              │      └ [<django.db.models.fields.PositiveIntegerField: extr_id>, <django.db.models.fields.TextField: name>, <django.db.models.fields...
+              │    │          │   │              └ 'default'
+              │    │          │   └ <property object at 0x0000026A9C66FE00>
+              │    │          └ <class 'hotelapp.models.Profile'>
+              │    └ <function Model._do_insert at 0x0000026A9C6C68B0>
+              └ <Profile: 243661831 dinislamlatypov>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\django\db\models\base.py", line 906, in _do_insert
+    return manager._insert(
+           │       └ <function BaseManager._get_queryset_methods.<locals>.create_method.<locals>.manager_method at 0x0000026A9C65A820>
+           └ <django.db.models.manager.Manager object at 0x0000026A9DA26CD0>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+                   │    │               │      │       └ {'fields': [<django.db.models.fields.PositiveIntegerField: extr_id>, <django.db.models.fields.TextField: name>, <django.db.mo...
+                   │    │               │      └ ([<Profile: 243661831 dinislamlatypov>],)
+                   │    │               └ '_insert'
+                   │    └ <function BaseManager.get_queryset at 0x0000026A9C65A550>
+                   └ <django.db.models.manager.Manager object at 0x0000026A9DA26CD0>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\django\db\models\query.py", line 1270, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           │     │                  │                  └ [<django.db.models.fields.BigAutoField: id>]
+           │     │                  └ 'default'
+           │     └ <function Query.get_compiler at 0x0000026A9C5E4C10>
+           └ <django.db.models.sql.subqueries.InsertQuery object at 0x0000026A9DB40DC0>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1416, in execute_sql
+    cursor.execute(sql, params)
+    │      │       │    └ [243661831, 'dinislamlatypov', None, 0, 0, 999, 0.0, 9999999.0, 1]
+    │      │       └ 'INSERT INTO "hotelapp_profile" ("extr_id", "name", "city", "city_id", "dist_min", "dist_max", "price_min", "price_max", "pag...
+    │      └ <function CursorDebugWrapper.execute at 0x0000026A9C62A670>
+    └ <django.db.backends.utils.CursorDebugWrapper object at 0x0000026A9DB40EB0>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\django\db\backends\utils.py", line 98, in execute
+    return super().execute(sql, params)
+                           │    └ [243661831, 'dinislamlatypov', None, 0, 0, 999, 0.0, 9999999.0, 1]
+                           └ 'INSERT INTO "hotelapp_profile" ("extr_id", "name", "city", "city_id", "dist_min", "dist_max", "price_min", "price_max", "pag...
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\django\db\backends\utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+           │    │                      │    │                            │    └ <function CursorWrapper._execute at 0x0000026A9C62A550>
+           │    │                      │    │                            └ <django.db.backends.utils.CursorDebugWrapper object at 0x0000026A9DB40EB0>
+           │    │                      │    └ [243661831, 'dinislamlatypov', None, 0, 0, 999, 0.0, 9999999.0, 1]
+           │    │                      └ 'INSERT INTO "hotelapp_profile" ("extr_id", "name", "city", "city_id", "dist_min", "dist_max", "price_min", "price_max", "pag...
+           │    └ <function CursorWrapper._execute_with_wrappers at 0x0000026A9C62A4C0>
+           └ <django.db.backends.utils.CursorDebugWrapper object at 0x0000026A9DB40EB0>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\django\db\backends\utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           │        │    │       │     └ {'connection': <django.db.backends.sqlite3.base.DatabaseWrapper object at 0x0000026A9DB40280>, 'cursor': <django.db.backends....
+           │        │    │       └ False
+           │        │    └ [243661831, 'dinislamlatypov', None, 0, 0, 999, 0.0, 9999999.0, 1]
+           │        └ 'INSERT INTO "hotelapp_profile" ("extr_id", "name", "city", "city_id", "dist_min", "dist_max", "price_min", "price_max", "pag...
+           └ <bound method CursorWrapper._execute of <django.db.backends.utils.CursorDebugWrapper object at 0x0000026A9DB40EB0>>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+           │    │      │       │    └ [243661831, 'dinislamlatypov', None, 0, 0, 999, 0.0, 9999999.0, 1]
+           │    │      │       └ 'INSERT INTO "hotelapp_profile" ("extr_id", "name", "city", "city_id", "dist_min", "dist_max", "price_min", "price_max", "pag...
+           │    │      └ <function SQLiteCursorWrapper.execute at 0x0000026A9CC9CF70>
+           │    └ <django.db.backends.sqlite3.base.SQLiteCursorWrapper object at 0x0000026A9DB475E0>
+           └ <django.db.backends.utils.CursorDebugWrapper object at 0x0000026A9DB40EB0>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\django\db\utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+          │            │              │               └ IntegrityError('NOT NULL constraint failed: hotelapp_profile.city')
+          │            │              └ <traceback object at 0x0000026A9DB4B540>
+          │            └ <method 'with_traceback' of 'BaseException' objects>
+          └ IntegrityError('NOT NULL constraint failed: hotelapp_profile.city')
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+           │    │      │       │    └ [243661831, 'dinislamlatypov', None, 0, 0, 999, 0.0, 9999999.0, 1]
+           │    │      │       └ 'INSERT INTO "hotelapp_profile" ("extr_id", "name", "city", "city_id", "dist_min", "dist_max", "price_min", "price_max", "pag...
+           │    │      └ <function SQLiteCursorWrapper.execute at 0x0000026A9CC9CF70>
+           │    └ <django.db.backends.sqlite3.base.SQLiteCursorWrapper object at 0x0000026A9DB475E0>
+           └ <django.db.backends.utils.CursorDebugWrapper object at 0x0000026A9DB40EB0>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+           │        │      │       │     │      └ [243661831, 'dinislamlatypov', None, 0, 0, 999, 0.0, 9999999.0, 1]
+           │        │      │       │     └ 'INSERT INTO "hotelapp_profile" ("extr_id", "name", "city", "city_id", "dist_min", "dist_max", "price_min", "price_max", "pag...
+           │        │      │       └ <django.db.backends.sqlite3.base.SQLiteCursorWrapper object at 0x0000026A9DB475E0>
+           │        │      └ <method 'execute' of 'sqlite3.Cursor' objects>
+           │        └ <class 'sqlite3.Cursor'>
+           └ <module 'sqlite3.dbapi2' from 'C:\\Users\\Ilnur\\AppData\\Local\\Programs\\Python\\Python39\\lib\\sqlite3\\dbapi2.py'>
+
+django.db.utils.IntegrityError: NOT NULL constraint failed: hotelapp_profile.city
+2021-08-24T17:49:08.945126+0300, DEBUG, callback_query run
+2021-08-24T17:50:05.737452+0300, DEBUG, callback_query run
+2021-08-24T17:50:09.726416+0300, INFO, Your address 17Е к2, улица Хусаина Мавлютова, Горки-1, Приволжский район, Казань, городской округ Казань, Татарстан, Приволжский федеральный округ, 420101, Россия
+2021-08-24T17:50:09.947855+0300, INFO, Selected city Казань
+2021-08-24T17:50:13.127719+0300, DEBUG, List city [{'city': 'Казань', 'caption': 'Казань, Республика Татарстан, Россия', 'city_id': '1215771'}, {'city': 'Казань (и окрестности)', 'caption': 'Казань (и окрестности), Республика Татарстан, Россия', 'city_id': '1794547'}, {'city': 'Центр города Казань', 'caption': 'Центр города Казань, Казань, Республика Татарстан, Россия', 'city_id': '10874035'}]
+2021-08-24T17:50:15.614435+0300, DEBUG, callback_query run
+2021-08-24T17:50:15.617431+0300, DEBUG, Выбран город Казань id 1215771
+2021-08-24T17:50:19.135695+0300, DEBUG, callback_query run
+2021-08-24T17:50:21.717861+0300, DEBUG, Количество отелей: 1 func: get_page_size
+2021-08-24T17:50:21.870422+0300, INFO, This is get list
+2021-08-24T17:50:21.873417+0300, INFO, GET requests
+2021-08-24T17:53:03.629391+0300, DEBUG, callback_query run
+2021-08-24T17:53:06.273345+0300, DEBUG, callback_query run
+2021-08-24T17:54:10.973896+0300, INFO, Your address ТЦ "Атриум", 9Д, Навагинская улица, Завокзальный, Центральный внутригородской район, Сочи, городской округ Сочи, Краснодарский край, Южный федеральный округ, 354000, Россия
+2021-08-24T17:54:11.115492+0300, INFO, Selected city Сочи
+2021-08-24T17:54:13.806691+0300, DEBUG, List city [{'city': 'Сочи (и окрестности)', 'caption': 'Сочи (и окрестности), Краснодарский край, Россия', 'city_id': '1662648'}, {'city': 'Центр города Сочи', 'caption': 'Центр города Сочи, Сочи (и окрестности), Краснодарский край, Россия', 'city_id': '10873622'}, {'city': 'Сочи пляжи', 'caption': 'Сочи пляжи, Краснодарский край, Россия', 'city_id': '1673492'}, {'city': 'Мацеста (Сочи)', 'caption': 'Мацеста (Сочи), Сочи (и окрестности), Краснодарский край, Россия', 'city_id': '10412378'}]
+2021-08-24T17:54:19.066422+0300, DEBUG, callback_query run
+2021-08-24T17:54:19.070380+0300, DEBUG, Выбран город Сочи id 1662648
+2021-08-24T17:54:21.587392+0300, DEBUG, callback_query run
+2021-08-24T17:54:32.388933+0300, DEBUG, Количество отелей: 1 func: get_page_size
+2021-08-24T17:54:32.494100+0300, INFO, This is get list
+2021-08-24T17:54:32.497100+0300, INFO, GET requests
+2021-08-24T17:54:39.446044+0300, INFO, Your address 44, улица Братьев Касимовых, Горки-1, Приволжский район, Казань, городской округ Казань, Татарстан, Приволжский федеральный округ, 420110, Россия
+2021-08-24T17:54:39.569176+0300, INFO, Selected city Казань
+2021-08-24T17:54:43.540172+0300, DEBUG, List city [{'city': 'Казань', 'caption': 'Казань, Республика Татарстан, Россия', 'city_id': '1215771'}, {'city': 'Казань (и окрестности)', 'caption': 'Казань (и окрестности), Республика Татарстан, Россия', 'city_id': '1794547'}, {'city': 'Центр города Казань', 'caption': 'Центр города Казань, Казань, Республика Татарстан, Россия', 'city_id': '10874035'}]
+2021-08-24T17:54:46.549890+0300, DEBUG, callback_query run
+2021-08-24T17:54:46.552869+0300, DEBUG, Выбран город Казань id 1215771
+2021-08-24T17:54:48.797559+0300, DEBUG, callback_query run
+2021-08-24T17:54:53.045561+0300, DEBUG, Количество отелей: 10 func: get_page_size
+2021-08-24T17:54:53.162366+0300, INFO, This is get list
+2021-08-24T17:54:53.165375+0300, INFO, GET requests
+2021-08-24T17:54:57.102575+0300, INFO, Next_list : Yes,  page_number: 1
+2021-08-24T17:54:57.104557+0300, DEBUG, The transition to the page has been prepared 2. Param: page_size 10 len(list): 8
+2021-08-24T17:54:57.106558+0300, DEBUG, Data result_list ['Отель: Отель «Корстон Роял»\nРейтинг: 8,4\nЦена за сутки: 35,771 RUB\nАдрес: Россия, Казань, ул. Ершова, 1а\nУдаленность от центра города 1.3 км. Ссылка на страницу бронирования:\nhttps://ru.hotels.com/ho253821/', 'Отель: Отель «Мано»\nРейтинг: 8,4\nЦена за сутки: 39,296 RUB\nАдрес: Россия, Казань, Чистопольская ул., 47\nУдаленность от центра города 3.1 км. Ссылка на страницу бронирования:\nhttps://ru.hotels.com/ho687355/', 'Отель: Отель «Мираж»\nРейтинг: 9,2\nЦена за сутки: 40,000 RUB\nАдрес: Россия, Казань, ул. Московская, 5\nУдаленность от центра города 1.7 км. Ссылка на страницу бронирования:\nhttps://ru.hotels.com/ho424401/', 'Отель: Корстон Тауэр\nРейтинг: 8,4\nЦена за сутки: 45,595 RUB\nАдрес: Россия, Казань, ул. Н. Ершова, 1 А\nУдаленность от центра города 1.3 км. Ссылка на страницу бронирования:\nhttps://ru.hotels.com/ho470196/', 'Отель: Отель Neo Kazan Palace by Tasigo\nРейтинг: 9,4\nЦена за сутки: 58,500 RUB\nАдрес: Россия, Казань, ул. Калинина, 3В\nУдаленность от центра города 0.6 км. Ссылка на страницу бронирования:\nhttps://ru.hotels.com/ho1969971552/', 'Отель: Отель Ramada by Wyndham, Казань-Центр\nРейтинг: 9,4\nЦена за сутки: 59,184 RUB\nАдрес: Россия, Казань, ул. Чернышевского, 39\nУдаленность от центра города 1.7 км. Ссылка на страницу бронирования:\nhttps://ru.hotels.com/ho427360/', 'Отель: Отель Kazan Palace by Tasıgo\nРейтинг: 9,2\nЦена за сутки: 62,550 RUB\nАдрес: Россия, Казань, ул. Калинина, 5/24\nУдаленность от центра города 1.4 км. Ссылка на страницу бронирования:\nhttps://ru.hotels.com/ho1030819072/', 'Отель: Хостел «Сарацин» на Большой Красной\nРейтинг: Без рейтинга\nЦена за сутки: 72,500 RUB\nАдрес: Россия, Казань, ул. Большая Красная, 20\nУдаленность от центра города 1.1 км. Ссылка на страницу бронирования:\nhttps://ru.hotels.com/ho555550/']
+2021-08-24T17:54:57.109683+0300, INFO, GET requests
+2021-08-24T17:56:26.753821+0300, INFO, Selected city Выльгорт
+2021-08-24T17:56:28.600955+0300, DEBUG, callback_query run
+2021-08-24T17:56:30.827351+0300, DEBUG, List city [{'city': 'Выльгорт', 'caption': 'Выльгорт, Республика Коми, Россия', 'city_id': '10423057'}, {'city': 'Лозымская', 'caption': 'Лозымская, Выльгорт, Республика Коми, Россия', 'city_id': '10692140'}]
+2021-08-24T17:56:32.852289+0300, INFO, Selected city Выльгорт
+2021-08-24T17:56:36.007417+0300, DEBUG, List city [{'city': 'Выльгорт', 'caption': 'Выльгорт, Республика Коми, Россия', 'city_id': '10423057'}, {'city': 'Лозымская', 'caption': 'Лозымская, Выльгорт, Республика Коми, Россия', 'city_id': '10692140'}]
+2021-08-24T17:58:59.779999+0300, INFO, Your address 44, улица Братьев Касимовых, Горки-1, Приволжский район, Казань, городской округ Казань, Татарстан, Приволжский федеральный округ, 420110, Россия
+2021-08-24T17:58:59.944020+0300, INFO, Selected city Казань
+2021-08-24T17:59:03.950001+0300, DEBUG, List city [{'city': 'Казань', 'caption': 'Казань, Республика Татарстан, Россия', 'city_id': '1215771'}, {'city': 'Казань (и окрестности)', 'caption': 'Казань (и окрестности), Республика Татарстан, Россия', 'city_id': '1794547'}, {'city': 'Центр города Казань', 'caption': 'Центр города Казань, Казань, Республика Татарстан, Россия', 'city_id': '10874035'}]
+2021-08-24T17:59:14.186011+0300, DEBUG, callback_query run
+2021-08-24T17:59:14.189022+0300, DEBUG, Выбран город Выльгорт id 10423057
+2021-08-24T17:59:15.568009+0300, DEBUG, callback_query run
+2021-08-24T17:59:19.072011+0300, DEBUG, Количество отелей: 10 func: get_page_size
+2021-08-24T17:59:19.252022+0300, INFO, This is get list
+2021-08-24T17:59:19.255022+0300, INFO, GET requests
+2021-08-24T17:59:23.636023+0300, INFO, Next_list : Yes,  page_number: 1
+2021-08-24T17:59:23.638023+0300, DEBUG, The transition to the page has been prepared 2. Param: page_size 10 len(list): 1
+2021-08-24T17:59:23.640023+0300, DEBUG, Data result_list ['Отель: Отель «Мельница»\nРейтинг: 10,0\nЦена за сутки: 16,000 RUB\nАдрес: Россия, Выльгорт, ул. Шоссейная, 9\nУдаленность от центра города 1.7 км. Ссылка на страницу бронирования:\nhttps://ru.hotels.com/ho972922432/']
+2021-08-24T17:59:23.641022+0300, INFO, GET requests
+2021-08-24T17:59:28.891011+0300, INFO, Next_list : Yes,  page_number: 2
+2021-08-24T17:59:28.893023+0300, DEBUG, The transition to the page has been prepared 3. Param: page_size 10 len(list): 2
+2021-08-24T17:59:28.895011+0300, DEBUG, Data result_list ['Отель: Отель «Мельница»\nРейтинг: 10,0\nЦена за сутки: 16,000 RUB\nАдрес: Россия, Выльгорт, ул. Шоссейная, 9\nУдаленность от центра города 1.7 км. Ссылка на страницу бронирования:\nhttps://ru.hotels.com/ho972922432/', 'Отель: Отель «Виктория» \nРейтинг: Без рейтинга\nЦена за сутки: 20,000 RUB\nАдрес: Россия, Сыктывкар, ул. Слободская, 3\nУдаленность от центра города 20 км. Ссылка на страницу бронирования:\nhttps://ru.hotels.com/ho1249296288/']
+2021-08-24T17:59:28.897022+0300, INFO, GET requests
+2021-08-24T17:59:33.776011+0300, INFO, Next_list : Yes,  page_number: 3
+2021-08-24T17:59:33.778004+0300, DEBUG, The transition to the page has been prepared 4. Param: page_size 10 len(list): 3
+2021-08-24T17:59:33.780004+0300, DEBUG, Data result_list ['Отель: Отель «Мельница»\nРейтинг: 10,0\nЦена за сутки: 16,000 RUB\nАдрес: Россия, Выльгорт, ул. Шоссейная, 9\nУдаленность от центра города 1.7 км. Ссылка на страницу бронирования:\nhttps://ru.hotels.com/ho972922432/', 'Отель: Отель «Виктория» \nРейтинг: Без рейтинга\nЦена за сутки: 20,000 RUB\nАдрес: Россия, Сыктывкар, ул. Слободская, 3\nУдаленность от центра города 20 км. Ссылка на страницу бронирования:\nhttps://ru.hotels.com/ho1249296288/', 'Отель: Отель «Виктория» \nРейтинг: Без рейтинга\nЦена за сутки: 20,000 RUB\nАдрес: Россия, Сыктывкар, ул. Слободская, 3\nУдаленность от центра города 20 км. Ссылка на страницу бронирования:\nhttps://ru.hotels.com/ho1249296288/']
+2021-08-24T17:59:33.782009+0300, INFO, GET requests
+2021-08-24T17:59:37.659003+0300, INFO, Next_list : Yes,  page_number: 4
+2021-08-24T17:59:37.661007+0300, DEBUG, The transition to the page has been prepared 5. Param: page_size 10 len(list): 4
+2021-08-24T17:59:37.663008+0300, DEBUG, Data result_list ['Отель: Отель «Мельница»\nРейтинг: 10,0\nЦена за сутки: 16,000 RUB\nАдрес: Россия, Выльгорт, ул. Шоссейная, 9\nУдаленность от центра города 1.7 км. Ссылка на страницу бронирования:\nhttps://ru.hotels.com/ho972922432/', 'Отель: Отель «Виктория» \nРейтинг: Без рейтинга\nЦена за сутки: 20,000 RUB\nАдрес: Россия, Сыктывкар, ул. Слободская, 3\nУдаленность от центра города 20 км. Ссылка на страницу бронирования:\nhttps://ru.hotels.com/ho1249296288/', 'Отель: Отель «Виктория» \nРейтинг: Без рейтинга\nЦена за сутки: 20,000 RUB\nАдрес: Россия, Сыктывкар, ул. Слободская, 3\nУдаленность от центра города 20 км. Ссылка на страницу бронирования:\nhttps://ru.hotels.com/ho1249296288/', 'Отель: Отель «Виктория» \nРейтинг: Без рейтинга\nЦена за сутки: 20,000 RUB\nАдрес: Россия, Сыктывкар, ул. Слободская, 3\nУдаленность от центра города 20 км. Ссылка на страницу бронирования:\nhttps://ru.hotels.com/ho1249296288/']
+2021-08-24T17:59:37.665008+0300, INFO, GET requests
+2021-08-24T18:00:12.694054+0300, INFO, Next_list : Yes,  page_number: 5
+2021-08-24T18:00:12.696065+0300, DEBUG, The transition to the page has been prepared 6. Param: page_size 10 len(list): 5
+2021-08-24T18:00:12.698054+0300, DEBUG, Data result_list ['Отель: Отель «Мельница»\nРейтинг: 10,0\nЦена за сутки: 16,000 RUB\nАдрес: Россия, Выльгорт, ул. Шоссейная, 9\nУдаленность от центра города 1.7 км. Ссылка на страницу бронирования:\nhttps://ru.hotels.com/ho972922432/', 'Отель: Отель «Виктория» \nРейтинг: Без рейтинга\nЦена за сутки: 20,000 RUB\nАдрес: Россия, Сыктывкар, ул. Слободская, 3\nУдаленность от центра города 20 км. Ссылка на страницу бронирования:\nhttps://ru.hotels.com/ho1249296288/', 'Отель: Отель «Виктория» \nРейтинг: Без рейтинга\nЦена за сутки: 20,000 RUB\nАдрес: Россия, Сыктывкар, ул. Слободская, 3\nУдаленность от центра города 20 км. Ссылка на страницу бронирования:\nhttps://ru.hotels.com/ho1249296288/', 'Отель: Отель «Виктория» \nРейтинг: Без рейтинга\nЦена за сутки: 20,000 RUB\nАдрес: Россия, Сыктывкар, ул. Слободская, 3\nУдаленность от центра города 20 км. Ссылка на страницу бронирования:\nhttps://ru.hotels.com/ho1249296288/', 'Отель: Отель «Виктория» \nРейтинг: Без рейтинга\nЦена за сутки: 20,000 RUB\nАдрес: Россия, Сыктывкар, ул. Слободская, 3\nУдаленность от центра города 20 км. Ссылка на страницу бронирования:\nhttps://ru.hotels.com/ho1249296288/']
+2021-08-24T18:00:12.701053+0300, INFO, GET requests
+2021-08-24T18:00:16.856047+0300, INFO, Next_list : Yes,  page_number: 6
+2021-08-24T18:00:16.858046+0300, DEBUG, The transition to the page has been prepared 7. Param: page_size 10 len(list): 6
+2021-08-24T18:00:16.860050+0300, DEBUG, Data result_list ['Отель: Отель «Мельница»\nРейтинг: 10,0\nЦена за сутки: 16,000 RUB\nАдрес: Россия, Выльгорт, ул. Шоссейная, 9\nУдаленность от центра города 1.7 км. Ссылка на страницу бронирования:\nhttps://ru.hotels.com/ho972922432/', 'Отель: Отель «Виктория» \nРейтинг: Без рейтинга\nЦена за сутки: 20,000 RUB\nАдрес: Россия, Сыктывкар, ул. Слободская, 3\nУдаленность от центра города 20 км. Ссылка на страницу бронирования:\nhttps://ru.hotels.com/ho1249296288/', 'Отель: Отель «Виктория» \nРейтинг: Без рейтинга\nЦена за сутки: 20,000 RUB\nАдрес: Россия, Сыктывкар, ул. Слободская, 3\nУдаленность от центра города 20 км. Ссылка на страницу бронирования:\nhttps://ru.hotels.com/ho1249296288/', 'Отель: Отель «Виктория» \nРейтинг: Без рейтинга\nЦена за сутки: 20,000 RUB\nАдрес: Россия, Сыктывкар, ул. Слободская, 3\nУдаленность от центра города 20 км. Ссылка на страницу бронирования:\nhttps://ru.hotels.com/ho1249296288/', 'Отель: Отель «Виктория» \nРейтинг: Без рейтинга\nЦена за сутки: 20,000 RUB\nАдрес: Россия, Сыктывкар, ул. Слободская, 3\nУдаленность от центра города 20 км. Ссылка на страницу бронирования:\nhttps://ru.hotels.com/ho1249296288/', 'Отель: Отель «Виктория» \nРейтинг: Без рейтинга\nЦена за сутки: 20,000 RUB\nАдрес: Россия, Сыктывкар, ул. Слободская, 3\nУдаленность от центра города 20 км. Ссылка на страницу бронирования:\nhttps://ru.hotels.com/ho1249296288/']
+2021-08-24T18:00:16.862052+0300, INFO, GET requests
+2021-08-24T18:00:20.260066+0300, INFO, Next_list : Yes,  page_number: 7
+2021-08-24T18:00:20.262065+0300, DEBUG, The transition to the page has been prepared 8. Param: page_size 10 len(list): 7
+2021-08-24T18:00:20.263067+0300, DEBUG, Data result_list ['Отель: Отель «Мельница»\nРейтинг: 10,0\nЦена за сутки: 16,000 RUB\nАдрес: Россия, Выльгорт, ул. Шоссейная, 9\nУдаленность от центра города 1.7 км. Ссылка на страницу бронирования:\nhttps://ru.hotels.com/ho972922432/', 'Отель: Отель «Виктория» \nРейтинг: Без рейтинга\nЦена за сутки: 20,000 RUB\nАдрес: Россия, Сыктывкар, ул. Слободская, 3\nУдаленность от центра города 20 км. Ссылка на страницу бронирования:\nhttps://ru.hotels.com/ho1249296288/', 'Отель: Отель «Виктория» \nРейтинг: Без рейтинга\nЦена за сутки: 20,000 RUB\nАдрес: Россия, Сыктывкар, ул. Слободская, 3\nУдаленность от центра города 20 км. Ссылка на страницу бронирования:\nhttps://ru.hotels.com/ho1249296288/', 'Отель: Отель «Виктория» \nРейтинг: Без рейтинга\nЦена за сутки: 20,000 RUB\nАдрес: Россия, Сыктывкар, ул. Слободская, 3\nУдаленность от центра города 20 км. Ссылка на страницу бронирования:\nhttps://ru.hotels.com/ho1249296288/', 'Отель: Отель «Виктория» \nРейтинг: Без рейтинга\nЦена за сутки: 20,000 RUB\nАдрес: Россия, Сыктывкар, ул. Слободская, 3\nУдаленность от центра города 20 км. Ссылка на страницу бронирования:\nhttps://ru.hotels.com/ho1249296288/', 'Отель: Отель «Виктория» \nРейтинг: Без рейтинга\nЦена за сутки: 20,000 RUB\nАдрес: Россия, Сыктывкар, ул. Слободская, 3\nУдаленность от центра города 20 км. Ссылка на страницу бронирования:\nhttps://ru.hotels.com/ho1249296288/', 'Отель: Отель «Виктория» \nРейтинг: Без рейтинга\nЦена за сутки: 20,000 RUB\nАдрес: Россия, Сыктывкар, ул. Слободская, 3\nУдаленность от центра города 20 км. Ссылка на страницу бронирования:\nhttps://ru.hotels.com/ho1249296288/']
+2021-08-24T18:00:20.266045+0300, INFO, GET requests
+2021-08-24T18:00:23.767065+0300, INFO, Next_list : Yes,  page_number: 8
+2021-08-24T18:00:23.770047+0300, DEBUG, The transition to the page has been prepared 9. Param: page_size 10 len(list): 8
+2021-08-24T18:00:23.772065+0300, DEBUG, Data result_list ['Отель: Отель «Мельница»\nРейтинг: 10,0\nЦена за сутки: 16,000 RUB\nАдрес: Россия, Выльгорт, ул. Шоссейная, 9\nУдаленность от центра города 1.7 км. Ссылка на страницу бронирования:\nhttps://ru.hotels.com/ho972922432/', 'Отель: Отель «Виктория» \nРейтинг: Без рейтинга\nЦена за сутки: 20,000 RUB\nАдрес: Россия, Сыктывкар, ул. Слободская, 3\nУдаленность от центра города 20 км. Ссылка на страницу бронирования:\nhttps://ru.hotels.com/ho1249296288/', 'Отель: Отель «Виктория» \nРейтинг: Без рейтинга\nЦена за сутки: 20,000 RUB\nАдрес: Россия, Сыктывкар, ул. Слободская, 3\nУдаленность от центра города 20 км. Ссылка на страницу бронирования:\nhttps://ru.hotels.com/ho1249296288/', 'Отель: Отель «Виктория» \nРейтинг: Без рейтинга\nЦена за сутки: 20,000 RUB\nАдрес: Россия, Сыктывкар, ул. Слободская, 3\nУдаленность от центра города 20 км. Ссылка на страницу бронирования:\nhttps://ru.hotels.com/ho1249296288/', 'Отель: Отель «Виктория» \nРейтинг: Без рейтинга\nЦена за сутки: 20,000 RUB\nАдрес: Россия, Сыктывкар, ул. Слободская, 3\nУдаленность от центра города 20 км. Ссылка на страницу бронирования:\nhttps://ru.hotels.com/ho1249296288/', 'Отель: Отель «Виктория» \nРейтинг: Без рейтинга\nЦена за сутки: 20,000 RUB\nАдрес: Россия, Сыктывкар, ул. Слободская, 3\nУдаленность от центра города 20 км. Ссылка на страницу бронирования:\nhttps://ru.hotels.com/ho1249296288/', 'Отель: Отель «Виктория» \nРейтинг: Без рейтинга\nЦена за сутки: 20,000 RUB\nАдрес: Россия, Сыктывкар, ул. Слободская, 3\nУдаленность от центра города 20 км. Ссылка на страницу бронирования:\nhttps://ru.hotels.com/ho1249296288/', 'Отель: Отель «Виктория» \nРейтинг: Без рейтинга\nЦена за сутки: 20,000 RUB\nАдрес: Россия, Сыктывкар, ул. Слободская, 3\nУдаленность от центра города 20 км. Ссылка на страницу бронирования:\nhttps://ru.hotels.com/ho1249296288/']
+2021-08-24T18:00:23.774047+0300, INFO, GET requests
+2021-08-24T18:00:27.316041+0300, INFO, Next_list : Yes,  page_number: 9
+2021-08-24T18:00:27.318041+0300, DEBUG, The transition to the page has been prepared 10. Param: page_size 10 len(list): 9
+2021-08-24T18:00:27.320041+0300, DEBUG, Data result_list ['Отель: Отель «Мельница»\nРейтинг: 10,0\nЦена за сутки: 16,000 RUB\nАдрес: Россия, Выльгорт, ул. Шоссейная, 9\nУдаленность от центра города 1.7 км. Ссылка на страницу бронирования:\nhttps://ru.hotels.com/ho972922432/', 'Отель: Отель «Виктория» \nРейтинг: Без рейтинга\nЦена за сутки: 20,000 RUB\nАдрес: Россия, Сыктывкар, ул. Слободская, 3\nУдаленность от центра города 20 км. Ссылка на страницу бронирования:\nhttps://ru.hotels.com/ho1249296288/', 'Отель: Отель «Виктория» \nРейтинг: Без рейтинга\nЦена за сутки: 20,000 RUB\nАдрес: Россия, Сыктывкар, ул. Слободская, 3\nУдаленность от центра города 20 км. Ссылка на страницу бронирования:\nhttps://ru.hotels.com/ho1249296288/', 'Отель: Отель «Виктория» \nРейтинг: Без рейтинга\nЦена за сутки: 20,000 RUB\nАдрес: Россия, Сыктывкар, ул. Слободская, 3\nУдаленность от центра города 20 км. Ссылка на страницу бронирования:\nhttps://ru.hotels.com/ho1249296288/', 'Отель: Отель «Виктория» \nРейтинг: Без рейтинга\nЦена за сутки: 20,000 RUB\nАдрес: Россия, Сыктывкар, ул. Слободская, 3\nУдаленность от центра города 20 км. Ссылка на страницу бронирования:\nhttps://ru.hotels.com/ho1249296288/', 'Отель: Отель «Виктория» \nРейтинг: Без рейтинга\nЦена за сутки: 20,000 RUB\nАдрес: Россия, Сыктывкар, ул. Слободская, 3\nУдаленность от центра города 20 км. Ссылка на страницу бронирования:\nhttps://ru.hotels.com/ho1249296288/', 'Отель: Отель «Виктория» \nРейтинг: Без рейтинга\nЦена за сутки: 20,000 RUB\nАдрес: Россия, Сыктывкар, ул. Слободская, 3\nУдаленность от центра города 20 км. Ссылка на страницу бронирования:\nhttps://ru.hotels.com/ho1249296288/', 'Отель: Отель «Виктория» \nРейтинг: Без рейтинга\nЦена за сутки: 20,000 RUB\nАдрес: Россия, Сыктывкар, ул. Слободская, 3\nУдаленность от центра города 20 км. Ссылка на страницу бронирования:\nhttps://ru.hotels.com/ho1249296288/', 'Отель: Отель «Виктория» \nРейтинг: Без рейтинга\nЦена за сутки: 20,000 RUB\nАдрес: Россия, Сыктывкар, ул. Слободская, 3\nУдаленность от центра города 20 км. Ссылка на страницу бронирования:\nhttps://ru.hotels.com/ho1249296288/']
+2021-08-24T18:00:27.322042+0300, INFO, GET requests
+2021-08-24T18:00:32.433053+0300, INFO, Selected city Bąki
+2021-08-24T18:00:35.402066+0300, DEBUG, List city [{'city': 'Бакыркёй', 'caption': 'Бакыркёй, Стамбул, Istanbul, Турция', 'city_id': '10874282'}, {'city': 'Пакистан', 'caption': 'Пакистан', 'city_id': '10233134'}, {'city': 'Бакио', 'caption': 'Бакио, Страна басков, Испания', 'city_id': '1900363'}, {'city': 'Красные Баки', 'caption': 'Красные Баки, Нижегородская область, Россия', 'city_id': '1126640'}, {'city': 'Боиркёй', 'caption': 'Боиркёй, Биледжик, Биледжик, Турция', 'city_id': '1799203'}, {'city': 'Бейзингстоук', 'caption': 'Бейзингстоук, Англия, Великобритания', 'city_id': '549597'}]
+2021-08-24T18:01:08.606080+0300, INFO, Selected city 
+2021-08-24T18:01:09.433083+0300, ERROR, Ошибка API (ERROR)
+2021-08-24T18:01:09.437085+0300, ERROR, An error has been caught in function 'get_city', process 'MainProcess' (19056), thread 'WorkerThread1' (4528):
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 908, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x00000157B6FE75E0>
+    └ <WorkerThread(WorkerThread1, started daemon 4528)>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 950, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x00000157BA0C1040>
+    └ <WorkerThread(WorkerThread1, started daemon 4528)>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<telebot.types.Message object at 0x00000157BADACAF0>,)
+    └ <function Command.handle.<locals>.get_city at 0x00000157BACDB1F0>
+
+> File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 303, in get_city
+    rst_dct = get_city_id(message)
+              │           └ <telebot.types.Message object at 0x00000157BADACAF0>
+              └ <function get_city_id at 0x00000157BAC308B0>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\hotel_api.py", line 30, in get_city_id
+    json.dump(data, file, indent=4, ensure_ascii=False)
+    │    │          └ <_io.TextIOWrapper name='data.txt' mode='w' encoding='UTF-8'>
+    │    └ <function dump at 0x00000157B955C670>
+    └ <module 'json' from 'C:\\Users\\Ilnur\\AppData\\Local\\Programs\\Python\\Python39\\lib\\json\\__init__.py'>
+
+UnboundLocalError: local variable 'data' referenced before assignment
+2021-08-24T18:01:09.467071+0300, ERROR, An error has been caught in function 'get_city', process 'MainProcess' (19056), thread 'WorkerThread1' (4528):
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 908, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x00000157B6FE75E0>
+    └ <WorkerThread(WorkerThread1, started daemon 4528)>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 950, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x00000157BA0C1040>
+    └ <WorkerThread(WorkerThread1, started daemon 4528)>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<telebot.types.Message object at 0x00000157BADACAF0>,)
+    └ <function Command.handle.<locals>.get_city at 0x00000157BACDB1F0>
+
+> File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 304, in get_city
+    keyboard = create_keyboard(message, rst_dct)
+               │               │        └ None
+               │               └ <telebot.types.Message object at 0x00000157BADACAF0>
+               └ <function Command.handle.<locals>.create_keyboard at 0x00000157BACDB4C0>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 319, in create_keyboard
+    for number, item in enumerate(dct):
+                                  └ None
+
+TypeError: 'NoneType' object is not iterable
+2021-08-24T18:02:14.015887+0300, INFO, Selected city Bąki
+2021-08-24T18:02:17.449733+0300, DEBUG, List city [{'city': 'Бакыркёй', 'caption': 'Бакыркёй, Стамбул, Istanbul, Турция', 'city_id': '10874282'}, {'city': 'Пакистан', 'caption': 'Пакистан', 'city_id': '10233134'}, {'city': 'Бакио', 'caption': 'Бакио, Страна басков, Испания', 'city_id': '1900363'}, {'city': 'Красные Баки', 'caption': 'Красные Баки, Нижегородская область, Россия', 'city_id': '1126640'}, {'city': 'Боиркёй', 'caption': 'Боиркёй, Биледжик, Биледжик, Турция', 'city_id': '1799203'}, {'city': 'Бейзингстоук', 'caption': 'Бейзингстоук, Англия, Великобритания', 'city_id': '549597'}]
+2021-08-24T18:04:59.121534+0300, INFO, Selected city 
+2021-08-24T18:04:59.965707+0300, ERROR, Ошибка API (ERROR)
+2021-08-24T18:04:59.968219+0300, ERROR, An error has been caught in function 'get_city', process 'MainProcess' (15652), thread 'WorkerThread2' (12900):
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 908, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x0000023D4C9F75E0>
+    └ <WorkerThread(WorkerThread2, started daemon 12900)>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 950, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x0000023D4FAC1040>
+    └ <WorkerThread(WorkerThread2, started daemon 12900)>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<telebot.types.Message object at 0x0000023D5074DBB0>,)
+    └ <function Command.handle.<locals>.get_city at 0x0000023D506DB1F0>
+
+> File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 303, in get_city
+    rst_dct = get_city_id(message)
+              │           └ <telebot.types.Message object at 0x0000023D5074DBB0>
+              └ <function get_city_id at 0x0000023D506308B0>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\hotel_api.py", line 30, in get_city_id
+    json.dump(data, file, indent=4, ensure_ascii=False)
+    │    │          └ <_io.TextIOWrapper name='data.txt' mode='w' encoding='UTF-8'>
+    │    └ <function dump at 0x0000023D4EF5B670>
+    └ <module 'json' from 'C:\\Users\\Ilnur\\AppData\\Local\\Programs\\Python\\Python39\\lib\\json\\__init__.py'>
+
+UnboundLocalError: local variable 'data' referenced before assignment
+2021-08-24T18:05:00.000230+0300, ERROR, An error has been caught in function 'get_city', process 'MainProcess' (15652), thread 'WorkerThread2' (12900):
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 908, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x0000023D4C9F75E0>
+    └ <WorkerThread(WorkerThread2, started daemon 12900)>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 950, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x0000023D4FAC1040>
+    └ <WorkerThread(WorkerThread2, started daemon 12900)>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<telebot.types.Message object at 0x0000023D5074DBB0>,)
+    └ <function Command.handle.<locals>.get_city at 0x0000023D506DB1F0>
+
+> File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 304, in get_city
+    keyboard = create_keyboard(message, rst_dct)
+               │               │        └ None
+               │               └ <telebot.types.Message object at 0x0000023D5074DBB0>
+               └ <function Command.handle.<locals>.create_keyboard at 0x0000023D506DB4C0>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 319, in create_keyboard
+    for number, item in enumerate(dct):
+                                  └ None
+
+TypeError: 'NoneType' object is not iterable
+2021-08-24T18:05:13.589212+0300, INFO, Selected city 
+2021-08-24T18:05:14.441691+0300, ERROR, Ошибка API (ERROR)
+2021-08-24T18:05:14.444919+0300, ERROR, An error has been caught in function 'get_city', process 'MainProcess' (15652), thread 'WorkerThread1' (16856):
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 908, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x0000023D4C9F75E0>
+    └ <WorkerThread(WorkerThread1, started daemon 16856)>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 950, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x0000023D4FAC1040>
+    └ <WorkerThread(WorkerThread1, started daemon 16856)>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<telebot.types.Message object at 0x0000023D50763AC0>,)
+    └ <function Command.handle.<locals>.get_city at 0x0000023D506DB1F0>
+
+> File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 303, in get_city
+    rst_dct = get_city_id(message)
+              │           └ <telebot.types.Message object at 0x0000023D50763AC0>
+              └ <function get_city_id at 0x0000023D506308B0>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\hotel_api.py", line 30, in get_city_id
+    json.dump(data, file, indent=4, ensure_ascii=False)
+    │    │          └ <_io.TextIOWrapper name='data.txt' mode='w' encoding='UTF-8'>
+    │    └ <function dump at 0x0000023D4EF5B670>
+    └ <module 'json' from 'C:\\Users\\Ilnur\\AppData\\Local\\Programs\\Python\\Python39\\lib\\json\\__init__.py'>
+
+UnboundLocalError: local variable 'data' referenced before assignment
+2021-08-24T18:05:14.472913+0300, ERROR, An error has been caught in function 'get_city', process 'MainProcess' (15652), thread 'WorkerThread1' (16856):
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 908, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x0000023D4C9F75E0>
+    └ <WorkerThread(WorkerThread1, started daemon 16856)>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 950, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x0000023D4FAC1040>
+    └ <WorkerThread(WorkerThread1, started daemon 16856)>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<telebot.types.Message object at 0x0000023D50763AC0>,)
+    └ <function Command.handle.<locals>.get_city at 0x0000023D506DB1F0>
+
+> File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 304, in get_city
+    keyboard = create_keyboard(message, rst_dct)
+               │               │        └ None
+               │               └ <telebot.types.Message object at 0x0000023D50763AC0>
+               └ <function Command.handle.<locals>.create_keyboard at 0x0000023D506DB4C0>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 319, in create_keyboard
+    for number, item in enumerate(dct):
+                                  └ None
+
+TypeError: 'NoneType' object is not iterable
+2021-08-24T18:05:38.356842+0300, INFO, Selected city 
+2021-08-24T18:05:39.164765+0300, ERROR, Ошибка API (ERROR)
+2021-08-24T18:05:39.167764+0300, ERROR, An error has been caught in function 'get_city', process 'MainProcess' (17292), thread 'WorkerThread1' (16748):
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 908, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x0000029A1BF775E0>
+    └ <WorkerThread(WorkerThread1, started daemon 16748)>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 950, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x0000029A1F031040>
+    └ <WorkerThread(WorkerThread1, started daemon 16748)>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<telebot.types.Message object at 0x0000029A1FC4E7C0>,)
+    └ <function Command.handle.<locals>.get_city at 0x0000029A1FC4B1F0>
+
+> File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 303, in get_city
+    rst_dct = get_city_id(message)
+              │           └ <telebot.types.Message object at 0x0000029A1FC4E7C0>
+              └ <function get_city_id at 0x0000029A1F3A08B0>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\hotel_api.py", line 30, in get_city_id
+    json.dump(data, file, indent=4, ensure_ascii=False)
+    │    │          └ <_io.TextIOWrapper name='data.txt' mode='w' encoding='UTF-8'>
+    │    └ <function dump at 0x0000029A1E4CC670>
+    └ <module 'json' from 'C:\\Users\\Ilnur\\AppData\\Local\\Programs\\Python\\Python39\\lib\\json\\__init__.py'>
+
+UnboundLocalError: local variable 'data' referenced before assignment
+2021-08-24T18:05:39.198584+0300, ERROR, An error has been caught in function 'get_city', process 'MainProcess' (17292), thread 'WorkerThread1' (16748):
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 908, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x0000029A1BF775E0>
+    └ <WorkerThread(WorkerThread1, started daemon 16748)>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 950, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x0000029A1F031040>
+    └ <WorkerThread(WorkerThread1, started daemon 16748)>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<telebot.types.Message object at 0x0000029A1FC4E7C0>,)
+    └ <function Command.handle.<locals>.get_city at 0x0000029A1FC4B1F0>
+
+> File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 304, in get_city
+    keyboard = create_keyboard(message, rst_dct)
+               │               │        └ None
+               │               └ <telebot.types.Message object at 0x0000029A1FC4E7C0>
+               └ <function Command.handle.<locals>.create_keyboard at 0x0000029A1FC4B4C0>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 319, in create_keyboard
+    for number, item in enumerate(dct):
+                                  └ None
+
+TypeError: 'NoneType' object is not iterable
+2021-08-24T18:05:40.693003+0300, INFO, Selected city 
+2021-08-24T18:05:41.489701+0300, ERROR, Ошибка API (ERROR)
+2021-08-24T18:05:41.492676+0300, ERROR, An error has been caught in function 'get_city', process 'MainProcess' (17292), thread 'WorkerThread2' (8832):
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 908, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x0000029A1BF775E0>
+    └ <WorkerThread(WorkerThread2, started daemon 8832)>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 950, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x0000029A1F031040>
+    └ <WorkerThread(WorkerThread2, started daemon 8832)>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<telebot.types.Message object at 0x0000029A1FC5D850>,)
+    └ <function Command.handle.<locals>.get_city at 0x0000029A1FC4B1F0>
+
+> File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 303, in get_city
+    rst_dct = get_city_id(message)
+              │           └ <telebot.types.Message object at 0x0000029A1FC5D850>
+              └ <function get_city_id at 0x0000029A1F3A08B0>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\hotel_api.py", line 30, in get_city_id
+    json.dump(data, file, indent=4, ensure_ascii=False)
+    │    │          └ <_io.TextIOWrapper name='data.txt' mode='w' encoding='UTF-8'>
+    │    └ <function dump at 0x0000029A1E4CC670>
+    └ <module 'json' from 'C:\\Users\\Ilnur\\AppData\\Local\\Programs\\Python\\Python39\\lib\\json\\__init__.py'>
+
+UnboundLocalError: local variable 'data' referenced before assignment
+2021-08-24T18:05:41.514693+0300, ERROR, An error has been caught in function 'get_city', process 'MainProcess' (17292), thread 'WorkerThread2' (8832):
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 908, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x0000029A1BF775E0>
+    └ <WorkerThread(WorkerThread2, started daemon 8832)>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 950, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x0000029A1F031040>
+    └ <WorkerThread(WorkerThread2, started daemon 8832)>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<telebot.types.Message object at 0x0000029A1FC5D850>,)
+    └ <function Command.handle.<locals>.get_city at 0x0000029A1FC4B1F0>
+
+> File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 304, in get_city
+    keyboard = create_keyboard(message, rst_dct)
+               │               │        └ None
+               │               └ <telebot.types.Message object at 0x0000029A1FC5D850>
+               └ <function Command.handle.<locals>.create_keyboard at 0x0000029A1FC4B4C0>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 319, in create_keyboard
+    for number, item in enumerate(dct):
+                                  └ None
+
+TypeError: 'NoneType' object is not iterable
+2021-08-24T18:05:46.696310+0300, INFO, Selected city 
+2021-08-24T18:05:47.532311+0300, ERROR, Ошибка API (ERROR)
+2021-08-24T18:05:47.535298+0300, ERROR, An error has been caught in function 'get_city', process 'MainProcess' (3728), thread 'WorkerThread2' (18020):
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 908, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x000002328FAD75E0>
+    └ <WorkerThread(WorkerThread2, started daemon 18020)>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 950, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x0000023292B91040>
+    └ <WorkerThread(WorkerThread2, started daemon 18020)>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<telebot.types.Message object at 0x00000232937AE7C0>,)
+    └ <function Command.handle.<locals>.get_city at 0x00000232937AB1F0>
+
+> File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 303, in get_city
+    rst_dct = get_city_id(message)
+              │           └ <telebot.types.Message object at 0x00000232937AE7C0>
+              └ <function get_city_id at 0x00000232937008B0>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\hotel_api.py", line 30, in get_city_id
+    json.dump(data, file, indent=4, ensure_ascii=False)
+    │    │          └ <_io.TextIOWrapper name='data.txt' mode='w' encoding='UTF-8'>
+    │    └ <function dump at 0x000002329202C670>
+    └ <module 'json' from 'C:\\Users\\Ilnur\\AppData\\Local\\Programs\\Python\\Python39\\lib\\json\\__init__.py'>
+
+UnboundLocalError: local variable 'data' referenced before assignment
+2021-08-24T18:05:47.567513+0300, ERROR, An error has been caught in function 'get_city', process 'MainProcess' (3728), thread 'WorkerThread2' (18020):
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 908, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x000002328FAD75E0>
+    └ <WorkerThread(WorkerThread2, started daemon 18020)>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 950, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x0000023292B91040>
+    └ <WorkerThread(WorkerThread2, started daemon 18020)>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<telebot.types.Message object at 0x00000232937AE7C0>,)
+    └ <function Command.handle.<locals>.get_city at 0x00000232937AB1F0>
+
+> File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 304, in get_city
+    keyboard = create_keyboard(message, rst_dct)
+               │               │        └ None
+               │               └ <telebot.types.Message object at 0x00000232937AE7C0>
+               └ <function Command.handle.<locals>.create_keyboard at 0x00000232937AB4C0>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 319, in create_keyboard
+    for number, item in enumerate(dct):
+                                  └ None
+
+TypeError: 'NoneType' object is not iterable
+2021-08-24T18:05:48.228087+0300, INFO, Selected city قندهار
+2021-08-24T18:05:51.191958+0300, DEBUG, List city []
+2021-08-24T18:05:59.130970+0300, INFO, Selected city هرات
+2021-08-24T18:06:02.552868+0300, DEBUG, List city [{'city': 'Ист-Хартфорд', 'caption': 'Ист-Хартфорд, Коннектикут, США', 'city_id': '1463743'}, {'city': 'Саут-Хартфорд', 'caption': 'Саут-Хартфорд, Нью-Йорк, США', 'city_id': '1516621'}]
+2021-08-24T18:06:09.166529+0300, INFO, Selected city 
+2021-08-24T18:06:10.015488+0300, ERROR, Ошибка API (ERROR)
+2021-08-24T18:06:10.018274+0300, ERROR, An error has been caught in function 'get_city', process 'MainProcess' (3728), thread 'WorkerThread2' (18020):
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 908, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x000002328FAD75E0>
+    └ <WorkerThread(WorkerThread2, started daemon 18020)>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 950, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x0000023292B91040>
+    └ <WorkerThread(WorkerThread2, started daemon 18020)>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<telebot.types.Message object at 0x000002329388DA60>,)
+    └ <function Command.handle.<locals>.get_city at 0x00000232937AB1F0>
+
+> File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 303, in get_city
+    rst_dct = get_city_id(message)
+              │           └ <telebot.types.Message object at 0x000002329388DA60>
+              └ <function get_city_id at 0x00000232937008B0>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\hotel_api.py", line 30, in get_city_id
+    json.dump(data, file, indent=4, ensure_ascii=False)
+    │    │          └ <_io.TextIOWrapper name='data.txt' mode='w' encoding='UTF-8'>
+    │    └ <function dump at 0x000002329202C670>
+    └ <module 'json' from 'C:\\Users\\Ilnur\\AppData\\Local\\Programs\\Python\\Python39\\lib\\json\\__init__.py'>
+
+UnboundLocalError: local variable 'data' referenced before assignment
+2021-08-24T18:06:10.043843+0300, ERROR, An error has been caught in function 'get_city', process 'MainProcess' (3728), thread 'WorkerThread2' (18020):
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 908, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x000002328FAD75E0>
+    └ <WorkerThread(WorkerThread2, started daemon 18020)>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 950, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x0000023292B91040>
+    └ <WorkerThread(WorkerThread2, started daemon 18020)>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<telebot.types.Message object at 0x000002329388DA60>,)
+    └ <function Command.handle.<locals>.get_city at 0x00000232937AB1F0>
+
+> File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 304, in get_city
+    keyboard = create_keyboard(message, rst_dct)
+               │               │        └ None
+               │               └ <telebot.types.Message object at 0x000002329388DA60>
+               └ <function Command.handle.<locals>.create_keyboard at 0x00000232937AB4C0>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 319, in create_keyboard
+    for number, item in enumerate(dct):
+                                  └ None
+
+TypeError: 'NoneType' object is not iterable
+2021-08-24T18:06:32.328617+0300, INFO, Selected city قندهار
+2021-08-24T18:06:35.735112+0300, INFO, Selected city هرات
+2021-08-24T18:06:39.062349+0300, DEBUG, List city [{'city': 'Ист-Хартфорд', 'caption': 'Ист-Хартфорд, Коннектикут, США', 'city_id': '1463743'}, {'city': 'Саут-Хартфорд', 'caption': 'Саут-Хартфорд, Нью-Йорк, США', 'city_id': '1516621'}]
+2021-08-24T18:06:42.591222+0300, DEBUG, List city []
+2021-08-24T18:07:20.993026+0300, INFO, Selected city 
+2021-08-24T18:07:21.909592+0300, ERROR, Ошибка API (ERROR)
+2021-08-24T18:07:21.912754+0300, ERROR, An error has been caught in function 'get_city', process 'MainProcess' (3728), thread 'WorkerThread1' (12048):
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 908, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x000002328FAD75E0>
+    └ <WorkerThread(WorkerThread1, started daemon 12048)>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 950, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x0000023292B91040>
+    └ <WorkerThread(WorkerThread1, started daemon 12048)>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<telebot.types.Message object at 0x0000023293832B20>,)
+    └ <function Command.handle.<locals>.get_city at 0x00000232937AB1F0>
+
+> File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 303, in get_city
+    rst_dct = get_city_id(message)
+              │           └ <telebot.types.Message object at 0x0000023293832B20>
+              └ <function get_city_id at 0x00000232937008B0>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\hotel_api.py", line 30, in get_city_id
+    json.dump(data, file, indent=4, ensure_ascii=False)
+    │    │          └ <_io.TextIOWrapper name='data.txt' mode='w' encoding='UTF-8'>
+    │    └ <function dump at 0x000002329202C670>
+    └ <module 'json' from 'C:\\Users\\Ilnur\\AppData\\Local\\Programs\\Python\\Python39\\lib\\json\\__init__.py'>
+
+UnboundLocalError: local variable 'data' referenced before assignment
+2021-08-24T18:07:21.937974+0300, ERROR, An error has been caught in function 'get_city', process 'MainProcess' (3728), thread 'WorkerThread1' (12048):
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 908, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x000002328FAD75E0>
+    └ <WorkerThread(WorkerThread1, started daemon 12048)>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 950, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x0000023292B91040>
+    └ <WorkerThread(WorkerThread1, started daemon 12048)>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<telebot.types.Message object at 0x0000023293832B20>,)
+    └ <function Command.handle.<locals>.get_city at 0x00000232937AB1F0>
+
+> File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 304, in get_city
+    keyboard = create_keyboard(message, rst_dct)
+               │               │        └ None
+               │               └ <telebot.types.Message object at 0x0000023293832B20>
+               └ <function Command.handle.<locals>.create_keyboard at 0x00000232937AB4C0>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 319, in create_keyboard
+    for number, item in enumerate(dct):
+                                  └ None
+
+TypeError: 'NoneType' object is not iterable
+2021-08-24T18:07:31.242286+0300, DEBUG, callback_query run
+2021-08-24T18:07:48.773889+0300, INFO, Selected city Antalya
+2021-08-24T18:08:31.250869+0300, DEBUG, List city [{'city': 'Анталья', 'caption': 'Анталья, Анталья (провинция), Турция', 'city_id': '1355047'}, {'city': 'Кемер', 'caption': 'Кемер, Анталья (провинция), Турция', 'city_id': '1343725'}, {'city': 'Коньяалты', 'caption': 'Коньяалты, Анталья (провинция), Турция', 'city_id': '1798897'}, {'city': 'Белек', 'caption': 'Белек, Анталья (провинция), Турция', 'city_id': '1351110'}, {'city': 'Калейчи', 'caption': 'Калейчи, Анталья, Анталья (провинция), Турция', 'city_id': '1725097'}, {'city': 'Лара', 'caption': 'Лара, Анталья, Анталья (провинция), Турция', 'city_id': '1710603'}, {'city': 'Аланья', 'caption': 'Аланья, Анталья (провинция), Турция', 'city_id': '1340186'}, {'city': 'Сиде', 'caption': 'Сиде, Анталья (провинция), Турция', 'city_id': '1640749'}]
+2021-08-24T18:08:36.570351+0300, DEBUG, callback_query run
+2021-08-24T18:08:36.574204+0300, DEBUG, Выбран город Antalya id 1355047
+2021-08-24T18:08:38.539805+0300, DEBUG, callback_query run
+2021-08-24T18:08:45.659155+0300, DEBUG, Количество отелей: 2 func: get_page_size
+2021-08-24T18:08:45.838176+0300, INFO, This is get list
+2021-08-24T18:08:45.841174+0300, INFO, GET requests
+2021-08-24T18:09:24.583951+0300, INFO, Selected city 
+2021-08-24T18:09:25.423258+0300, ERROR, Ошибка API (ERROR)
+2021-08-24T18:09:25.426251+0300, ERROR, An error has been caught in function 'get_city', process 'MainProcess' (3728), thread 'WorkerThread1' (12048):
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 908, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x000002328FAD75E0>
+    └ <WorkerThread(WorkerThread1, started daemon 12048)>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 950, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x0000023292B91040>
+    └ <WorkerThread(WorkerThread1, started daemon 12048)>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<telebot.types.Message object at 0x00000232938A27C0>,)
+    └ <function Command.handle.<locals>.get_city at 0x00000232937AB1F0>
+
+> File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 303, in get_city
+    rst_dct = get_city_id(message)
+              │           └ <telebot.types.Message object at 0x00000232938A27C0>
+              └ <function get_city_id at 0x00000232937008B0>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\hotel_api.py", line 30, in get_city_id
+    json.dump(data, file, indent=4, ensure_ascii=False)
+    │    │          └ <_io.TextIOWrapper name='data.txt' mode='w' encoding='UTF-8'>
+    │    └ <function dump at 0x000002329202C670>
+    └ <module 'json' from 'C:\\Users\\Ilnur\\AppData\\Local\\Programs\\Python\\Python39\\lib\\json\\__init__.py'>
+
+UnboundLocalError: local variable 'data' referenced before assignment
+2021-08-24T18:09:25.450229+0300, ERROR, An error has been caught in function 'get_city', process 'MainProcess' (3728), thread 'WorkerThread1' (12048):
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 908, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x000002328FAD75E0>
+    └ <WorkerThread(WorkerThread1, started daemon 12048)>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 950, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x0000023292B91040>
+    └ <WorkerThread(WorkerThread1, started daemon 12048)>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<telebot.types.Message object at 0x00000232938A27C0>,)
+    └ <function Command.handle.<locals>.get_city at 0x00000232937AB1F0>
+
+> File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 304, in get_city
+    keyboard = create_keyboard(message, rst_dct)
+               │               │        └ None
+               │               └ <telebot.types.Message object at 0x00000232938A27C0>
+               └ <function Command.handle.<locals>.create_keyboard at 0x00000232937AB4C0>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 319, in create_keyboard
+    for number, item in enumerate(dct):
+                                  └ None
+
+TypeError: 'NoneType' object is not iterable
+2021-08-24T18:09:33.688889+0300, INFO, Selected city بغداد
+2021-08-24T18:09:36.737505+0300, INFO, Selected city شهر تهران
+2021-08-24T18:09:37.159249+0300, DEBUG, List city [{'city': 'Багдад', 'caption': 'Багдад, Тасмания, Австралия', 'city_id': '10432353'}, {'city': 'Багдад', 'caption': 'Багдад, Кентукки, США', 'city_id': '10419190'}, {'city': 'Багдад', 'caption': 'Багдад, Аризона, США', 'city_id': '1502884'}]
+2021-08-24T18:09:40.592934+0300, DEBUG, List city []
+2021-08-24T18:09:58.460621+0300, INFO, Selected city شهر تهران
+2021-08-24T18:10:05.173635+0300, DEBUG, List city []
+2021-08-24T18:10:53.405625+0300, DEBUG, callback_query run
+2021-08-24T18:10:59.038622+0300, INFO, Selected city 
+2021-08-24T18:10:59.889638+0300, ERROR, Ошибка API (ERROR)
+2021-08-24T18:10:59.892634+0300, ERROR, An error has been caught in function 'get_city', process 'MainProcess' (3728), thread 'WorkerThread1' (12048):
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 908, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x000002328FAD75E0>
+    └ <WorkerThread(WorkerThread1, started daemon 12048)>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 950, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x0000023292B91040>
+    └ <WorkerThread(WorkerThread1, started daemon 12048)>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<telebot.types.Message object at 0x00000232938A3D00>,)
+    └ <function Command.handle.<locals>.get_city at 0x00000232937AB1F0>
+
+> File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 303, in get_city
+    rst_dct = get_city_id(message)
+              │           └ <telebot.types.Message object at 0x00000232938A3D00>
+              └ <function get_city_id at 0x00000232937008B0>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\hotel_api.py", line 30, in get_city_id
+    json.dump(data, file, indent=4, ensure_ascii=False)
+    │    │          └ <_io.TextIOWrapper name='data.txt' mode='w' encoding='UTF-8'>
+    │    └ <function dump at 0x000002329202C670>
+    └ <module 'json' from 'C:\\Users\\Ilnur\\AppData\\Local\\Programs\\Python\\Python39\\lib\\json\\__init__.py'>
+
+UnboundLocalError: local variable 'data' referenced before assignment
+2021-08-24T18:10:59.920641+0300, ERROR, An error has been caught in function 'get_city', process 'MainProcess' (3728), thread 'WorkerThread1' (12048):
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 908, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x000002328FAD75E0>
+    └ <WorkerThread(WorkerThread1, started daemon 12048)>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 950, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x0000023292B91040>
+    └ <WorkerThread(WorkerThread1, started daemon 12048)>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<telebot.types.Message object at 0x00000232938A3D00>,)
+    └ <function Command.handle.<locals>.get_city at 0x00000232937AB1F0>
+
+> File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 304, in get_city
+    keyboard = create_keyboard(message, rst_dct)
+               │               │        └ None
+               │               └ <telebot.types.Message object at 0x00000232938A3D00>
+               └ <function Command.handle.<locals>.create_keyboard at 0x00000232937AB4C0>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 319, in create_keyboard
+    for number, item in enumerate(dct):
+                                  └ None
+
+TypeError: 'NoneType' object is not iterable
+2021-08-24T18:11:08.977654+0300, INFO, Selected city 
+2021-08-24T18:11:09.794646+0300, ERROR, Ошибка API (ERROR)
+2021-08-24T18:11:09.797635+0300, ERROR, An error has been caught in function 'get_city', process 'MainProcess' (3728), thread 'WorkerThread2' (18020):
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 908, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x000002328FAD75E0>
+    └ <WorkerThread(WorkerThread2, started daemon 18020)>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 950, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x0000023292B91040>
+    └ <WorkerThread(WorkerThread2, started daemon 18020)>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<telebot.types.Message object at 0x00000232938856A0>,)
+    └ <function Command.handle.<locals>.get_city at 0x00000232937AB1F0>
+
+> File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 303, in get_city
+    rst_dct = get_city_id(message)
+              │           └ <telebot.types.Message object at 0x00000232938856A0>
+              └ <function get_city_id at 0x00000232937008B0>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\hotel_api.py", line 30, in get_city_id
+    json.dump(data, file, indent=4, ensure_ascii=False)
+    │    │          └ <_io.TextIOWrapper name='data.txt' mode='w' encoding='UTF-8'>
+    │    └ <function dump at 0x000002329202C670>
+    └ <module 'json' from 'C:\\Users\\Ilnur\\AppData\\Local\\Programs\\Python\\Python39\\lib\\json\\__init__.py'>
+
+UnboundLocalError: local variable 'data' referenced before assignment
+2021-08-24T18:11:09.823631+0300, ERROR, An error has been caught in function 'get_city', process 'MainProcess' (3728), thread 'WorkerThread2' (18020):
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 908, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x000002328FAD75E0>
+    └ <WorkerThread(WorkerThread2, started daemon 18020)>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 950, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x0000023292B91040>
+    └ <WorkerThread(WorkerThread2, started daemon 18020)>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<telebot.types.Message object at 0x00000232938856A0>,)
+    └ <function Command.handle.<locals>.get_city at 0x00000232937AB1F0>
+
+> File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 304, in get_city
+    keyboard = create_keyboard(message, rst_dct)
+               │               │        └ None
+               │               └ <telebot.types.Message object at 0x00000232938856A0>
+               └ <function Command.handle.<locals>.create_keyboard at 0x00000232937AB4C0>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 319, in create_keyboard
+    for number, item in enumerate(dct):
+                                  └ None
+
+TypeError: 'NoneType' object is not iterable
+2021-08-24T18:11:37.993622+0300, INFO, Selected city თბილისი
+2021-08-24T18:11:41.731646+0300, DEBUG, List city []
+2021-08-24T18:11:48.912631+0300, INFO, Selected city 
+2021-08-24T18:11:49.733636+0300, ERROR, Ошибка API (ERROR)
+2021-08-24T18:11:49.736635+0300, ERROR, An error has been caught in function 'get_city', process 'MainProcess' (3728), thread 'WorkerThread1' (12048):
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 908, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x000002328FAD75E0>
+    └ <WorkerThread(WorkerThread1, started daemon 12048)>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 950, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x0000023292B91040>
+    └ <WorkerThread(WorkerThread1, started daemon 12048)>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<telebot.types.Message object at 0x0000023293832D00>,)
+    └ <function Command.handle.<locals>.get_city at 0x00000232937AB1F0>
+
+> File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 303, in get_city
+    rst_dct = get_city_id(message)
+              │           └ <telebot.types.Message object at 0x0000023293832D00>
+              └ <function get_city_id at 0x00000232937008B0>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\hotel_api.py", line 30, in get_city_id
+    json.dump(data, file, indent=4, ensure_ascii=False)
+    │    │          └ <_io.TextIOWrapper name='data.txt' mode='w' encoding='UTF-8'>
+    │    └ <function dump at 0x000002329202C670>
+    └ <module 'json' from 'C:\\Users\\Ilnur\\AppData\\Local\\Programs\\Python\\Python39\\lib\\json\\__init__.py'>
+
+UnboundLocalError: local variable 'data' referenced before assignment
+2021-08-24T18:11:49.762646+0300, ERROR, An error has been caught in function 'get_city', process 'MainProcess' (3728), thread 'WorkerThread1' (12048):
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 908, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x000002328FAD75E0>
+    └ <WorkerThread(WorkerThread1, started daemon 12048)>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 950, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x0000023292B91040>
+    └ <WorkerThread(WorkerThread1, started daemon 12048)>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<telebot.types.Message object at 0x0000023293832D00>,)
+    └ <function Command.handle.<locals>.get_city at 0x00000232937AB1F0>
+
+> File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 304, in get_city
+    keyboard = create_keyboard(message, rst_dct)
+               │               │        └ None
+               │               └ <telebot.types.Message object at 0x0000023293832D00>
+               └ <function Command.handle.<locals>.create_keyboard at 0x00000232937AB4C0>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 319, in create_keyboard
+    for number, item in enumerate(dct):
+                                  └ None
+
+TypeError: 'NoneType' object is not iterable
+2021-08-24T18:11:49.913630+0300, INFO, Selected city กรุงเทพมหานคร
+2021-08-24T18:11:51.487642+0300, INFO, Selected city Bakı
+2021-08-24T18:11:53.035637+0300, DEBUG, List city [{'city': 'Бангкок', 'caption': 'Бангкок, Бангкок (провинция), Таиланд', 'city_id': '1313946'}, {'city': 'Центр города', 'caption': 'Центр города, Бангкок, Бангкок (провинция), Таиланд', 'city_id': '10565513'}, {'city': 'Дон-Муанг', 'caption': 'Дон-Муанг, Бангкок, Бангкок (провинция), Таиланд', 'city_id': '1697666'}, {'city': 'Центр Бангкока', 'caption': 'Центр Бангкока, Бангкок, Бангкок (провинция), Таиланд', 'city_id': '1735335'}, {'city': 'Силом', 'caption': 'Силом, Бангкок, Бангкок (провинция), Таиланд', 'city_id': '1714318'}, {'city': 'Лат-Крабанг', 'caption': 'Лат-Крабанг, Бангкок, Бангкок (провинция), Таиланд', 'city_id': '1697682'}, {'city': 'Пхая Тай', 'caption': 'Пхая Тай, Бангкок, Бангкок (провинция), Таиланд', 'city_id': '1796904'}, {'city': 'Сукхумвит', 'caption': 'Сукхумвит, Бангкок, Бангкок (провинция), Таиланд', 'city_id': '1729981'}, {'city': 'Кхао-Сан', 'caption': 'Кхао-Сан, Бангкок, Бангкок (провинция), Таиланд', 'city_id': '1812326'}]
+2021-08-24T18:11:54.471648+0300, DEBUG, List city [{'city': 'Бакыркёй', 'caption': 'Бакыркёй, Стамбул, Istanbul, Турция (Distretto di Bakırköy)', 'city_id': '10874282'}, {'city': 'Пакистан', 'caption': 'Пакистан', 'city_id': '10233134'}, {'city': 'Бакио', 'caption': 'Бакио, Страна басков, Испания', 'city_id': '1900363'}, {'city': 'Красные Баки', 'caption': 'Красные Баки, Нижегородская область, Россия', 'city_id': '1126640'}, {'city': 'Боиркёй', 'caption': 'Боиркёй, Биледжик, Биледжик, Турция', 'city_id': '1799203'}, {'city': 'Бейзингстоук', 'caption': 'Бейзингстоук, Англия, Великобритания', 'city_id': '549597'}]
+2021-08-24T18:11:54.916635+0300, DEBUG, callback_query run
+2021-08-24T18:12:00.811635+0300, INFO, Selected city 
+2021-08-24T18:12:01.684634+0300, ERROR, Ошибка API (ERROR)
+2021-08-24T18:12:01.687634+0300, ERROR, An error has been caught in function 'get_city', process 'MainProcess' (3728), thread 'WorkerThread2' (18020):
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 908, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x000002328FAD75E0>
+    └ <WorkerThread(WorkerThread2, started daemon 18020)>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 950, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x0000023292B91040>
+    └ <WorkerThread(WorkerThread2, started daemon 18020)>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<telebot.types.Message object at 0x00000232938CF0D0>,)
+    └ <function Command.handle.<locals>.get_city at 0x00000232937AB1F0>
+
+> File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 303, in get_city
+    rst_dct = get_city_id(message)
+              │           └ <telebot.types.Message object at 0x00000232938CF0D0>
+              └ <function get_city_id at 0x00000232937008B0>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\hotel_api.py", line 30, in get_city_id
+    json.dump(data, file, indent=4, ensure_ascii=False)
+    │    │          └ <_io.TextIOWrapper name='data.txt' mode='w' encoding='UTF-8'>
+    │    └ <function dump at 0x000002329202C670>
+    └ <module 'json' from 'C:\\Users\\Ilnur\\AppData\\Local\\Programs\\Python\\Python39\\lib\\json\\__init__.py'>
+
+UnboundLocalError: local variable 'data' referenced before assignment
+2021-08-24T18:12:01.715637+0300, ERROR, An error has been caught in function 'get_city', process 'MainProcess' (3728), thread 'WorkerThread2' (18020):
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 908, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x000002328FAD75E0>
+    └ <WorkerThread(WorkerThread2, started daemon 18020)>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 950, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x0000023292B91040>
+    └ <WorkerThread(WorkerThread2, started daemon 18020)>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<telebot.types.Message object at 0x00000232938CF0D0>,)
+    └ <function Command.handle.<locals>.get_city at 0x00000232937AB1F0>
+
+> File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 304, in get_city
+    keyboard = create_keyboard(message, rst_dct)
+               │               │        └ None
+               │               └ <telebot.types.Message object at 0x00000232938CF0D0>
+               └ <function Command.handle.<locals>.create_keyboard at 0x00000232937AB4C0>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 319, in create_keyboard
+    for number, item in enumerate(dct):
+                                  └ None
+
+TypeError: 'NoneType' object is not iterable
+2021-08-24T18:12:22.058157+0300, INFO, Selected city اسلام آباد
+2021-08-24T18:12:25.526141+0300, DEBUG, List city []
+2021-08-24T18:13:14.383156+0300, INFO, Selected city جدة
+2021-08-24T18:13:18.643141+0300, DEBUG, List city [{'city': 'Джедда', 'caption': 'Джедда, Мекка, Саудовская Аравия', 'city_id': '1634165'}, {'city': 'Саудовская Аравия', 'caption': 'Саудовская Аравия', 'city_id': '10233150'}, {'city': 'Эль-Рияд', 'caption': 'Эль-Рияд, Джедда, Мекка, Саудовская Аравия', 'city_id': '11386973'}, {'city': 'Король-Абдул-Азиз-роуд', 'caption': 'Король-Абдул-Азиз-роуд, Джедда, Мекка, Саудовская Аравия', 'city_id': '10873517'}, {'city': 'As Salamah', 'caption': 'As Salamah, Jeddah, Makkah Province, Saudi Arabia', 'city_id': '12514310'}, {'city': 'Al Bawadi', 'caption': 'Al Bawadi, Jeddah, Makkah Province, Saudi Arabia', 'city_id': '12477770'}, {'city': 'Al-Hamadaniyah', 'caption': 'Al-Hamadaniyah, Jeddah, Makkah Province, Saudi Arabia', 'city_id': '12499553'}]
+2021-08-24T18:13:37.893150+0300, INFO, Selected city محافظة الدمام
+2021-08-24T18:13:41.547153+0300, DEBUG, List city []
+2021-08-24T18:14:34.358122+0300, INFO, Selected city ירושלים
+2021-08-24T18:14:37.479876+0300, DEBUG, List city [{'city': 'Иерусалим', 'caption': 'Иерусалим, Jerusalem District, Израиль', 'city_id': '1633057'}, {'city': 'Центр города Иерусалим', 'caption': 'Центр города Иерусалим, Иерусалим, Jerusalem District, Израиль', 'city_id': '10873726'}, {'city': 'Историческая часть города', 'caption': 'Историческая часть города, Иерусалим, Jerusalem District', 'city_id': '1767644'}, {'city': 'Западный Иерусалим', 'caption': 'Западный Иерусалим, Jerusalem District, Израиль', 'city_id': '1809442'}, {'city': 'Восточный Иерусалим', 'caption': 'Восточный Иерусалим, Jerusalem District', 'city_id': '1809441'}, {'city': 'Бейт-Шемеш', 'caption': 'Бейт-Шемеш, Jerusalem District, Израиль', 'city_id': '699951'}, {'city': 'Эйн-Карем', 'caption': 'Эйн-Карем, Иерусалим, Jerusalem District, Израиль', 'city_id': '1808940'}, {'city': 'Армянский квартал', 'caption': 'Армянский квартал, Иерусалим, Jerusalem District', 'city_id': '1808985'}]
+2021-08-24T18:14:43.924100+0300, INFO, Selected city بيروت
+2021-08-24T18:14:46.893915+0300, DEBUG, List city [{'city': 'Бейрут', 'caption': 'Бейрут, Ливан', 'city_id': '1635360'}, {'city': 'Центральный деловой район Бейрута', 'caption': 'Центральный деловой район Бейрута, Бейрут, Бейрут, Ливан', 'city_id': '10565554'}, {'city': 'Хамра', 'caption': 'Хамра, Бейрут, Бейрут, Ливан', 'city_id': '10378623'}, {'city': 'Вилладжио-Перуццо', 'caption': 'Вилладжио-Перуццо, Агридженто, Сицилия, Италия', 'city_id': '11068219'}, {'city': 'Пирот', 'caption': 'Пирот, Центральная Сербия, Сербия', 'city_id': '1602541'}, {'city': 'Перучац', 'caption': 'Перучац, Байина-Башта, Центральная Сербия, Сербия', 'city_id': '10395532'}, {'city': 'Берутовице', 'caption': 'Берутовице, Карпач, Нижнесилезское воеводство, Польша', 'city_id': '11109129'}, {'city': 'Ашрафия', 'caption': 'Ашрафия, Бейрут, Бейрут, Ливан', 'city_id': '10565553'}, {'city': 'Nasra', 'caption': 'Nasra, Beirut, Beirut Governorate, Lebanon', 'city_id': '12517393'}, {'city': 'Перучо', 'caption': 'Перучо, Пичинча, Эквадор', 'city_id': '12482324'}]
+2021-08-24T18:14:51.808588+0300, INFO, Selected city القاهرة
+2021-08-24T18:14:54.777073+0300, DEBUG, List city [{'city': 'Каир', 'caption': 'Каир, Эль-Кахира, Египет', 'city_id': '1634358'}, {'city': 'Центр Каира', 'caption': 'Центр Каира, Каир, Эль-Кахира, Египет', 'city_id': '1661131'}, {'city': 'Замалек', 'caption': 'Замалек, Каир, Египет', 'city_id': '1718697'}, {'city': 'Новый Каир', 'caption': 'Новый Каир, Эль-Кахира, Египет', 'city_id': '1808045'}, {'city': 'Шератон-Аль-Матар', 'caption': 'Шератон-Аль-Матар, Каир, Эль-Кахира, Египет', 'city_id': '11390374'}, {'city': 'Исламская часть Каира', 'caption': 'Исламская часть Каира, Каир, Эль-Кахира, Египет', 'city_id': '1699211'}, {'city': 'Маади', 'caption': 'Маади, Каир, Эль-Кахира, Египет', 'city_id': '10512848'}, {'city': 'Старый Каир', 'caption': 'Старый Каир, Каир, Эль-Кахира, Египет', 'city_id': '1661128'}, {'city': 'Гезира', 'caption': 'Гезира, Каир, Египет', 'city_id': '10512846'}]
+2021-08-24T18:15:07.113862+0300, INFO, Selected city دمشق
+2021-08-24T18:15:10.374959+0300, DEBUG, List city [{'city': 'Дамаскус', 'caption': 'Дамаскус, Джорджия, США', 'city_id': '11021583'}, {'city': 'Дамаск', 'caption': 'Дамаск, Вирджиния, США', 'city_id': '1413352'}, {'city': 'Дамаск', 'caption': 'Дамаск, Орегон, США', 'city_id': '10430317'}, {'city': 'Дамаск', 'caption': 'Дамаск, Мэриленд, США', 'city_id': '10420217'}, {'city': 'Дамаск', 'caption': 'Дамаск, Пенсильвания, США', 'city_id': '10425714'}]
+2021-08-24T18:15:14.808713+0300, INFO, Selected city 
+2021-08-24T18:15:15.648010+0300, ERROR, Ошибка API (ERROR)
+2021-08-24T18:15:15.650990+0300, ERROR, An error has been caught in function 'get_city', process 'MainProcess' (3772), thread 'WorkerThread1' (6012):
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 908, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x000002CC2C5575E0>
+    └ <WorkerThread(WorkerThread1, started daemon 6012)>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 950, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x000002CC2F5ABEE0>
+    └ <WorkerThread(WorkerThread1, started daemon 6012)>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<telebot.types.Message object at 0x000002CC301EF9D0>,)
+    └ <function Command.handle.<locals>.get_city at 0x000002CC301EC0D0>
+
+> File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 303, in get_city
+    rst_dct = get_city_id(message)
+              │           └ <telebot.types.Message object at 0x000002CC301EF9D0>
+              └ <function get_city_id at 0x000002CC30141790>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\hotel_api.py", line 30, in get_city_id
+    json.dump(data, file, indent=4, ensure_ascii=False)
+    │    │          └ <_io.TextIOWrapper name='data.txt' mode='w' encoding='UTF-8'>
+    │    └ <function dump at 0x000002CC2EA6C670>
+    └ <module 'json' from 'C:\\Users\\Ilnur\\AppData\\Local\\Programs\\Python\\Python39\\lib\\json\\__init__.py'>
+
+UnboundLocalError: local variable 'data' referenced before assignment
+2021-08-24T18:15:15.680909+0300, ERROR, An error has been caught in function 'get_city', process 'MainProcess' (3772), thread 'WorkerThread1' (6012):
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 908, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x000002CC2C5575E0>
+    └ <WorkerThread(WorkerThread1, started daemon 6012)>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 950, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x000002CC2F5ABEE0>
+    └ <WorkerThread(WorkerThread1, started daemon 6012)>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<telebot.types.Message object at 0x000002CC301EF9D0>,)
+    └ <function Command.handle.<locals>.get_city at 0x000002CC301EC0D0>
+
+> File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 304, in get_city
+    keyboard = create_keyboard(message, rst_dct)
+               │               │        └ None
+               │               └ <telebot.types.Message object at 0x000002CC301EF9D0>
+               └ <function Command.handle.<locals>.create_keyboard at 0x000002CC301EC3A0>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 319, in create_keyboard
+    for number, item in enumerate(dct):
+                                  └ None
+
+TypeError: 'NoneType' object is not iterable
+2021-08-24T18:15:37.726478+0300, INFO, Selected city 
+2021-08-24T18:15:38.599914+0300, ERROR, Ошибка API (ERROR)
+2021-08-24T18:15:38.603475+0300, ERROR, An error has been caught in function 'get_city', process 'MainProcess' (3772), thread 'WorkerThread1' (6012):
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 908, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x000002CC2C5575E0>
+    └ <WorkerThread(WorkerThread1, started daemon 6012)>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 950, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x000002CC2F5ABEE0>
+    └ <WorkerThread(WorkerThread1, started daemon 6012)>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<telebot.types.Message object at 0x000002CC301FDE50>,)
+    └ <function Command.handle.<locals>.get_city at 0x000002CC301EC0D0>
+
+> File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 303, in get_city
+    rst_dct = get_city_id(message)
+              │           └ <telebot.types.Message object at 0x000002CC301FDE50>
+              └ <function get_city_id at 0x000002CC30141790>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\hotel_api.py", line 30, in get_city_id
+    json.dump(data, file, indent=4, ensure_ascii=False)
+    │    │          └ <_io.TextIOWrapper name='data.txt' mode='w' encoding='UTF-8'>
+    │    └ <function dump at 0x000002CC2EA6C670>
+    └ <module 'json' from 'C:\\Users\\Ilnur\\AppData\\Local\\Programs\\Python\\Python39\\lib\\json\\__init__.py'>
+
+UnboundLocalError: local variable 'data' referenced before assignment
+2021-08-24T18:15:38.629152+0300, ERROR, An error has been caught in function 'get_city', process 'MainProcess' (3772), thread 'WorkerThread1' (6012):
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 908, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x000002CC2C5575E0>
+    └ <WorkerThread(WorkerThread1, started daemon 6012)>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 950, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x000002CC2F5ABEE0>
+    └ <WorkerThread(WorkerThread1, started daemon 6012)>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<telebot.types.Message object at 0x000002CC301FDE50>,)
+    └ <function Command.handle.<locals>.get_city at 0x000002CC301EC0D0>
+
+> File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 304, in get_city
+    keyboard = create_keyboard(message, rst_dct)
+               │               │        └ None
+               │               └ <telebot.types.Message object at 0x000002CC301FDE50>
+               └ <function Command.handle.<locals>.create_keyboard at 0x000002CC301EC3A0>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 319, in create_keyboard
+    for number, item in enumerate(dct):
+                                  └ None
+
+TypeError: 'NoneType' object is not iterable
+2021-08-24T18:15:40.747256+0300, INFO, Selected city Islamabad
+2021-08-24T18:15:43.523787+0300, DEBUG, List city [{'city': 'Исламабад', 'caption': 'Исламабад, Столична територия Исламабад, Пакистан', 'city_id': '1642108'}, {'city': 'Сила', 'caption': 'Сила, Столична територия Исламабад, Пакистан', 'city_id': '12472922'}, {'city': 'Сектор E-7', 'caption': 'Сектор E-7, Исламабад, Столична територия Исламабад, Пакистан', 'city_id': '10874176'}]
+2021-08-24T18:15:47.939565+0300, INFO, Selected city 
+2021-08-24T18:15:48.743254+0300, ERROR, Ошибка API (ERROR)
+2021-08-24T18:15:48.746252+0300, ERROR, An error has been caught in function 'get_city', process 'MainProcess' (3772), thread 'WorkerThread2' (19276):
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 908, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x000002CC2C5575E0>
+    └ <WorkerThread(WorkerThread2, started daemon 19276)>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 950, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x000002CC2F5ABEE0>
+    └ <WorkerThread(WorkerThread2, started daemon 19276)>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<telebot.types.Message object at 0x000002CC302292E0>,)
+    └ <function Command.handle.<locals>.get_city at 0x000002CC301EC0D0>
+
+> File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 303, in get_city
+    rst_dct = get_city_id(message)
+              │           └ <telebot.types.Message object at 0x000002CC302292E0>
+              └ <function get_city_id at 0x000002CC30141790>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\hotel_api.py", line 30, in get_city_id
+    json.dump(data, file, indent=4, ensure_ascii=False)
+    │    │          └ <_io.TextIOWrapper name='data.txt' mode='w' encoding='UTF-8'>
+    │    └ <function dump at 0x000002CC2EA6C670>
+    └ <module 'json' from 'C:\\Users\\Ilnur\\AppData\\Local\\Programs\\Python\\Python39\\lib\\json\\__init__.py'>
+
+UnboundLocalError: local variable 'data' referenced before assignment
+2021-08-24T18:15:48.770245+0300, ERROR, An error has been caught in function 'get_city', process 'MainProcess' (3772), thread 'WorkerThread2' (19276):
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 908, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x000002CC2C5575E0>
+    └ <WorkerThread(WorkerThread2, started daemon 19276)>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 950, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x000002CC2F5ABEE0>
+    └ <WorkerThread(WorkerThread2, started daemon 19276)>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<telebot.types.Message object at 0x000002CC302292E0>,)
+    └ <function Command.handle.<locals>.get_city at 0x000002CC301EC0D0>
+
+> File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 304, in get_city
+    keyboard = create_keyboard(message, rst_dct)
+               │               │        └ None
+               │               └ <telebot.types.Message object at 0x000002CC302292E0>
+               └ <function Command.handle.<locals>.create_keyboard at 0x000002CC301EC3A0>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 319, in create_keyboard
+    for number, item in enumerate(dct):
+                                  └ None
+
+TypeError: 'NoneType' object is not iterable
+2021-08-24T18:15:49.451796+0300, INFO, Selected city Tehran
+2021-08-24T18:15:52.950260+0300, DEBUG, List city []
+2021-08-24T18:16:16.585439+0300, INFO, Selected city 
+2021-08-24T18:16:17.426412+0300, ERROR, Ошибка API (ERROR)
+2021-08-24T18:16:17.429688+0300, ERROR, An error has been caught in function 'get_city', process 'MainProcess' (3772), thread 'WorkerThread2' (19276):
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 908, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x000002CC2C5575E0>
+    └ <WorkerThread(WorkerThread2, started daemon 19276)>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 950, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x000002CC2F5ABEE0>
+    └ <WorkerThread(WorkerThread2, started daemon 19276)>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<telebot.types.Message object at 0x000002CC302E4FA0>,)
+    └ <function Command.handle.<locals>.get_city at 0x000002CC301EC0D0>
+
+> File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 303, in get_city
+    rst_dct = get_city_id(message)
+              │           └ <telebot.types.Message object at 0x000002CC302E4FA0>
+              └ <function get_city_id at 0x000002CC30141790>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\hotel_api.py", line 30, in get_city_id
+    json.dump(data, file, indent=4, ensure_ascii=False)
+    │    │          └ <_io.TextIOWrapper name='data.txt' mode='w' encoding='UTF-8'>
+    │    └ <function dump at 0x000002CC2EA6C670>
+    └ <module 'json' from 'C:\\Users\\Ilnur\\AppData\\Local\\Programs\\Python\\Python39\\lib\\json\\__init__.py'>
+
+UnboundLocalError: local variable 'data' referenced before assignment
+2021-08-24T18:16:17.450702+0300, ERROR, An error has been caught in function 'get_city', process 'MainProcess' (3772), thread 'WorkerThread2' (19276):
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 908, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x000002CC2C5575E0>
+    └ <WorkerThread(WorkerThread2, started daemon 19276)>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 950, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x000002CC2F5ABEE0>
+    └ <WorkerThread(WorkerThread2, started daemon 19276)>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<telebot.types.Message object at 0x000002CC302E4FA0>,)
+    └ <function Command.handle.<locals>.get_city at 0x000002CC301EC0D0>
+
+> File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 304, in get_city
+    keyboard = create_keyboard(message, rst_dct)
+               │               │        └ None
+               │               └ <telebot.types.Message object at 0x000002CC302E4FA0>
+               └ <function Command.handle.<locals>.create_keyboard at 0x000002CC301EC3A0>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 319, in create_keyboard
+    for number, item in enumerate(dct):
+                                  └ None
+
+TypeError: 'NoneType' object is not iterable
+2021-08-24T18:16:25.881010+0300, INFO, Selected city 
+2021-08-24T18:16:26.685543+0300, ERROR, Ошибка API (ERROR)
+2021-08-24T18:16:26.689535+0300, ERROR, An error has been caught in function 'get_city', process 'MainProcess' (3772), thread 'WorkerThread1' (6012):
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 908, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x000002CC2C5575E0>
+    └ <WorkerThread(WorkerThread1, started daemon 6012)>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 950, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x000002CC2F5ABEE0>
+    └ <WorkerThread(WorkerThread1, started daemon 6012)>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<telebot.types.Message object at 0x000002CC302D3820>,)
+    └ <function Command.handle.<locals>.get_city at 0x000002CC301EC0D0>
+
+> File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 303, in get_city
+    rst_dct = get_city_id(message)
+              │           └ <telebot.types.Message object at 0x000002CC302D3820>
+              └ <function get_city_id at 0x000002CC30141790>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\hotel_api.py", line 30, in get_city_id
+    json.dump(data, file, indent=4, ensure_ascii=False)
+    │    │          └ <_io.TextIOWrapper name='data.txt' mode='w' encoding='UTF-8'>
+    │    └ <function dump at 0x000002CC2EA6C670>
+    └ <module 'json' from 'C:\\Users\\Ilnur\\AppData\\Local\\Programs\\Python\\Python39\\lib\\json\\__init__.py'>
+
+UnboundLocalError: local variable 'data' referenced before assignment
+2021-08-24T18:16:26.714451+0300, ERROR, An error has been caught in function 'get_city', process 'MainProcess' (3772), thread 'WorkerThread1' (6012):
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 908, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x000002CC2C5575E0>
+    └ <WorkerThread(WorkerThread1, started daemon 6012)>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 950, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x000002CC2F5ABEE0>
+    └ <WorkerThread(WorkerThread1, started daemon 6012)>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<telebot.types.Message object at 0x000002CC302D3820>,)
+    └ <function Command.handle.<locals>.get_city at 0x000002CC301EC0D0>
+
+> File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 304, in get_city
+    keyboard = create_keyboard(message, rst_dct)
+               │               │        └ None
+               │               └ <telebot.types.Message object at 0x000002CC302D3820>
+               └ <function Command.handle.<locals>.create_keyboard at 0x000002CC301EC3A0>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 319, in create_keyboard
+    for number, item in enumerate(dct):
+                                  └ None
+
+TypeError: 'NoneType' object is not iterable
+2021-08-24T18:16:38.441067+0300, INFO, Selected city Moscow
+2021-08-24T18:16:42.306930+0300, DEBUG, List city [{'city': 'Москва', 'caption': 'Москва, Россия', 'city_id': '1153093'}, {'city': 'Центр Москвы', 'caption': 'Центр Москвы, Москва, Россия', 'city_id': '10565407'}, {'city': 'Москва', 'caption': 'Москва, Айдахо, США', 'city_id': '1449014'}, {'city': 'Домодедово, Московская область', 'caption': 'Домодедово, Московская область, Подмосковье (Московская область), Россия', 'city_id': '1118662'}]
+2021-08-24T18:17:40.349560+0300, INFO, Selected city Agryz
+2021-08-24T18:17:43.439365+0300, DEBUG, List city [{'city': 'Агрыз', 'caption': 'Агрыз, Республика Татарстан, Россия', 'city_id': '1166743'}]
+2021-08-24T18:18:22.998180+0300, INFO, Selected city 
+2021-08-24T18:18:23.834439+0300, ERROR, Ошибка API (ERROR)
+2021-08-24T18:18:23.837427+0300, ERROR, An error has been caught in function 'get_city', process 'MainProcess' (3772), thread 'WorkerThread1' (6012):
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 908, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x000002CC2C5575E0>
+    └ <WorkerThread(WorkerThread1, started daemon 6012)>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 950, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x000002CC2F5ABEE0>
+    └ <WorkerThread(WorkerThread1, started daemon 6012)>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<telebot.types.Message object at 0x000002CC302E9580>,)
+    └ <function Command.handle.<locals>.get_city at 0x000002CC301EC0D0>
+
+> File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 303, in get_city
+    rst_dct = get_city_id(message)
+              │           └ <telebot.types.Message object at 0x000002CC302E9580>
+              └ <function get_city_id at 0x000002CC30141790>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\hotel_api.py", line 30, in get_city_id
+    json.dump(data, file, indent=4, ensure_ascii=False)
+    │    │          └ <_io.TextIOWrapper name='data.txt' mode='w' encoding='UTF-8'>
+    │    └ <function dump at 0x000002CC2EA6C670>
+    └ <module 'json' from 'C:\\Users\\Ilnur\\AppData\\Local\\Programs\\Python\\Python39\\lib\\json\\__init__.py'>
+
+UnboundLocalError: local variable 'data' referenced before assignment
+2021-08-24T18:18:23.862088+0300, ERROR, An error has been caught in function 'get_city', process 'MainProcess' (3772), thread 'WorkerThread1' (6012):
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 908, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x000002CC2C5575E0>
+    └ <WorkerThread(WorkerThread1, started daemon 6012)>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 950, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x000002CC2F5ABEE0>
+    └ <WorkerThread(WorkerThread1, started daemon 6012)>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<telebot.types.Message object at 0x000002CC302E9580>,)
+    └ <function Command.handle.<locals>.get_city at 0x000002CC301EC0D0>
+
+> File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 304, in get_city
+    keyboard = create_keyboard(message, rst_dct)
+               │               │        └ None
+               │               └ <telebot.types.Message object at 0x000002CC302E9580>
+               └ <function Command.handle.<locals>.create_keyboard at 0x000002CC301EC3A0>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 319, in create_keyboard
+    for number, item in enumerate(dct):
+                                  └ None
+
+TypeError: 'NoneType' object is not iterable
+2021-08-24T18:18:26.228330+0300, INFO, Selected city 
+2021-08-24T18:18:27.063092+0300, ERROR, Ошибка API (ERROR)
+2021-08-24T18:18:27.067579+0300, ERROR, An error has been caught in function 'get_city', process 'MainProcess' (3772), thread 'WorkerThread1' (6012):
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 908, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x000002CC2C5575E0>
+    └ <WorkerThread(WorkerThread1, started daemon 6012)>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 950, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x000002CC2F5ABEE0>
+    └ <WorkerThread(WorkerThread1, started daemon 6012)>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<telebot.types.Message object at 0x000002CC302E0190>,)
+    └ <function Command.handle.<locals>.get_city at 0x000002CC301EC0D0>
+
+> File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 303, in get_city
+    rst_dct = get_city_id(message)
+              │           └ <telebot.types.Message object at 0x000002CC302E0190>
+              └ <function get_city_id at 0x000002CC30141790>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\hotel_api.py", line 30, in get_city_id
+    json.dump(data, file, indent=4, ensure_ascii=False)
+    │    │          └ <_io.TextIOWrapper name='data.txt' mode='w' encoding='UTF-8'>
+    │    └ <function dump at 0x000002CC2EA6C670>
+    └ <module 'json' from 'C:\\Users\\Ilnur\\AppData\\Local\\Programs\\Python\\Python39\\lib\\json\\__init__.py'>
+
+UnboundLocalError: local variable 'data' referenced before assignment
+2021-08-24T18:18:27.095523+0300, ERROR, An error has been caught in function 'get_city', process 'MainProcess' (3772), thread 'WorkerThread1' (6012):
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 908, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x000002CC2C5575E0>
+    └ <WorkerThread(WorkerThread1, started daemon 6012)>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 950, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x000002CC2F5ABEE0>
+    └ <WorkerThread(WorkerThread1, started daemon 6012)>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<telebot.types.Message object at 0x000002CC302E0190>,)
+    └ <function Command.handle.<locals>.get_city at 0x000002CC301EC0D0>
+
+> File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 304, in get_city
+    keyboard = create_keyboard(message, rst_dct)
+               │               │        └ None
+               │               └ <telebot.types.Message object at 0x000002CC302E0190>
+               └ <function Command.handle.<locals>.create_keyboard at 0x000002CC301EC3A0>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 319, in create_keyboard
+    for number, item in enumerate(dct):
+                                  └ None
+
+TypeError: 'NoneType' object is not iterable
+2021-08-24T18:18:34.038718+0300, INFO, Selected city Westminster
+2021-08-24T18:18:36.904272+0300, DEBUG, List city [{'city': 'Сити-оф-Вестминстер', 'caption': 'Сити-оф-Вестминстер, Лондон, Англия, Великобритания (Westminster)', 'city_id': '1695988'}, {'city': 'Вестминстер (штат Колорадо)', 'caption': 'Вестминстер (штат Колорадо), Колорадо, США', 'city_id': '1489635'}, {'city': 'Вестминстер (штат Колорадо)', 'caption': 'Вестминстер (штат Колорадо), Мэриленд, США', 'city_id': '1426470'}, {'city': 'Вестминстер (штат Колорадо)', 'caption': 'Вестминстер (штат Колорадо), Калифорния, США', 'city_id': '1466874'}, {'city': 'Виктория', 'caption': 'Виктория, Лондон, Графство Большой Лондон, Англия, Великобритания', 'city_id': '1762415'}]
+2021-08-24T18:18:37.235674+0300, INFO, Selected city 
+2021-08-24T18:18:38.034985+0300, ERROR, Ошибка API (ERROR)
+2021-08-24T18:18:38.037982+0300, ERROR, An error has been caught in function 'get_city', process 'MainProcess' (3772), thread 'WorkerThread2' (19276):
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 908, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x000002CC2C5575E0>
+    └ <WorkerThread(WorkerThread2, started daemon 19276)>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 950, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x000002CC2F5ABEE0>
+    └ <WorkerThread(WorkerThread2, started daemon 19276)>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<telebot.types.Message object at 0x000002CC302F0970>,)
+    └ <function Command.handle.<locals>.get_city at 0x000002CC301EC0D0>
+
+> File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 303, in get_city
+    rst_dct = get_city_id(message)
+              │           └ <telebot.types.Message object at 0x000002CC302F0970>
+              └ <function get_city_id at 0x000002CC30141790>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\hotel_api.py", line 30, in get_city_id
+    json.dump(data, file, indent=4, ensure_ascii=False)
+    │    │          └ <_io.TextIOWrapper name='data.txt' mode='w' encoding='UTF-8'>
+    │    └ <function dump at 0x000002CC2EA6C670>
+    └ <module 'json' from 'C:\\Users\\Ilnur\\AppData\\Local\\Programs\\Python\\Python39\\lib\\json\\__init__.py'>
+
+UnboundLocalError: local variable 'data' referenced before assignment
+2021-08-24T18:18:38.062985+0300, ERROR, An error has been caught in function 'get_city', process 'MainProcess' (3772), thread 'WorkerThread2' (19276):
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 908, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x000002CC2C5575E0>
+    └ <WorkerThread(WorkerThread2, started daemon 19276)>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 950, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x000002CC2F5ABEE0>
+    └ <WorkerThread(WorkerThread2, started daemon 19276)>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<telebot.types.Message object at 0x000002CC302F0970>,)
+    └ <function Command.handle.<locals>.get_city at 0x000002CC301EC0D0>
+
+> File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 304, in get_city
+    keyboard = create_keyboard(message, rst_dct)
+               │               │        └ None
+               │               └ <telebot.types.Message object at 0x000002CC302F0970>
+               └ <function Command.handle.<locals>.create_keyboard at 0x000002CC301EC3A0>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 319, in create_keyboard
+    for number, item in enumerate(dct):
+                                  └ None
+
+TypeError: 'NoneType' object is not iterable
+2021-08-24T18:18:42.596072+0300, DEBUG, callback_query run
+2021-08-24T18:18:42.599072+0300, DEBUG, Выбран город Westminster id 1695988
+2021-08-24T18:18:44.585363+0300, DEBUG, callback_query run
+2021-08-24T18:18:50.189406+0300, DEBUG, Количество отелей: 10 func: get_page_size
+2021-08-24T18:18:50.340412+0300, INFO, This is get list
+2021-08-24T18:18:50.343405+0300, INFO, GET requests
+2021-08-24T18:19:03.497006+0300, INFO, Selected city 
+2021-08-24T18:19:04.379910+0300, ERROR, Ошибка API (ERROR)
+2021-08-24T18:19:04.382905+0300, ERROR, An error has been caught in function 'get_city', process 'MainProcess' (3772), thread 'WorkerThread2' (19276):
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 908, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x000002CC2C5575E0>
+    └ <WorkerThread(WorkerThread2, started daemon 19276)>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 950, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x000002CC2F5ABEE0>
+    └ <WorkerThread(WorkerThread2, started daemon 19276)>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<telebot.types.Message object at 0x000002CC302E4FD0>,)
+    └ <function Command.handle.<locals>.get_city at 0x000002CC301EC0D0>
+
+> File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 303, in get_city
+    rst_dct = get_city_id(message)
+              │           └ <telebot.types.Message object at 0x000002CC302E4FD0>
+              └ <function get_city_id at 0x000002CC30141790>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\hotel_api.py", line 30, in get_city_id
+    json.dump(data, file, indent=4, ensure_ascii=False)
+    │    │          └ <_io.TextIOWrapper name='data.txt' mode='w' encoding='UTF-8'>
+    │    └ <function dump at 0x000002CC2EA6C670>
+    └ <module 'json' from 'C:\\Users\\Ilnur\\AppData\\Local\\Programs\\Python\\Python39\\lib\\json\\__init__.py'>
+
+UnboundLocalError: local variable 'data' referenced before assignment
+2021-08-24T18:19:04.403656+0300, ERROR, An error has been caught in function 'get_city', process 'MainProcess' (3772), thread 'WorkerThread2' (19276):
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 908, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x000002CC2C5575E0>
+    └ <WorkerThread(WorkerThread2, started daemon 19276)>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 950, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x000002CC2F5ABEE0>
+    └ <WorkerThread(WorkerThread2, started daemon 19276)>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<telebot.types.Message object at 0x000002CC302E4FD0>,)
+    └ <function Command.handle.<locals>.get_city at 0x000002CC301EC0D0>
+
+> File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 304, in get_city
+    keyboard = create_keyboard(message, rst_dct)
+               │               │        └ None
+               │               └ <telebot.types.Message object at 0x000002CC302E4FD0>
+               └ <function Command.handle.<locals>.create_keyboard at 0x000002CC301EC3A0>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 319, in create_keyboard
+    for number, item in enumerate(dct):
+                                  └ None
+
+TypeError: 'NoneType' object is not iterable
+2021-08-24T18:21:33.155247+0300, INFO, Selected city 
+2021-08-24T18:21:34.010458+0300, ERROR, Ошибка API (ERROR)
+2021-08-24T18:21:34.012447+0300, ERROR, An error has been caught in function 'get_city', process 'MainProcess' (5228), thread 'WorkerThread1' (7048):
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 908, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x00000234C29E75E0>
+    └ <WorkerThread(WorkerThread1, started daemon 7048)>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 950, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x00000234C5A8BEE0>
+    └ <WorkerThread(WorkerThread1, started daemon 7048)>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<telebot.types.Message object at 0x00000234C66CF9D0>,)
+    └ <function Command.handle.<locals>.get_city at 0x00000234C66CC0D0>
+
+> File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 303, in get_city
+    rst_dct = get_city_id(message)
+              │           └ <telebot.types.Message object at 0x00000234C66CF9D0>
+              └ <function get_city_id at 0x00000234C6621790>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\hotel_api.py", line 30, in get_city_id
+    json.dump(data, file, indent=4, ensure_ascii=False)
+    │    │          └ <_io.TextIOWrapper name='data.txt' mode='w' encoding='UTF-8'>
+    │    └ <function dump at 0x00000234C4F4B670>
+    └ <module 'json' from 'C:\\Users\\Ilnur\\AppData\\Local\\Programs\\Python\\Python39\\lib\\json\\__init__.py'>
+
+UnboundLocalError: local variable 'data' referenced before assignment
+2021-08-24T18:21:34.042357+0300, ERROR, An error has been caught in function 'get_city', process 'MainProcess' (5228), thread 'WorkerThread1' (7048):
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 908, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x00000234C29E75E0>
+    └ <WorkerThread(WorkerThread1, started daemon 7048)>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 950, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x00000234C5A8BEE0>
+    └ <WorkerThread(WorkerThread1, started daemon 7048)>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<telebot.types.Message object at 0x00000234C66CF9D0>,)
+    └ <function Command.handle.<locals>.get_city at 0x00000234C66CC0D0>
+
+> File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 304, in get_city
+    keyboard = create_keyboard(message, rst_dct)
+               │               │        └ None
+               │               └ <telebot.types.Message object at 0x00000234C66CF9D0>
+               └ <function Command.handle.<locals>.create_keyboard at 0x00000234C66CC3A0>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 319, in create_keyboard
+    for number, item in enumerate(dct):
+                                  └ None
+
+TypeError: 'NoneType' object is not iterable
+2021-08-24T18:22:05.644260+0300, DEBUG, callback_query run
+2021-08-24T18:22:09.425294+0300, INFO, Selected city 
+2021-08-24T18:22:10.236212+0300, ERROR, Ошибка API (ERROR)
+2021-08-24T18:22:10.239202+0300, ERROR, An error has been caught in function 'get_city', process 'MainProcess' (2832), thread 'WorkerThread2' (17392):
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 908, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x000001878A5E75E0>
+    └ <WorkerThread(WorkerThread2, started daemon 17392)>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 950, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x000001878D68BEE0>
+    └ <WorkerThread(WorkerThread2, started daemon 17392)>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<telebot.types.Message object at 0x000001878E2CF9D0>,)
+    └ <function Command.handle.<locals>.get_city at 0x000001878E2CC0D0>
+
+> File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 303, in get_city
+    rst_dct = get_city_id(message)
+              │           └ <telebot.types.Message object at 0x000001878E2CF9D0>
+              └ <function get_city_id at 0x000001878E221790>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\hotel_api.py", line 30, in get_city_id
+    json.dump(data, file, indent=4, ensure_ascii=False)
+    │    │          └ <_io.TextIOWrapper name='data.txt' mode='w' encoding='UTF-8'>
+    │    └ <function dump at 0x000001878CB4B670>
+    └ <module 'json' from 'C:\\Users\\Ilnur\\AppData\\Local\\Programs\\Python\\Python39\\lib\\json\\__init__.py'>
+
+UnboundLocalError: local variable 'data' referenced before assignment
+2021-08-24T18:22:10.264933+0300, ERROR, An error has been caught in function 'get_city', process 'MainProcess' (2832), thread 'WorkerThread2' (17392):
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 908, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x000001878A5E75E0>
+    └ <WorkerThread(WorkerThread2, started daemon 17392)>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 950, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x000001878D68BEE0>
+    └ <WorkerThread(WorkerThread2, started daemon 17392)>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<telebot.types.Message object at 0x000001878E2CF9D0>,)
+    └ <function Command.handle.<locals>.get_city at 0x000001878E2CC0D0>
+
+> File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 304, in get_city
+    keyboard = create_keyboard(message, rst_dct)
+               │               │        └ None
+               │               └ <telebot.types.Message object at 0x000001878E2CF9D0>
+               └ <function Command.handle.<locals>.create_keyboard at 0x000001878E2CC3A0>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 319, in create_keyboard
+    for number, item in enumerate(dct):
+                                  └ None
+
+TypeError: 'NoneType' object is not iterable
+2021-08-24T18:23:24.173638+0300, DEBUG, callback_query run
+2021-08-24T18:23:27.520588+0300, INFO, دبي, Дубай, Объединённые Арабские Эмираты
+2021-08-24T18:23:28.018572+0300, INFO, Al Khamila Street, Al Barsha, Dubai, 24857, United Arab Emirates
+2021-08-24T18:23:28.021766+0300, INFO, Selected city 
+2021-08-24T18:23:28.888878+0300, ERROR, Ошибка API (ERROR)
+2021-08-24T18:23:28.891330+0300, ERROR, An error has been caught in function 'get_city', process 'MainProcess' (9680), thread 'WorkerThread2' (20384):
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 908, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x000002271BDA75E0>
+    └ <WorkerThread(WorkerThread2, started daemon 20384)>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 950, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x000002271EE4BEE0>
+    └ <WorkerThread(WorkerThread2, started daemon 20384)>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<telebot.types.Message object at 0x000002271FA8E9D0>,)
+    └ <function Command.handle.<locals>.get_city at 0x000002271FA8B0D0>
+
+> File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 305, in get_city
+    rst_dct = get_city_id(message)
+              │           └ <telebot.types.Message object at 0x000002271FA8E9D0>
+              └ <function get_city_id at 0x000002271F9E1790>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\hotel_api.py", line 30, in get_city_id
+    json.dump(data, file, indent=4, ensure_ascii=False)
+    │    │          └ <_io.TextIOWrapper name='data.txt' mode='w' encoding='UTF-8'>
+    │    └ <function dump at 0x000002271E30C670>
+    └ <module 'json' from 'C:\\Users\\Ilnur\\AppData\\Local\\Programs\\Python\\Python39\\lib\\json\\__init__.py'>
+
+UnboundLocalError: local variable 'data' referenced before assignment
+2021-08-24T18:23:28.919942+0300, ERROR, An error has been caught in function 'get_city', process 'MainProcess' (9680), thread 'WorkerThread2' (20384):
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 908, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x000002271BDA75E0>
+    └ <WorkerThread(WorkerThread2, started daemon 20384)>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 950, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x000002271EE4BEE0>
+    └ <WorkerThread(WorkerThread2, started daemon 20384)>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<telebot.types.Message object at 0x000002271FA8E9D0>,)
+    └ <function Command.handle.<locals>.get_city at 0x000002271FA8B0D0>
+
+> File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 306, in get_city
+    keyboard = create_keyboard(message, rst_dct)
+               │               │        └ None
+               │               └ <telebot.types.Message object at 0x000002271FA8E9D0>
+               └ <function Command.handle.<locals>.create_keyboard at 0x000002271FA8B3A0>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 321, in create_keyboard
+    for number, item in enumerate(dct):
+                                  └ None
+
+TypeError: 'NoneType' object is not iterable
+2021-08-24T18:26:32.616803+0300, DEBUG, callback_query run
+2021-08-24T18:26:37.264271+0300, INFO, دبي, Дубай, Объединённые Арабские Эмираты
+2021-08-24T18:26:37.758044+0300, INFO, {'place_id': 95492960, 'licence': 'Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright', 'osm_type': 'way', 'osm_id': 25978856, 'lat': '25.072841418111143', 'lon': '55.187371116952455', 'display_name': 'Al Khamila Street, Al Barsha, Dubai, 24857, United Arab Emirates', 'address': {'road': 'Al Khamila Street', 'suburb': 'Al Barsha', 'state': 'Dubai', 'postcode': '24857', 'country': 'United Arab Emirates', 'country_code': 'ae'}, 'boundingbox': ['25.0722864', '25.0765204', '55.182814', '55.1880561']}
+2021-08-24T18:26:37.764044+0300, INFO, Selected city 
+2021-08-24T18:26:38.643199+0300, ERROR, Ошибка API (ERROR)
+2021-08-24T18:26:38.646199+0300, ERROR, An error has been caught in function 'get_city', process 'MainProcess' (17728), thread 'WorkerThread1' (19576):
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 908, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x00000251EC0B75E0>
+    └ <WorkerThread(WorkerThread1, started daemon 19576)>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 950, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x00000251EF14BEE0>
+    └ <WorkerThread(WorkerThread1, started daemon 19576)>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<telebot.types.Message object at 0x00000251EFE12CA0>,)
+    └ <function Command.handle.<locals>.get_city at 0x00000251EFD8B0D0>
+
+> File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 305, in get_city
+    rst_dct = get_city_id(message)
+              │           └ <telebot.types.Message object at 0x00000251EFE12CA0>
+              └ <function get_city_id at 0x00000251EFCE1790>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\hotel_api.py", line 30, in get_city_id
+    json.dump(data, file, indent=4, ensure_ascii=False)
+    │    │          └ <_io.TextIOWrapper name='data.txt' mode='w' encoding='UTF-8'>
+    │    └ <function dump at 0x00000251EE60C670>
+    └ <module 'json' from 'C:\\Users\\Ilnur\\AppData\\Local\\Programs\\Python\\Python39\\lib\\json\\__init__.py'>
+
+UnboundLocalError: local variable 'data' referenced before assignment
+2021-08-24T18:26:38.677763+0300, ERROR, An error has been caught in function 'get_city', process 'MainProcess' (17728), thread 'WorkerThread1' (19576):
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 908, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x00000251EC0B75E0>
+    └ <WorkerThread(WorkerThread1, started daemon 19576)>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 950, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x00000251EF14BEE0>
+    └ <WorkerThread(WorkerThread1, started daemon 19576)>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<telebot.types.Message object at 0x00000251EFE12CA0>,)
+    └ <function Command.handle.<locals>.get_city at 0x00000251EFD8B0D0>
+
+> File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 306, in get_city
+    keyboard = create_keyboard(message, rst_dct)
+               │               │        └ None
+               │               └ <telebot.types.Message object at 0x00000251EFE12CA0>
+               └ <function Command.handle.<locals>.create_keyboard at 0x00000251EFD8B3A0>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 321, in create_keyboard
+    for number, item in enumerate(dct):
+                                  └ None
+
+TypeError: 'NoneType' object is not iterable
+2021-08-24T18:29:32.160040+0300, DEBUG, callback_query run
+2021-08-24T18:29:35.069804+0300, INFO, دبي, Дубай, Объединённые Арабские Эмираты
+2021-08-24T18:29:35.558616+0300, INFO, {'place_id': 95492960, 'licence': 'Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright', 'osm_type': 'way', 'osm_id': 25978856, 'lat': '25.072841418111143', 'lon': '55.187371116952455', 'display_name': 'Al Khamila Street, Al Barsha, Dubai, 24857, United Arab Emirates', 'address': {'road': 'Al Khamila Street', 'suburb': 'Al Barsha', 'state': 'Dubai', 'postcode': '24857', 'country': 'United Arab Emirates', 'country_code': 'ae'}, 'boundingbox': ['25.0722864', '25.0765204', '55.182814', '55.1880561']}
+2021-08-24T18:29:35.566916+0300, INFO, Selected city Dubai
+2021-08-24T18:29:38.986493+0300, DEBUG, List city [{'city': 'Дубай', 'caption': 'Дубай, Дубай, Объединенные Арабские Эмираты', 'city_id': '11594'}, {'city': 'Дубайская пристань', 'caption': 'Дубайская пристань, Дубай, Дубай, Объединенные Арабские Эмираты', 'city_id': '1686798'}, {'city': 'Аль-Барша', 'caption': 'Аль-Барша, Дубай, Дубай, Объединенные Арабские Эмираты', 'city_id': '1701273'}, {'city': 'Dubai Maritime City (морской комплекс)', 'caption': 'Dubai Maritime City (морской комплекс), Дубай, Дубай, Объединенные Арабские Эмираты', 'city_id': '1693868'}, {'city': 'Jumeirah Beach Residence', 'caption': 'Jumeirah Beach Residence, Дубай, Дубай, Объединенные Арабские Эмираты', 'city_id': '1766308'}, {'city': 'Центр Дубая', 'caption': 'Центр Дубая, Дубай, Дубай, Объединенные Арабские Эмираты', 'city_id': '1693852'}]
+2021-08-24T18:29:55.417626+0300, DEBUG, callback_query run
+2021-08-24T18:29:55.420628+0300, DEBUG, Выбран город Dubai id 11594
+2021-08-24T18:29:56.863280+0300, DEBUG, callback_query run
+2021-08-24T18:29:59.526840+0300, DEBUG, Количество отелей: 3 func: get_page_size
+2021-08-24T18:29:59.641950+0300, INFO, This is get list
+2021-08-24T18:29:59.645948+0300, INFO, GET requests
+2021-08-24T18:30:12.044722+0300, DEBUG, callback_query run
+2021-08-24T18:30:15.475343+0300, INFO, Кабул, کابل ولسوالۍ, ولایت كابل, 10013, Афганистан
+2021-08-24T18:30:15.972947+0300, INFO, {'place_id': 152372204, 'licence': 'Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright', 'osm_type': 'way', 'osm_id': 251884004, 'lat': '34.52733895', 'lon': '69.17714250001092', 'display_name': 'Embassy of China, جاده غازیان, Kabul District, Kabul Province, 10013, Afghanistan', 'address': {'office': 'Embassy of China', 'road': 'جاده غازیان', 'county': 'Kabul District', 'state': 'Kabul Province', 'postcode': '10013', 'country': 'Afghanistan', 'country_code': 'af'}, 'boundingbox': ['34.5264604', '34.5281976', '69.1761186', '69.1781799']}
+2021-08-24T18:30:15.983947+0300, INFO, Selected city Kabul Province
+2021-08-24T18:30:20.517830+0300, DEBUG, List city [{'city': 'Кабулонга', 'caption': 'Кабулонга, Лусака, Провинция Лусака, Замбия', 'city_id': '12504853'}]
+2021-08-24T18:31:52.826156+0300, DEBUG, callback_query run
+2021-08-24T18:31:57.171146+0300, INFO, دبي, Дубай, Объединённые Арабские Эмираты
+2021-08-24T18:31:57.657865+0300, INFO, {'place_id': 95492960, 'licence': 'Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright', 'osm_type': 'way', 'osm_id': 25978856, 'lat': '25.072841418111143', 'lon': '55.187371116952455', 'display_name': 'Al Khamila Street, Al Barsha, Dubai, 24857, United Arab Emirates', 'address': {'road': 'Al Khamila Street', 'suburb': 'Al Barsha', 'state': 'Dubai', 'postcode': '24857', 'country': 'United Arab Emirates', 'country_code': 'ae'}, 'boundingbox': ['25.0722864', '25.0765204', '55.182814', '55.1880561']}
+2021-08-24T18:31:57.667069+0300, INFO, Selected city Dubai
+2021-08-24T18:32:01.465413+0300, DEBUG, List city [{'city': 'Дубай', 'caption': 'Дубай, Дубай, Объединенные Арабские Эмираты', 'city_id': '11594'}, {'city': 'Дубайская пристань', 'caption': 'Дубайская пристань, Дубай, Дубай, Объединенные Арабские Эмираты', 'city_id': '1686798'}, {'city': 'Аль-Барша', 'caption': 'Аль-Барша, Дубай, Дубай, Объединенные Арабские Эмираты', 'city_id': '1701273'}, {'city': 'Dubai Maritime City (морской комплекс)', 'caption': 'Dubai Maritime City (морской комплекс), Дубай, Дубай, Объединенные Арабские Эмираты', 'city_id': '1693868'}, {'city': 'Jumeirah Beach Residence', 'caption': 'Jumeirah Beach Residence, Дубай, Дубай, Объединенные Арабские Эмираты', 'city_id': '1766308'}, {'city': 'Центр Дубая', 'caption': 'Центр Дубая, Дубай, Дубай, Объединенные Арабские Эмираты', 'city_id': '1693852'}]
+2021-08-24T18:32:06.235003+0300, INFO, Кабул, کابل ولسوالۍ, ولایت كابل, 10013, Афганистан
+2021-08-24T18:32:06.724024+0300, INFO, {'place_id': 152372204, 'licence': 'Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright', 'osm_type': 'way', 'osm_id': 251884004, 'lat': '34.52733895', 'lon': '69.17714250001092', 'display_name': 'Embassy of China, جاده غازیان, Kabul District, Kabul Province, 10013, Afghanistan', 'address': {'office': 'Embassy of China', 'road': 'جاده غازیان', 'county': 'Kabul District', 'state': 'Kabul Province', 'postcode': '10013', 'country': 'Afghanistan', 'country_code': 'af'}, 'boundingbox': ['34.5264604', '34.5281976', '69.1761186', '69.1781799']}
+2021-08-24T18:32:06.734026+0300, INFO, Selected city Kabul
+2021-08-24T18:32:10.587604+0300, DEBUG, List city [{'city': 'Кобулети', 'caption': 'Кобулети, Аджария, Грузия', 'city_id': '1671980'}, {'city': 'Кахулуи', 'caption': 'Кахулуи, Гавайи, США', 'city_id': '1454533'}, {'city': 'Заповедник Кабулабула', 'caption': 'Заповедник Кабулабула, Zambezi Region, Намибия', 'city_id': '12473585'}]
+2021-08-24T18:32:52.292546+0300, INFO, Баку, Ясамальский район, Бакинская Администрация, Апшерон, Азербайджан
+2021-08-24T18:32:52.817123+0300, INFO, {'place_id': 160739711, 'licence': 'Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright', 'osm_type': 'way', 'osm_id': 299469586, 'lat': '40.376151', 'lon': '49.83311840818092', 'display_name': 'Beşmərtəbə, Fizuli Street, Baku, Yasamal Raion, Baku City, Baku, AZ1009, Azerbaijan', 'address': {'building': 'Beşmərtəbə', 'road': 'Fizuli Street', 'city': 'Baku', 'municipality': 'Yasamal Raion', 'state_district': 'Baku City', 'state': 'Baku', 'postcode': 'AZ1009', 'country': 'Azerbaijan', 'country_code': 'az'}, 'boundingbox': ['40.3759151', '40.376378', '49.8324039', '49.8332522']}
+2021-08-24T18:32:52.825114+0300, INFO, Selected city Baku
+2021-08-24T18:32:56.507350+0300, DEBUG, List city [{'city': 'Баку', 'caption': 'Баку, Азербайджан', 'city_id': '1637231'}, {'city': 'Бакуриани', 'caption': 'Бакуриани, Самцхе-Джавахети, Грузия', 'city_id': '1911335'}, {'city': 'Бильгях', 'caption': 'Бильгях, Баку, Азербайджан', 'city_id': '48860'}]
+2021-08-24T18:36:11.938787+0300, INFO, Москва, Центральный федеральный округ, Россия
+2021-08-24T18:36:12.430369+0300, INFO, {'place_id': 259682628, 'licence': 'Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright', 'osm_type': 'relation', 'osm_id': 8857806, 'lat': '55.7520439', 'lon': '37.61850028109701', 'display_name': 'Kremlin and Red Square, Moscow, Дворцовая площадь, 19, Tverskoy District, Moscow, Central Federal District, 103073, Russia', 'address': {'historic': 'Kremlin and Red Square, Moscow', 'road': 'Дворцовая площадь', 'quarter': '19', 'suburb': 'Tverskoy District', 'city': 'Moscow', 'state': 'Moscow', 'region': 'Central Federal District', 'postcode': '103073', 'country': 'Russia', 'country_code': 'ru'}, 'boundingbox': ['55.7480503', '55.7560472', '37.6123958', '37.6254805']}
+2021-08-24T18:36:12.439385+0300, INFO, Selected city Moscow
+2021-08-24T18:36:19.011686+0300, DEBUG, List city [{'city': 'Москва', 'caption': 'Москва, Россия', 'city_id': '1153093'}, {'city': 'Центр Москвы', 'caption': 'Центр Москвы, Москва, Россия', 'city_id': '10565407'}, {'city': 'Москва', 'caption': 'Москва, Айдахо, США', 'city_id': '1449014'}, {'city': 'Домодедово, Московская область', 'caption': 'Домодедово, Московская область, Подмосковье (Московская область), Россия', 'city_id': '1118662'}]
+2021-08-24T18:36:20.891679+0300, DEBUG, callback_query run
+2021-08-24T18:36:30.333798+0300, INFO, Лондон, Большой Лондон, Англия, Великобритания
+2021-08-24T18:36:30.861101+0300, INFO, {'place_id': 157327098, 'licence': 'Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright', 'osm_type': 'way', 'osm_id': 267214563, 'lat': '51.5073171', 'lon': '-0.12765535893207325', 'display_name': 'Charles I, Charing Cross, Covent Garden, Westminster, London, Greater London, England, SW1, United Kingdom', 'address': {'historic': 'Charles I', 'road': 'Charing Cross', 'suburb': 'Covent Garden', 'city': 'Westminster', 'state_district': 'Greater London', 'state': 'England', 'postcode': 'SW1', 'country': 'United Kingdom', 'country_code': 'gb'}, 'boundingbox': ['51.5073016', '51.5073325', '-0.1276759', '-0.1276348']}
+2021-08-24T18:36:30.869099+0300, INFO, Selected city Westminster
+2021-08-24T18:36:52.874713+0300, DEBUG, List city [{'city': 'Сити-оф-Вестминстер', 'caption': 'Сити-оф-Вестминстер, Лондон, Англия, Великобритания (Westminster)', 'city_id': '1695988'}, {'city': 'Вестминстер (штат Колорадо)', 'caption': 'Вестминстер (штат Колорадо), Колорадо, США', 'city_id': '1489635'}, {'city': 'Вестминстер (штат Колорадо)', 'caption': 'Вестминстер (штат Колорадо), Мэриленд, США', 'city_id': '1426470'}, {'city': 'Вестминстер (штат Колорадо)', 'caption': 'Вестминстер (штат Колорадо), Калифорния, США', 'city_id': '1466874'}, {'city': 'Виктория', 'caption': 'Виктория, Лондон, Графство Большой Лондон, Англия, Великобритания', 'city_id': '1762415'}]
+2021-08-24T18:37:54.534319+0300, INFO, Берлин, 10117, Германия
+2021-08-24T18:37:55.053268+0300, INFO, {'place_id': 258492126, 'licence': 'Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright', 'osm_type': 'way', 'osm_id': 881245035, 'lat': '52.5164734', 'lon': '13.389002013634213', 'display_name': 'U Unter den Linden, Unter den Linden, Mitte, Berlin, 10117, Germany', 'address': {'railway': 'U Unter den Linden', 'road': 'Unter den Linden', 'suburb': 'Mitte', 'borough': 'Mitte', 'city': 'Berlin', 'state': 'Berlin', 'postcode': '10117', 'country': 'Germany', 'country_code': 'de'}, 'boundingbox': ['52.5160503', '52.5172182', '13.3888355', '13.3894195']}
+2021-08-24T18:37:55.309904+0300, INFO, Selected city Berlin
+2021-08-24T18:37:58.513865+0300, DEBUG, List city [{'city': 'Берлин', 'caption': 'Берлин, Германия', 'city_id': '332483'}, {'city': 'Митте', 'caption': 'Митте, Берлин, Германия', 'city_id': '1662710'}, {'city': 'Шарлоттенбург', 'caption': 'Шарлоттенбург, Берлин, Германия', 'city_id': '10871331'}, {'city': 'Тегель', 'caption': 'Тегель, Берлин, Германия', 'city_id': '10979252'}, {'city': 'Berlin', 'caption': 'Berlin, Seedorf, Schleswig-Holstein, Germany', 'city_id': '12492985'}, {'city': 'Берлинер-Шоссе', 'caption': 'Берлинер-Шоссе, Магдебург, Саксония-Анхальт (земля), Германия', 'city_id': '11112368'}]
+2021-08-24T18:46:34.754375+0300, DEBUG, callback_query run
+2021-08-24T18:46:37.241516+0300, INFO, Your address 17Е к1, улица Хусаина Мавлютова, Горки-1, Приволжский район, Казань, городской округ Казань, Татарстан, Приволжский федеральный округ, 420101, Россия
+2021-08-24T18:46:37.568969+0300, INFO, Selected city Казань
+2021-08-24T18:46:40.305947+0300, DEBUG, List city [{'city': 'Казань', 'caption': 'Казань, Республика Татарстан, Россия', 'city_id': '1215771'}, {'city': 'Казань (и окрестности)', 'caption': 'Казань (и окрестности), Республика Татарстан, Россия', 'city_id': '1794547'}, {'city': 'Центр города Казань', 'caption': 'Центр города Казань, Казань, Республика Татарстан, Россия', 'city_id': '10874035'}]
+2021-08-24T18:46:42.177055+0300, DEBUG, callback_query run
+2021-08-24T18:46:42.180052+0300, DEBUG, Выбран город Казань id 1215771
+2021-08-24T18:46:44.137236+0300, DEBUG, callback_query run
+2021-08-24T18:46:47.915698+0300, DEBUG, Количество отелей: 3 func: get_page_size
+2021-08-24T18:46:48.036942+0300, INFO, This is get list
+2021-08-24T18:46:48.039943+0300, INFO, GET requests
+2021-08-24T18:47:02.840642+0300, DEBUG, callback_query run
+2021-08-24T18:47:11.395872+0300, INFO, Берлин, 10117, Германия
+2021-08-24T18:47:11.946000+0300, INFO, {'place_id': 258492126, 'licence': 'Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright', 'osm_type': 'way', 'osm_id': 881245035, 'lat': '52.5164734', 'lon': '13.389002013634213', 'display_name': 'U Unter den Linden, Unter den Linden, Mitte, Berlin, 10117, Germany', 'address': {'railway': 'U Unter den Linden', 'road': 'Unter den Linden', 'suburb': 'Mitte', 'borough': 'Mitte', 'city': 'Berlin', 'state': 'Berlin', 'postcode': '10117', 'country': 'Germany', 'country_code': 'de'}, 'boundingbox': ['52.5160503', '52.5172182', '13.3888355', '13.3894195']}
+2021-08-24T18:47:12.096193+0300, INFO, Selected city Berlin
+2021-08-24T18:47:16.326611+0300, DEBUG, List city [{'city': 'Берлин', 'caption': 'Берлин, Германия', 'city_id': '332483'}, {'city': 'Митте', 'caption': 'Митте, Берлин, Германия', 'city_id': '1662710'}, {'city': 'Шарлоттенбург', 'caption': 'Шарлоттенбург, Берлин, Германия', 'city_id': '10871331'}, {'city': 'Тегель', 'caption': 'Тегель, Берлин, Германия', 'city_id': '10979252'}, {'city': 'Berlin', 'caption': 'Berlin, Seedorf, Schleswig-Holstein, Germany', 'city_id': '12492985'}, {'city': 'Берлинер-Шоссе', 'caption': 'Берлинер-Шоссе, Магдебург, Саксония-Анхальт (земля), Германия', 'city_id': '11112368'}]
+2021-08-24T18:48:06.354631+0300, DEBUG, callback_query run
+2021-08-24T18:48:12.492321+0300, INFO, Берлин, 10117, Германия
+2021-08-24T18:48:13.031013+0300, INFO, {'place_id': 258492126, 'licence': 'Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright', 'osm_type': 'way', 'osm_id': 881245035, 'lat': '52.5164734', 'lon': '13.389002013634213', 'display_name': 'U Unter den Linden, Unter den Linden, Mitte, Berlin, 10117, Germany', 'address': {'railway': 'U Unter den Linden', 'road': 'Unter den Linden', 'suburb': 'Mitte', 'borough': 'Mitte', 'city': 'Berlin', 'state': 'Berlin', 'postcode': '10117', 'country': 'Germany', 'country_code': 'de'}, 'boundingbox': ['52.5160503', '52.5172182', '13.3888355', '13.3894195']}
+2021-08-24T18:48:13.150989+0300, INFO, Selected city Berlin
+2021-08-24T18:48:16.263836+0300, DEBUG, List city [{'city': 'Берлин', 'caption': 'Берлин, Германия', 'city_id': '332483'}, {'city': 'Митте', 'caption': 'Митте, Берлин, Германия', 'city_id': '1662710'}, {'city': 'Шарлоттенбург', 'caption': 'Шарлоттенбург, Берлин, Германия', 'city_id': '10871331'}, {'city': 'Тегель', 'caption': 'Тегель, Берлин, Германия', 'city_id': '10979252'}, {'city': 'Berlin', 'caption': 'Berlin, Seedorf, Schleswig-Holstein, Germany', 'city_id': '12492985'}, {'city': 'Берлинер-Шоссе', 'caption': 'Берлинер-Шоссе, Магдебург, Саксония-Анхальт (земля), Германия', 'city_id': '11112368'}]
+2021-08-24T18:49:07.912232+0300, DEBUG, callback_query run
+2021-08-24T18:49:17.027444+0300, INFO, Пхукет, Таиланд
+2021-08-24T18:49:17.538046+0300, INFO, {'place_id': 110782212, 'licence': 'Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright', 'osm_type': 'way', 'osm_id': 89395597, 'lat': '7.938486387932948', 'lon': '98.35218866626495', 'display_name': 'Phuket, Phuket Province, 83120, Thailand', 'address': {'city': 'Phuket', 'state': 'Phuket Province', 'postcode': '83120', 'country': 'Thailand', 'country_code': 'th'}, 'boundingbox': ['7.937797', '7.944318', '98.350281', '98.363009']}
+2021-08-24T18:49:17.731675+0300, INFO, Selected city Phuket
+2021-08-24T18:49:23.986785+0300, DEBUG, List city [{'city': 'Пхукет (и округа)', 'caption': 'Пхукет (и округа), Пхукет (провинция), Таиланд', 'city_id': '1708722'}, {'city': 'Карон', 'caption': 'Карон, Пхукет (провинция), Таиланд', 'city_id': '1806864'}, {'city': 'Патонг', 'caption': 'Патонг, Пхукет (провинция), Таиланд', 'city_id': '1806849'}, {'city': 'Ката', 'caption': 'Ката, Карон, Пхукет (провинция), Таиланд', 'city_id': '1740931'}, {'city': 'Камала', 'caption': 'Камала, Пхукет (провинция), Таиланд', 'city_id': '1806850'}, {'city': 'Най-Харн', 'caption': 'Най-Харн, Равай, Пхукет (провинция), Таиланд', 'city_id': '1771989'}, {'city': 'Лагуна', 'caption': 'Лагуна, Чонг-Тхале, Пхукет (провинция), Таиланд', 'city_id': '1772729'}, {'city': 'Старый Пхукет', 'caption': 'Старый Пхукет, Пхукет (и округа), Пхукет (провинция), Таиланд', 'city_id': '1746494'}]
+2021-08-24T18:49:26.900626+0300, DEBUG, callback_query run
+2021-08-24T18:49:26.903628+0300, DEBUG, Выбран город Phuket id 1806864
+2021-08-24T18:49:29.120361+0300, DEBUG, callback_query run
+2021-08-24T18:49:31.626939+0300, DEBUG, Количество отелей: 3 func: get_page_size
+2021-08-24T18:49:31.753436+0300, INFO, This is get list
+2021-08-24T18:49:31.756417+0300, INFO, GET requests
+2021-08-24T18:49:46.228319+0300, DEBUG, callback_query run
+2021-08-24T18:49:57.280229+0300, INFO, Анталья, Муратпаша, Анталья, Средиземноморский регион, 07010, Турция
+2021-08-24T18:49:57.799665+0300, INFO, {'place_id': 190531672, 'licence': 'Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright', 'osm_type': 'way', 'osm_id': 436435055, 'lat': '36.90097335', 'lon': '30.695501049999997', 'display_name': 'Cumhuriyet Mahallesi, Antalya, Muratpaşa, Antalya, Mediterranean Region, Turkey', 'address': {'suburb': 'Cumhuriyet Mahallesi', 'city': 'Antalya', 'town': 'Muratpaşa', 'province': 'Antalya', 'region': 'Mediterranean Region', 'country': 'Turkey', 'country_code': 'tr'}, 'boundingbox': ['36.9008553', '36.9010914', '30.6953535', '30.6956486']}
+2021-08-24T18:49:57.925641+0300, INFO, Selected city Antalya
+2021-08-24T18:50:01.076097+0300, DEBUG, List city [{'city': 'Анталья', 'caption': 'Анталья, Анталья (провинция), Турция', 'city_id': '1355047'}, {'city': 'Кемер', 'caption': 'Кемер, Анталья (провинция), Турция', 'city_id': '1343725'}, {'city': 'Коньяалты', 'caption': 'Коньяалты, Анталья (провинция), Турция', 'city_id': '1798897'}, {'city': 'Белек', 'caption': 'Белек, Анталья (провинция), Турция', 'city_id': '1351110'}, {'city': 'Калейчи', 'caption': 'Калейчи, Анталья, Анталья (провинция), Турция', 'city_id': '1725097'}, {'city': 'Лара', 'caption': 'Лара, Анталья, Анталья (провинция), Турция', 'city_id': '1710603'}, {'city': 'Аланья', 'caption': 'Аланья, Анталья (провинция), Турция', 'city_id': '1340186'}, {'city': 'Сиде', 'caption': 'Сиде, Анталья (провинция), Турция', 'city_id': '1640749'}]
+2021-08-24T18:50:04.115424+0300, DEBUG, callback_query run
+2021-08-24T18:50:04.119425+0300, DEBUG, Выбран город Antalya id 1355047
+2021-08-24T18:50:05.882663+0300, DEBUG, callback_query run
+2021-08-24T18:50:07.832147+0300, DEBUG, Количество отелей: 3 func: get_page_size
+2021-08-24T18:50:07.991324+0300, INFO, This is get list
+2021-08-24T18:50:07.994306+0300, INFO, GET requests
+2021-08-24T18:50:18.013205+0300, DEBUG, callback_query run
+2021-08-24T18:50:30.859920+0300, INFO, Нью-Йорк, Соединённые Штаты Америки
+2021-08-24T18:50:31.404749+0300, INFO, {'place_id': 212523510, 'licence': 'Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright', 'osm_type': 'way', 'osm_id': 575213527, 'lat': '40.712742950000006', 'lon': '-74.00595024412516', 'display_name': 'New York City Hall, 260, Broadway, Lower Manhattan, Civic Center, Manhattan, New York County, New York, 10000, United States', 'address': {'amenity': 'New York City Hall', 'house_number': '260', 'road': 'Broadway', 'quarter': 'Lower Manhattan', 'neighbourhood': 'Civic Center', 'suburb': 'Manhattan', 'county': 'New York County', 'city': 'New York', 'state': 'New York', 'postcode': '10000', 'country': 'United States', 'country_code': 'us'}, 'boundingbox': ['40.7124463', '40.7130195', '-74.0064366', '-74.0055703']}
+2021-08-24T18:50:31.582188+0300, INFO, Selected city New York
+2021-08-24T18:50:34.928164+0300, DEBUG, List city [{'city': 'Нью-Йорк', 'caption': 'Нью-Йорк, Нью-Йорк, США (New York City)', 'city_id': '1506246'}, {'city': 'Центральный Нью-Йорк', 'caption': 'Центральный Нью-Йорк, Нью-Йорк, Нью-Йорк, США', 'city_id': '10819060'}, {'city': 'Манхэттен', 'caption': 'Манхэттен, Нью-Йорк, Нью-Йорк, США', 'city_id': '1535616'}, {'city': 'Бруклин', 'caption': 'Бруклин, Нью-Йорк, США', 'city_id': '1496773'}, {'city': 'Ист-Нью-Йорк', 'caption': 'Ист-Нью-Йорк, Бруклин, Нью-Йорк, США', 'city_id': '1748361'}, {'city': 'Мидтаун', 'caption': 'Мидтаун, Нью-Йорк, Нью-Йорк, США', 'city_id': '1737998'}]
+2021-08-24T18:50:37.942982+0300, DEBUG, callback_query run
+2021-08-24T18:50:37.945880+0300, DEBUG, Выбран город New York id 1506246
+2021-08-24T18:50:39.542322+0300, DEBUG, callback_query run
+2021-08-24T18:50:54.763335+0300, INFO, run get_result
+2021-08-24T18:50:54.766331+0300, INFO, run get_list_hotel
+2021-08-24T18:50:54.771319+0300, INFO, This is get list
+2021-08-24T18:50:54.773320+0300, INFO, GET requests
+2021-08-24T18:51:00.764042+0300, INFO, Run send_result
