@@ -1,220 +1,2067 @@
-2021-08-14T19:55:35.707982+0300, ERROR, An error has been caught in function 'city_for_geo', process 'MainProcess' (6588), thread 'WorkerThread1' (16108):
+2021-08-23T17:03:24.537347+0300, INFO, Your address 17Е к1, улица Хусаина Мавлютова, Горки-1, Приволжский район, Казань, городской округ Казань, Татарстан, Приволжский федеральный округ, 420101, Россия
+2021-08-23T17:13:14.294811+0300, DEBUG, callback_query run
+2021-08-23T17:13:16.452874+0300, INFO, Your address 17Е к1, улица Хусаина Мавлютова, Горки-1, Приволжский район, Казань, городской округ Казань, Татарстан, Приволжский федеральный округ, 420101, Россия
+2021-08-23T17:14:29.426627+0300, INFO, Your address 17Е к1, улица Хусаина Мавлютова, Горки-1, Приволжский район, Казань, городской округ Казань, Татарстан, Приволжский федеральный округ, 420101, Россия
+2021-08-23T17:16:26.102895+0300, DEBUG, callback_query run
+2021-08-23T17:37:22.682308+0300, DEBUG, callback_query run
+2021-08-23T17:37:22.682308+0300, DEBUG, callback_query run
+2021-08-23T17:37:28.638846+0300, INFO, Selected city Берлин
+2021-08-23T17:37:28.638846+0300, INFO, Selected city Берлин
+2021-08-23T17:37:33.721989+0300, DEBUG, List city [{'city': 'Берлин', 'caption': 'Берлин, Германия', 'city_id': '332483'}, {'city': 'Митте', 'caption': 'Митте, Берлин, Германия', 'city_id': '1662710'}, {'city': 'Тегель', 'caption': 'Тегель, Берлин, Германия', 'city_id': '10979252'}, {'city': 'Берлинхен', 'caption': 'Берлинхен, Виттшток/Доссе, Бранденбург  (регион), Германия', 'city_id': '10370402'}, {'city': 'Шарлоттенбург', 'caption': 'Шарлоттенбург, Берлин, Германия', 'city_id': '10871331'}]
+2021-08-23T17:37:33.721989+0300, DEBUG, List city [{'city': 'Берлин', 'caption': 'Берлин, Германия', 'city_id': '332483'}, {'city': 'Митте', 'caption': 'Митте, Берлин, Германия', 'city_id': '1662710'}, {'city': 'Тегель', 'caption': 'Тегель, Берлин, Германия', 'city_id': '10979252'}, {'city': 'Берлинхен', 'caption': 'Берлинхен, Виттшток/Доссе, Бранденбург  (регион), Германия', 'city_id': '10370402'}, {'city': 'Шарлоттенбург', 'caption': 'Шарлоттенбург, Берлин, Германия', 'city_id': '10871331'}]
+2021-08-23T17:37:50.725457+0300, DEBUG, callback_query run
+2021-08-23T17:37:50.725457+0300, DEBUG, callback_query run
+2021-08-23T17:38:02.709881+0300, DEBUG, callback_query run
+2021-08-23T17:38:02.709881+0300, DEBUG, callback_query run
+2021-08-23T17:39:44.837384+0300, DEBUG, callback_query run
+2021-08-23T17:39:44.837384+0300, DEBUG, callback_query run
+2021-08-23T17:39:49.406447+0300, INFO, Selected city Берлин
+2021-08-23T17:39:49.406447+0300, INFO, Selected city Берлин
+2021-08-23T17:39:52.208384+0300, DEBUG, List city [{'city': 'Берлин', 'caption': 'Берлин, Германия', 'city_id': '332483'}, {'city': 'Митте', 'caption': 'Митте, Берлин, Германия', 'city_id': '1662710'}, {'city': 'Тегель', 'caption': 'Тегель, Берлин, Германия', 'city_id': '10979252'}, {'city': 'Берлинхен', 'caption': 'Берлинхен, Виттшток/Доссе, Бранденбург  (регион), Германия', 'city_id': '10370402'}, {'city': 'Шарлоттенбург', 'caption': 'Шарлоттенбург, Берлин, Германия', 'city_id': '10871331'}]
+2021-08-23T17:39:52.208384+0300, DEBUG, List city [{'city': 'Берлин', 'caption': 'Берлин, Германия', 'city_id': '332483'}, {'city': 'Митте', 'caption': 'Митте, Берлин, Германия', 'city_id': '1662710'}, {'city': 'Тегель', 'caption': 'Тегель, Берлин, Германия', 'city_id': '10979252'}, {'city': 'Берлинхен', 'caption': 'Берлинхен, Виттшток/Доссе, Бранденбург  (регион), Германия', 'city_id': '10370402'}, {'city': 'Шарлоттенбург', 'caption': 'Шарлоттенбург, Берлин, Германия', 'city_id': '10871331'}]
+2021-08-23T17:39:54.957305+0300, DEBUG, callback_query run
+2021-08-23T17:39:54.957305+0300, DEBUG, callback_query run
+2021-08-23T17:43:20.826627+0300, DEBUG, callback_query run
+2021-08-23T17:43:20.826627+0300, DEBUG, callback_query run
+2021-08-23T17:43:25.295596+0300, INFO, Selected city Берлин
+2021-08-23T17:43:25.295596+0300, INFO, Selected city Берлин
+2021-08-23T17:43:28.308089+0300, DEBUG, List city [{'city': 'Берлин', 'caption': 'Берлин, Германия', 'city_id': '332483'}, {'city': 'Митте', 'caption': 'Митте, Берлин, Германия', 'city_id': '1662710'}, {'city': 'Тегель', 'caption': 'Тегель, Берлин, Германия', 'city_id': '10979252'}, {'city': 'Берлинхен', 'caption': 'Берлинхен, Виттшток/Доссе, Бранденбург  (регион), Германия', 'city_id': '10370402'}, {'city': 'Шарлоттенбург', 'caption': 'Шарлоттенбург, Берлин, Германия', 'city_id': '10871331'}]
+2021-08-23T17:43:28.308089+0300, DEBUG, List city [{'city': 'Берлин', 'caption': 'Берлин, Германия', 'city_id': '332483'}, {'city': 'Митте', 'caption': 'Митте, Берлин, Германия', 'city_id': '1662710'}, {'city': 'Тегель', 'caption': 'Тегель, Берлин, Германия', 'city_id': '10979252'}, {'city': 'Берлинхен', 'caption': 'Берлинхен, Виттшток/Доссе, Бранденбург  (регион), Германия', 'city_id': '10370402'}, {'city': 'Шарлоттенбург', 'caption': 'Шарлоттенбург, Берлин, Германия', 'city_id': '10871331'}]
+2021-08-23T17:43:30.204421+0300, DEBUG, callback_query run
+2021-08-23T17:43:30.204421+0300, DEBUG, callback_query run
+2021-08-23T17:43:30.208418+0300, ERROR, An error has been caught in function 'run', process 'MainProcess' (19492), thread 'WorkerThread4' (17640):
 Traceback (most recent call last):
 
   File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 908, in _bootstrap
     self._bootstrap_inner()
-    |    -> <function Thread._bootstrap_inner at 0x000001D8C61B75E0>
-    -> <WorkerThread(WorkerThread1, started daemon 16108)>
+    │    └ <function Thread._bootstrap_inner at 0x00000155026775E0>
+    └ <WorkerThread(WorkerThread4, started daemon 17640)>
 
   File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 950, in _bootstrap_inner
     self.run()
-    |    -> <function WorkerThread.run at 0x000001D8C924A5E0>
-    -> <WorkerThread(WorkerThread1, started daemon 16108)>
-
-  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
-    task(*args, **kwargs)
-    |     |       -> {}
-    |     -> (<telebot.types.CallbackQuery object at 0x000001D8C9E8ECD0>,)
-    -> <function Command.handle.<locals>.city_for_geo at 0x000001D8C9E65310>
-
-> File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 73, in city_for_geo
-    navigaton(call.message)
-    |         |    -> <telebot.types.Message object at 0x000001D8C9E8EBB0>
-    |         -> <telebot.types.CallbackQuery object at 0x000001D8C9E8ECD0>
-    -> <function Command.handle.<locals>.navigaton at 0x000001D8C9E659D0>
-
-  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 99, in navigaton
-    button_low = InlineKeyboardButton(text="��� ����� ������� ������", callback_data= '/lowprice')
-
-NameError: name 'InlineKeyboardButton' is not defined
-2021-08-14T19:55:47.757402+0300, ERROR, An error has been caught in function 'city_for_geo', process 'MainProcess' (6588), thread 'WorkerThread1' (16108):
-Traceback (most recent call last):
-
-  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 908, in _bootstrap
-    self._bootstrap_inner()
-    |    -> <function Thread._bootstrap_inner at 0x000001D8C61B75E0>
-    -> <WorkerThread(WorkerThread1, started daemon 16108)>
-
-  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 950, in _bootstrap_inner
-    self.run()
-    |    -> <function WorkerThread.run at 0x000001D8C924A5E0>
-    -> <WorkerThread(WorkerThread1, started daemon 16108)>
-
-  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
-    task(*args, **kwargs)
-    |     |       -> {}
-    |     -> (<telebot.types.CallbackQuery object at 0x000001D8C9E70370>,)
-    -> <function Command.handle.<locals>.city_for_geo at 0x000001D8C9E65310>
-
-> File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 73, in city_for_geo
-    navigaton(call.message)
-    |         |    -> <telebot.types.Message object at 0x000001D8C9E70E50>
-    |         -> <telebot.types.CallbackQuery object at 0x000001D8C9E70370>
-    -> <function Command.handle.<locals>.navigaton at 0x000001D8C9E659D0>
-
-  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 99, in navigaton
-    button_low = InlineKeyboardButton(text="��� ����� ������� ������", callback_data= '/lowprice')
-
-NameError: name 'InlineKeyboardButton' is not defined
-2021-08-15T13:44:23.081069+0300, ERROR, An error has been caught in function 'run', process 'MainProcess' (5404), thread 'WorkerThread1' (12976):
-Traceback (most recent call last):
-
-  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 908, in _bootstrap
-    self._bootstrap_inner()
-    |    -> <function Thread._bootstrap_inner at 0x000001A57DB475E0>
-    -> <WorkerThread(WorkerThread1, started daemon 12976)>
-
-  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 950, in _bootstrap_inner
-    self.run()
-    |    -> <function WorkerThread.run at 0x000001A500C07700>
-    -> <WorkerThread(WorkerThread1, started daemon 12976)>
+    │    └ <function WorkerThread.run at 0x0000015505706CA0>
+    └ <WorkerThread(WorkerThread4, started daemon 17640)>
 
 > File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
     task(*args, **kwargs)
-    |     |       -> {}
-    |     -> (<telebot.types.Message object at 0x000001A50182CEE0>,)
-    -> <function Command.handle.<locals>.location at 0x000001A501824700>
+    │     │       └ {}
+    │     └ (<telebot.types.CallbackQuery object at 0x000001550636A610>,)
+    └ <function Command.handle.<locals>.callback_query at 0x0000015506337F70>
 
-  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 69, in location
-    bot.send_message(message.chat.id, "�������� �����", reply_markup=keyboard)
-    |   |            |       |    |                                  -> <telebot.types.InlineKeyboardMarkup object at 0x000001A50182CFD0>
-    |   |            |       |    -> 158572669
-    |   |            |       -> <telebot.types.Chat object at 0x000001A50182CF40>
-    |   |            -> <telebot.types.Message object at 0x000001A50182CEE0>
-    |   -> <function TeleBot.send_message at 0x000001A500E39AF0>
-    -> <telebot.TeleBot object at 0x000001A500F884F0>
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 75, in callback_query
+    Profile.objects.filter(extr_id=call.message.chat.id).update(city_id=int(call.message.text))
+    │       │                      │    │       │    │                      │    │       └ 'Найденные города:'
+    │       │                      │    │       │    │                      │    └ <telebot.types.Message object at 0x000001550636A700>
+    │       │                      │    │       │    │                      └ <telebot.types.CallbackQuery object at 0x000001550636A610>
+    │       │                      │    │       │    └ 158572669
+    │       │                      │    │       └ <telebot.types.Chat object at 0x000001550636AC70>
+    │       │                      │    └ <telebot.types.Message object at 0x000001550636A700>
+    │       │                      └ <telebot.types.CallbackQuery object at 0x000001550636A610>
+    │       └ <django.db.models.manager.ManagerDescriptor object at 0x0000015505639DC0>
+    └ <class 'hotelapp.models.Profile'>
 
-  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\__init__.py", line 919, in send_message
-    apihelper.send_message(
-    |         -> <function send_message at 0x000001A500E25CA0>
-    -> <module 'telebot.apihelper' from 'C:\\Users\\Ilnur\\PycharmProjects\\python_django\\venv\\lib\\site-packages\\telebot\\apihel...
-
-  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\apihelper.py", line 257, in send_message
-    return _make_request(token, method_url, params=payload, method='post')
-           |             |      |                  -> {'chat_id': '158572669', 'text': '�������� �����', 'reply_markup': '{"inline_keyboard": [[{"text": "\\u041f\\u043e\\u0438\\u0...
-           |             |      -> 'sendMessage'
-           |             -> '1875127679:AAFuKvDtEgDMPDzdr8gyiD2lGFZ6R1srYhc'
-           -> <function _make_request at 0x000001A500C461F0>
-
-  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\apihelper.py", line 145, in _make_request
-    json_result = _check_result(method_name, result)
-                  |             |            -> <Response [403]>
-                  |             -> 'sendMessage'
-                  -> <function _check_result at 0x000001A500C46160>
-
-  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\apihelper.py", line 172, in _check_result
-    raise ApiTelegramException(method_name, result, result_json)
-          |                    |            |       -> {'ok': False, 'error_code': 403, 'description': 'Forbidden: bot was blocked by the user'}
-          |                    |            -> <Response [403]>
-          |                    -> 'sendMessage'
-          -> <class 'telebot.apihelper.ApiTelegramException'>
-
-telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 403. Description: Forbidden: bot was blocked by the user
-2021-08-15T16:03:13.997558+0300, ERROR, An error has been caught in function 'lowprice', process 'MainProcess' (6916), thread 'WorkerThread2' (2424):
+ValueError: invalid literal for int() with base 10: 'Найденные города:'
+2021-08-23T17:43:30.208418+0300, ERROR, An error has been caught in function 'run', process 'MainProcess' (19492), thread 'WorkerThread4' (17640):
 Traceback (most recent call last):
 
   File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 908, in _bootstrap
     self._bootstrap_inner()
-    |    -> <function Thread._bootstrap_inner at 0x00000256A46E75E0>
-    -> <WorkerThread(WorkerThread2, started daemon 2424)>
+    │    └ <function Thread._bootstrap_inner at 0x00000155026775E0>
+    └ <WorkerThread(WorkerThread4, started daemon 17640)>
 
   File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 950, in _bootstrap_inner
     self.run()
-    |    -> <function WorkerThread.run at 0x00000256A7777700>
-    -> <WorkerThread(WorkerThread2, started daemon 2424)>
+    │    └ <function WorkerThread.run at 0x0000015505706CA0>
+    └ <WorkerThread(WorkerThread4, started daemon 17640)>
 
-  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
+> File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
     task(*args, **kwargs)
-    |     |       -> {}
-    |     -> (<telebot.types.CallbackQuery object at 0x00000256A83C7DC0>,)
-    -> <function Command.handle.<locals>.lowprice at 0x00000256A8399670>
+    │     │       └ {}
+    │     └ (<telebot.types.CallbackQuery object at 0x000001550636A610>,)
+    └ <function Command.handle.<locals>.callback_query at 0x0000015506337F70>
 
-> File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 121, in lowprice
-    get_lowprice(call)
-    |            -> <telebot.types.CallbackQuery object at 0x00000256A83C7DC0>
-    -> <function get_lowprice at 0x00000256A7B03040>
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 75, in callback_query
+    Profile.objects.filter(extr_id=call.message.chat.id).update(city_id=int(call.message.text))
+    │       │                      │    │       │    │                      │    │       └ 'Найденные города:'
+    │       │                      │    │       │    │                      │    └ <telebot.types.Message object at 0x000001550636A700>
+    │       │                      │    │       │    │                      └ <telebot.types.CallbackQuery object at 0x000001550636A610>
+    │       │                      │    │       │    └ 158572669
+    │       │                      │    │       └ <telebot.types.Chat object at 0x000001550636AC70>
+    │       │                      │    └ <telebot.types.Message object at 0x000001550636A700>
+    │       │                      └ <telebot.types.CallbackQuery object at 0x000001550636A610>
+    │       └ <django.db.models.manager.ManagerDescriptor object at 0x0000015505639DC0>
+    └ <class 'hotelapp.models.Profile'>
 
-  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\lowprice.py", line 24, in get_lowprice
-    json.dump(response, file, indent=4)
-    |    |    |         -> <_io.TextIOWrapper name='data.txt' mode='w' encoding='cp1251'>
-    |    |    -> <Response [200]>
-    |    -> <function dump at 0x00000256A6C2B670>
-    -> <module 'json' from 'C:\\Users\\Ilnur\\AppData\\Local\\Programs\\Python\\Python39\\lib\\json\\__init__.py'>
-
-  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\json\__init__.py", line 179, in dump
-    for chunk in iterable:
-                 -> <generator object _make_iterencode.<locals>._iterencode at 0x00000256A84286D0>
-
-  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\json\encoder.py", line 438, in _iterencode
-    o = _default(o)
-        |        -> <Response [200]>
-        -> <bound method JSONEncoder.default of <json.encoder.JSONEncoder object at 0x00000256A83A9B80>>
-
-  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\json\encoder.py", line 179, in default
-    raise TypeError(f'Object of type {o.__class__.__name__} '
-
-TypeError: Object of type Response is not JSON serializable
-2021-08-15T17:54:33.544974+0300, ERROR, An error has been caught in function 'lowprice', process 'MainProcess' (10668), thread 'WorkerThread1' (5656):
+ValueError: invalid literal for int() with base 10: 'Найденные города:'
+2021-08-23T17:43:35.391156+0300, DEBUG, callback_query run
+2021-08-23T17:43:35.391156+0300, DEBUG, callback_query run
+2021-08-23T17:43:35.396148+0300, ERROR, An error has been caught in function 'run', process 'MainProcess' (19492), thread 'WorkerThread3' (18996):
 Traceback (most recent call last):
 
   File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 908, in _bootstrap
     self._bootstrap_inner()
-    |    -> <function Thread._bootstrap_inner at 0x0000029F767275E0>
-    -> <WorkerThread(WorkerThread1, started daemon 5656)>
+    │    └ <function Thread._bootstrap_inner at 0x00000155026775E0>
+    └ <WorkerThread(WorkerThread3, started daemon 18996)>
 
   File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 950, in _bootstrap_inner
     self.run()
-    |    -> <function WorkerThread.run at 0x0000029F797D9790>
-    -> <WorkerThread(WorkerThread1, started daemon 5656)>
+    │    └ <function WorkerThread.run at 0x0000015505706CA0>
+    └ <WorkerThread(WorkerThread3, started daemon 18996)>
 
-  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
+> File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
     task(*args, **kwargs)
-    |     |       -> {}
-    |     -> (<telebot.types.CallbackQuery object at 0x0000029F7A425A00>,)
-    -> <function Command.handle.<locals>.lowprice at 0x0000029F7A3F9670>
+    │     │       └ {}
+    │     └ (<telebot.types.CallbackQuery object at 0x0000015506388790>,)
+    └ <function Command.handle.<locals>.callback_query at 0x0000015506337F70>
 
-> File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 123, in lowprice
-    get_lowprice(call)
-    |            -> <telebot.types.CallbackQuery object at 0x0000029F7A425A00>
-    -> <function get_lowprice at 0x0000029F7A35C040>
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 75, in callback_query
+    Profile.objects.filter(extr_id=call.message.chat.id).update(city_id=int(call.message.text))
+    │       │                      │    │       │    │                      │    │       └ 'Найденные города:'
+    │       │                      │    │       │    │                      │    └ <telebot.types.Message object at 0x0000015506388A60>
+    │       │                      │    │       │    │                      └ <telebot.types.CallbackQuery object at 0x0000015506388790>
+    │       │                      │    │       │    └ 158572669
+    │       │                      │    │       └ <telebot.types.Chat object at 0x000001550636AB20>
+    │       │                      │    └ <telebot.types.Message object at 0x0000015506388A60>
+    │       │                      └ <telebot.types.CallbackQuery object at 0x0000015506388790>
+    │       └ <django.db.models.manager.ManagerDescriptor object at 0x0000015505639DC0>
+    └ <class 'hotelapp.models.Profile'>
 
-  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\lowprice.py", line 31, in get_lowprice
-    Profile.objects.get(extr_id=call.message.chat.id).update(city_id=int(i_item['destinationId']))
-    |       |                   |    |       |    |                      -> {'geoId': '6337833', 'destinationId': '1806849', 'landmarkCityDestinationId': None, 'type': 'CITY', 'redirectPage': 'DEFAULT_...
-    |       |                   |    |       |    -> 158572669
-    |       |                   |    |       -> <telebot.types.Chat object at 0x0000029F7A3F23D0>
-    |       |                   |    -> <telebot.types.Message object at 0x0000029F7A425940>
-    |       |                   -> <telebot.types.CallbackQuery object at 0x0000029F7A425A00>
-    |       -> <django.db.models.manager.ManagerDescriptor object at 0x0000029F79712580>
-    -> <class 'hotelapp.models.Profile'>
-
-AttributeError: 'Profile' object has no attribute 'update'
-2021-08-15T18:19:07.548129+0300, ERROR, An error has been caught in function 'get_lowprice', process 'MainProcess' (6056), thread 'WorkerThread1' (8136):
+ValueError: invalid literal for int() with base 10: 'Найденные города:'
+2021-08-23T17:43:35.396148+0300, ERROR, An error has been caught in function 'run', process 'MainProcess' (19492), thread 'WorkerThread3' (18996):
 Traceback (most recent call last):
 
   File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 908, in _bootstrap
     self._bootstrap_inner()
-    |    -> <function Thread._bootstrap_inner at 0x0000020FA06E75E0>
-    -> <WorkerThread(WorkerThread1, started daemon 8136)>
+    │    └ <function Thread._bootstrap_inner at 0x00000155026775E0>
+    └ <WorkerThread(WorkerThread3, started daemon 18996)>
 
   File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 950, in _bootstrap_inner
     self.run()
-    |    -> <function WorkerThread.run at 0x0000020FA3799790>
-    -> <WorkerThread(WorkerThread1, started daemon 8136)>
+    │    └ <function WorkerThread.run at 0x0000015505706CA0>
+    └ <WorkerThread(WorkerThread3, started daemon 18996)>
+
+> File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<telebot.types.CallbackQuery object at 0x0000015506388790>,)
+    └ <function Command.handle.<locals>.callback_query at 0x0000015506337F70>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 75, in callback_query
+    Profile.objects.filter(extr_id=call.message.chat.id).update(city_id=int(call.message.text))
+    │       │                      │    │       │    │                      │    │       └ 'Найденные города:'
+    │       │                      │    │       │    │                      │    └ <telebot.types.Message object at 0x0000015506388A60>
+    │       │                      │    │       │    │                      └ <telebot.types.CallbackQuery object at 0x0000015506388790>
+    │       │                      │    │       │    └ 158572669
+    │       │                      │    │       └ <telebot.types.Chat object at 0x000001550636AB20>
+    │       │                      │    └ <telebot.types.Message object at 0x0000015506388A60>
+    │       │                      └ <telebot.types.CallbackQuery object at 0x0000015506388790>
+    │       └ <django.db.models.manager.ManagerDescriptor object at 0x0000015505639DC0>
+    └ <class 'hotelapp.models.Profile'>
+
+ValueError: invalid literal for int() with base 10: 'Найденные города:'
+2021-08-23T17:43:37.673460+0300, DEBUG, callback_query run
+2021-08-23T17:43:37.673460+0300, DEBUG, callback_query run
+2021-08-23T17:43:37.677451+0300, ERROR, An error has been caught in function 'run', process 'MainProcess' (19492), thread 'WorkerThread4' (17640):
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 908, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x00000155026775E0>
+    └ <WorkerThread(WorkerThread4, started daemon 17640)>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 950, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x0000015505706CA0>
+    └ <WorkerThread(WorkerThread4, started daemon 17640)>
+
+> File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<telebot.types.CallbackQuery object at 0x0000015506409580>,)
+    └ <function Command.handle.<locals>.callback_query at 0x0000015506337F70>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 75, in callback_query
+    Profile.objects.filter(extr_id=call.message.chat.id).update(city_id=int(call.message.text))
+    │       │                      │    │       │    │                      │    │       └ 'Найденные города:'
+    │       │                      │    │       │    │                      │    └ <telebot.types.Message object at 0x0000015506409550>
+    │       │                      │    │       │    │                      └ <telebot.types.CallbackQuery object at 0x0000015506409580>
+    │       │                      │    │       │    └ 158572669
+    │       │                      │    │       └ <telebot.types.Chat object at 0x0000015506351EE0>
+    │       │                      │    └ <telebot.types.Message object at 0x0000015506409550>
+    │       │                      └ <telebot.types.CallbackQuery object at 0x0000015506409580>
+    │       └ <django.db.models.manager.ManagerDescriptor object at 0x0000015505639DC0>
+    └ <class 'hotelapp.models.Profile'>
+
+ValueError: invalid literal for int() with base 10: 'Найденные города:'
+2021-08-23T17:43:37.677451+0300, ERROR, An error has been caught in function 'run', process 'MainProcess' (19492), thread 'WorkerThread4' (17640):
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 908, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x00000155026775E0>
+    └ <WorkerThread(WorkerThread4, started daemon 17640)>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 950, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x0000015505706CA0>
+    └ <WorkerThread(WorkerThread4, started daemon 17640)>
+
+> File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<telebot.types.CallbackQuery object at 0x0000015506409580>,)
+    └ <function Command.handle.<locals>.callback_query at 0x0000015506337F70>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 75, in callback_query
+    Profile.objects.filter(extr_id=call.message.chat.id).update(city_id=int(call.message.text))
+    │       │                      │    │       │    │                      │    │       └ 'Найденные города:'
+    │       │                      │    │       │    │                      │    └ <telebot.types.Message object at 0x0000015506409550>
+    │       │                      │    │       │    │                      └ <telebot.types.CallbackQuery object at 0x0000015506409580>
+    │       │                      │    │       │    └ 158572669
+    │       │                      │    │       └ <telebot.types.Chat object at 0x0000015506351EE0>
+    │       │                      │    └ <telebot.types.Message object at 0x0000015506409550>
+    │       │                      └ <telebot.types.CallbackQuery object at 0x0000015506409580>
+    │       └ <django.db.models.manager.ManagerDescriptor object at 0x0000015505639DC0>
+    └ <class 'hotelapp.models.Profile'>
+
+ValueError: invalid literal for int() with base 10: 'Найденные города:'
+2021-08-23T17:43:38.501569+0300, DEBUG, callback_query run
+2021-08-23T17:43:38.501569+0300, DEBUG, callback_query run
+2021-08-23T17:43:38.506568+0300, ERROR, An error has been caught in function 'run', process 'MainProcess' (19492), thread 'WorkerThread4' (17640):
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 908, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x00000155026775E0>
+    └ <WorkerThread(WorkerThread4, started daemon 17640)>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 950, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x0000015505706CA0>
+    └ <WorkerThread(WorkerThread4, started daemon 17640)>
+
+> File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<telebot.types.CallbackQuery object at 0x0000015506414BE0>,)
+    └ <function Command.handle.<locals>.callback_query at 0x0000015506337F70>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 75, in callback_query
+    Profile.objects.filter(extr_id=call.message.chat.id).update(city_id=int(call.message.text))
+    │       │                      │    │       │    │                      │    │       └ 'Найденные города:'
+    │       │                      │    │       │    │                      │    └ <telebot.types.Message object at 0x00000155064149A0>
+    │       │                      │    │       │    │                      └ <telebot.types.CallbackQuery object at 0x0000015506414BE0>
+    │       │                      │    │       │    └ 158572669
+    │       │                      │    │       └ <telebot.types.Chat object at 0x0000015506388F70>
+    │       │                      │    └ <telebot.types.Message object at 0x00000155064149A0>
+    │       │                      └ <telebot.types.CallbackQuery object at 0x0000015506414BE0>
+    │       └ <django.db.models.manager.ManagerDescriptor object at 0x0000015505639DC0>
+    └ <class 'hotelapp.models.Profile'>
+
+ValueError: invalid literal for int() with base 10: 'Найденные города:'
+2021-08-23T17:43:38.506568+0300, ERROR, An error has been caught in function 'run', process 'MainProcess' (19492), thread 'WorkerThread4' (17640):
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 908, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x00000155026775E0>
+    └ <WorkerThread(WorkerThread4, started daemon 17640)>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 950, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x0000015505706CA0>
+    └ <WorkerThread(WorkerThread4, started daemon 17640)>
+
+> File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<telebot.types.CallbackQuery object at 0x0000015506414BE0>,)
+    └ <function Command.handle.<locals>.callback_query at 0x0000015506337F70>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 75, in callback_query
+    Profile.objects.filter(extr_id=call.message.chat.id).update(city_id=int(call.message.text))
+    │       │                      │    │       │    │                      │    │       └ 'Найденные города:'
+    │       │                      │    │       │    │                      │    └ <telebot.types.Message object at 0x00000155064149A0>
+    │       │                      │    │       │    │                      └ <telebot.types.CallbackQuery object at 0x0000015506414BE0>
+    │       │                      │    │       │    └ 158572669
+    │       │                      │    │       └ <telebot.types.Chat object at 0x0000015506388F70>
+    │       │                      │    └ <telebot.types.Message object at 0x00000155064149A0>
+    │       │                      └ <telebot.types.CallbackQuery object at 0x0000015506414BE0>
+    │       └ <django.db.models.manager.ManagerDescriptor object at 0x0000015505639DC0>
+    └ <class 'hotelapp.models.Profile'>
+
+ValueError: invalid literal for int() with base 10: 'Найденные города:'
+2021-08-23T17:44:32.233918+0300, DEBUG, callback_query run
+2021-08-23T17:44:32.233918+0300, DEBUG, callback_query run
+2021-08-23T17:44:39.300674+0300, INFO, Selected city Берлин
+2021-08-23T17:44:39.300674+0300, INFO, Selected city Берлин
+2021-08-23T17:44:42.286653+0300, DEBUG, List city [{'city': 'Берлин', 'caption': 'Берлин, Германия', 'city_id': '332483'}, {'city': 'Митте', 'caption': 'Митте, Берлин, Германия', 'city_id': '1662710'}, {'city': 'Тегель', 'caption': 'Тегель, Берлин, Германия', 'city_id': '10979252'}, {'city': 'Берлинхен', 'caption': 'Берлинхен, Виттшток/Доссе, Бранденбург  (регион), Германия', 'city_id': '10370402'}, {'city': 'Шарлоттенбург', 'caption': 'Шарлоттенбург, Берлин, Германия', 'city_id': '10871331'}]
+2021-08-23T17:44:42.286653+0300, DEBUG, List city [{'city': 'Берлин', 'caption': 'Берлин, Германия', 'city_id': '332483'}, {'city': 'Митте', 'caption': 'Митте, Берлин, Германия', 'city_id': '1662710'}, {'city': 'Тегель', 'caption': 'Тегель, Берлин, Германия', 'city_id': '10979252'}, {'city': 'Берлинхен', 'caption': 'Берлинхен, Виттшток/Доссе, Бранденбург  (регион), Германия', 'city_id': '10370402'}, {'city': 'Шарлоттенбург', 'caption': 'Шарлоттенбург, Берлин, Германия', 'city_id': '10871331'}]
+2021-08-24T13:14:01.519450+0300, ERROR, An error has been caught in function 'execute', process 'MainProcess' (19620), thread 'MainThread' (1788):
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\urllib3\connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+                       │    └ <function HTTPConnectionPool._make_request at 0x000001B1C737CB80>
+                       └ <urllib3.connectionpool.HTTPSConnectionPool object at 0x000001B1C7EF01F0>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\urllib3\connectionpool.py", line 445, in _make_request
+    six.raise_from(e, None)
+    │   └ <function raise_from at 0x000001B1C731A550>
+    └ <module 'urllib3.packages.six' from 'C:\\Users\\Ilnur\\PycharmProjects\\python_django\\venv\\lib\\site-packages\\urllib3\\pac...
+
+  File "<string>", line 3, in raise_from
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\urllib3\connectionpool.py", line 440, in _make_request
+    httplib_response = conn.getresponse()
+                       │    └ <function HTTPConnection.getresponse at 0x000001B1C67F3DC0>
+                       └ <urllib3.connection.HTTPSConnection object at 0x000001B1C7EF0E80>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\http\client.py", line 1347, in getresponse
+    response.begin()
+    │        └ <function HTTPResponse.begin at 0x000001B1C67F2160>
+    └ <http.client.HTTPResponse object at 0x000001B1C7F0A730>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\http\client.py", line 307, in begin
+    version, status, reason = self._read_status()
+                              │    └ <function HTTPResponse._read_status at 0x000001B1C67F20D0>
+                              └ <http.client.HTTPResponse object at 0x000001B1C7F0A730>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\http\client.py", line 268, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               │    │           └ 65536
+               │    └ None
+               └ <http.client.HTTPResponse object at 0x000001B1C7F0A730>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+           │    │               └ <memory at 0x000001B1C7ED3040>
+           │    └ None
+           └ <socket.SocketIO object at 0x000001B1C7F25910>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\ssl.py", line 1241, in recv_into
+    return self.read(nbytes, buffer)
+           │    │    │       └ <memory at 0x000001B1C7ED3040>
+           │    │    └ 8192
+           │    └ <function SSLSocket.read at 0x000001B1C5E92820>
+           └ <ssl.SSLSocket [closed] fd=-1, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\ssl.py", line 1099, in read
+    return self._sslobj.read(len, buffer)
+           │    │            │    └ <memory at 0x000001B1C7ED3040>
+           │    │            └ 8192
+           │    └ None
+           └ <ssl.SSLSocket [closed] fd=-1, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0>
+
+ConnectionResetError: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+
+
+During handling of the above exception, another exception occurred:
+
+
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\requests\adapters.py", line 439, in send
+    resp = conn.urlopen(
+           │    └ <function HTTPConnectionPool.urlopen at 0x000001B1C737CDC0>
+           └ <urllib3.connectionpool.HTTPSConnectionPool object at 0x000001B1C7EF01F0>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\urllib3\connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+              │       └ <function Retry.increment at 0x000001B1C733D160>
+              └ Retry(total=0, connect=None, read=False, redirect=None, status=None)
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\urllib3\util\retry.py", line 532, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+          │   │            │       │      └ <traceback object at 0x000001B1C7F3F140>
+          │   │            │       └ ProtocolError('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключе...
+          │   │            └ ProtocolError('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключе...
+          │   └ <function reraise at 0x000001B1C731A4C0>
+          └ <module 'urllib3.packages.six' from 'C:\\Users\\Ilnur\\PycharmProjects\\python_django\\venv\\lib\\site-packages\\urllib3\\pac...
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\urllib3\packages\six.py", line 769, in reraise
+    raise value.with_traceback(tb)
+          │                    └ None
+          └ None
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\urllib3\connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+                       │    └ <function HTTPConnectionPool._make_request at 0x000001B1C737CB80>
+                       └ <urllib3.connectionpool.HTTPSConnectionPool object at 0x000001B1C7EF01F0>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\urllib3\connectionpool.py", line 445, in _make_request
+    six.raise_from(e, None)
+    │   └ <function raise_from at 0x000001B1C731A550>
+    └ <module 'urllib3.packages.six' from 'C:\\Users\\Ilnur\\PycharmProjects\\python_django\\venv\\lib\\site-packages\\urllib3\\pac...
+
+  File "<string>", line 3, in raise_from
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\urllib3\connectionpool.py", line 440, in _make_request
+    httplib_response = conn.getresponse()
+                       │    └ <function HTTPConnection.getresponse at 0x000001B1C67F3DC0>
+                       └ <urllib3.connection.HTTPSConnection object at 0x000001B1C7EF0E80>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\http\client.py", line 1347, in getresponse
+    response.begin()
+    │        └ <function HTTPResponse.begin at 0x000001B1C67F2160>
+    └ <http.client.HTTPResponse object at 0x000001B1C7F0A730>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\http\client.py", line 307, in begin
+    version, status, reason = self._read_status()
+                              │    └ <function HTTPResponse._read_status at 0x000001B1C67F20D0>
+                              └ <http.client.HTTPResponse object at 0x000001B1C7F0A730>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\http\client.py", line 268, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               │    │           └ 65536
+               │    └ None
+               └ <http.client.HTTPResponse object at 0x000001B1C7F0A730>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+           │    │               └ <memory at 0x000001B1C7ED3040>
+           │    └ None
+           └ <socket.SocketIO object at 0x000001B1C7F25910>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\ssl.py", line 1241, in recv_into
+    return self.read(nbytes, buffer)
+           │    │    │       └ <memory at 0x000001B1C7ED3040>
+           │    │    └ 8192
+           │    └ <function SSLSocket.read at 0x000001B1C5E92820>
+           └ <ssl.SSLSocket [closed] fd=-1, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\ssl.py", line 1099, in read
+    return self._sslobj.read(len, buffer)
+           │    │            │    └ <memory at 0x000001B1C7ED3040>
+           │    │            └ 8192
+           │    └ None
+           └ <ssl.SSLSocket [closed] fd=-1, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0>
+
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None))
+
+
+During handling of the above exception, another exception occurred:
+
+
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\manage.py", line 22, in <module>
+    main()
+    └ <function main at 0x000001B1C3F4B9D0>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\manage.py", line 18, in main
+    execute_from_command_line(sys.argv)
+    │                         │   └ ['manage.py', 'bot']
+    │                         └ <module 'sys' (built-in)>
+    └ <function execute_from_command_line at 0x000001B1C65F3040>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\django\core\management\__init__.py", line 419, in execute_from_command_line
+    utility.execute()
+    │       └ <function ManagementUtility.execute at 0x000001B1C65F3310>
+    └ <django.core.management.ManagementUtility object at 0x000001B1C3F4DFD0>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\django\core\management\__init__.py", line 413, in execute
+    self.fetch_command(subcommand).run_from_argv(self.argv)
+    │    │             │                         │    └ ['manage.py', 'bot']
+    │    │             │                         └ <django.core.management.ManagementUtility object at 0x000001B1C3F4DFD0>
+    │    │             └ 'bot'
+    │    └ <function ManagementUtility.fetch_command at 0x000001B1C65F31F0>
+    └ <django.core.management.ManagementUtility object at 0x000001B1C3F4DFD0>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\django\core\management\base.py", line 354, in run_from_argv
+    self.execute(*args, **cmd_options)
+    │    │        │       └ {'verbosity': 1, 'settings': None, 'pythonpath': None, 'traceback': False, 'no_color': False, 'force_color': False, 'skip_che...
+    │    │        └ ()
+    │    └ <function BaseCommand.execute at 0x000001B1C65F28B0>
+    └ <hotelapp.management.commands.bot.Command object at 0x000001B1C6E182B0>
+
+> File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\django\core\management\base.py", line 398, in execute
+    output = self.handle(*args, **options)
+             │    │       │       └ {'verbosity': 1, 'settings': None, 'pythonpath': None, 'traceback': False, 'no_color': False, 'force_color': False, 'skip_che...
+             │    │       └ ()
+             │    └ <function Command.handle at 0x000001B1C7E500D0>
+             └ <hotelapp.management.commands.bot.Command object at 0x000001B1C6E182B0>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 170, in handle
+    bot.polling()
+    │   └ <function TeleBot.polling at 0x000001B1C74DB4C0>
+    └ <telebot.TeleBot object at 0x000001B1C7E4A340>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\__init__.py", line 617, in polling
+    self.__threaded_polling(none_stop, interval, timeout, long_polling_timeout, allowed_updates)
+    │                       │          │         │        │                     └ None
+    │                       │          │         │        └ 20
+    │                       │          │         └ 20
+    │                       │          └ 0
+    │                       └ False
+    └ <telebot.TeleBot object at 0x000001B1C7E4A340>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\__init__.py", line 676, in __threaded_polling
+    raise e
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\__init__.py", line 638, in __threaded_polling
+    polling_thread.raise_exceptions()
+    │              └ <function WorkerThread.raise_exceptions at 0x000001B1C72E8700>
+    └ <WorkerThread(PollingThread, stopped daemon 18376)>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 100, in raise_exceptions
+    raise self.exception_info
+          │    └ ConnectionError(ProtocolError('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал сущес...
+          └ <WorkerThread(PollingThread, stopped daemon 18376)>
 
   File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
     task(*args, **kwargs)
-    |     |       -> {}
-    |     -> (<telebot.types.CallbackQuery object at 0x0000020FA4431E20>,)
-    -> <function Command.handle.<locals>.lowprice at 0x0000020FA43B99D0>
+    │     │       └ {'allowed_updates': None}
+    │     └ (20, 20)
+    └ <bound method TeleBot.__retrieve_updates of <telebot.TeleBot object at 0x000001B1C7E4A340>>
 
-  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 123, in lowprice
-    get_lowprice(call)
-    |            -> <telebot.types.CallbackQuery object at 0x0000020FA4431E20>
-    -> <function get_lowprice at 0x0000020FA3B263A0>
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\__init__.py", line 388, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+              │    │                   │    └ 87393731
+              │    │                   └ <telebot.TeleBot object at 0x000001B1C7E4A340>
+              │    └ <function TeleBot.get_updates at 0x000001B1C74DA940>
+              └ <telebot.TeleBot object at 0x000001B1C7E4A340>
 
-> File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\lowprice.py", line 36, in get_lowprice
-    get_city_id()
-    -> <function get_city_id at 0x0000020FA3B26160>
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\__init__.py", line 361, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates, long_polling_timeout)
+                   │         │           │    │      │       │      │        │                └ 20
+                   │         │           │    │      │       │      │        └ None
+                   │         │           │    │      │       │      └ 20
+                   │         │           │    │      │       └ None
+                   │         │           │    │      └ 87393732
+                   │         │           │    └ '1875127679:AAFuKvDtEgDMPDzdr8gyiD2lGFZ6R1srYhc'
+                   │         │           └ <telebot.TeleBot object at 0x000001B1C7E4A340>
+                   │         └ <function get_updates at 0x000001B1C74D5550>
+                   └ <module 'telebot.apihelper' from 'C:\\Users\\Ilnur\\PycharmProjects\\python_django\\venv\\lib\\site-packages\\telebot\\apihel...
 
-TypeError: get_city_id() missing 1 required positional argument: 'call'
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\apihelper.py", line 312, in get_updates
+    return _make_request(token, method_url, params=payload)
+           │             │      │                  └ {'offset': 87393732, 'timeout': 20}
+           │             │      └ 'getUpdates'
+           │             └ '1875127679:AAFuKvDtEgDMPDzdr8gyiD2lGFZ6R1srYhc'
+           └ <function _make_request at 0x000001B1C72DC820>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\apihelper.py", line 139, in _make_request
+    result = _get_req_session().request(
+             └ <function _get_req_session at 0x000001B1C72DC5E0>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\requests\sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+           │    │    │       └ {'timeout': (20, 25), 'allow_redirects': True, 'verify': True, 'proxies': OrderedDict(), 'stream': False, 'cert': None}
+           │    │    └ <PreparedRequest [GET]>
+           │    └ <function Session.send at 0x000001B1C74D4820>
+           └ <requests.sessions.Session object at 0x000001B1C7EE4AC0>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\requests\sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+        │       │    │          └ {'timeout': (20, 25), 'verify': True, 'proxies': OrderedDict(), 'stream': False, 'cert': None}
+        │       │    └ <PreparedRequest [GET]>
+        │       └ <function HTTPAdapter.send at 0x000001B1C74CACA0>
+        └ <requests.adapters.HTTPAdapter object at 0x000001B1C7EE4EB0>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\requests\adapters.py", line 498, in send
+    raise ConnectionError(err, request=request)
+          │                            └ <PreparedRequest [GET]>
+          └ <class 'requests.exceptions.ConnectionError'>
+
+requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None))
+2021-08-24T13:14:01.519450+0300, ERROR, An error has been caught in function 'execute', process 'MainProcess' (19620), thread 'MainThread' (1788):
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\urllib3\connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+                       │    └ <function HTTPConnectionPool._make_request at 0x000001B1C737CB80>
+                       └ <urllib3.connectionpool.HTTPSConnectionPool object at 0x000001B1C7EF01F0>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\urllib3\connectionpool.py", line 445, in _make_request
+    six.raise_from(e, None)
+    │   └ <function raise_from at 0x000001B1C731A550>
+    └ <module 'urllib3.packages.six' from 'C:\\Users\\Ilnur\\PycharmProjects\\python_django\\venv\\lib\\site-packages\\urllib3\\pac...
+
+  File "<string>", line 3, in raise_from
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\urllib3\connectionpool.py", line 440, in _make_request
+    httplib_response = conn.getresponse()
+                       │    └ <function HTTPConnection.getresponse at 0x000001B1C67F3DC0>
+                       └ <urllib3.connection.HTTPSConnection object at 0x000001B1C7EF0E80>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\http\client.py", line 1347, in getresponse
+    response.begin()
+    │        └ <function HTTPResponse.begin at 0x000001B1C67F2160>
+    └ <http.client.HTTPResponse object at 0x000001B1C7F0A730>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\http\client.py", line 307, in begin
+    version, status, reason = self._read_status()
+                              │    └ <function HTTPResponse._read_status at 0x000001B1C67F20D0>
+                              └ <http.client.HTTPResponse object at 0x000001B1C7F0A730>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\http\client.py", line 268, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               │    │           └ 65536
+               │    └ None
+               └ <http.client.HTTPResponse object at 0x000001B1C7F0A730>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+           │    │               └ <memory at 0x000001B1C7ED3040>
+           │    └ None
+           └ <socket.SocketIO object at 0x000001B1C7F25910>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\ssl.py", line 1241, in recv_into
+    return self.read(nbytes, buffer)
+           │    │    │       └ <memory at 0x000001B1C7ED3040>
+           │    │    └ 8192
+           │    └ <function SSLSocket.read at 0x000001B1C5E92820>
+           └ <ssl.SSLSocket [closed] fd=-1, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\ssl.py", line 1099, in read
+    return self._sslobj.read(len, buffer)
+           │    │            │    └ <memory at 0x000001B1C7ED3040>
+           │    │            └ 8192
+           │    └ None
+           └ <ssl.SSLSocket [closed] fd=-1, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0>
+
+ConnectionResetError: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+
+
+During handling of the above exception, another exception occurred:
+
+
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\requests\adapters.py", line 439, in send
+    resp = conn.urlopen(
+           │    └ <function HTTPConnectionPool.urlopen at 0x000001B1C737CDC0>
+           └ <urllib3.connectionpool.HTTPSConnectionPool object at 0x000001B1C7EF01F0>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\urllib3\connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+              │       └ <function Retry.increment at 0x000001B1C733D160>
+              └ Retry(total=0, connect=None, read=False, redirect=None, status=None)
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\urllib3\util\retry.py", line 532, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+          │   │            │       │      └ <traceback object at 0x000001B1C7F3F140>
+          │   │            │       └ ProtocolError('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключе...
+          │   │            └ ProtocolError('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключе...
+          │   └ <function reraise at 0x000001B1C731A4C0>
+          └ <module 'urllib3.packages.six' from 'C:\\Users\\Ilnur\\PycharmProjects\\python_django\\venv\\lib\\site-packages\\urllib3\\pac...
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\urllib3\packages\six.py", line 769, in reraise
+    raise value.with_traceback(tb)
+          │                    └ None
+          └ None
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\urllib3\connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+                       │    └ <function HTTPConnectionPool._make_request at 0x000001B1C737CB80>
+                       └ <urllib3.connectionpool.HTTPSConnectionPool object at 0x000001B1C7EF01F0>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\urllib3\connectionpool.py", line 445, in _make_request
+    six.raise_from(e, None)
+    │   └ <function raise_from at 0x000001B1C731A550>
+    └ <module 'urllib3.packages.six' from 'C:\\Users\\Ilnur\\PycharmProjects\\python_django\\venv\\lib\\site-packages\\urllib3\\pac...
+
+  File "<string>", line 3, in raise_from
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\urllib3\connectionpool.py", line 440, in _make_request
+    httplib_response = conn.getresponse()
+                       │    └ <function HTTPConnection.getresponse at 0x000001B1C67F3DC0>
+                       └ <urllib3.connection.HTTPSConnection object at 0x000001B1C7EF0E80>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\http\client.py", line 1347, in getresponse
+    response.begin()
+    │        └ <function HTTPResponse.begin at 0x000001B1C67F2160>
+    └ <http.client.HTTPResponse object at 0x000001B1C7F0A730>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\http\client.py", line 307, in begin
+    version, status, reason = self._read_status()
+                              │    └ <function HTTPResponse._read_status at 0x000001B1C67F20D0>
+                              └ <http.client.HTTPResponse object at 0x000001B1C7F0A730>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\http\client.py", line 268, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               │    │           └ 65536
+               │    └ None
+               └ <http.client.HTTPResponse object at 0x000001B1C7F0A730>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+           │    │               └ <memory at 0x000001B1C7ED3040>
+           │    └ None
+           └ <socket.SocketIO object at 0x000001B1C7F25910>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\ssl.py", line 1241, in recv_into
+    return self.read(nbytes, buffer)
+           │    │    │       └ <memory at 0x000001B1C7ED3040>
+           │    │    └ 8192
+           │    └ <function SSLSocket.read at 0x000001B1C5E92820>
+           └ <ssl.SSLSocket [closed] fd=-1, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\ssl.py", line 1099, in read
+    return self._sslobj.read(len, buffer)
+           │    │            │    └ <memory at 0x000001B1C7ED3040>
+           │    │            └ 8192
+           │    └ None
+           └ <ssl.SSLSocket [closed] fd=-1, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0>
+
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None))
+
+
+During handling of the above exception, another exception occurred:
+
+
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\manage.py", line 22, in <module>
+    main()
+    └ <function main at 0x000001B1C3F4B9D0>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\manage.py", line 18, in main
+    execute_from_command_line(sys.argv)
+    │                         │   └ ['manage.py', 'bot']
+    │                         └ <module 'sys' (built-in)>
+    └ <function execute_from_command_line at 0x000001B1C65F3040>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\django\core\management\__init__.py", line 419, in execute_from_command_line
+    utility.execute()
+    │       └ <function ManagementUtility.execute at 0x000001B1C65F3310>
+    └ <django.core.management.ManagementUtility object at 0x000001B1C3F4DFD0>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\django\core\management\__init__.py", line 413, in execute
+    self.fetch_command(subcommand).run_from_argv(self.argv)
+    │    │             │                         │    └ ['manage.py', 'bot']
+    │    │             │                         └ <django.core.management.ManagementUtility object at 0x000001B1C3F4DFD0>
+    │    │             └ 'bot'
+    │    └ <function ManagementUtility.fetch_command at 0x000001B1C65F31F0>
+    └ <django.core.management.ManagementUtility object at 0x000001B1C3F4DFD0>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\django\core\management\base.py", line 354, in run_from_argv
+    self.execute(*args, **cmd_options)
+    │    │        │       └ {'verbosity': 1, 'settings': None, 'pythonpath': None, 'traceback': False, 'no_color': False, 'force_color': False, 'skip_che...
+    │    │        └ ()
+    │    └ <function BaseCommand.execute at 0x000001B1C65F28B0>
+    └ <hotelapp.management.commands.bot.Command object at 0x000001B1C6E182B0>
+
+> File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\django\core\management\base.py", line 398, in execute
+    output = self.handle(*args, **options)
+             │    │       │       └ {'verbosity': 1, 'settings': None, 'pythonpath': None, 'traceback': False, 'no_color': False, 'force_color': False, 'skip_che...
+             │    │       └ ()
+             │    └ <function Command.handle at 0x000001B1C7E500D0>
+             └ <hotelapp.management.commands.bot.Command object at 0x000001B1C6E182B0>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 170, in handle
+    bot.polling()
+    │   └ <function TeleBot.polling at 0x000001B1C74DB4C0>
+    └ <telebot.TeleBot object at 0x000001B1C7E4A340>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\__init__.py", line 617, in polling
+    self.__threaded_polling(none_stop, interval, timeout, long_polling_timeout, allowed_updates)
+    │                       │          │         │        │                     └ None
+    │                       │          │         │        └ 20
+    │                       │          │         └ 20
+    │                       │          └ 0
+    │                       └ False
+    └ <telebot.TeleBot object at 0x000001B1C7E4A340>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\__init__.py", line 676, in __threaded_polling
+    raise e
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\__init__.py", line 638, in __threaded_polling
+    polling_thread.raise_exceptions()
+    │              └ <function WorkerThread.raise_exceptions at 0x000001B1C72E8700>
+    └ <WorkerThread(PollingThread, stopped daemon 18376)>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 100, in raise_exceptions
+    raise self.exception_info
+          │    └ ConnectionError(ProtocolError('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал сущес...
+          └ <WorkerThread(PollingThread, stopped daemon 18376)>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {'allowed_updates': None}
+    │     └ (20, 20)
+    └ <bound method TeleBot.__retrieve_updates of <telebot.TeleBot object at 0x000001B1C7E4A340>>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\__init__.py", line 388, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+              │    │                   │    └ 87393731
+              │    │                   └ <telebot.TeleBot object at 0x000001B1C7E4A340>
+              │    └ <function TeleBot.get_updates at 0x000001B1C74DA940>
+              └ <telebot.TeleBot object at 0x000001B1C7E4A340>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\__init__.py", line 361, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates, long_polling_timeout)
+                   │         │           │    │      │       │      │        │                └ 20
+                   │         │           │    │      │       │      │        └ None
+                   │         │           │    │      │       │      └ 20
+                   │         │           │    │      │       └ None
+                   │         │           │    │      └ 87393732
+                   │         │           │    └ '1875127679:AAFuKvDtEgDMPDzdr8gyiD2lGFZ6R1srYhc'
+                   │         │           └ <telebot.TeleBot object at 0x000001B1C7E4A340>
+                   │         └ <function get_updates at 0x000001B1C74D5550>
+                   └ <module 'telebot.apihelper' from 'C:\\Users\\Ilnur\\PycharmProjects\\python_django\\venv\\lib\\site-packages\\telebot\\apihel...
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\apihelper.py", line 312, in get_updates
+    return _make_request(token, method_url, params=payload)
+           │             │      │                  └ {'offset': 87393732, 'timeout': 20}
+           │             │      └ 'getUpdates'
+           │             └ '1875127679:AAFuKvDtEgDMPDzdr8gyiD2lGFZ6R1srYhc'
+           └ <function _make_request at 0x000001B1C72DC820>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\apihelper.py", line 139, in _make_request
+    result = _get_req_session().request(
+             └ <function _get_req_session at 0x000001B1C72DC5E0>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\requests\sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+           │    │    │       └ {'timeout': (20, 25), 'allow_redirects': True, 'verify': True, 'proxies': OrderedDict(), 'stream': False, 'cert': None}
+           │    │    └ <PreparedRequest [GET]>
+           │    └ <function Session.send at 0x000001B1C74D4820>
+           └ <requests.sessions.Session object at 0x000001B1C7EE4AC0>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\requests\sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+        │       │    │          └ {'timeout': (20, 25), 'verify': True, 'proxies': OrderedDict(), 'stream': False, 'cert': None}
+        │       │    └ <PreparedRequest [GET]>
+        │       └ <function HTTPAdapter.send at 0x000001B1C74CACA0>
+        └ <requests.adapters.HTTPAdapter object at 0x000001B1C7EE4EB0>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\requests\adapters.py", line 498, in send
+    raise ConnectionError(err, request=request)
+          │                            └ <PreparedRequest [GET]>
+          └ <class 'requests.exceptions.ConnectionError'>
+
+requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None))
+2021-08-24T13:14:31.140473+0300, DEBUG, callback_query run
+2021-08-24T13:14:31.140473+0300, DEBUG, callback_query run
+2021-08-24T13:14:37.810012+0300, DEBUG, callback_query run
+2021-08-24T13:14:37.810012+0300, DEBUG, callback_query run
+2021-08-24T13:14:59.062194+0300, DEBUG, callback_query run
+2021-08-24T13:14:59.062194+0300, DEBUG, callback_query run
+2021-08-24T13:15:18.655383+0300, INFO, Selected city Берлин
+2021-08-24T13:15:18.655383+0300, INFO, Selected city Берлин
+2021-08-24T13:15:22.046993+0300, DEBUG, List city [{'city': 'Берлин', 'caption': 'Берлин, Германия', 'city_id': '332483'}, {'city': 'Митте', 'caption': 'Митте, Берлин, Германия', 'city_id': '1662710'}, {'city': 'Тегель', 'caption': 'Тегель, Берлин, Германия', 'city_id': '10979252'}, {'city': 'Берлинхен', 'caption': 'Берлинхен, Виттшток/Доссе, Бранденбург  (регион), Германия', 'city_id': '10370402'}, {'city': 'Шарлоттенбург', 'caption': 'Шарлоттенбург, Берлин, Германия', 'city_id': '10871331'}]
+2021-08-24T13:15:22.046993+0300, DEBUG, List city [{'city': 'Берлин', 'caption': 'Берлин, Германия', 'city_id': '332483'}, {'city': 'Митте', 'caption': 'Митте, Берлин, Германия', 'city_id': '1662710'}, {'city': 'Тегель', 'caption': 'Тегель, Берлин, Германия', 'city_id': '10979252'}, {'city': 'Берлинхен', 'caption': 'Берлинхен, Виттшток/Доссе, Бранденбург  (регион), Германия', 'city_id': '10370402'}, {'city': 'Шарлоттенбург', 'caption': 'Шарлоттенбург, Берлин, Германия', 'city_id': '10871331'}]
+2021-08-24T13:16:40.579275+0300, DEBUG, callback_query run
+2021-08-24T13:16:40.579275+0300, DEBUG, callback_query run
+2021-08-24T13:16:47.003108+0300, INFO, Selected city Берлин
+2021-08-24T13:16:47.003108+0300, INFO, Selected city Берлин
+2021-08-24T13:16:53.281117+0300, DEBUG, List city [{'city': 'Берлин', 'caption': 'Берлин, Германия', 'city_id': '332483'}, {'city': 'Митте', 'caption': 'Митте, Берлин, Германия', 'city_id': '1662710'}, {'city': 'Тегель', 'caption': 'Тегель, Берлин, Германия', 'city_id': '10979252'}, {'city': 'Берлинхен', 'caption': 'Берлинхен, Виттшток/Доссе, Бранденбург  (регион), Германия', 'city_id': '10370402'}, {'city': 'Шарлоттенбург', 'caption': 'Шарлоттенбург, Берлин, Германия', 'city_id': '10871331'}]
+2021-08-24T13:16:53.281117+0300, DEBUG, List city [{'city': 'Берлин', 'caption': 'Берлин, Германия', 'city_id': '332483'}, {'city': 'Митте', 'caption': 'Митте, Берлин, Германия', 'city_id': '1662710'}, {'city': 'Тегель', 'caption': 'Тегель, Берлин, Германия', 'city_id': '10979252'}, {'city': 'Берлинхен', 'caption': 'Берлинхен, Виттшток/Доссе, Бранденбург  (регион), Германия', 'city_id': '10370402'}, {'city': 'Шарлоттенбург', 'caption': 'Шарлоттенбург, Берлин, Германия', 'city_id': '10871331'}]
+2021-08-24T13:18:57.995746+0300, DEBUG, callback_query run
+2021-08-24T13:18:57.995746+0300, DEBUG, callback_query run
+2021-08-24T13:18:57.999490+0300, ERROR, An error has been caught in function 'run', process 'MainProcess' (6064), thread 'WorkerThread4' (6428):
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 908, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x00000269B23175E0>
+    └ <WorkerThread(WorkerThread4, started daemon 6428)>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 950, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x00000269B5386CA0>
+    └ <WorkerThread(WorkerThread4, started daemon 6428)>
+
+> File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<telebot.types.CallbackQuery object at 0x00000269B5FEA9A0>,)
+    └ <function Command.handle.<locals>.callback_query at 0x00000269B5FB7F70>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 75, in callback_query
+    Profile.objects.filter(extr_id=call.message.chat.id).update(city_id=int(call.message.text))
+    │       │                      │    │       │    │                      │    │       └ 'Найденные города:'
+    │       │                      │    │       │    │                      │    └ <telebot.types.Message object at 0x00000269B5FEA580>
+    │       │                      │    │       │    │                      └ <telebot.types.CallbackQuery object at 0x00000269B5FEA9A0>
+    │       │                      │    │       │    └ 158572669
+    │       │                      │    │       └ <telebot.types.Chat object at 0x00000269B6038E20>
+    │       │                      │    └ <telebot.types.Message object at 0x00000269B5FEA580>
+    │       │                      └ <telebot.types.CallbackQuery object at 0x00000269B5FEA9A0>
+    │       └ <django.db.models.manager.ManagerDescriptor object at 0x00000269B52B9DC0>
+    └ <class 'hotelapp.models.Profile'>
+
+ValueError: invalid literal for int() with base 10: 'Найденные города:'
+2021-08-24T13:18:57.999490+0300, ERROR, An error has been caught in function 'run', process 'MainProcess' (6064), thread 'WorkerThread4' (6428):
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 908, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x00000269B23175E0>
+    └ <WorkerThread(WorkerThread4, started daemon 6428)>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 950, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x00000269B5386CA0>
+    └ <WorkerThread(WorkerThread4, started daemon 6428)>
+
+> File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<telebot.types.CallbackQuery object at 0x00000269B5FEA9A0>,)
+    └ <function Command.handle.<locals>.callback_query at 0x00000269B5FB7F70>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 75, in callback_query
+    Profile.objects.filter(extr_id=call.message.chat.id).update(city_id=int(call.message.text))
+    │       │                      │    │       │    │                      │    │       └ 'Найденные города:'
+    │       │                      │    │       │    │                      │    └ <telebot.types.Message object at 0x00000269B5FEA580>
+    │       │                      │    │       │    │                      └ <telebot.types.CallbackQuery object at 0x00000269B5FEA9A0>
+    │       │                      │    │       │    └ 158572669
+    │       │                      │    │       └ <telebot.types.Chat object at 0x00000269B6038E20>
+    │       │                      │    └ <telebot.types.Message object at 0x00000269B5FEA580>
+    │       │                      └ <telebot.types.CallbackQuery object at 0x00000269B5FEA9A0>
+    │       └ <django.db.models.manager.ManagerDescriptor object at 0x00000269B52B9DC0>
+    └ <class 'hotelapp.models.Profile'>
+
+ValueError: invalid literal for int() with base 10: 'Найденные города:'
+2021-08-24T13:23:24.932218+0300, DEBUG, callback_query run
+2021-08-24T13:23:24.932218+0300, DEBUG, callback_query run
+2021-08-24T13:23:33.031884+0300, INFO, Selected city Берлин
+2021-08-24T13:23:33.031884+0300, INFO, Selected city Берлин
+2021-08-24T13:23:37.228632+0300, DEBUG, List city [{'city': 'Берлин', 'caption': 'Берлин, Германия', 'city_id': '332483'}, {'city': 'Митте', 'caption': 'Митте, Берлин, Германия', 'city_id': '1662710'}, {'city': 'Тегель', 'caption': 'Тегель, Берлин, Германия', 'city_id': '10979252'}, {'city': 'Берлинхен', 'caption': 'Берлинхен, Виттшток/Доссе, Бранденбург  (регион), Германия', 'city_id': '10370402'}, {'city': 'Шарлоттенбург', 'caption': 'Шарлоттенбург, Берлин, Германия', 'city_id': '10871331'}]
+2021-08-24T13:23:37.228632+0300, DEBUG, List city [{'city': 'Берлин', 'caption': 'Берлин, Германия', 'city_id': '332483'}, {'city': 'Митте', 'caption': 'Митте, Берлин, Германия', 'city_id': '1662710'}, {'city': 'Тегель', 'caption': 'Тегель, Берлин, Германия', 'city_id': '10979252'}, {'city': 'Берлинхен', 'caption': 'Берлинхен, Виттшток/Доссе, Бранденбург  (регион), Германия', 'city_id': '10370402'}, {'city': 'Шарлоттенбург', 'caption': 'Шарлоттенбург, Берлин, Германия', 'city_id': '10871331'}]
+2021-08-24T13:23:42.786977+0300, DEBUG, callback_query run
+2021-08-24T13:23:42.786977+0300, DEBUG, callback_query run
+2021-08-24T13:23:42.791290+0300, ERROR, An error has been caught in function 'run', process 'MainProcess' (3188), thread 'WorkerThread4' (13740):
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 908, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x0000023A2E3A75E0>
+    └ <WorkerThread(WorkerThread4, started daemon 13740)>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 950, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x0000023A31440D30>
+    └ <WorkerThread(WorkerThread4, started daemon 13740)>
+
+> File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<telebot.types.CallbackQuery object at 0x0000023A320AABE0>,)
+    └ <function Command.handle.<locals>.callback_query at 0x0000023A32082040>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 75, in callback_query
+    Profile.objects.filter(extr_id=call.message.chat.id).update(city_id=int(call.message.text))
+    │       │                      │    │       │    │                      │    │       └ 'Найденные города:'
+    │       │                      │    │       │    │                      │    └ <telebot.types.Message object at 0x0000023A320AA550>
+    │       │                      │    │       │    │                      └ <telebot.types.CallbackQuery object at 0x0000023A320AABE0>
+    │       │                      │    │       │    └ 158572669
+    │       │                      │    │       └ <telebot.types.Chat object at 0x0000023A320F9E20>
+    │       │                      │    └ <telebot.types.Message object at 0x0000023A320AA550>
+    │       │                      └ <telebot.types.CallbackQuery object at 0x0000023A320AABE0>
+    │       └ <django.db.models.manager.ManagerDescriptor object at 0x0000023A31379DC0>
+    └ <class 'hotelapp.models.Profile'>
+
+ValueError: invalid literal for int() with base 10: 'Найденные города:'
+2021-08-24T13:23:42.791290+0300, ERROR, An error has been caught in function 'run', process 'MainProcess' (3188), thread 'WorkerThread4' (13740):
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 908, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x0000023A2E3A75E0>
+    └ <WorkerThread(WorkerThread4, started daemon 13740)>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 950, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x0000023A31440D30>
+    └ <WorkerThread(WorkerThread4, started daemon 13740)>
+
+> File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<telebot.types.CallbackQuery object at 0x0000023A320AABE0>,)
+    └ <function Command.handle.<locals>.callback_query at 0x0000023A32082040>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 75, in callback_query
+    Profile.objects.filter(extr_id=call.message.chat.id).update(city_id=int(call.message.text))
+    │       │                      │    │       │    │                      │    │       └ 'Найденные города:'
+    │       │                      │    │       │    │                      │    └ <telebot.types.Message object at 0x0000023A320AA550>
+    │       │                      │    │       │    │                      └ <telebot.types.CallbackQuery object at 0x0000023A320AABE0>
+    │       │                      │    │       │    └ 158572669
+    │       │                      │    │       └ <telebot.types.Chat object at 0x0000023A320F9E20>
+    │       │                      │    └ <telebot.types.Message object at 0x0000023A320AA550>
+    │       │                      └ <telebot.types.CallbackQuery object at 0x0000023A320AABE0>
+    │       └ <django.db.models.manager.ManagerDescriptor object at 0x0000023A31379DC0>
+    └ <class 'hotelapp.models.Profile'>
+
+ValueError: invalid literal for int() with base 10: 'Найденные города:'
+2021-08-24T13:25:34.680579+0300, DEBUG, callback_query run
+2021-08-24T13:25:34.680579+0300, DEBUG, callback_query run
+2021-08-24T13:25:42.378464+0300, INFO, Selected city Берлин
+2021-08-24T13:25:42.378464+0300, INFO, Selected city Берлин
+2021-08-24T13:25:46.666258+0300, DEBUG, List city [{'city': 'Берлин', 'caption': 'Берлин, Германия', 'city_id': '332483'}, {'city': 'Митте', 'caption': 'Митте, Берлин, Германия', 'city_id': '1662710'}, {'city': 'Тегель', 'caption': 'Тегель, Берлин, Германия', 'city_id': '10979252'}, {'city': 'Берлинхен', 'caption': 'Берлинхен, Виттшток/Доссе, Бранденбург  (регион), Германия', 'city_id': '10370402'}, {'city': 'Шарлоттенбург', 'caption': 'Шарлоттенбург, Берлин, Германия', 'city_id': '10871331'}]
+2021-08-24T13:25:46.666258+0300, DEBUG, List city [{'city': 'Берлин', 'caption': 'Берлин, Германия', 'city_id': '332483'}, {'city': 'Митте', 'caption': 'Митте, Берлин, Германия', 'city_id': '1662710'}, {'city': 'Тегель', 'caption': 'Тегель, Берлин, Германия', 'city_id': '10979252'}, {'city': 'Берлинхен', 'caption': 'Берлинхен, Виттшток/Доссе, Бранденбург  (регион), Германия', 'city_id': '10370402'}, {'city': 'Шарлоттенбург', 'caption': 'Шарлоттенбург, Берлин, Германия', 'city_id': '10871331'}]
+2021-08-24T13:28:58.590514+0300, DEBUG, callback_query run
+2021-08-24T13:28:58.590514+0300, DEBUG, callback_query run
+2021-08-24T13:29:05.066727+0300, INFO, Selected city Сочи
+2021-08-24T13:29:05.066727+0300, INFO, Selected city Сочи
+2021-08-24T13:29:07.819450+0300, DEBUG, List city [{'city': 'Сочи (и окрестности)', 'caption': 'Сочи (и окрестности), Краснодарский край, Россия', 'city_id': '1662648'}, {'city': 'Центр города Сочи', 'caption': 'Центр города Сочи, Сочи (и окрестности), Краснодарский край, Россия', 'city_id': '10873622'}, {'city': 'Сочи пляжи', 'caption': 'Сочи пляжи, Краснодарский край, Россия', 'city_id': '1673492'}, {'city': 'Мацеста (Сочи)', 'caption': 'Мацеста (Сочи), Сочи (и окрестности), Краснодарский край, Россия', 'city_id': '10412378'}]
+2021-08-24T13:29:07.819450+0300, DEBUG, List city [{'city': 'Сочи (и окрестности)', 'caption': 'Сочи (и окрестности), Краснодарский край, Россия', 'city_id': '1662648'}, {'city': 'Центр города Сочи', 'caption': 'Центр города Сочи, Сочи (и окрестности), Краснодарский край, Россия', 'city_id': '10873622'}, {'city': 'Сочи пляжи', 'caption': 'Сочи пляжи, Краснодарский край, Россия', 'city_id': '1673492'}, {'city': 'Мацеста (Сочи)', 'caption': 'Мацеста (Сочи), Сочи (и окрестности), Краснодарский край, Россия', 'city_id': '10412378'}]
+2021-08-24T13:29:17.717314+0300, DEBUG, callback_query run
+2021-08-24T13:29:17.717314+0300, DEBUG, callback_query run
+2021-08-24T13:29:17.721312+0300, ERROR, An error has been caught in function 'run', process 'MainProcess' (18288), thread 'WorkerThread3' (19876):
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 908, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x000001C6060A75E0>
+    └ <WorkerThread(WorkerThread3, started daemon 19876)>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 950, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x000001C609156CA0>
+    └ <WorkerThread(WorkerThread3, started daemon 19876)>
+
+> File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<telebot.types.CallbackQuery object at 0x000001C609DBACD0>,)
+    └ <function Command.handle.<locals>.callback_query at 0x000001C609D86F70>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 75, in callback_query
+    Profile.objects.filter(extr_id=call.message.chat.id).update(city_id=int(call.data))
+    │       │                      │    │       │    │                      │    └ 'CITY 1662648'
+    │       │                      │    │       │    │                      └ <telebot.types.CallbackQuery object at 0x000001C609DBACD0>
+    │       │                      │    │       │    └ 158572669
+    │       │                      │    │       └ <telebot.types.Chat object at 0x000001C609DBA850>
+    │       │                      │    └ <telebot.types.Message object at 0x000001C609DBA760>
+    │       │                      └ <telebot.types.CallbackQuery object at 0x000001C609DBACD0>
+    │       └ <django.db.models.manager.ManagerDescriptor object at 0x000001C609089DC0>
+    └ <class 'hotelapp.models.Profile'>
+
+ValueError: invalid literal for int() with base 10: 'CITY 1662648'
+2021-08-24T13:29:17.721312+0300, ERROR, An error has been caught in function 'run', process 'MainProcess' (18288), thread 'WorkerThread3' (19876):
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 908, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x000001C6060A75E0>
+    └ <WorkerThread(WorkerThread3, started daemon 19876)>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 950, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x000001C609156CA0>
+    └ <WorkerThread(WorkerThread3, started daemon 19876)>
+
+> File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<telebot.types.CallbackQuery object at 0x000001C609DBACD0>,)
+    └ <function Command.handle.<locals>.callback_query at 0x000001C609D86F70>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 75, in callback_query
+    Profile.objects.filter(extr_id=call.message.chat.id).update(city_id=int(call.data))
+    │       │                      │    │       │    │                      │    └ 'CITY 1662648'
+    │       │                      │    │       │    │                      └ <telebot.types.CallbackQuery object at 0x000001C609DBACD0>
+    │       │                      │    │       │    └ 158572669
+    │       │                      │    │       └ <telebot.types.Chat object at 0x000001C609DBA850>
+    │       │                      │    └ <telebot.types.Message object at 0x000001C609DBA760>
+    │       │                      └ <telebot.types.CallbackQuery object at 0x000001C609DBACD0>
+    │       └ <django.db.models.manager.ManagerDescriptor object at 0x000001C609089DC0>
+    └ <class 'hotelapp.models.Profile'>
+
+ValueError: invalid literal for int() with base 10: 'CITY 1662648'
+2021-08-24T13:31:11.588520+0300, DEBUG, callback_query run
+2021-08-24T13:31:11.588520+0300, DEBUG, callback_query run
+2021-08-24T13:33:09.467416+0300, DEBUG, callback_query run
+2021-08-24T13:33:09.467416+0300, DEBUG, callback_query run
+2021-08-24T13:33:09.472859+0300, ERROR, An error has been caught in function 'run', process 'MainProcess' (3828), thread 'WorkerThread4' (7412):
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 908, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x0000025802C775E0>
+    └ <WorkerThread(WorkerThread4, started daemon 7412)>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 950, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x0000025805CF6CA0>
+    └ <WorkerThread(WorkerThread4, started daemon 7412)>
+
+> File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<telebot.types.CallbackQuery object at 0x0000025806941F10>,)
+    └ <function Command.handle.<locals>.callback_query at 0x0000025806926F70>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 76, in callback_query
+    logger.debug(f'Выбран город {Profile.object.get(extr_id=call.message.chat.id).city} id {city_id}')
+    │      └ <function Logger.debug at 0x000002580687EB80>
+    └ <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=10, sink='logging.log'), (id=2, level=10, sink='loggin...
+
+AttributeError: type object 'Profile' has no attribute 'object'
+2021-08-24T13:33:09.472859+0300, ERROR, An error has been caught in function 'run', process 'MainProcess' (3828), thread 'WorkerThread4' (7412):
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 908, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x0000025802C775E0>
+    └ <WorkerThread(WorkerThread4, started daemon 7412)>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 950, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x0000025805CF6CA0>
+    └ <WorkerThread(WorkerThread4, started daemon 7412)>
+
+> File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<telebot.types.CallbackQuery object at 0x0000025806941F10>,)
+    └ <function Command.handle.<locals>.callback_query at 0x0000025806926F70>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 76, in callback_query
+    logger.debug(f'Выбран город {Profile.object.get(extr_id=call.message.chat.id).city} id {city_id}')
+    │      └ <function Logger.debug at 0x000002580687EB80>
+    └ <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=10, sink='logging.log'), (id=2, level=10, sink='loggin...
+
+AttributeError: type object 'Profile' has no attribute 'object'
+2021-08-24T13:33:24.934002+0300, DEBUG, callback_query run
+2021-08-24T13:33:24.934002+0300, DEBUG, callback_query run
+2021-08-24T13:33:24.940571+0300, DEBUG, Выбран город Сочи id 1662648
+2021-08-24T13:33:24.940571+0300, DEBUG, Выбран город Сочи id 1662648
+2021-08-24T13:33:37.115098+0300, DEBUG, callback_query run
+2021-08-24T13:33:37.115098+0300, DEBUG, callback_query run
+2021-08-24T13:33:37.119106+0300, DEBUG, Выбран город Сочи id 1673492
+2021-08-24T13:33:37.119106+0300, DEBUG, Выбран город Сочи id 1673492
+2021-08-24T13:35:52.981305+0300, DEBUG, callback_query run
+2021-08-24T13:35:52.981305+0300, DEBUG, callback_query run
+2021-08-24T13:35:52.989297+0300, DEBUG, Выбран город Сочи id 1673492
+2021-08-24T13:35:52.989297+0300, DEBUG, Выбран город Сочи id 1673492
+2021-08-24T13:35:52.994273+0300, ERROR, An error has been caught in function 'run', process 'MainProcess' (6372), thread 'WorkerThread4' (17588):
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 908, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x0000023FF36375E0>
+    └ <WorkerThread(WorkerThread4, started daemon 17588)>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 950, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x0000023FF66B6CA0>
+    └ <WorkerThread(WorkerThread4, started daemon 17588)>
+
+> File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<telebot.types.CallbackQuery object at 0x0000023FF72FFF10>,)
+    └ <function Command.handle.<locals>.callback_query at 0x0000023FF72E6F70>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 79, in callback_query
+    f'Город для поиска - {call.data.split()[2]}')
+
+IndexError: list index out of range
+2021-08-24T13:35:52.994273+0300, ERROR, An error has been caught in function 'run', process 'MainProcess' (6372), thread 'WorkerThread4' (17588):
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 908, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x0000023FF36375E0>
+    └ <WorkerThread(WorkerThread4, started daemon 17588)>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 950, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x0000023FF66B6CA0>
+    └ <WorkerThread(WorkerThread4, started daemon 17588)>
+
+> File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<telebot.types.CallbackQuery object at 0x0000023FF72FFF10>,)
+    └ <function Command.handle.<locals>.callback_query at 0x0000023FF72E6F70>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 79, in callback_query
+    f'Город для поиска - {call.data.split()[2]}')
+
+IndexError: list index out of range
+2021-08-24T13:36:10.102432+0300, DEBUG, callback_query run
+2021-08-24T13:36:10.102432+0300, DEBUG, callback_query run
+2021-08-24T13:36:14.995018+0300, INFO, Selected city Москва
+2021-08-24T13:36:14.995018+0300, INFO, Selected city Москва
+2021-08-24T13:36:19.796623+0300, DEBUG, List city [{'city': 'Москва', 'caption': 'Москва, Россия', 'city_id': '1153093'}, {'city': 'Центр Москвы', 'caption': 'Центр Москвы, Москва, Россия', 'city_id': '10565407'}, {'city': 'Измайлово', 'caption': 'Измайлово, Москва, Россия', 'city_id': '10779356'}, {'city': 'Арбат', 'caption': 'Арбат, Москва, Россия', 'city_id': '1665959'}, {'city': 'Сокольники', 'caption': 'Сокольники, Москва, Россия', 'city_id': '1786031'}]
+2021-08-24T13:36:19.796623+0300, DEBUG, List city [{'city': 'Москва', 'caption': 'Москва, Россия', 'city_id': '1153093'}, {'city': 'Центр Москвы', 'caption': 'Центр Москвы, Москва, Россия', 'city_id': '10565407'}, {'city': 'Измайлово', 'caption': 'Измайлово, Москва, Россия', 'city_id': '10779356'}, {'city': 'Арбат', 'caption': 'Арбат, Москва, Россия', 'city_id': '1665959'}, {'city': 'Сокольники', 'caption': 'Сокольники, Москва, Россия', 'city_id': '1786031'}]
+2021-08-24T13:36:38.774582+0300, DEBUG, callback_query run
+2021-08-24T13:36:38.774582+0300, DEBUG, callback_query run
+2021-08-24T13:36:44.181443+0300, INFO, Selected city Москва
+2021-08-24T13:36:44.181443+0300, INFO, Selected city Москва
+2021-08-24T13:36:47.768281+0300, DEBUG, List city [{'city': 'Москва', 'caption': 'Москва, Россия', 'city_id': '1153093'}, {'city': 'Центр Москвы', 'caption': 'Центр Москвы, Москва, Россия', 'city_id': '10565407'}, {'city': 'Измайлово', 'caption': 'Измайлово, Москва, Россия', 'city_id': '10779356'}, {'city': 'Арбат', 'caption': 'Арбат, Москва, Россия', 'city_id': '1665959'}, {'city': 'Сокольники', 'caption': 'Сокольники, Москва, Россия', 'city_id': '1786031'}]
+2021-08-24T13:36:47.768281+0300, DEBUG, List city [{'city': 'Москва', 'caption': 'Москва, Россия', 'city_id': '1153093'}, {'city': 'Центр Москвы', 'caption': 'Центр Москвы, Москва, Россия', 'city_id': '10565407'}, {'city': 'Измайлово', 'caption': 'Измайлово, Москва, Россия', 'city_id': '10779356'}, {'city': 'Арбат', 'caption': 'Арбат, Москва, Россия', 'city_id': '1665959'}, {'city': 'Сокольники', 'caption': 'Сокольники, Москва, Россия', 'city_id': '1786031'}]
+2021-08-24T13:39:14.176720+0300, INFO, Selected city Москва
+2021-08-24T13:39:14.176720+0300, INFO, Selected city Москва
+2021-08-24T13:39:17.189670+0300, DEBUG, List city [{'city': 'Москва', 'caption': 'Москва, Россия', 'city_id': '1153093'}, {'city': 'Центр Москвы', 'caption': 'Центр Москвы, Москва, Россия', 'city_id': '10565407'}, {'city': 'Измайлово', 'caption': 'Измайлово, Москва, Россия', 'city_id': '10779356'}, {'city': 'Арбат', 'caption': 'Арбат, Москва, Россия', 'city_id': '1665959'}, {'city': 'Сокольники', 'caption': 'Сокольники, Москва, Россия', 'city_id': '1786031'}]
+2021-08-24T13:39:17.189670+0300, DEBUG, List city [{'city': 'Москва', 'caption': 'Москва, Россия', 'city_id': '1153093'}, {'city': 'Центр Москвы', 'caption': 'Центр Москвы, Москва, Россия', 'city_id': '10565407'}, {'city': 'Измайлово', 'caption': 'Измайлово, Москва, Россия', 'city_id': '10779356'}, {'city': 'Арбат', 'caption': 'Арбат, Москва, Россия', 'city_id': '1665959'}, {'city': 'Сокольники', 'caption': 'Сокольники, Москва, Россия', 'city_id': '1786031'}]
+2021-08-24T13:39:21.082081+0300, DEBUG, callback_query run
+2021-08-24T13:39:21.082081+0300, DEBUG, callback_query run
+2021-08-24T13:39:21.087125+0300, DEBUG, Выбран город Москва id 1665959
+2021-08-24T13:39:21.087125+0300, DEBUG, Выбран город Москва id 1665959
+2021-08-24T13:41:48.031160+0300, DEBUG, callback_query run
+2021-08-24T13:41:48.031160+0300, DEBUG, callback_query run
+2021-08-24T13:41:51.644138+0300, INFO, Selected city Казань
+2021-08-24T13:41:51.644138+0300, INFO, Selected city Казань
+2021-08-24T13:41:54.745055+0300, DEBUG, List city [{'city': 'Казань', 'caption': 'Казань, Республика Татарстан, Россия', 'city_id': '1215771'}, {'city': 'Казань (и окрестности)', 'caption': 'Казань (и окрестности), Республика Татарстан, Россия', 'city_id': '1794547'}, {'city': 'Центр города Казань', 'caption': 'Центр города Казань, Казань, Республика Татарстан, Россия', 'city_id': '10874035'}]
+2021-08-24T13:41:54.745055+0300, DEBUG, List city [{'city': 'Казань', 'caption': 'Казань, Республика Татарстан, Россия', 'city_id': '1215771'}, {'city': 'Казань (и окрестности)', 'caption': 'Казань (и окрестности), Республика Татарстан, Россия', 'city_id': '1794547'}, {'city': 'Центр города Казань', 'caption': 'Центр города Казань, Казань, Республика Татарстан, Россия', 'city_id': '10874035'}]
+2021-08-24T14:02:41.997664+0300, DEBUG, callback_query run
+2021-08-24T14:02:41.997664+0300, DEBUG, callback_query run
+2021-08-24T14:02:46.443010+0300, INFO, Selected city Казань
+2021-08-24T14:02:46.443010+0300, INFO, Selected city Казань
+2021-08-24T14:02:49.864624+0300, DEBUG, List city [{'city': 'Казань', 'caption': 'Казань, Республика Татарстан, Россия', 'city_id': '1215771'}, {'city': 'Казань (и окрестности)', 'caption': 'Казань (и окрестности), Республика Татарстан, Россия', 'city_id': '1794547'}, {'city': 'Центр города Казань', 'caption': 'Центр города Казань, Казань, Республика Татарстан, Россия', 'city_id': '10874035'}]
+2021-08-24T14:02:49.864624+0300, DEBUG, List city [{'city': 'Казань', 'caption': 'Казань, Республика Татарстан, Россия', 'city_id': '1215771'}, {'city': 'Казань (и окрестности)', 'caption': 'Казань (и окрестности), Республика Татарстан, Россия', 'city_id': '1794547'}, {'city': 'Центр города Казань', 'caption': 'Центр города Казань, Казань, Республика Татарстан, Россия', 'city_id': '10874035'}]
+2021-08-24T14:02:53.852006+0300, DEBUG, callback_query run
+2021-08-24T14:02:53.852006+0300, DEBUG, callback_query run
+2021-08-24T14:02:53.857985+0300, DEBUG, Выбран город Казань id 1794547
+2021-08-24T14:02:53.857985+0300, DEBUG, Выбран город Казань id 1794547
+2021-08-24T14:02:56.828585+0300, DEBUG, callback_query run
+2021-08-24T14:02:56.828585+0300, DEBUG, callback_query run
+2021-08-24T14:02:56.969640+0300, DEBUG, ERROR data page_size
+2021-08-24T14:02:56.969640+0300, DEBUG, ERROR data page_size
+2021-08-24T14:03:08.854960+0300, DEBUG, callback_query run
+2021-08-24T14:03:08.854960+0300, DEBUG, callback_query run
+2021-08-24T14:03:08.962772+0300, DEBUG, ERROR data page_size
+2021-08-24T14:03:08.962772+0300, DEBUG, ERROR data page_size
+2021-08-24T14:06:36.576648+0300, DEBUG, callback_query run
+2021-08-24T14:06:36.576648+0300, DEBUG, callback_query run
+2021-08-24T14:06:42.131721+0300, INFO, Selected city Рим
+2021-08-24T14:06:42.131721+0300, INFO, Selected city Рим
+2021-08-24T14:06:45.532388+0300, DEBUG, List city [{'city': 'Рим', 'caption': 'Рим, Лацио, Италия', 'city_id': '712491'}, {'city': 'Римини', 'caption': 'Римини, Римини, Эмилия-Романья, Италия', 'city_id': '1641012'}, {'city': 'Римини-Ривьера', 'caption': 'Римини-Ривьера, Италия', 'city_id': '1907488'}, {'city': 'Центр Рима', 'caption': 'Центр Рима, Рим, Лацио, Италия', 'city_id': '10818945'}, {'city': 'Исторический центр Римини', 'caption': 'Исторический центр Римини, Римини, Эмилия-Романья, Италия', 'city_id': '10565239'}, {'city': 'Римское побережье', 'caption': 'Римское побережье, Италия', 'city_id': '1641498'}]
+2021-08-24T14:06:45.532388+0300, DEBUG, List city [{'city': 'Рим', 'caption': 'Рим, Лацио, Италия', 'city_id': '712491'}, {'city': 'Римини', 'caption': 'Римини, Римини, Эмилия-Романья, Италия', 'city_id': '1641012'}, {'city': 'Римини-Ривьера', 'caption': 'Римини-Ривьера, Италия', 'city_id': '1907488'}, {'city': 'Центр Рима', 'caption': 'Центр Рима, Рим, Лацио, Италия', 'city_id': '10818945'}, {'city': 'Исторический центр Римини', 'caption': 'Исторический центр Римини, Римини, Эмилия-Романья, Италия', 'city_id': '10565239'}, {'city': 'Римское побережье', 'caption': 'Римское побережье, Италия', 'city_id': '1641498'}]
+2021-08-24T14:06:50.060467+0300, DEBUG, callback_query run
+2021-08-24T14:06:50.060467+0300, DEBUG, callback_query run
+2021-08-24T14:06:50.065461+0300, DEBUG, Выбран город Рим id 712491
+2021-08-24T14:06:50.065461+0300, DEBUG, Выбран город Рим id 712491
+2021-08-24T14:06:52.432478+0300, DEBUG, callback_query run
+2021-08-24T14:06:52.432478+0300, DEBUG, callback_query run
+2021-08-24T14:06:52.547532+0300, DEBUG, Количество отелей: None func: callback_query
+2021-08-24T14:06:52.547532+0300, DEBUG, Количество отелей: None func: callback_query
+2021-08-24T14:06:56.931176+0300, ERROR, An error has been caught in function 'execute', process 'MainProcess' (17700), thread 'MainThread' (14264):
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 167, in get_page_size
+    if int(call.message.text) > 0 and int(call.message.text) <= 10:
+           │                              └ <telebot.types.Message object at 0x00000176B5305670>
+           └ <telebot.types.Message object at 0x00000176B5305670>
+
+AttributeError: 'Message' object has no attribute 'message'
+
+
+During handling of the above exception, another exception occurred:
+
+
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\manage.py", line 22, in <module>
+    main()
+    └ <function main at 0x00000176B134B9D0>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\manage.py", line 18, in main
+    execute_from_command_line(sys.argv)
+    │                         │   └ ['manage.py', 'bot']
+    │                         └ <module 'sys' (built-in)>
+    └ <function execute_from_command_line at 0x00000176B35F3040>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\django\core\management\__init__.py", line 419, in execute_from_command_line
+    utility.execute()
+    │       └ <function ManagementUtility.execute at 0x00000176B35F3310>
+    └ <django.core.management.ManagementUtility object at 0x00000176B134DFD0>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\django\core\management\__init__.py", line 413, in execute
+    self.fetch_command(subcommand).run_from_argv(self.argv)
+    │    │             │                         │    └ ['manage.py', 'bot']
+    │    │             │                         └ <django.core.management.ManagementUtility object at 0x00000176B134DFD0>
+    │    │             └ 'bot'
+    │    └ <function ManagementUtility.fetch_command at 0x00000176B35F31F0>
+    └ <django.core.management.ManagementUtility object at 0x00000176B134DFD0>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\django\core\management\base.py", line 354, in run_from_argv
+    self.execute(*args, **cmd_options)
+    │    │        │       └ {'verbosity': 1, 'settings': None, 'pythonpath': None, 'traceback': False, 'no_color': False, 'force_color': False, 'skip_che...
+    │    │        └ ()
+    │    └ <function BaseCommand.execute at 0x00000176B35F28B0>
+    └ <hotelapp.management.commands.bot.Command object at 0x00000176B42182B0>
+
+> File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\django\core\management\base.py", line 398, in execute
+    output = self.handle(*args, **options)
+             │    │       │       └ {'verbosity': 1, 'settings': None, 'pythonpath': None, 'traceback': False, 'no_color': False, 'force_color': False, 'skip_che...
+             │    │       └ ()
+             │    └ <function Command.handle at 0x00000176B5250160>
+             └ <hotelapp.management.commands.bot.Command object at 0x00000176B42182B0>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 177, in handle
+    bot.polling()
+    │   └ <function TeleBot.polling at 0x00000176B48DB550>
+    └ <telebot.TeleBot object at 0x00000176B524A370>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\__init__.py", line 617, in polling
+    self.__threaded_polling(none_stop, interval, timeout, long_polling_timeout, allowed_updates)
+    │                       │          │         │        │                     └ None
+    │                       │          │         │        └ 20
+    │                       │          │         └ 20
+    │                       │          └ 0
+    │                       └ False
+    └ <telebot.TeleBot object at 0x00000176B524A370>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\__init__.py", line 676, in __threaded_polling
+    raise e
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\__init__.py", line 639, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+    │    │           └ <function ThreadPool.raise_exceptions at 0x00000176B46E8AF0>
+    │    └ <telebot.util.ThreadPool object at 0x00000176B524A550>
+    └ <telebot.TeleBot object at 0x00000176B524A370>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 130, in raise_exceptions
+    raise self.exception_info
+          │    └ AttributeError("'Message' object has no attribute 'message'")
+          └ <telebot.util.ThreadPool object at 0x00000176B524A550>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<telebot.types.Message object at 0x00000176B5305670>, 'PRICE')
+    └ <function Command.handle.<locals>.get_page_size at 0x00000176B52E3B80>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 173, in get_page_size
+    bot.send_message(call.message.chat.id, "Попробуйте еще раз")
+    │   │            └ <telebot.types.Message object at 0x00000176B5305670>
+    │   └ <function TeleBot.send_message at 0x00000176B48DC1F0>
+    └ <telebot.TeleBot object at 0x00000176B524A370>
+
+AttributeError: 'Message' object has no attribute 'message'
+2021-08-24T14:06:56.931176+0300, ERROR, An error has been caught in function 'execute', process 'MainProcess' (17700), thread 'MainThread' (14264):
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 167, in get_page_size
+    if int(call.message.text) > 0 and int(call.message.text) <= 10:
+           │                              └ <telebot.types.Message object at 0x00000176B5305670>
+           └ <telebot.types.Message object at 0x00000176B5305670>
+
+AttributeError: 'Message' object has no attribute 'message'
+
+
+During handling of the above exception, another exception occurred:
+
+
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\manage.py", line 22, in <module>
+    main()
+    └ <function main at 0x00000176B134B9D0>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\manage.py", line 18, in main
+    execute_from_command_line(sys.argv)
+    │                         │   └ ['manage.py', 'bot']
+    │                         └ <module 'sys' (built-in)>
+    └ <function execute_from_command_line at 0x00000176B35F3040>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\django\core\management\__init__.py", line 419, in execute_from_command_line
+    utility.execute()
+    │       └ <function ManagementUtility.execute at 0x00000176B35F3310>
+    └ <django.core.management.ManagementUtility object at 0x00000176B134DFD0>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\django\core\management\__init__.py", line 413, in execute
+    self.fetch_command(subcommand).run_from_argv(self.argv)
+    │    │             │                         │    └ ['manage.py', 'bot']
+    │    │             │                         └ <django.core.management.ManagementUtility object at 0x00000176B134DFD0>
+    │    │             └ 'bot'
+    │    └ <function ManagementUtility.fetch_command at 0x00000176B35F31F0>
+    └ <django.core.management.ManagementUtility object at 0x00000176B134DFD0>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\django\core\management\base.py", line 354, in run_from_argv
+    self.execute(*args, **cmd_options)
+    │    │        │       └ {'verbosity': 1, 'settings': None, 'pythonpath': None, 'traceback': False, 'no_color': False, 'force_color': False, 'skip_che...
+    │    │        └ ()
+    │    └ <function BaseCommand.execute at 0x00000176B35F28B0>
+    └ <hotelapp.management.commands.bot.Command object at 0x00000176B42182B0>
+
+> File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\django\core\management\base.py", line 398, in execute
+    output = self.handle(*args, **options)
+             │    │       │       └ {'verbosity': 1, 'settings': None, 'pythonpath': None, 'traceback': False, 'no_color': False, 'force_color': False, 'skip_che...
+             │    │       └ ()
+             │    └ <function Command.handle at 0x00000176B5250160>
+             └ <hotelapp.management.commands.bot.Command object at 0x00000176B42182B0>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 177, in handle
+    bot.polling()
+    │   └ <function TeleBot.polling at 0x00000176B48DB550>
+    └ <telebot.TeleBot object at 0x00000176B524A370>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\__init__.py", line 617, in polling
+    self.__threaded_polling(none_stop, interval, timeout, long_polling_timeout, allowed_updates)
+    │                       │          │         │        │                     └ None
+    │                       │          │         │        └ 20
+    │                       │          │         └ 20
+    │                       │          └ 0
+    │                       └ False
+    └ <telebot.TeleBot object at 0x00000176B524A370>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\__init__.py", line 676, in __threaded_polling
+    raise e
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\__init__.py", line 639, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+    │    │           └ <function ThreadPool.raise_exceptions at 0x00000176B46E8AF0>
+    │    └ <telebot.util.ThreadPool object at 0x00000176B524A550>
+    └ <telebot.TeleBot object at 0x00000176B524A370>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 130, in raise_exceptions
+    raise self.exception_info
+          │    └ AttributeError("'Message' object has no attribute 'message'")
+          └ <telebot.util.ThreadPool object at 0x00000176B524A550>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<telebot.types.Message object at 0x00000176B5305670>, 'PRICE')
+    └ <function Command.handle.<locals>.get_page_size at 0x00000176B52E3B80>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 173, in get_page_size
+    bot.send_message(call.message.chat.id, "Попробуйте еще раз")
+    │   │            └ <telebot.types.Message object at 0x00000176B5305670>
+    │   └ <function TeleBot.send_message at 0x00000176B48DC1F0>
+    └ <telebot.TeleBot object at 0x00000176B524A370>
+
+AttributeError: 'Message' object has no attribute 'message'
+2021-08-24T14:08:29.437718+0300, DEBUG, callback_query run
+2021-08-24T14:08:29.437718+0300, DEBUG, callback_query run
+2021-08-24T14:08:29.744900+0300, DEBUG, Количество отелей: None func: callback_query
+2021-08-24T14:08:29.744900+0300, DEBUG, Количество отелей: None func: callback_query
+2021-08-24T14:11:12.169598+0300, DEBUG, callback_query run
+2021-08-24T14:11:12.169598+0300, DEBUG, callback_query run
+2021-08-24T14:11:12.474373+0300, DEBUG, Количество отелей: 4 func: callback_query
+2021-08-24T14:11:12.474373+0300, DEBUG, Количество отелей: 4 func: callback_query
+2021-08-24T14:12:46.726139+0300, DEBUG, callback_query run
+2021-08-24T14:12:46.726139+0300, DEBUG, callback_query run
+2021-08-24T14:12:48.841944+0300, INFO, Your address 17Е к1, улица Хусаина Мавлютова, Горки-1, Приволжский район, Казань, городской округ Казань, Татарстан, Приволжский федеральный округ, 420101, Россия
+2021-08-24T14:12:48.841944+0300, INFO, Your address 17Е к1, улица Хусаина Мавлютова, Горки-1, Приволжский район, Казань, городской округ Казань, Татарстан, Приволжский федеральный округ, 420101, Россия
+2021-08-24T14:12:51.552050+0300, DEBUG, callback_query run
+2021-08-24T14:12:51.552050+0300, DEBUG, callback_query run
+2021-08-24T14:12:51.704651+0300, DEBUG, Количество отелей: 6 func: callback_query
+2021-08-24T14:12:51.704651+0300, DEBUG, Количество отелей: 6 func: callback_query
+2021-08-24T14:13:55.612693+0300, DEBUG, callback_query run
+2021-08-24T14:13:55.612693+0300, DEBUG, callback_query run
+2021-08-24T14:13:55.784632+0300, DEBUG, Количество отелей: 8 func: callback_query
+2021-08-24T14:13:55.784632+0300, DEBUG, Количество отелей: 8 func: callback_query
+2021-08-24T14:14:58.573819+0300, DEBUG, callback_query run
+2021-08-24T14:14:58.573819+0300, DEBUG, callback_query run
+2021-08-24T14:15:00.727741+0300, INFO, Your address 17Е к1, улица Хусаина Мавлютова, Горки-1, Приволжский район, Казань, городской округ Казань, Татарстан, Приволжский федеральный округ, 420101, Россия
+2021-08-24T14:15:00.727741+0300, INFO, Your address 17Е к1, улица Хусаина Мавлютова, Горки-1, Приволжский район, Казань, городской округ Казань, Татарстан, Приволжский федеральный округ, 420101, Россия
+2021-08-24T14:15:02.357518+0300, DEBUG, callback_query run
+2021-08-24T14:15:02.357518+0300, DEBUG, callback_query run
+2021-08-24T14:15:02.474809+0300, DEBUG, Количество отелей: 2 func: callback_query
+2021-08-24T14:15:02.474809+0300, DEBUG, Количество отелей: 2 func: callback_query
+2021-08-24T14:21:14.166118+0300, DEBUG, callback_query run
+2021-08-24T14:21:14.166118+0300, DEBUG, callback_query run
+2021-08-24T14:21:17.869110+0300, INFO, Selected city Сочи
+2021-08-24T14:21:17.869110+0300, INFO, Selected city Сочи
+2021-08-24T14:21:21.103361+0300, DEBUG, List city [{'city': 'Сочи (и окрестности)', 'caption': 'Сочи (и окрестности), Краснодарский край, Россия', 'city_id': '1662648'}, {'city': 'Центр города Сочи', 'caption': 'Центр города Сочи, Сочи (и окрестности), Краснодарский край, Россия', 'city_id': '10873622'}, {'city': 'Сочи пляжи', 'caption': 'Сочи пляжи, Краснодарский край, Россия', 'city_id': '1673492'}, {'city': 'Мацеста (Сочи)', 'caption': 'Мацеста (Сочи), Сочи (и окрестности), Краснодарский край, Россия', 'city_id': '10412378'}]
+2021-08-24T14:21:21.103361+0300, DEBUG, List city [{'city': 'Сочи (и окрестности)', 'caption': 'Сочи (и окрестности), Краснодарский край, Россия', 'city_id': '1662648'}, {'city': 'Центр города Сочи', 'caption': 'Центр города Сочи, Сочи (и окрестности), Краснодарский край, Россия', 'city_id': '10873622'}, {'city': 'Сочи пляжи', 'caption': 'Сочи пляжи, Краснодарский край, Россия', 'city_id': '1673492'}, {'city': 'Мацеста (Сочи)', 'caption': 'Мацеста (Сочи), Сочи (и окрестности), Краснодарский край, Россия', 'city_id': '10412378'}]
+2021-08-24T14:21:24.225347+0300, DEBUG, callback_query run
+2021-08-24T14:21:24.225347+0300, DEBUG, callback_query run
+2021-08-24T14:21:24.230345+0300, DEBUG, Выбран город Сочи id 1662648
+2021-08-24T14:21:24.230345+0300, DEBUG, Выбран город Сочи id 1662648
+2021-08-24T14:21:26.109509+0300, DEBUG, callback_query run
+2021-08-24T14:21:26.109509+0300, DEBUG, callback_query run
+2021-08-24T14:21:28.214923+0300, DEBUG, Количество отелей: 7 func: get_page_size
+2021-08-24T14:21:28.214923+0300, DEBUG, Количество отелей: 7 func: get_page_size
+2021-08-24T14:38:54.665898+0300, DEBUG, callback_query run
+2021-08-24T14:38:54.665898+0300, DEBUG, callback_query run
+2021-08-24T14:38:57.509530+0300, INFO, Your address 17Е к2, улица Хусаина Мавлютова, Горки-1, Приволжский район, Казань, городской округ Казань, Татарстан, Приволжский федеральный округ, 420101, Россия
+2021-08-24T14:38:57.509530+0300, INFO, Your address 17Е к2, улица Хусаина Мавлютова, Горки-1, Приволжский район, Казань, городской округ Казань, Татарстан, Приволжский федеральный округ, 420101, Россия
+2021-08-24T14:38:59.087399+0300, DEBUG, callback_query run
+2021-08-24T14:38:59.087399+0300, DEBUG, callback_query run
+2021-08-24T14:39:02.195966+0300, ERROR, An error has been caught in function 'run', process 'MainProcess' (10560), thread 'WorkerThread4' (5252):
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 908, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x0000026ABC0E75E0>
+    └ <WorkerThread(WorkerThread4, started daemon 5252)>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 950, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x0000026ABF13EDC0>
+    └ <WorkerThread(WorkerThread4, started daemon 5252)>
+
+> File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<telebot.types.Message object at 0x0000026ABFDC85E0>,)
+    └ <function Command.handle.<locals>.get_page_size at 0x0000026ABFD81E50>
+
+TypeError: get_page_size() missing 1 required positional argument: 'sort'
+2021-08-24T14:39:02.195966+0300, ERROR, An error has been caught in function 'run', process 'MainProcess' (10560), thread 'WorkerThread4' (5252):
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 908, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x0000026ABC0E75E0>
+    └ <WorkerThread(WorkerThread4, started daemon 5252)>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 950, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x0000026ABF13EDC0>
+    └ <WorkerThread(WorkerThread4, started daemon 5252)>
+
+> File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<telebot.types.Message object at 0x0000026ABFDC85E0>,)
+    └ <function Command.handle.<locals>.get_page_size at 0x0000026ABFD81E50>
+
+TypeError: get_page_size() missing 1 required positional argument: 'sort'
+2021-08-24T14:39:02.811416+0300, DEBUG, callback_query run
+2021-08-24T14:39:02.811416+0300, DEBUG, callback_query run
+2021-08-24T14:39:42.994444+0300, INFO, Selected city Тайбэй
+2021-08-24T14:39:42.994444+0300, INFO, Selected city Тайбэй
+2021-08-24T14:39:47.102516+0300, DEBUG, List city [{'city': 'Тайбэй', 'caption': 'Тайбэй, Тайвань', 'city_id': '1366745'}, {'city': 'Zhongshan', 'caption': 'Zhongshan, Тайбэй, Тайвань', 'city_id': '1665741'}, {'city': 'Нью-Тайбэй (Синьбэй)', 'caption': 'Нью-Тайбэй (Синьбэй), Тайвань', 'city_id': '1728696'}, {'city': 'Симэньдин', 'caption': 'Симэньдин, Тайбэй, Тайвань', 'city_id': '1708207'}, {'city': 'Бали', 'caption': 'Бали, Нью-Тайбэй (Синьбэй), Тайвань', 'city_id': '1726916'}, {'city': 'Датун', 'caption': 'Датун, Тайбэй, Тайвань', 'city_id': '1665738'}, {'city': 'Beitou', 'caption': 'Beitou, Тайбэй, Тайвань', 'city_id': '1665744'}]
+2021-08-24T14:39:47.102516+0300, DEBUG, List city [{'city': 'Тайбэй', 'caption': 'Тайбэй, Тайвань', 'city_id': '1366745'}, {'city': 'Zhongshan', 'caption': 'Zhongshan, Тайбэй, Тайвань', 'city_id': '1665741'}, {'city': 'Нью-Тайбэй (Синьбэй)', 'caption': 'Нью-Тайбэй (Синьбэй), Тайвань', 'city_id': '1728696'}, {'city': 'Симэньдин', 'caption': 'Симэньдин, Тайбэй, Тайвань', 'city_id': '1708207'}, {'city': 'Бали', 'caption': 'Бали, Нью-Тайбэй (Синьбэй), Тайвань', 'city_id': '1726916'}, {'city': 'Датун', 'caption': 'Датун, Тайбэй, Тайвань', 'city_id': '1665738'}, {'city': 'Beitou', 'caption': 'Beitou, Тайбэй, Тайвань', 'city_id': '1665744'}]
+2021-08-24T14:39:51.294944+0300, DEBUG, callback_query run
+2021-08-24T14:39:51.294944+0300, DEBUG, callback_query run
+2021-08-24T14:39:51.299769+0300, DEBUG, Выбран город Тайбэй id 1366745
+2021-08-24T14:39:51.299769+0300, DEBUG, Выбран город Тайбэй id 1366745
+2021-08-24T14:39:52.886744+0300, DEBUG, callback_query run
+2021-08-24T14:39:52.886744+0300, DEBUG, callback_query run
+2021-08-24T14:39:56.036204+0300, ERROR, An error has been caught in function 'run', process 'MainProcess' (15936), thread 'WorkerThread3' (20428):
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 908, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x00000274CA7C75E0>
+    └ <WorkerThread(WorkerThread3, started daemon 20428)>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 950, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x00000274CD85EDC0>
+    └ <WorkerThread(WorkerThread3, started daemon 20428)>
+
+> File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<telebot.types.Message object at 0x00000274CE4E30D0>,)
+    └ <function Command.handle.<locals>.get_page_size at 0x00000274CE4A1E50>
+
+TypeError: get_page_size() missing 1 required positional argument: 'sort'
+2021-08-24T14:39:56.036204+0300, ERROR, An error has been caught in function 'run', process 'MainProcess' (15936), thread 'WorkerThread3' (20428):
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 908, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x00000274CA7C75E0>
+    └ <WorkerThread(WorkerThread3, started daemon 20428)>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 950, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x00000274CD85EDC0>
+    └ <WorkerThread(WorkerThread3, started daemon 20428)>
+
+> File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<telebot.types.Message object at 0x00000274CE4E30D0>,)
+    └ <function Command.handle.<locals>.get_page_size at 0x00000274CE4A1E50>
+
+TypeError: get_page_size() missing 1 required positional argument: 'sort'
+2021-08-24T14:41:27.427623+0300, DEBUG, callback_query run
+2021-08-24T14:41:27.427623+0300, DEBUG, callback_query run
+2021-08-24T14:41:29.301727+0300, INFO, Your address 17Е к1, улица Хусаина Мавлютова, Горки-1, Приволжский район, Казань, городской округ Казань, Татарстан, Приволжский федеральный округ, 420101, Россия
+2021-08-24T14:41:29.301727+0300, INFO, Your address 17Е к1, улица Хусаина Мавлютова, Горки-1, Приволжский район, Казань, городской округ Казань, Татарстан, Приволжский федеральный округ, 420101, Россия
+2021-08-24T14:41:30.697689+0300, DEBUG, callback_query run
+2021-08-24T14:41:30.697689+0300, DEBUG, callback_query run
+2021-08-24T14:41:33.285772+0300, DEBUG, Количество отелей: 5 func: get_page_size
+2021-08-24T14:41:33.285772+0300, DEBUG, Количество отелей: 5 func: get_page_size
+2021-08-24T14:41:33.288763+0300, INFO, This is get list
+2021-08-24T14:41:33.288763+0300, INFO, This is get list
+2021-08-24T14:41:33.291389+0300, INFO, GET requests
+2021-08-24T14:41:33.291389+0300, INFO, GET requests
+2021-08-24T14:44:58.111759+0300, DEBUG, callback_query run
+2021-08-24T14:44:58.111759+0300, DEBUG, callback_query run
+2021-08-24T14:45:00.397545+0300, DEBUG, callback_query run
+2021-08-24T14:45:00.397545+0300, DEBUG, callback_query run
+2021-08-24T14:45:20.943196+0300, DEBUG, callback_query run
+2021-08-24T14:45:20.943196+0300, DEBUG, callback_query run
+2021-08-24T14:45:23.651506+0300, INFO, Your address 17Е к1, улица Хусаина Мавлютова, Горки-1, Приволжский район, Казань, городской округ Казань, Татарстан, Приволжский федеральный округ, 420101, Россия
+2021-08-24T14:45:23.651506+0300, INFO, Your address 17Е к1, улица Хусаина Мавлютова, Горки-1, Приволжский район, Казань, городской округ Казань, Татарстан, Приволжский федеральный округ, 420101, Россия
+2021-08-24T14:45:25.358856+0300, DEBUG, callback_query run
+2021-08-24T14:45:25.358856+0300, DEBUG, callback_query run
+2021-08-24T14:45:28.600018+0300, DEBUG, Количество отелей: 6 func: get_page_size
+2021-08-24T14:45:28.600018+0300, DEBUG, Количество отелей: 6 func: get_page_size
+2021-08-24T14:45:28.603003+0300, INFO, This is get list
+2021-08-24T14:45:28.603003+0300, INFO, This is get list
+2021-08-24T14:45:28.605004+0300, INFO, GET requests
+2021-08-24T14:45:28.605004+0300, INFO, GET requests
+2021-08-24T14:47:40.788980+0300, DEBUG, callback_query run
+2021-08-24T14:47:40.788980+0300, DEBUG, callback_query run
+2021-08-24T14:47:41.312900+0300, DEBUG, callback_query run
+2021-08-24T14:47:41.312900+0300, DEBUG, callback_query run
+2021-08-24T14:47:46.573813+0300, INFO, Selected city Казань
+2021-08-24T14:47:46.573813+0300, INFO, Selected city Казань
+2021-08-24T14:47:49.633733+0300, DEBUG, List city [{'city': 'Казань', 'caption': 'Казань, Республика Татарстан, Россия', 'city_id': '1215771'}, {'city': 'Казань (и окрестности)', 'caption': 'Казань (и окрестности), Республика Татарстан, Россия', 'city_id': '1794547'}, {'city': 'Центр города Казань', 'caption': 'Центр города Казань, Казань, Республика Татарстан, Россия', 'city_id': '10874035'}]
+2021-08-24T14:47:49.633733+0300, DEBUG, List city [{'city': 'Казань', 'caption': 'Казань, Республика Татарстан, Россия', 'city_id': '1215771'}, {'city': 'Казань (и окрестности)', 'caption': 'Казань (и окрестности), Республика Татарстан, Россия', 'city_id': '1794547'}, {'city': 'Центр города Казань', 'caption': 'Центр города Казань, Казань, Республика Татарстан, Россия', 'city_id': '10874035'}]
+2021-08-24T14:47:52.463218+0300, DEBUG, callback_query run
+2021-08-24T14:47:52.463218+0300, DEBUG, callback_query run
+2021-08-24T14:47:52.468197+0300, DEBUG, Выбран город Казань id 1215771
+2021-08-24T14:47:52.468197+0300, DEBUG, Выбран город Казань id 1215771
+2021-08-24T14:47:54.508007+0300, DEBUG, callback_query run
+2021-08-24T14:47:54.508007+0300, DEBUG, callback_query run
+2021-08-24T14:47:57.806828+0300, DEBUG, Количество отелей: 6 func: get_page_size
+2021-08-24T14:47:57.806828+0300, DEBUG, Количество отелей: 6 func: get_page_size
+2021-08-24T14:47:57.809816+0300, INFO, This is get list
+2021-08-24T14:47:57.809816+0300, INFO, This is get list
+2021-08-24T14:47:57.812056+0300, INFO, GET requests
+2021-08-24T14:47:57.812056+0300, INFO, GET requests
+2021-08-24T14:48:17.877240+0300, DEBUG, callback_query run
+2021-08-24T14:48:17.877240+0300, DEBUG, callback_query run
+2021-08-24T14:48:18.678132+0300, DEBUG, callback_query run
+2021-08-24T14:48:18.678132+0300, DEBUG, callback_query run
+2021-08-24T14:48:27.011542+0300, INFO, Selected city Казань
+2021-08-24T14:48:27.011542+0300, INFO, Selected city Казань
+2021-08-24T14:48:30.081975+0300, DEBUG, List city [{'city': 'Казань', 'caption': 'Казань, Республика Татарстан, Россия', 'city_id': '1215771'}, {'city': 'Казань (и окрестности)', 'caption': 'Казань (и окрестности), Республика Татарстан, Россия', 'city_id': '1794547'}, {'city': 'Центр города Казань', 'caption': 'Центр города Казань, Казань, Республика Татарстан, Россия', 'city_id': '10874035'}]
+2021-08-24T14:48:30.081975+0300, DEBUG, List city [{'city': 'Казань', 'caption': 'Казань, Республика Татарстан, Россия', 'city_id': '1215771'}, {'city': 'Казань (и окрестности)', 'caption': 'Казань (и окрестности), Республика Татарстан, Россия', 'city_id': '1794547'}, {'city': 'Центр города Казань', 'caption': 'Центр города Казань, Казань, Республика Татарстан, Россия', 'city_id': '10874035'}]
+2021-08-24T14:48:32.212065+0300, DEBUG, callback_query run
+2021-08-24T14:48:32.212065+0300, DEBUG, callback_query run
+2021-08-24T14:48:32.216756+0300, DEBUG, Выбран город Казань id 1794547
+2021-08-24T14:48:32.216756+0300, DEBUG, Выбран город Казань id 1794547
+2021-08-24T14:48:33.845416+0300, DEBUG, callback_query run
+2021-08-24T14:48:33.845416+0300, DEBUG, callback_query run
+2021-08-24T14:48:36.086529+0300, DEBUG, Количество отелей: 4 func: get_page_size
+2021-08-24T14:48:36.086529+0300, DEBUG, Количество отелей: 4 func: get_page_size
+2021-08-24T14:48:36.088527+0300, INFO, This is get list
+2021-08-24T14:48:36.088527+0300, INFO, This is get list
+2021-08-24T14:48:36.091515+0300, INFO, GET requests
+2021-08-24T14:48:36.091515+0300, INFO, GET requests
+2021-08-24T14:52:38.893763+0300, DEBUG, callback_query run
+2021-08-24T14:52:38.893763+0300, DEBUG, callback_query run
+2021-08-24T14:52:45.718687+0300, INFO, Your address 17Е к2, улица Хусаина Мавлютова, Горки-1, Приволжский район, Казань, городской округ Казань, Татарстан, Приволжский федеральный округ, 420101, Россия
+2021-08-24T14:52:45.718687+0300, INFO, Your address 17Е к2, улица Хусаина Мавлютова, Горки-1, Приволжский район, Казань, городской округ Казань, Татарстан, Приволжский федеральный округ, 420101, Россия
+2021-08-24T14:52:51.134672+0300, DEBUG, callback_query run
+2021-08-24T14:52:51.134672+0300, DEBUG, callback_query run
+2021-08-24T14:52:54.524941+0300, DEBUG, Количество отелей: 3 func: get_page_size
+2021-08-24T14:52:54.524941+0300, DEBUG, Количество отелей: 3 func: get_page_size
+2021-08-24T14:52:54.526938+0300, INFO, This is get list
+2021-08-24T14:52:54.526938+0300, INFO, This is get list
+2021-08-24T14:52:54.529935+0300, INFO, GET requests
+2021-08-24T14:52:54.529935+0300, INFO, GET requests
+2021-08-24T14:54:19.940519+0300, ERROR, An error has been caught in function 'callback_query', process 'MainProcess' (13048), thread 'WorkerThread3' (1940):
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 908, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x00000246A83275E0>
+    └ <WorkerThread(WorkerThread3, started daemon 1940)>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 950, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x00000246AB3CEDC0>
+    └ <WorkerThread(WorkerThread3, started daemon 1940)>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<telebot.types.CallbackQuery object at 0x00000246AC026BB0>,)
+    └ <function Command.handle.<locals>.callback_query at 0x00000246AC0120D0>
+
+> File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 64, in callback_query
+    registration(call.data)
+    │            │    └ 'search_geo'
+    │            └ <telebot.types.CallbackQuery object at 0x00000246AC026BB0>
+    └ <function registration at 0x00000246ABF78AF0>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 26, in registration
+    extr_id=message.chat.id,
+            └ 'search_geo'
+
+AttributeError: 'str' object has no attribute 'chat'
+2021-08-24T14:54:19.940519+0300, ERROR, An error has been caught in function 'callback_query', process 'MainProcess' (13048), thread 'WorkerThread3' (1940):
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 908, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x00000246A83275E0>
+    └ <WorkerThread(WorkerThread3, started daemon 1940)>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 950, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x00000246AB3CEDC0>
+    └ <WorkerThread(WorkerThread3, started daemon 1940)>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<telebot.types.CallbackQuery object at 0x00000246AC026BB0>,)
+    └ <function Command.handle.<locals>.callback_query at 0x00000246AC0120D0>
+
+> File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 64, in callback_query
+    registration(call.data)
+    │            │    └ 'search_geo'
+    │            └ <telebot.types.CallbackQuery object at 0x00000246AC026BB0>
+    └ <function registration at 0x00000246ABF78AF0>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 26, in registration
+    extr_id=message.chat.id,
+            └ 'search_geo'
+
+AttributeError: 'str' object has no attribute 'chat'
+2021-08-24T14:54:19.967320+0300, DEBUG, callback_query run
+2021-08-24T14:54:19.967320+0300, DEBUG, callback_query run
+2021-08-24T14:55:05.905961+0300, DEBUG, callback_query run
+2021-08-24T14:55:05.905961+0300, DEBUG, callback_query run
+2021-08-24T14:55:11.083883+0300, INFO, Selected city Рим
+2021-08-24T14:55:11.083883+0300, INFO, Selected city Рим
+2021-08-24T14:55:14.403606+0300, DEBUG, List city [{'city': 'Рим', 'caption': 'Рим, Лацио, Италия', 'city_id': '712491'}, {'city': 'Римини', 'caption': 'Римини, Римини, Эмилия-Романья, Италия', 'city_id': '1641012'}, {'city': 'Римини-Ривьера', 'caption': 'Римини-Ривьера, Италия', 'city_id': '1907488'}, {'city': 'Центр Рима', 'caption': 'Центр Рима, Рим, Лацио, Италия', 'city_id': '10818945'}, {'city': 'Исторический центр Римини', 'caption': 'Исторический центр Римини, Римини, Эмилия-Романья, Италия', 'city_id': '10565239'}, {'city': 'Римское побережье', 'caption': 'Римское побережье, Италия', 'city_id': '1641498'}]
+2021-08-24T14:55:14.403606+0300, DEBUG, List city [{'city': 'Рим', 'caption': 'Рим, Лацио, Италия', 'city_id': '712491'}, {'city': 'Римини', 'caption': 'Римини, Римини, Эмилия-Романья, Италия', 'city_id': '1641012'}, {'city': 'Римини-Ривьера', 'caption': 'Римини-Ривьера, Италия', 'city_id': '1907488'}, {'city': 'Центр Рима', 'caption': 'Центр Рима, Рим, Лацио, Италия', 'city_id': '10818945'}, {'city': 'Исторический центр Римини', 'caption': 'Исторический центр Римини, Римини, Эмилия-Романья, Италия', 'city_id': '10565239'}, {'city': 'Римское побережье', 'caption': 'Римское побережье, Италия', 'city_id': '1641498'}]
+2021-08-24T14:55:19.586268+0300, DEBUG, callback_query run
+2021-08-24T14:55:19.586268+0300, DEBUG, callback_query run
+2021-08-24T14:55:19.589256+0300, DEBUG, Выбран город Рим id 10818945
+2021-08-24T14:55:19.589256+0300, DEBUG, Выбран город Рим id 10818945
+2021-08-24T14:55:21.330502+0300, DEBUG, callback_query run
+2021-08-24T14:55:21.330502+0300, DEBUG, callback_query run
+2021-08-24T14:55:23.450700+0300, DEBUG, Количество отелей: 4 func: get_page_size
+2021-08-24T14:55:23.450700+0300, DEBUG, Количество отелей: 4 func: get_page_size
+2021-08-24T14:55:23.452696+0300, INFO, This is get list
+2021-08-24T14:55:23.452696+0300, INFO, This is get list
+2021-08-24T14:55:23.455698+0300, INFO, GET requests
+2021-08-24T14:55:23.455698+0300, INFO, GET requests
+2021-08-24T14:58:49.350126+0300, DEBUG, callback_query run
+2021-08-24T14:58:49.350126+0300, DEBUG, callback_query run
+2021-08-24T14:58:54.999402+0300, INFO, Selected city Москва
+2021-08-24T14:58:54.999402+0300, INFO, Selected city Москва
+2021-08-24T14:59:14.632485+0300, DEBUG, List city [{'city': 'Москва', 'caption': 'Москва, Россия', 'city_id': '1153093'}, {'city': 'Центр Москвы', 'caption': 'Центр Москвы, Москва, Россия', 'city_id': '10565407'}, {'city': 'Измайлово', 'caption': 'Измайлово, Москва, Россия', 'city_id': '10779356'}, {'city': 'Арбат', 'caption': 'Арбат, Москва, Россия', 'city_id': '1665959'}, {'city': 'Сокольники', 'caption': 'Сокольники, Москва, Россия', 'city_id': '1786031'}]
+2021-08-24T14:59:14.632485+0300, DEBUG, List city [{'city': 'Москва', 'caption': 'Москва, Россия', 'city_id': '1153093'}, {'city': 'Центр Москвы', 'caption': 'Центр Москвы, Москва, Россия', 'city_id': '10565407'}, {'city': 'Измайлово', 'caption': 'Измайлово, Москва, Россия', 'city_id': '10779356'}, {'city': 'Арбат', 'caption': 'Арбат, Москва, Россия', 'city_id': '1665959'}, {'city': 'Сокольники', 'caption': 'Сокольники, Москва, Россия', 'city_id': '1786031'}]
+2021-08-24T15:11:58.974478+0300, DEBUG, callback_query run
+2021-08-24T15:11:58.974478+0300, DEBUG, callback_query run
+2021-08-24T15:12:07.992679+0300, INFO, Selected city Москва
+2021-08-24T15:12:07.992679+0300, INFO, Selected city Москва
+2021-08-24T15:12:11.057625+0300, DEBUG, List city [{'city': 'Москва', 'caption': 'Москва, Россия', 'city_id': '1153093'}, {'city': 'Центр Москвы', 'caption': 'Центр Москвы, Москва, Россия', 'city_id': '10565407'}, {'city': 'Измайлово', 'caption': 'Измайлово, Москва, Россия', 'city_id': '10779356'}, {'city': 'Арбат', 'caption': 'Арбат, Москва, Россия', 'city_id': '1665959'}, {'city': 'Сокольники', 'caption': 'Сокольники, Москва, Россия', 'city_id': '1786031'}]
+2021-08-24T15:12:11.057625+0300, DEBUG, List city [{'city': 'Москва', 'caption': 'Москва, Россия', 'city_id': '1153093'}, {'city': 'Центр Москвы', 'caption': 'Центр Москвы, Москва, Россия', 'city_id': '10565407'}, {'city': 'Измайлово', 'caption': 'Измайлово, Москва, Россия', 'city_id': '10779356'}, {'city': 'Арбат', 'caption': 'Арбат, Москва, Россия', 'city_id': '1665959'}, {'city': 'Сокольники', 'caption': 'Сокольники, Москва, Россия', 'city_id': '1786031'}]
+2021-08-24T15:12:50.467334+0300, DEBUG, callback_query run
+2021-08-24T15:12:50.467334+0300, DEBUG, callback_query run
+2021-08-24T15:12:59.304098+0300, INFO, Selected city Москва
+2021-08-24T15:12:59.304098+0300, INFO, Selected city Москва
+2021-08-24T15:13:02.436641+0300, DEBUG, List city [{'city': 'Москва', 'caption': 'Москва, Россия', 'city_id': '1153093'}, {'city': 'Центр Москвы', 'caption': 'Центр Москвы, Москва, Россия', 'city_id': '10565407'}, {'city': 'Измайлово', 'caption': 'Измайлово, Москва, Россия', 'city_id': '10779356'}, {'city': 'Арбат', 'caption': 'Арбат, Москва, Россия', 'city_id': '1665959'}, {'city': 'Сокольники', 'caption': 'Сокольники, Москва, Россия', 'city_id': '1786031'}]
+2021-08-24T15:13:02.436641+0300, DEBUG, List city [{'city': 'Москва', 'caption': 'Москва, Россия', 'city_id': '1153093'}, {'city': 'Центр Москвы', 'caption': 'Центр Москвы, Москва, Россия', 'city_id': '10565407'}, {'city': 'Измайлово', 'caption': 'Измайлово, Москва, Россия', 'city_id': '10779356'}, {'city': 'Арбат', 'caption': 'Арбат, Москва, Россия', 'city_id': '1665959'}, {'city': 'Сокольники', 'caption': 'Сокольники, Москва, Россия', 'city_id': '1786031'}]
+2021-08-24T15:16:35.258265+0300, DEBUG, callback_query run
+2021-08-24T15:16:35.258265+0300, DEBUG, callback_query run
+2021-08-24T15:16:42.805890+0300, INFO, Selected city Москва
+2021-08-24T15:16:42.805890+0300, INFO, Selected city Москва
+2021-08-24T15:16:45.551137+0300, DEBUG, List city [{'city': 'Москва', 'caption': 'Москва, Россия', 'city_id': '1153093'}, {'city': 'Центр Москвы', 'caption': 'Центр Москвы, Москва, Россия', 'city_id': '10565407'}, {'city': 'Измайлово', 'caption': 'Измайлово, Москва, Россия', 'city_id': '10779356'}, {'city': 'Арбат', 'caption': 'Арбат, Москва, Россия', 'city_id': '1665959'}, {'city': 'Сокольники', 'caption': 'Сокольники, Москва, Россия', 'city_id': '1786031'}]
+2021-08-24T15:16:45.551137+0300, DEBUG, List city [{'city': 'Москва', 'caption': 'Москва, Россия', 'city_id': '1153093'}, {'city': 'Центр Москвы', 'caption': 'Центр Москвы, Москва, Россия', 'city_id': '10565407'}, {'city': 'Измайлово', 'caption': 'Измайлово, Москва, Россия', 'city_id': '10779356'}, {'city': 'Арбат', 'caption': 'Арбат, Москва, Россия', 'city_id': '1665959'}, {'city': 'Сокольники', 'caption': 'Сокольники, Москва, Россия', 'city_id': '1786031'}]
+2021-08-24T15:17:03.587264+0300, INFO, Selected city Москва
+2021-08-24T15:17:03.587264+0300, INFO, Selected city Москва
+2021-08-24T15:17:06.916929+0300, DEBUG, List city [{'city': 'Москва', 'caption': 'Москва, Россия', 'city_id': '1153093'}, {'city': 'Центр Москвы', 'caption': 'Центр Москвы, Москва, Россия', 'city_id': '10565407'}, {'city': 'Измайлово', 'caption': 'Измайлово, Москва, Россия', 'city_id': '10779356'}, {'city': 'Арбат', 'caption': 'Арбат, Москва, Россия', 'city_id': '1665959'}, {'city': 'Сокольники', 'caption': 'Сокольники, Москва, Россия', 'city_id': '1786031'}]
+2021-08-24T15:17:06.916929+0300, DEBUG, List city [{'city': 'Москва', 'caption': 'Москва, Россия', 'city_id': '1153093'}, {'city': 'Центр Москвы', 'caption': 'Центр Москвы, Москва, Россия', 'city_id': '10565407'}, {'city': 'Измайлово', 'caption': 'Измайлово, Москва, Россия', 'city_id': '10779356'}, {'city': 'Арбат', 'caption': 'Арбат, Москва, Россия', 'city_id': '1665959'}, {'city': 'Сокольники', 'caption': 'Сокольники, Москва, Россия', 'city_id': '1786031'}]
+2021-08-24T15:17:31.385284+0300, INFO, Selected city Moscow
+2021-08-24T15:17:31.385284+0300, INFO, Selected city Moscow
+2021-08-24T15:17:34.449197+0300, DEBUG, List city [{'city': 'Москва', 'caption': 'Москва, Россия', 'city_id': '1153093'}, {'city': 'Центр Москвы', 'caption': 'Центр Москвы, Москва, Россия', 'city_id': '10565407'}, {'city': 'Москва', 'caption': 'Москва, Айдахо, США', 'city_id': '1449014'}, {'city': 'Домодедово, Московская область', 'caption': 'Домодедово, Московская область, Подмосковье (Московская область), Россия', 'city_id': '1118662'}]
+2021-08-24T15:17:34.449197+0300, DEBUG, List city [{'city': 'Москва', 'caption': 'Москва, Россия', 'city_id': '1153093'}, {'city': 'Центр Москвы', 'caption': 'Центр Москвы, Москва, Россия', 'city_id': '10565407'}, {'city': 'Москва', 'caption': 'Москва, Айдахо, США', 'city_id': '1449014'}, {'city': 'Домодедово, Московская область', 'caption': 'Домодедово, Московская область, Подмосковье (Московская область), Россия', 'city_id': '1118662'}]
+2021-08-24T15:17:49.490978+0300, DEBUG, callback_query run
+2021-08-24T15:17:49.490978+0300, DEBUG, callback_query run
+2021-08-24T15:17:49.494870+0300, DEBUG, Выбран город Moscow id 1449014
+2021-08-24T15:17:49.494870+0300, DEBUG, Выбран город Moscow id 1449014
+2021-08-24T15:17:54.056068+0300, INFO, Selected city 臺北市
+2021-08-24T15:17:54.056068+0300, INFO, Selected city 臺北市
+2021-08-24T15:17:59.585340+0300, DEBUG, List city []
+2021-08-24T15:17:59.585340+0300, DEBUG, List city []
+2021-08-24T15:18:11.969664+0300, DEBUG, callback_query run
+2021-08-24T15:18:11.969664+0300, DEBUG, callback_query run
+2021-08-24T15:18:19.135723+0300, INFO, Selected city Moscow
+2021-08-24T15:18:19.135723+0300, INFO, Selected city Moscow
+2021-08-24T15:18:23.217456+0300, DEBUG, List city [{'city': 'Москва', 'caption': 'Москва, Россия', 'city_id': '1153093'}, {'city': 'Центр Москвы', 'caption': 'Центр Москвы, Москва, Россия', 'city_id': '10565407'}, {'city': 'Москва', 'caption': 'Москва, Айдахо, США', 'city_id': '1449014'}, {'city': 'Домодедово, Московская область', 'caption': 'Домодедово, Московская область, Подмосковье (Московская область), Россия', 'city_id': '1118662'}]
+2021-08-24T15:18:23.217456+0300, DEBUG, List city [{'city': 'Москва', 'caption': 'Москва, Россия', 'city_id': '1153093'}, {'city': 'Центр Москвы', 'caption': 'Центр Москвы, Москва, Россия', 'city_id': '10565407'}, {'city': 'Москва', 'caption': 'Москва, Айдахо, США', 'city_id': '1449014'}, {'city': 'Домодедово, Московская область', 'caption': 'Домодедово, Московская область, Подмосковье (Московская область), Россия', 'city_id': '1118662'}]
+2021-08-24T15:18:26.842929+0300, DEBUG, callback_query run
+2021-08-24T15:18:26.842929+0300, DEBUG, callback_query run
+2021-08-24T15:18:26.846921+0300, DEBUG, Выбран город Moscow id 1449014
+2021-08-24T15:18:26.846921+0300, DEBUG, Выбран город Moscow id 1449014
+2021-08-24T15:18:28.681112+0300, DEBUG, callback_query run
+2021-08-24T15:18:28.681112+0300, DEBUG, callback_query run
+2021-08-24T15:18:30.760053+0300, DEBUG, Количество отелей: 5 func: get_page_size
+2021-08-24T15:18:30.760053+0300, DEBUG, Количество отелей: 5 func: get_page_size
+2021-08-24T15:18:30.763207+0300, INFO, This is get list
+2021-08-24T15:18:30.763207+0300, INFO, This is get list
+2021-08-24T15:18:30.765217+0300, INFO, GET requests
+2021-08-24T15:18:30.765217+0300, INFO, GET requests
+2021-08-24T15:30:26.663528+0300, DEBUG, callback_query run
+2021-08-24T15:30:26.663528+0300, DEBUG, callback_query run
+2021-08-24T15:30:32.837528+0300, INFO, Selected city Москва
+2021-08-24T15:30:32.837528+0300, INFO, Selected city Москва
+2021-08-24T15:30:37.030132+0300, DEBUG, List city [{'city': 'Москва', 'caption': 'Москва, Россия', 'city_id': '1153093'}, {'city': 'Центр Москвы', 'caption': 'Центр Москвы, Москва, Россия', 'city_id': '10565407'}, {'city': 'Измайлово', 'caption': 'Измайлово, Москва, Россия', 'city_id': '10779356'}, {'city': 'Арбат', 'caption': 'Арбат, Москва, Россия', 'city_id': '1665959'}, {'city': 'Сокольники', 'caption': 'Сокольники, Москва, Россия', 'city_id': '1786031'}]
+2021-08-24T15:30:37.030132+0300, DEBUG, List city [{'city': 'Москва', 'caption': 'Москва, Россия', 'city_id': '1153093'}, {'city': 'Центр Москвы', 'caption': 'Центр Москвы, Москва, Россия', 'city_id': '10565407'}, {'city': 'Измайлово', 'caption': 'Измайлово, Москва, Россия', 'city_id': '10779356'}, {'city': 'Арбат', 'caption': 'Арбат, Москва, Россия', 'city_id': '1665959'}, {'city': 'Сокольники', 'caption': 'Сокольники, Москва, Россия', 'city_id': '1786031'}]
+2021-08-24T15:30:41.608530+0300, DEBUG, callback_query run
+2021-08-24T15:30:41.608530+0300, DEBUG, callback_query run
+2021-08-24T15:30:41.614502+0300, DEBUG, Выбран город Москва id 1153093
+2021-08-24T15:30:41.614502+0300, DEBUG, Выбран город Москва id 1153093
+2021-08-24T15:30:43.341643+0300, DEBUG, callback_query run
+2021-08-24T15:30:43.341643+0300, DEBUG, callback_query run
+2021-08-24T15:30:43.641165+0300, ERROR, An error has been caught in function 'callback_query', process 'MainProcess' (14844), thread 'WorkerThread3' (16200):
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 908, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x000001CC63B975E0>
+    └ <WorkerThread(WorkerThread3, started daemon 16200)>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 950, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x000001CC66C2BE50>
+    └ <WorkerThread(WorkerThread3, started daemon 16200)>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<telebot.types.CallbackQuery object at 0x000001CC67905550>,)
+    └ <function Command.handle.<locals>.callback_query at 0x000001CC67873160>
+
+> File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 92, in callback_query
+    get_city_id(call)
+    │           └ <telebot.types.CallbackQuery object at 0x000001CC67905550>
+    └ <function get_city_id at 0x000001CC677DC3A0>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\hotel_api.py", line 18, in get_city_id
+    querystring = {"query":f"{Profile.objects.get(extr_id=message.chat.id).city}", "locale":"ru_RU"}
+
+AttributeError: 'CallbackQuery' object has no attribute 'chat'
+2021-08-24T15:30:43.641165+0300, ERROR, An error has been caught in function 'callback_query', process 'MainProcess' (14844), thread 'WorkerThread3' (16200):
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 908, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x000001CC63B975E0>
+    └ <WorkerThread(WorkerThread3, started daemon 16200)>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 950, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x000001CC66C2BE50>
+    └ <WorkerThread(WorkerThread3, started daemon 16200)>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<telebot.types.CallbackQuery object at 0x000001CC67905550>,)
+    └ <function Command.handle.<locals>.callback_query at 0x000001CC67873160>
+
+> File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 92, in callback_query
+    get_city_id(call)
+    │           └ <telebot.types.CallbackQuery object at 0x000001CC67905550>
+    └ <function get_city_id at 0x000001CC677DC3A0>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\hotel_api.py", line 18, in get_city_id
+    querystring = {"query":f"{Profile.objects.get(extr_id=message.chat.id).city}", "locale":"ru_RU"}
+
+AttributeError: 'CallbackQuery' object has no attribute 'chat'
+2021-08-24T15:32:06.753760+0300, DEBUG, callback_query run
+2021-08-24T15:32:06.753760+0300, DEBUG, callback_query run
+2021-08-24T15:32:10.591116+0300, INFO, Selected city Москва
+2021-08-24T15:32:10.591116+0300, INFO, Selected city Москва
+2021-08-24T15:32:27.305913+0300, DEBUG, List city [{'city': 'Москва', 'caption': 'Москва, Россия', 'city_id': '1153093'}, {'city': 'Центр Москвы', 'caption': 'Центр Москвы, Москва, Россия', 'city_id': '10565407'}, {'city': 'Измайлово', 'caption': 'Измайлово, Москва, Россия', 'city_id': '10779356'}, {'city': 'Арбат', 'caption': 'Арбат, Москва, Россия', 'city_id': '1665959'}, {'city': 'Сокольники', 'caption': 'Сокольники, Москва, Россия', 'city_id': '1786031'}]
+2021-08-24T15:32:27.305913+0300, DEBUG, List city [{'city': 'Москва', 'caption': 'Москва, Россия', 'city_id': '1153093'}, {'city': 'Центр Москвы', 'caption': 'Центр Москвы, Москва, Россия', 'city_id': '10565407'}, {'city': 'Измайлово', 'caption': 'Измайлово, Москва, Россия', 'city_id': '10779356'}, {'city': 'Арбат', 'caption': 'Арбат, Москва, Россия', 'city_id': '1665959'}, {'city': 'Сокольники', 'caption': 'Сокольники, Москва, Россия', 'city_id': '1786031'}]
+2021-08-24T15:32:29.315281+0300, DEBUG, callback_query run
+2021-08-24T15:32:29.315281+0300, DEBUG, callback_query run
+2021-08-24T15:32:29.318210+0300, DEBUG, Выбран город Москва id 1153093
+2021-08-24T15:32:29.318210+0300, DEBUG, Выбран город Москва id 1153093
+2021-08-24T15:32:31.271617+0300, DEBUG, callback_query run
+2021-08-24T15:32:31.271617+0300, DEBUG, callback_query run
+2021-08-24T15:32:31.392377+0300, INFO, Selected city Москва
+2021-08-24T15:32:31.392377+0300, INFO, Selected city Москва
+2021-08-24T15:32:34.224721+0300, DEBUG, List city [{'city': 'Москва', 'caption': 'Москва, Россия', 'city_id': '1153093'}, {'city': 'Центр Москвы', 'caption': 'Центр Москвы, Москва, Россия', 'city_id': '10565407'}, {'city': 'Измайлово', 'caption': 'Измайлово, Москва, Россия', 'city_id': '10779356'}, {'city': 'Арбат', 'caption': 'Арбат, Москва, Россия', 'city_id': '1665959'}, {'city': 'Сокольники', 'caption': 'Сокольники, Москва, Россия', 'city_id': '1786031'}]
+2021-08-24T15:32:34.224721+0300, DEBUG, List city [{'city': 'Москва', 'caption': 'Москва, Россия', 'city_id': '1153093'}, {'city': 'Центр Москвы', 'caption': 'Центр Москвы, Москва, Россия', 'city_id': '10565407'}, {'city': 'Измайлово', 'caption': 'Измайлово, Москва, Россия', 'city_id': '10779356'}, {'city': 'Арбат', 'caption': 'Арбат, Москва, Россия', 'city_id': '1665959'}, {'city': 'Сокольники', 'caption': 'Сокольники, Москва, Россия', 'city_id': '1786031'}]
+2021-08-24T15:32:56.952374+0300, INFO, run get_result
+2021-08-24T15:32:56.952374+0300, INFO, run get_result
+2021-08-24T15:32:56.955357+0300, INFO, run get_list_hotel
+2021-08-24T15:32:56.955357+0300, INFO, run get_list_hotel
+2021-08-24T15:32:56.973602+0300, INFO, This is get list
+2021-08-24T15:32:56.973602+0300, INFO, This is get list
+2021-08-24T15:32:56.976530+0300, INFO, GET requests
+2021-08-24T15:32:56.976530+0300, INFO, GET requests
+2021-08-24T15:33:01.900155+0300, INFO, Run send_result
+2021-08-24T15:33:01.900155+0300, INFO, Run send_result
+2021-08-24T15:35:21.780796+0300, DEBUG, callback_query run
+2021-08-24T15:35:21.780796+0300, DEBUG, callback_query run
+2021-08-24T15:36:31.992190+0300, DEBUG, callback_query run
+2021-08-24T15:36:31.992190+0300, DEBUG, callback_query run
+2021-08-24T15:38:02.655460+0300, DEBUG, callback_query run
+2021-08-24T15:38:02.655460+0300, DEBUG, callback_query run
+2021-08-24T15:38:04.823232+0300, INFO, Your address 17Е к1, улица Хусаина Мавлютова, Горки-1, Приволжский район, Казань, городской округ Казань, Татарстан, Приволжский федеральный округ, 420101, Россия
+2021-08-24T15:38:04.823232+0300, INFO, Your address 17Е к1, улица Хусаина Мавлютова, Горки-1, Приволжский район, Казань, городской округ Казань, Татарстан, Приволжский федеральный округ, 420101, Россия
+2021-08-24T15:38:06.131764+0300, DEBUG, callback_query run
+2021-08-24T15:38:06.131764+0300, DEBUG, callback_query run
+2021-08-24T15:38:09.296304+0300, DEBUG, Количество отелей: 2 func: get_page_size
+2021-08-24T15:38:09.296304+0300, DEBUG, Количество отелей: 2 func: get_page_size
+2021-08-24T15:38:09.298302+0300, INFO, This is get list
+2021-08-24T15:38:09.298302+0300, INFO, This is get list
+2021-08-24T15:38:09.300292+0300, INFO, GET requests
+2021-08-24T15:38:09.300292+0300, INFO, GET requests
+2021-08-24T15:38:17.087464+0300, DEBUG, callback_query run
+2021-08-24T15:38:17.087464+0300, DEBUG, callback_query run
+2021-08-24T15:51:59.238555+0300, DEBUG, callback_query run
+2021-08-24T15:51:59.238555+0300, DEBUG, callback_query run
+2021-08-24T15:52:10.838596+0300, INFO, Selected city ภูเก็ต
+2021-08-24T15:52:10.838596+0300, INFO, Selected city ภูเก็ต
+2021-08-24T15:52:15.425574+0300, DEBUG, List city [{'city': 'Пхукет (и округа)', 'caption': 'Пхукет (и округа), Пхукет (провинция), Таиланд', 'city_id': '1708722'}, {'city': 'Карон', 'caption': 'Карон, Пхукет (провинция), Таиланд', 'city_id': '1806864'}, {'city': 'Патонг', 'caption': 'Патонг, Пхукет (провинция), Таиланд', 'city_id': '1806849'}, {'city': 'Ката', 'caption': 'Ката, Карон, Пхукет (провинция), Таиланд', 'city_id': '1740931'}, {'city': 'Камала', 'caption': 'Камала, Пхукет (провинция), Таиланд', 'city_id': '1806850'}, {'city': 'Най-Харн', 'caption': 'Най-Харн, Равай, Пхукет (провинция), Таиланд', 'city_id': '1771989'}, {'city': 'Най Харн', 'caption': 'Най Харн, Май-Кхао, Пхукет (провинция), Таиланд', 'city_id': '10398720'}, {'city': 'Май-Кхао', 'caption': 'Май-Кхао, Пхукет (провинция), Таиланд', 'city_id': '1806860'}, {'city': 'Равай', 'caption': 'Равай, Пхукет (провинция), Таиланд', 'city_id': '1806865'}]
+2021-08-24T15:52:15.425574+0300, DEBUG, List city [{'city': 'Пхукет (и округа)', 'caption': 'Пхукет (и округа), Пхукет (провинция), Таиланд', 'city_id': '1708722'}, {'city': 'Карон', 'caption': 'Карон, Пхукет (провинция), Таиланд', 'city_id': '1806864'}, {'city': 'Патонг', 'caption': 'Патонг, Пхукет (провинция), Таиланд', 'city_id': '1806849'}, {'city': 'Ката', 'caption': 'Ката, Карон, Пхукет (провинция), Таиланд', 'city_id': '1740931'}, {'city': 'Камала', 'caption': 'Камала, Пхукет (провинция), Таиланд', 'city_id': '1806850'}, {'city': 'Най-Харн', 'caption': 'Най-Харн, Равай, Пхукет (провинция), Таиланд', 'city_id': '1771989'}, {'city': 'Най Харн', 'caption': 'Най Харн, Май-Кхао, Пхукет (провинция), Таиланд', 'city_id': '10398720'}, {'city': 'Май-Кхао', 'caption': 'Май-Кхао, Пхукет (провинция), Таиланд', 'city_id': '1806860'}, {'city': 'Равай', 'caption': 'Равай, Пхукет (провинция), Таиланд', 'city_id': '1806865'}]
+2021-08-24T15:52:21.651038+0300, DEBUG, callback_query run
+2021-08-24T15:52:21.651038+0300, DEBUG, callback_query run
+2021-08-24T15:52:21.654890+0300, DEBUG, Выбран город ภูเก็ต id 1806849
+2021-08-24T15:52:21.654890+0300, DEBUG, Выбран город ภูเก็ต id 1806849
+2021-08-24T15:52:23.816131+0300, DEBUG, callback_query run
+2021-08-24T15:52:23.816131+0300, DEBUG, callback_query run
+2021-08-24T15:52:26.353497+0300, DEBUG, Количество отелей: 5 func: get_page_size
+2021-08-24T15:52:26.353497+0300, DEBUG, Количество отелей: 5 func: get_page_size
+2021-08-24T15:52:26.356484+0300, INFO, This is get list
+2021-08-24T15:52:26.356484+0300, INFO, This is get list
+2021-08-24T15:52:26.359481+0300, INFO, GET requests
+2021-08-24T15:52:26.359481+0300, INFO, GET requests
+2021-08-24T15:52:39.475972+0300, DEBUG, callback_query run
+2021-08-24T15:52:39.475972+0300, DEBUG, callback_query run
+2021-08-24T15:58:17.118895+0300, DEBUG, callback_query run
+2021-08-24T15:58:20.038378+0300, INFO, Your address 17Е к2, улица Хусаина Мавлютова, Горки-1, Приволжский район, Казань, городской округ Казань, Татарстан, Приволжский федеральный округ, 420101, Россия
+2021-08-24T15:58:22.352287+0300, DEBUG, callback_query run
+2021-08-24T15:58:25.059355+0300, DEBUG, Количество отелей: 3 func: get_page_size
+2021-08-24T15:58:25.062338+0300, INFO, This is get list
+2021-08-24T15:58:25.064335+0300, INFO, GET requests
+2021-08-24T15:59:47.145237+0300, DEBUG, callback_query run
+2021-08-24T15:59:49.148409+0300, INFO, Your address 17Е к1, улица Хусаина Мавлютова, Горки-1, Приволжский район, Казань, городской округ Казань, Татарстан, Приволжский федеральный округ, 420101, Россия
+2021-08-24T15:59:50.576507+0300, DEBUG, callback_query run
+2021-08-24T15:59:53.584541+0300, DEBUG, Количество отелей: 3 func: get_page_size
+2021-08-24T15:59:53.587290+0300, INFO, This is get list
+2021-08-24T15:59:53.589291+0300, INFO, GET requests
+2021-08-24T16:01:06.633717+0300, DEBUG, callback_query run
+2021-08-24T16:01:12.317093+0300, INFO, Selected city Москва
+2021-08-24T16:01:16.794732+0300, DEBUG, List city [{'city': 'Москва', 'caption': 'Москва, Россия', 'city_id': '1153093'}, {'city': 'Центр Москвы', 'caption': 'Центр Москвы, Москва, Россия', 'city_id': '10565407'}, {'city': 'Измайлово', 'caption': 'Измайлово, Москва, Россия', 'city_id': '10779356'}, {'city': 'Арбат', 'caption': 'Арбат, Москва, Россия', 'city_id': '1665959'}, {'city': 'Сокольники', 'caption': 'Сокольники, Москва, Россия', 'city_id': '1786031'}]
+2021-08-24T16:01:19.936272+0300, DEBUG, callback_query run
+2021-08-24T16:01:19.940308+0300, DEBUG, Выбран город Москва id 1153093
+2021-08-24T16:01:21.574099+0300, DEBUG, callback_query run
+2021-08-24T16:01:23.785309+0300, DEBUG, Количество отелей: 3 func: get_page_size
+2021-08-24T16:01:23.788300+0300, INFO, This is get list
+2021-08-24T16:01:23.790293+0300, INFO, GET requests
+2021-08-24T16:02:59.888784+0300, DEBUG, callback_query run
+2021-08-24T16:03:02.284929+0300, INFO, Your address 17Е к2, улица Хусаина Мавлютова, Горки-1, Приволжский район, Казань, городской округ Казань, Татарстан, Приволжский федеральный округ, 420101, Россия
+2021-08-24T16:03:03.483943+0300, DEBUG, callback_query run
+2021-08-24T16:03:05.757812+0300, DEBUG, Количество отелей: 2 func: get_page_size
+2021-08-24T16:03:05.760792+0300, INFO, This is get list
+2021-08-24T16:03:05.762789+0300, INFO, GET requests
+2021-08-24T16:04:10.672070+0300, DEBUG, callback_query run
+2021-08-24T16:04:12.739692+0300, INFO, Your address 17Е к1, улица Хусаина Мавлютова, Горки-1, Приволжский район, Казань, городской округ Казань, Татарстан, Приволжский федеральный округ, 420101, Россия
+2021-08-24T16:04:14.067301+0300, DEBUG, callback_query run
+2021-08-24T16:04:17.563653+0300, DEBUG, Количество отелей: 2 func: get_page_size
+2021-08-24T16:04:17.565659+0300, INFO, This is get list
+2021-08-24T16:04:17.568633+0300, INFO, GET requests
+2021-08-24T16:09:47.168776+0300, DEBUG, callback_query run
+2021-08-24T16:09:49.204180+0300, INFO, Your address 17Е к2, улица Хусаина Мавлютова, Горки-1, Приволжский район, Казань, городской округ Казань, Татарстан, Приволжский федеральный округ, 420101, Россия
+2021-08-24T16:09:49.214168+0300, INFO, Selected city Казань
+2021-08-24T16:09:52.259723+0300, DEBUG, List city [{'city': 'Казань', 'caption': 'Казань, Республика Татарстан, Россия', 'city_id': '1215771'}, {'city': 'Казань (и окрестности)', 'caption': 'Казань (и окрестности), Республика Татарстан, Россия', 'city_id': '1794547'}, {'city': 'Центр города Казань', 'caption': 'Центр города Казань, Казань, Республика Татарстан, Россия', 'city_id': '10874035'}]
+2021-08-24T16:09:55.414132+0300, DEBUG, callback_query run
+2021-08-24T16:09:55.417960+0300, DEBUG, Выбран город Казань id 1215771
+2021-08-24T16:10:00.211234+0300, DEBUG, callback_query run
+2021-08-24T16:10:03.963280+0300, DEBUG, Количество отелей: 3 func: get_page_size
+2021-08-24T16:10:03.966279+0300, INFO, This is get list
+2021-08-24T16:10:03.969273+0300, INFO, GET requests
+2021-08-24T16:11:20.325114+0300, DEBUG, callback_query run
+2021-08-24T16:11:22.525227+0300, INFO, Your address 17Е к2, улица Хусаина Мавлютова, Горки-1, Приволжский район, Казань, городской округ Казань, Татарстан, Приволжский федеральный округ, 420101, Россия
+2021-08-24T16:11:22.536226+0300, INFO, Selected city Казань
+2021-08-24T16:11:25.595354+0300, DEBUG, List city [{'city': 'Казань', 'caption': 'Казань, Республика Татарстан, Россия', 'city_id': '1215771'}, {'city': 'Казань (и окрестности)', 'caption': 'Казань (и окрестности), Республика Татарстан, Россия', 'city_id': '1794547'}, {'city': 'Центр города Казань', 'caption': 'Центр города Казань, Казань, Республика Татарстан, Россия', 'city_id': '10874035'}]
+2021-08-24T16:11:28.234573+0300, DEBUG, callback_query run
+2021-08-24T16:11:28.238590+0300, DEBUG, Выбран город Казань id 1215771
+2021-08-24T16:11:30.600359+0300, DEBUG, callback_query run
+2021-08-24T16:11:33.533251+0300, DEBUG, Количество отелей: 5 func: get_page_size
+2021-08-24T16:11:33.536251+0300, INFO, This is get list
+2021-08-24T16:11:33.538356+0300, INFO, GET requests
+2021-08-24T16:17:29.944890+0300, DEBUG, callback_query run
+2021-08-24T16:17:39.065979+0300, DEBUG, callback_query run
+2021-08-24T16:17:45.344283+0300, INFO, Selected city Roma
+2021-08-24T16:17:49.101457+0300, DEBUG, List city [{'city': 'Рим', 'caption': 'Рим, Лацио, Италия', 'city_id': '712491'}, {'city': 'Центр Рима', 'caption': 'Центр Рима, Рим, Лацио, Италия', 'city_id': '10818945'}, {'city': 'Исторический центр Рима', 'caption': 'Исторический центр Рима, Рим, Лацио, Италия', 'city_id': '1735377'}, {'city': 'Трастевере', 'caption': 'Трастевере, Рим, Лацио, Италия', 'city_id': '1663686'}, {'city': 'Целль-ам-Зе', 'caption': 'Целль-ам-Зе, Целль-ам-Зе, Зальцбург (земля), Австрия', 'city_id': '1636657'}]
+2021-08-24T16:17:49.731800+0300, DEBUG, callback_query run
+2021-08-24T16:18:01.489287+0300, INFO, Selected city Roma
+2021-08-24T16:18:04.114289+0300, DEBUG, List city [{'city': 'Рим', 'caption': 'Рим, Лацио, Италия', 'city_id': '712491'}, {'city': 'Центр Рима', 'caption': 'Центр Рима, Рим, Лацио, Италия', 'city_id': '10818945'}, {'city': 'Исторический центр Рима', 'caption': 'Исторический центр Рима, Рим, Лацио, Италия', 'city_id': '1735377'}, {'city': 'Трастевере', 'caption': 'Трастевере, Рим, Лацио, Италия', 'city_id': '1663686'}, {'city': 'Целль-ам-Зе', 'caption': 'Целль-ам-Зе, Целль-ам-Зе, Зальцбург (земля), Австрия', 'city_id': '1636657'}]
+2021-08-24T16:18:06.530752+0300, DEBUG, callback_query run
+2021-08-24T16:18:06.533753+0300, DEBUG, Выбран город Roma id 712491
+2021-08-24T16:18:12.065626+0300, DEBUG, callback_query run
+2021-08-24T16:18:14.722332+0300, DEBUG, Количество отелей: 3 func: get_page_size
+2021-08-24T16:18:14.724813+0300, INFO, This is get list
+2021-08-24T16:18:14.727834+0300, INFO, GET requests
+2021-08-24T16:21:30.963116+0300, DEBUG, callback_query run
+2021-08-24T16:21:33.671871+0300, INFO, Your address 17Е к3, улица Хусаина Мавлютова, Горки-1, Приволжский район, Казань, городской округ Казань, Татарстан, Приволжский федеральный округ, 420101, Россия
+2021-08-24T16:21:33.785873+0300, INFO, Selected city Казань
+2021-08-24T16:21:38.199418+0300, DEBUG, List city [{'city': 'Казань', 'caption': 'Казань, Республика Татарстан, Россия', 'city_id': '1215771'}, {'city': 'Казань (и окрестности)', 'caption': 'Казань (и окрестности), Республика Татарстан, Россия', 'city_id': '1794547'}, {'city': 'Центр города Казань', 'caption': 'Центр города Казань, Казань, Республика Татарстан, Россия', 'city_id': '10874035'}]
+2021-08-24T16:21:40.569419+0300, DEBUG, callback_query run
+2021-08-24T16:21:40.572930+0300, DEBUG, Выбран город Казань id 1215771
+2021-08-24T16:21:42.064889+0300, DEBUG, callback_query run
+2021-08-24T16:21:44.376678+0300, DEBUG, Количество отелей: 3 func: get_page_size
+2021-08-24T16:21:44.877929+0300, INFO, This is get list
+2021-08-24T16:21:44.880931+0300, INFO, GET requests
+2021-08-24T16:21:51.969026+0300, DEBUG, callback_query run
+2021-08-24T16:21:58.158392+0300, INFO, Selected city Berlin
+2021-08-24T16:22:03.999509+0300, DEBUG, List city [{'city': 'Берлин', 'caption': 'Берлин, Германия', 'city_id': '332483'}, {'city': 'Митте', 'caption': 'Митте, Берлин, Германия', 'city_id': '1662710'}, {'city': 'Шарлоттенбург', 'caption': 'Шарлоттенбург, Берлин, Германия', 'city_id': '10871331'}, {'city': 'Тегель', 'caption': 'Тегель, Берлин, Германия', 'city_id': '10979252'}, {'city': 'Berlin', 'caption': 'Berlin, Seedorf, Schleswig-Holstein, Germany', 'city_id': '12492985'}, {'city': 'Берлинер-Шоссе', 'caption': 'Берлинер-Шоссе, Магдебург, Саксония-Анхальт (земля), Германия', 'city_id': '11112368'}]
+2021-08-24T16:22:15.604072+0300, DEBUG, callback_query run
+2021-08-24T16:22:15.607070+0300, DEBUG, Выбран город Berlin id 332483
+2021-08-24T16:22:17.263521+0300, DEBUG, callback_query run
+2021-08-24T16:22:21.044178+0300, DEBUG, Количество отелей: 5 func: get_page_size
+2021-08-24T16:22:21.185869+0300, INFO, This is get list
+2021-08-24T16:22:21.189868+0300, INFO, GET requests
+2021-08-24T16:22:42.254615+0300, DEBUG, callback_query run
+2021-08-24T16:22:50.228787+0300, INFO, Selected city Paris
+2021-08-24T16:22:53.445579+0300, DEBUG, List city [{'city': 'Париж', 'caption': 'Париж, Франция (Parisi)', 'city_id': '504261'}, {'city': 'Центр Парижа', 'caption': 'Центр Парижа, Париж, Франция', 'city_id': '1730997'}, {'city': '9-й округ', 'caption': '9-й округ, Париж, Франция', 'city_id': '1731375'}, {'city': '8-й округ', 'caption': '8-й округ, Париж, Франция', 'city_id': '1731373'}, {'city': 'Берси', 'caption': 'Берси, Париж, Франция', 'city_id': '1691967'}]
+2021-08-24T16:22:57.677068+0300, DEBUG, callback_query run
+2021-08-24T16:22:57.680367+0300, DEBUG, Выбран город Paris id 504261
+2021-08-24T16:22:59.678080+0300, DEBUG, callback_query run
+2021-08-24T16:23:29.838214+0300, INFO, run get_result
+2021-08-24T16:23:29.841208+0300, INFO, run get_list_hotel
+2021-08-24T16:23:29.845484+0300, INFO, This is get list
+2021-08-24T16:23:29.848484+0300, INFO, GET requests
+2021-08-24T16:23:37.871061+0300, DEBUG, the distance is not observed 19 min: 1, max 9
+2021-08-24T16:23:37.874060+0300, DEBUG, the distance is not observed 13 min: 1, max 9
+2021-08-24T16:23:37.875062+0300, DEBUG, the distance is not observed 29 min: 1, max 9
+2021-08-24T16:23:37.877063+0300, DEBUG, the distance is not observed 19 min: 1, max 9
+2021-08-24T16:23:37.879061+0300, DEBUG, the distance is not observed 9.8 min: 1, max 9
+2021-08-24T16:23:37.880061+0300, DEBUG, the distance is not observed 17 min: 1, max 9
+2021-08-24T16:23:37.882060+0300, DEBUG, the distance is not observed 10 min: 1, max 9
+2021-08-24T16:23:37.883061+0300, DEBUG, the distance is not observed 19 min: 1, max 9
+2021-08-24T16:23:37.885152+0300, DEBUG, the distance is not observed 21 min: 1, max 9
+2021-08-24T16:23:37.886165+0300, DEBUG, the distance is not observed 22 min: 1, max 9
+2021-08-24T16:23:37.888166+0300, DEBUG, the distance is not observed 10 min: 1, max 9
+2021-08-24T16:23:37.890166+0300, INFO, Run send_result
+2021-08-24T16:58:39.865834+0300, DEBUG, callback_query run
+2021-08-24T16:58:42.161164+0300, INFO, Your address 17Е к2, улица Хусаина Мавлютова, Горки-1, Приволжский район, Казань, городской округ Казань, Татарстан, Приволжский федеральный округ, 420101, Россия
+2021-08-24T16:58:42.311323+0300, INFO, Selected city Казань
+2021-08-24T16:59:00.028213+0300, DEBUG, List city [{'city': 'Казань', 'caption': 'Казань, Республика Татарстан, Россия', 'city_id': '1215771'}, {'city': 'Казань (и окрестности)', 'caption': 'Казань (и окрестности), Республика Татарстан, Россия', 'city_id': '1794547'}, {'city': 'Центр города Казань', 'caption': 'Центр города Казань, Казань, Республика Татарстан, Россия', 'city_id': '10874035'}]
+2021-08-24T16:59:07.687181+0300, DEBUG, callback_query run
+2021-08-24T16:59:07.690878+0300, DEBUG, Выбран город Казань id 1794547
+2021-08-24T16:59:09.408113+0300, DEBUG, callback_query run
+2021-08-24T16:59:12.964106+0300, DEBUG, Количество отелей: 2 func: get_page_size
+2021-08-24T16:59:13.094240+0300, INFO, This is get list
+2021-08-24T16:59:13.097238+0300, INFO, GET requests
+2021-08-24T16:59:48.410620+0300, DEBUG, callback_query run
+2021-08-24T16:59:57.183132+0300, INFO, Selected city Denpasar
+2021-08-24T17:00:02.506467+0300, DEBUG, List city [{'city': 'Денпасар', 'caption': 'Денпасар, Denpasar, Бали, Индонезия', 'city_id': '661282'}, {'city': 'Санур', 'caption': 'Санур, Денпасар, Бали, Индонезия', 'city_id': '1667038'}, {'city': 'Sanur Kauh', 'caption': 'Sanur Kauh, Denpasar, Bali, Indonesia', 'city_id': '12511985'}]
+2021-08-24T17:00:05.167735+0300, DEBUG, callback_query run
+2021-08-24T17:00:05.170722+0300, DEBUG, Выбран город Denpasar id 661282
+2021-08-24T17:00:07.157009+0300, DEBUG, callback_query run
+2021-08-24T17:00:09.410145+0300, DEBUG, Количество отелей: 3 func: get_page_size
+2021-08-24T17:00:09.533129+0300, INFO, This is get list
+2021-08-24T17:00:09.536140+0300, INFO, GET requests
+2021-08-24T17:18:07.710692+0300, DEBUG, callback_query run
+2021-08-24T17:18:09.992167+0300, INFO, Your address 17Е к1, улица Хусаина Мавлютова, Горки-1, Приволжский район, Казань, городской округ Казань, Татарстан, Приволжский федеральный округ, 420101, Россия
+2021-08-24T17:18:10.141395+0300, INFO, Selected city Казань
+2021-08-24T17:18:13.748167+0300, DEBUG, List city [{'city': 'Казань', 'caption': 'Казань, Республика Татарстан, Россия', 'city_id': '1215771'}, {'city': 'Казань (и окрестности)', 'caption': 'Казань (и окрестности), Республика Татарстан, Россия', 'city_id': '1794547'}, {'city': 'Центр города Казань', 'caption': 'Центр города Казань, Казань, Республика Татарстан, Россия', 'city_id': '10874035'}]
+2021-08-24T17:18:18.883229+0300, DEBUG, callback_query run
+2021-08-24T17:18:18.886208+0300, DEBUG, Выбран город Казань id 1215771
+2021-08-24T17:18:23.047577+0300, DEBUG, callback_query run
+2021-08-24T17:18:26.024547+0300, DEBUG, Количество отелей: 8 func: get_page_size
+2021-08-24T17:18:26.130205+0300, INFO, This is get list
+2021-08-24T17:18:26.133210+0300, INFO, GET requests
+2021-08-24T17:34:21.588282+0300, DEBUG, callback_query run
+2021-08-24T17:34:28.667835+0300, INFO, Selected city Москва
+2021-08-24T17:34:38.767719+0300, DEBUG, List city [{'city': 'Москва', 'caption': 'Москва, Россия', 'city_id': '1153093'}, {'city': 'Центр Москвы', 'caption': 'Центр Москвы, Москва, Россия', 'city_id': '10565407'}, {'city': 'Измайлово', 'caption': 'Измайлово, Москва, Россия', 'city_id': '10779356'}, {'city': 'Арбат', 'caption': 'Арбат, Москва, Россия', 'city_id': '1665959'}, {'city': 'Сокольники', 'caption': 'Сокольники, Москва, Россия', 'city_id': '1786031'}]
+2021-08-24T17:34:46.671235+0300, DEBUG, callback_query run
+2021-08-24T17:34:46.674214+0300, DEBUG, Выбран город Москва id 1153093
+2021-08-24T17:34:48.084175+0300, DEBUG, callback_query run
+2021-08-24T17:34:50.213789+0300, DEBUG, Количество отелей: 2 func: get_page_size
+2021-08-24T17:34:50.348476+0300, INFO, This is get list
+2021-08-24T17:34:50.351486+0300, INFO, GET requests
+2021-08-24T17:37:02.481704+0300, DEBUG, callback_query run
+2021-08-24T17:37:09.239675+0300, INFO, Selected city Berlin
+2021-08-24T17:37:12.306705+0300, DEBUG, List city [{'city': 'Берлин', 'caption': 'Берлин, Германия', 'city_id': '332483'}, {'city': 'Митте', 'caption': 'Митте, Берлин, Германия', 'city_id': '1662710'}, {'city': 'Шарлоттенбург', 'caption': 'Шарлоттенбург, Берлин, Германия', 'city_id': '10871331'}, {'city': 'Тегель', 'caption': 'Тегель, Берлин, Германия', 'city_id': '10979252'}, {'city': 'Berlin', 'caption': 'Berlin, Seedorf, Schleswig-Holstein, Germany', 'city_id': '12492985'}, {'city': 'Берлинер-Шоссе', 'caption': 'Берлинер-Шоссе, Магдебург, Саксония-Анхальт (земля), Германия', 'city_id': '11112368'}]
+2021-08-24T17:37:18.507932+0300, DEBUG, callback_query run
+2021-08-24T17:37:18.510884+0300, DEBUG, Выбран город Berlin id 332483
+2021-08-24T17:37:20.580780+0300, DEBUG, callback_query run
+2021-08-24T17:37:22.575217+0300, DEBUG, Количество отелей: 3 func: get_page_size
+2021-08-24T17:37:22.720821+0300, INFO, This is get list
+2021-08-24T17:37:22.724812+0300, INFO, GET requests

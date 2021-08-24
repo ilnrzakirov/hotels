@@ -1,6 +1,11 @@
 from django.db import models
 
 class Profile(models.Model):
+    """
+    Класс Профиль пользователя. Атрибуты extr_id - уникальный id пользователя (chat_id телеграмм).
+    Name - имя пользователя (телеграмм), city - местонахождение или город поиска.
+    city_id - ID города в rapidapi
+    """
     extr_id = models.PositiveIntegerField(
         verbose_name='User ID'
     )
@@ -14,6 +19,26 @@ class Profile(models.Model):
     city_id = models.IntegerField(
         verbose_name='City ID',
         default=0
+    )
+    dist_min = models.IntegerField(
+        verbose_name='Min dist center',
+        default=0
+    )
+    dist_max = models.IntegerField(
+        verbose_name='Max dist center',
+        default=999
+    )
+    price_min = models.FloatField(
+        verbose_name='min price',
+        default=0
+    )
+    price_max = models.FloatField(
+        verbose_name='max price',
+        default=9999999
+    )
+    page_size = models.IntegerField(
+        verbose_name='number of hotels',
+        default=1
     )
     def __str__(self):
         return  f'{self.extr_id} {self.name}'

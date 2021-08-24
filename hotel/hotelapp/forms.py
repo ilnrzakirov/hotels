@@ -10,6 +10,11 @@ class ProfileForm(forms.ModelForm):
             'name',
             'city',
             'city_id',
+            'dist_min',
+            'dist_max',
+            'price_min',
+            'price_max',
+            'page_size',
         )
         widgets = {
             'name' : forms.TextInput,
