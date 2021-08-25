@@ -1,7 +1,7 @@
 import requests
 import json
 import telebot
-from .models import Profile, Message
+from .models import Profile
 from django.conf import settings
 from .management.commands.bot import logger
 import datetime
@@ -12,10 +12,10 @@ import re
 def get_city_id(message: telebot.types.Message):
     """
     Функция для получения id города по API rapidaipi. После получения ID функция записывает результат в БД
-    :param call: telebot.types.Call
+    :param message: types.Message
     """
     url = "https://hotels4.p.rapidapi.com/locations/search"
-    querystring = {"query":f"{Profile.objects.get(extr_id=message.chat.id).city}", "locale":"ru_RU"}
+    querystring = {"query": f"{Profile.objects.get(extr_id=message.chat.id).city}", "locale": "ru_RU"}
     logger.info(f"Selected city {Profile.objects.get(extr_id=message.chat.id).city}")
     headers = {
         'x-rapidapi-key': settings.API_KEY,
@@ -24,8 +24,8 @@ def get_city_id(message: telebot.types.Message):
     try:
         response = requests.request("GET", url, headers=headers, params=querystring)
         data = json.loads(response.text)
-    except Exception:
-        logger.error("Ошибка API (ERROR)")
+    except Exception as err:
+        logger.error(f"Ошибка API {err}")
     with open('data.txt', 'w', encoding='UTF-8') as file:
         json.dump(data, file, indent=4, ensure_ascii=False)
     result_dict = list()
@@ -34,15 +34,14 @@ def get_city_id(message: telebot.types.Message):
             for i_item in item['entities']:
                 city = i_item['name']
                 caption = re.sub('<[^>]*>', '', i_item['caption'])
-                destinationId = i_item['destinationId']
-                result_dict.append({"city" : city, "caption" : caption, "city_id" : destinationId})
+                destination_id = i_item['destinationId']
+                result_dict.append({"city": city, "caption": caption, "city_id": destination_id})
     logger.debug(f'List city {result_dict}')
     return result_dict
 
 
-
 @logger.catch()
-def get_list_hotel(message: telebot.types.Message, page_size: int, sort : str, price_min=0,
+def get_list_hotel(message: telebot.types.Message, page_size: int, sort: str, price_min=0,
                    price_max=9999999, dist_min=0, dist_max=999) -> list:
     url = "https://hotels4.p.rapidapi.com/properties/list"
     headers = {
@@ -51,18 +50,18 @@ def get_list_hotel(message: telebot.types.Message, page_size: int, sort : str, p
     }
     logger.info("This is get list")
     page_number = 1
-    check_out = (datetime.datetime.now() + datetime.timedelta(days=5)).strftime('%Y-%m-%d')
+    check_out = (datetime.datetime.now() + datetime.timedelta(days=1)).strftime('%Y-%m-%d')
     check_in = datetime.datetime.now().strftime('%Y-%m-%d')
     city_id = Profile.objects.get(extr_id=message.chat.id).city_id
     querystring = {"destinationId": f"{city_id}", "pageNumber": f"{page_number}",
                    "pageSize": "25", "checkIn": check_in,
                    "checkOut": check_out, "adults1": "1", "sortOrder": sort, "currency": "RUB",
-                   "locale":"ru_RU", "priceMin": f"{price_min}", "priceMax" : f"{price_max}"}
+                   "locale": "ru_RU", "priceMin": f"{price_min}", "priceMax": f"{price_max}"}
     if dist_max != 999 and float(dist_min) and float(dist_max):
         querystring['landmarkIds'] = 'Центр города'
         if float(dist_min) > float(dist_max):
             dist_min, dist_max = dist_max, dist_min
-            logger.debug("Added distance parameters")
+            logger.info("Added distance parameters")
     else:
         dist_min = 0
         dist_max = 999
@@ -72,11 +71,10 @@ def get_list_hotel(message: telebot.types.Message, page_size: int, sort : str, p
         try:
             response = requests.request("GET", url, headers=headers, params=querystring)
             data = json.loads(response.text)
-        except Exception:
-            logger.error("API (ERROR) GET_LIST")
+        except Exception as err:
+            logger.error(f"API (ERROR) GET_LIST {err}")
         with open('data_list.txt', 'w', encoding='UTF-8') as file:
             json.dump(data, file, indent=4, ensure_ascii=False)
-        count = 1
         for hotel in data['data']['body']['searchResults']['results']:
             hotel_name = f'Отель: {hotel["name"]}'
             address = f'Адрес: {hotel["address"]["countryName"]}, {hotel["address"]["locality"]}, ' \
@@ -87,19 +85,19 @@ def get_list_hotel(message: telebot.types.Message, page_size: int, sort : str, p
             dist_center_fin = f'Удаленность от центра города {dist_center} км.'
             try:
                 rating = hotel['guestReviews']['rating']
-            except Exception:
+            except Exception as err:
                 rating = "Без рейтинга"
-
+                logger.info(f"Нет рейтинга {err}")
             if dist_max != 999:
                 if float(dist_min) > float(dist_center) or float(dist_center) > float(dist_max):
-                    logger.debug(f'the distance is not observed {dist_center} min: {dist_min}, max {dist_max}')
+                    logger.info(f'the distance is not observed {dist_center} min: {dist_min}, max {dist_max}')
                     continue
                 else:
                     if len(result_list) < page_size:
                         result_list.append(f'{hotel_name}\nРейтинг: {rating}\n{price}\n{address}\n{dist_center_fin}')
             else:
                 if len(result_list) < page_size:
-                    result_list.append(f'{hotel_name}\nРейтинг: {rating}\n{price}\n{address}\n{dist_center_fin} '
+                    result_list.append(f'{hotel_name}\nРейтинг: {rating}\n{price}\n{address}\n{dist_center_fin}\n'
                                        f'Ссылка на страницу бронирования:\nhttps://ru.hotels.com/ho{hotel["id"]}/')
         if len(result_list) < page_size:
             if "pagination" in data['data']['body']['searchResults']:
@@ -108,9 +106,9 @@ def get_list_hotel(message: telebot.types.Message, page_size: int, sort : str, p
                                 f" page_number: {page_number}")
                     page_number += 1
                     querystring["pageNumber"] = f"{page_number}"
-                    logger.debug(f"The transition to the page has been prepared {page_number}. Param: "
-                                    f"page_size {page_size} len(list): {len(result_list)}")
-                    logger.debug(f'Data result_list {result_list}')
+                    logger.info(f"The transition to the page has been prepared {page_number}. Param: "
+                                f"page_size {page_size} len(list): {len(result_list)}")
+                    logger.info(f'Data result_list {result_list}')
             else:
                 return result_list
         else:

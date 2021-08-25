@@ -4358,3 +4358,66 @@ TypeError: 'NoneType' object is not iterable
 2021-08-24T18:50:54.771319+0300, INFO, This is get list
 2021-08-24T18:50:54.773320+0300, INFO, GET requests
 2021-08-24T18:51:00.764042+0300, INFO, Run send_result
+2021-08-25T13:33:58.004257+0300, INFO, callback_query run
+2021-08-25T13:34:04.074441+0300, INFO, Москва, Центральный федеральный округ, Россия
+2021-08-25T13:34:04.555336+0300, INFO, {'place_id': 259682628, 'licence': 'Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright', 'osm_type': 'relation', 'osm_id': 8857806, 'lat': '55.7520439', 'lon': '37.61850028109701', 'display_name': 'Kremlin and Red Square, Moscow, Дворцовая площадь, 19, Tverskoy District, Moscow, Central Federal District, 103073, Russia', 'address': {'historic': 'Kremlin and Red Square, Moscow', 'road': 'Дворцовая площадь', 'quarter': '19', 'suburb': 'Tverskoy District', 'city': 'Moscow', 'state': 'Moscow', 'region': 'Central Federal District', 'postcode': '103073', 'country': 'Russia', 'country_code': 'ru'}, 'boundingbox': ['55.7480503', '55.7560472', '37.6123958', '37.6254805']}
+2021-08-25T13:34:04.660403+0300, INFO, Selected city Moscow
+2021-08-25T13:34:09.074201+0300, DEBUG, List city [{'city': 'Москва', 'caption': 'Москва, Россия', 'city_id': '1153093'}, {'city': 'Центр Москвы', 'caption': 'Центр Москвы, Москва, Россия', 'city_id': '10565407'}, {'city': 'Москва', 'caption': 'Москва, Айдахо, США', 'city_id': '1449014'}, {'city': 'Домодедово, Московская область', 'caption': 'Домодедово, Московская область, Подмосковье (Московская область), Россия', 'city_id': '1118662'}]
+2021-08-25T13:34:11.849804+0300, INFO, callback_query run
+2021-08-25T13:34:11.852791+0300, INFO, Выбран город: Moscow id: 1153093
+2021-08-25T13:34:13.794724+0300, INFO, callback_query run
+2021-08-25T13:34:16.873140+0300, DEBUG, Количество отелей: 6 func: get_page_size
+2021-08-25T13:34:16.972752+0300, INFO, This is get list
+2021-08-25T13:34:16.975749+0300, INFO, GET requests
+2021-08-25T13:51:38.174291+0300, INFO, callback_query run
+2021-08-25T13:51:42.983794+0300, INFO, Казань, городской округ Казань, Татарстан, Приволжский федеральный округ, Россия
+2021-08-25T13:51:43.492219+0300, INFO, {'place_id': 183243645, 'licence': 'Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright', 'osm_type': 'way', 'osm_id': 397258267, 'lat': '55.781867207386696', 'lon': '49.12382579635655', 'display_name': 'Marselya Salimzhanova Street, Staro-Tatarskaya Sloboda, Вахитовский район, Kazan, городской округ Казань, Tatarstan, Volga Federal District, 420107, Russia', 'address': {'road': 'Marselya Salimzhanova Street', 'suburb': 'Staro-Tatarskaya Sloboda', 'city_district': 'Вахитовский район', 'city': 'Kazan', 'county': 'городской округ Казань', 'state': 'Tatarstan', 'region': 'Volga Federal District', 'postcode': '420107', 'country': 'Russia', 'country_code': 'ru'}, 'boundingbox': ['55.7816781', '55.7822394', '49.1233541', '49.1240107']}
+2021-08-25T13:51:43.622814+0300, INFO, Selected city Kazan
+2021-08-25T13:51:46.282577+0300, DEBUG, List city [{'city': 'Казань', 'caption': 'Казань, Республика Татарстан, Россия', 'city_id': '1215771'}, {'city': 'Центр города Казань', 'caption': 'Центр города Казань, Казань, Республика Татарстан, Россия', 'city_id': '10874035'}, {'city': 'Казанеика', 'caption': 'Казанеика, Аргинон, Западная Греция, Греция', 'city_id': '10587307'}]
+2021-08-25T13:51:48.074767+0300, INFO, callback_query run
+2021-08-25T13:51:48.077738+0300, INFO, Выбран город: Kazan id: 1215771
+2021-08-25T13:51:50.062225+0300, INFO, callback_query run
+2021-08-25T13:51:53.364926+0300, DEBUG, Количество отелей: 5 func: get_page_size
+2021-08-25T13:51:53.454189+0300, INFO, This is get list
+2021-08-25T13:51:53.460189+0300, INFO, GET requests
+2021-08-25T14:31:20.075576+0300, INFO, callback_query run
+2021-08-25T14:31:22.381399+0300, INFO, Your address 17Е к3, улица Хусаина Мавлютова, Горки-1, Приволжский район, Казань, городской округ Казань, Татарстан, Приволжский федеральный округ, 420101, Россия
+2021-08-25T14:31:22.495867+0300, INFO, Selected city Казань
+2021-08-25T14:31:25.834189+0300, DEBUG, List city [{'city': 'Казань', 'caption': 'Казань, Республика Татарстан, Россия', 'city_id': '1215771'}, {'city': 'Казань (и окрестности)', 'caption': 'Казань (и окрестности), Республика Татарстан, Россия', 'city_id': '1794547'}, {'city': 'Центр города Казань', 'caption': 'Центр города Казань, Казань, Республика Татарстан, Россия', 'city_id': '10874035'}]
+2021-08-25T14:31:27.332908+0300, INFO, callback_query run
+2021-08-25T14:31:27.335905+0300, INFO, Выбран город: Казань id: 1215771
+2021-08-25T14:31:29.287420+0300, INFO, callback_query run
+2021-08-25T14:31:33.228473+0300, DEBUG, Количество отелей: 3 func: get_page_size
+2021-08-25T14:31:33.349916+0300, INFO, This is get list
+2021-08-25T14:31:33.353917+0300, INFO, GET requests
+2021-08-25T14:31:36.812489+0300, INFO, Нет рейтинга 'guestReviews'
+2021-08-25T14:31:39.020617+0300, INFO, callback_query run
+2021-08-25T14:31:45.383532+0300, INFO, Патонг, Пхукет, 83150, Таиланд
+2021-08-25T14:31:45.914849+0300, INFO, {'place_id': 54621117, 'licence': 'Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright', 'osm_type': 'node', 'osm_id': 4615633795, 'lat': '7.8929007', 'lon': '98.2968706', 'display_name': "Rico's Hotel, Food Alley, Pa Tong, Phuket Province, 83150, Thailand", 'address': {'tourism': "Rico's Hotel", 'road': 'Food Alley', 'town': 'Pa Tong', 'state': 'Phuket Province', 'postcode': '83150', 'country': 'Thailand', 'country_code': 'th'}, 'boundingbox': ['7.8928507', '7.8929507', '98.2968206', '98.2969206']}
+2021-08-25T14:31:46.082864+0300, INFO, Selected city Pa Tong
+2021-08-25T14:31:48.777333+0300, DEBUG, List city [{'city': 'Батуми', 'caption': 'Батуми, Аджария, Грузия', 'city_id': '1644171'}, {'city': 'Патонг', 'caption': 'Патонг, Пхукет (провинция), Таиланд', 'city_id': '1806849'}, {'city': 'Сан-Патонг', 'caption': 'Сан-Патонг, Провинция Чианг-Май, Таиланд', 'city_id': '1643869'}, {'city': 'Тонг-Сала', 'caption': 'Тонг-Сала, Остров Пханган, Провинция Сураттани, Таиланд', 'city_id': '1714312'}, {'city': 'Район Гонконга Causeway Bay', 'caption': 'Район Гонконга Causeway Bay, Гонконг, САР Гонконг', 'city_id': '851'}, {'city': 'Стоун-Маунтин', 'caption': 'Стоун-Маунтин, Джорджия, США', 'city_id': '1461660'}]
+2021-08-25T14:31:52.411215+0300, INFO, callback_query run
+2021-08-25T14:31:52.414512+0300, INFO, Выбран город: Pa Tong id: 1806849
+2021-08-25T14:31:55.322825+0300, INFO, callback_query run
+2021-08-25T14:31:57.325545+0300, DEBUG, Количество отелей: 5 func: get_page_size
+2021-08-25T14:31:57.452574+0300, INFO, This is get list
+2021-08-25T14:31:57.456543+0300, INFO, GET requests
+2021-08-25T14:32:03.672858+0300, INFO, Нет рейтинга 'guestReviews'
+2021-08-25T14:32:03.674857+0300, INFO, Нет рейтинга 'guestReviews'
+2021-08-25T14:32:03.676846+0300, INFO, Нет рейтинга 'guestReviews'
+2021-08-25T14:32:03.678851+0300, INFO, Нет рейтинга 'guestReviews'
+2021-08-25T14:32:03.679847+0300, INFO, Нет рейтинга 'guestReviews'
+2021-08-25T14:32:03.681847+0300, INFO, Нет рейтинга 'guestReviews'
+2021-08-25T14:45:22.839492+0300, INFO, callback_query run
+2021-08-25T14:45:27.831381+0300, INFO, Нью-Йорк, Соединённые Штаты Америки
+2021-08-25T14:45:28.356767+0300, INFO, {'place_id': 212523510, 'licence': 'Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright', 'osm_type': 'way', 'osm_id': 575213527, 'lat': '40.712742950000006', 'lon': '-74.00595024412516', 'display_name': 'New York City Hall, 260, Broadway, Lower Manhattan, Civic Center, Manhattan, New York County, New York, 10000, United States', 'address': {'amenity': 'New York City Hall', 'house_number': '260', 'road': 'Broadway', 'quarter': 'Lower Manhattan', 'neighbourhood': 'Civic Center', 'suburb': 'Manhattan', 'county': 'New York County', 'city': 'New York', 'state': 'New York', 'postcode': '10000', 'country': 'United States', 'country_code': 'us'}, 'boundingbox': ['40.7124463', '40.7130195', '-74.0064366', '-74.0055703']}
+2021-08-25T14:45:28.471601+0300, INFO, Selected city New York
+2021-08-25T14:45:32.347793+0300, DEBUG, List city [{'city': 'Нью-Йорк', 'caption': 'Нью-Йорк, Нью-Йорк, США (New York City)', 'city_id': '1506246'}, {'city': 'Центральный Нью-Йорк', 'caption': 'Центральный Нью-Йорк, Нью-Йорк, Нью-Йорк, США', 'city_id': '10819060'}, {'city': 'Манхэттен', 'caption': 'Манхэттен, Нью-Йорк, Нью-Йорк, США', 'city_id': '1535616'}, {'city': 'Бруклин', 'caption': 'Бруклин, Нью-Йорк, США', 'city_id': '1496773'}, {'city': 'Ист-Нью-Йорк', 'caption': 'Ист-Нью-Йорк, Бруклин, Нью-Йорк, США', 'city_id': '1748361'}, {'city': 'Мидтаун', 'caption': 'Мидтаун, Нью-Йорк, Нью-Йорк, США', 'city_id': '1737998'}]
+2021-08-25T14:45:35.319113+0300, INFO, callback_query run
+2021-08-25T14:45:35.322342+0300, INFO, Выбран город: New York id: 1506246
+2021-08-25T14:45:39.359149+0300, INFO, callback_query run
+2021-08-25T14:45:52.785314+0300, INFO, run get_result
+2021-08-25T14:45:52.787299+0300, INFO, run get_list_hotel
+2021-08-25T14:45:52.791315+0300, INFO, This is get list
+2021-08-25T14:45:52.794296+0300, INFO, GET requests
+2021-08-25T14:45:59.096774+0300, INFO, Run send_result

@@ -75,8 +75,9 @@ class Command(BaseCommand):
             :param call: types.CallbackQuery
             :return: None
             """
+            call.message.text = call.data
             registration(call.message)
-            logger.debug("callback_query run")
+            logger.info("callback_query run")
             if call.data == "geo":
                 keyboard = types.ReplyKeyboardMarkup(row_width=1, resize_keyboard=True)
                 button_geo = types.KeyboardButton(text="Отправить местоположение", request_location=True)
@@ -89,7 +90,7 @@ class Command(BaseCommand):
                                                        " Например (Россия Москва) ")
             if "CITY" in call.data:
                 city_id = call.data.split()[1]
-                logger.debug(f'Выбран город {Profile.objects.get(extr_id=call.message.chat.id).city} id {city_id}')
+                logger.info(f'Выбран город: {Profile.objects.get(extr_id=call.message.chat.id).city} id: {city_id}')
                 Profile.objects.filter(extr_id=call.message.chat.id).update(city_id=int(city_id))
                 navigaton(call.message)
 
@@ -288,6 +289,7 @@ class Command(BaseCommand):
             использован значение населенного пункта или деревни. Полученный результат обнавляет локацию в БД.
             :param message: telebot.message
             """
+            registration(message)
             city = message.text
             geolocator = Nominatim(user_agent='hotel')
             if geolocator.geocode(city):
@@ -371,10 +373,10 @@ class Command(BaseCommand):
             else:
                 for item in result_list:
                     bot.send_message(message.chat.id, f'{item}')
+                    message.text = item
+                    registration(message)
 
-        bot.polling()
-        # while True:
-        #     try:
-        #         bot.polling()
-        #     except Exception:
-        #         logger.error("Не запустился бот")
+        try:
+            bot.polling()
+        except Exception as err:
+            logger.error(f"Не запустился бот {err}")
