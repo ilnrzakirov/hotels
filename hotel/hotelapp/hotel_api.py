@@ -26,8 +26,8 @@ def get_city_id(message: telebot.types.Message):
         data = json.loads(response.text)
     except Exception as err:
         logger.error(f"Ошибка API {err}")
-    with open('data.txt', 'w', encoding='UTF-8') as file:
-        json.dump(data, file, indent=4, ensure_ascii=False)
+    # with open('data.txt', 'w', encoding='UTF-8') as file:
+    #     json.dump(data, file, indent=4, ensure_ascii=False)
     result_dict = list()
     for item in data['suggestions']:
         if item['group'] == 'CITY_GROUP':
@@ -73,8 +73,8 @@ def get_list_hotel(message: telebot.types.Message, page_size: int, sort: str, pr
             data = json.loads(response.text)
         except Exception as err:
             logger.error(f"API (ERROR) GET_LIST {err}")
-        with open('data_list.txt', 'w', encoding='UTF-8') as file:
-            json.dump(data, file, indent=4, ensure_ascii=False)
+        # with open('data_list.txt', 'w', encoding='UTF-8') as file:
+        #     json.dump(data, file, indent=4, ensure_ascii=False)
         for hotel in data['data']['body']['searchResults']['results']:
             hotel_name = f'Отель: {hotel["name"]}'
             address = f'Адрес: {hotel["address"]["countryName"]}, {hotel["address"]["locality"]}, ' \

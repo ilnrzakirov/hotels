@@ -47,7 +47,6 @@ class Command(BaseCommand):
         """
         Функция запуска бота. При вызове команды bot запускается данная функция
         """
-
         @bot.message_handler(commands=['start'])
         @logger.catch()
         def start_bot(message: telebot.types.Message):

@@ -4437,3 +4437,32 @@ TypeError: 'NoneType' object is not iterable
 2021-08-28T15:29:39.205269+0300, INFO, {'place_id': 258946546, 'licence': 'Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright', 'osm_type': 'relation', 'osm_id': 2380991, 'lat': '72.28380185', 'lon': '115.50289393194782', 'display_name': 'Саскылахский национальный наслег, Anabarsky Ulus, Sakha Republic, Far Eastern Federal District, 678440, Russia', 'address': {'municipality': 'Саскылахский национальный наслег', 'county': 'Anabarsky Ulus', 'state': 'Sakha Republic', 'region': 'Far Eastern Federal District', 'postcode': '678440', 'country': 'Russia', 'country_code': 'ru'}, 'boundingbox': ['70.751155', '73.8165175', '113.1357479', '120.4372784']}
 2021-08-28T15:29:39.534889+0300, INFO, Selected city Sakha
 2021-08-28T15:29:44.231668+0300, DEBUG, List city [{'city': 'Южно-Сахалинск', 'caption': 'Южно-Сахалинск, Сахалинская область, Россия', 'city_id': '1137550'}, {'city': 'Якутск', 'caption': 'Якутск, Республика Саха, Россия', 'city_id': '1103557'}, {'city': 'Нерюнгри', 'caption': 'Нерюнгри, Республика Саха, Россия', 'city_id': '1152313'}, {'city': 'Мирный', 'caption': 'Мирный, Республика Саха, Россия', 'city_id': '1155080'}, {'city': 'Холмск', 'caption': 'Холмск, Сахалинская область, Россия', 'city_id': '1119072'}, {'city': 'Алдан', 'caption': 'Алдан, Республика Саха, Россия', 'city_id': '1164291'}, {'city': 'Корсаков', 'caption': 'Корсаков, Сахалинская область, Россия', 'city_id': '1151276'}, {'city': 'Ленск', 'caption': 'Ленск, Республика Саха, Россия', 'city_id': '10409392'}]
+2021-08-28T15:58:43.362379+0300, INFO, callback_query run
+2021-08-28T15:58:48.970597+0300, INFO, callback_query run
+2021-08-28T15:59:04.535188+0300, INFO, Москва, Центральный федеральный округ, Россия
+2021-08-28T15:59:05.013855+0300, INFO, {'place_id': 259682628, 'licence': 'Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright', 'osm_type': 'relation', 'osm_id': 8857806, 'lat': '55.7520439', 'lon': '37.61850028109701', 'display_name': 'Kremlin and Red Square, Moscow, Дворцовая площадь, 19, Tverskoy District, Moscow, Central Federal District, 103073, Russia', 'address': {'historic': 'Kremlin and Red Square, Moscow', 'road': 'Дворцовая площадь', 'quarter': '19', 'suburb': 'Tverskoy District', 'city': 'Moscow', 'state': 'Moscow', 'region': 'Central Federal District', 'postcode': '103073', 'country': 'Russia', 'country_code': 'ru'}, 'boundingbox': ['55.7480503', '55.7560472', '37.6123958', '37.6254805']}
+2021-08-28T15:59:05.116682+0300, INFO, Selected city Moscow
+2021-08-28T15:59:08.558100+0300, DEBUG, List city [{'city': 'Москва', 'caption': 'Москва, Россия', 'city_id': '1153093'}, {'city': 'Центр Москвы', 'caption': 'Центр Москвы, Москва, Россия', 'city_id': '10565407'}, {'city': 'Москва', 'caption': 'Москва, Айдахо, США', 'city_id': '1449014'}, {'city': 'Домодедово, Московская область', 'caption': 'Домодедово, Московская область, Подмосковье (Московская область), Россия', 'city_id': '1118662'}]
+2021-08-28T15:59:11.148536+0300, INFO, callback_query run
+2021-08-28T15:59:11.153545+0300, INFO, Выбран город: Moscow id: 1153093
+2021-08-28T15:59:13.754068+0300, INFO, callback_query run
+2021-08-28T15:59:16.405860+0300, DEBUG, Количество отелей: 3 func: get_page_size
+2021-08-28T15:59:16.521992+0300, INFO, This is get list
+2021-08-28T15:59:16.524992+0300, INFO, GET requests
+2021-08-28T15:59:23.089909+0300, INFO, Нет рейтинга 'guestReviews'
+2021-08-28T15:59:23.092899+0300, INFO, Нет рейтинга 'guestReviews'
+2021-08-28T15:59:23.094898+0300, INFO, Нет рейтинга 'guestReviews'
+2021-08-28T15:59:23.095898+0300, INFO, Нет рейтинга 'guestReviews'
+2021-08-28T15:59:23.096904+0300, INFO, Нет рейтинга 'guestReviews'
+2021-08-28T15:59:23.098901+0300, INFO, Нет рейтинга 'guestReviews'
+2021-08-28T15:59:23.099899+0300, INFO, Нет рейтинга 'guestReviews'
+2021-08-28T15:59:23.100905+0300, INFO, Нет рейтинга 'guestReviews'
+2021-08-28T15:59:23.103987+0300, INFO, Нет рейтинга 'guestReviews'
+2021-08-28T15:59:23.108254+0300, INFO, Нет рейтинга 'guestReviews'
+2021-08-28T15:59:23.110261+0300, INFO, Нет рейтинга 'guestReviews'
+2021-08-28T15:59:23.111253+0300, INFO, Нет рейтинга 'guestReviews'
+2021-08-28T15:59:23.112253+0300, INFO, Нет рейтинга 'guestReviews'
+2021-08-28T15:59:23.113253+0300, INFO, Нет рейтинга 'guestReviews'
+2021-08-28T15:59:23.115244+0300, INFO, Нет рейтинга 'guestReviews'
+2021-08-28T15:59:23.116253+0300, INFO, Нет рейтинга 'guestReviews'
+2021-08-28T15:59:23.118227+0300, INFO, Нет рейтинга 'guestReviews'
