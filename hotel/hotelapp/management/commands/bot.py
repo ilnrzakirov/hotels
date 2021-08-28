@@ -1,4 +1,5 @@
 import telebot
+
 from django.conf import settings
 from django.core.management.base import BaseCommand
 from geopy.geocoders import Nominatim
@@ -57,14 +58,15 @@ class Command(BaseCommand):
             :return: None
             """
             bot.send_message(message.chat.id, "Добро пожаловать! Бот предназначан для поиска отелей по местоположению, "
-                                              "либо по выбранному городу. ")
+                                              "либо по выбранному городу. Бот выполнен в виде интерактивное меню."
+                                              " Для работы с ботом требуется лишь: ")
             registration(message)
             keyboard = types.InlineKeyboardMarkup(row_width=1)
             button_geo = types.InlineKeyboardButton("Поиск по геопозиции", callback_data="geo")
             button_search = types.InlineKeyboardButton("Выбрать город", callback_data="search_geo")
             keyboard.row(button_geo)
             keyboard.row(button_search)
-            bot.send_message(message.chat.id, "Следуйте по подсказкам бота", reply_markup=keyboard)
+            bot.send_message(message.chat.id, "Следовать по подсказкам бота", reply_markup=keyboard)
 
         @bot.callback_query_handler(func=lambda call: True)
         @logger.catch()
@@ -252,7 +254,7 @@ class Command(BaseCommand):
                 registration(message, city)
                 bot.send_message(message.chat.id, "Подождите, это займет некоторое время")
                 rst_dct = get_city_id(message)
-                keyboard = create_keyboard(message, rst_dct)
+                keyboard = create_keyboard(rst_dct)
                 bot.send_message(message.chat.id, "Выберите точку поиска: ", reply_markup=keyboard)
             else:
                 bot.send_message(message.chat.id, "Не удается загрузить геоданные")
@@ -308,16 +310,15 @@ class Command(BaseCommand):
                 Profile.objects.filter(extr_id=message.chat.id).update(city=city)
                 bot.send_message(message.chat.id, "Подождите, это займет некоторое время")
                 rst_dct = get_city_id(message)
-                keyboard = create_keyboard(message, rst_dct)
+                keyboard = create_keyboard(rst_dct)
                 bot.send_message(message.chat.id, "Найденные города: ", reply_markup=keyboard)
             else:
                 bot.send_message(message.chat.id, "Такого города не существует, попробуйте еще раз")
 
         @logger.catch()
-        def create_keyboard(message: types.Message, dct: list) -> types.InlineKeyboardMarkup:
+        def create_keyboard(dct: list) -> types.InlineKeyboardMarkup:
             """
             Функция созадает inline клавиатуру с полученного списка городов
-            :param message: types.Message
             :param dct: list
             :return: types.InlineKeyboardMarkup
             """
