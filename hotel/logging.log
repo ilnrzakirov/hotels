@@ -4466,3 +4466,234 @@ TypeError: 'NoneType' object is not iterable
 2021-08-28T15:59:23.115244+0300, INFO, Нет рейтинга 'guestReviews'
 2021-08-28T15:59:23.116253+0300, INFO, Нет рейтинга 'guestReviews'
 2021-08-28T15:59:23.118227+0300, INFO, Нет рейтинга 'guestReviews'
+2021-08-28T17:01:25.971604+0300, INFO, callback_query run
+2021-08-28T17:01:32.969149+0300, INFO, Пхукет, Таиланд
+2021-08-28T17:01:33.485688+0300, INFO, {'place_id': 110782212, 'licence': 'Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright', 'osm_type': 'way', 'osm_id': 89395597, 'lat': '7.938486387932948', 'lon': '98.35218866626495', 'display_name': 'Phuket, Phuket Province, 83120, Thailand', 'address': {'city': 'Phuket', 'state': 'Phuket Province', 'postcode': '83120', 'country': 'Thailand', 'country_code': 'th'}, 'boundingbox': ['7.937797', '7.944318', '98.350281', '98.363009']}
+2021-08-28T17:01:33.717408+0300, INFO, Selected city Phuket
+2021-08-28T17:01:36.645150+0300, DEBUG, List city [{'city': 'Пхукет (и округа)', 'caption': 'Пхукет (и округа), Пхукет (провинция), Таиланд', 'city_id': '1708722'}, {'city': 'Карон', 'caption': 'Карон, Пхукет (провинция), Таиланд', 'city_id': '1806864'}, {'city': 'Патонг', 'caption': 'Патонг, Пхукет (провинция), Таиланд', 'city_id': '1806849'}, {'city': 'Ката', 'caption': 'Ката, Карон, Пхукет (провинция), Таиланд', 'city_id': '1740931'}, {'city': 'Камала', 'caption': 'Камала, Пхукет (провинция), Таиланд', 'city_id': '1806850'}, {'city': 'Най-Харн', 'caption': 'Най-Харн, Равай, Пхукет (провинция), Таиланд', 'city_id': '1771989'}, {'city': 'Лагуна', 'caption': 'Лагуна, Чонг-Тхале, Пхукет (провинция), Таиланд', 'city_id': '1772729'}, {'city': 'Старый Пхукет', 'caption': 'Старый Пхукет, Пхукет (и округа), Пхукет (провинция), Таиланд', 'city_id': '1746494'}]
+2021-08-28T17:01:40.855012+0300, INFO, callback_query run
+2021-08-28T17:01:40.870658+0300, INFO, Выбран город: Phuket id: 1806849
+2021-08-28T17:01:42.772697+0300, INFO, callback_query run
+2021-08-28T17:01:45.040735+0300, INFO, callback_query run
+2021-08-28T17:01:47.529994+0300, DEBUG, Количество отелей: 3 func: get_page_size
+2021-08-28T17:01:47.529994+0300, DEBUG, Количество отелей: 3 func: get_page_size
+2021-08-28T17:01:47.630204+0300, INFO, This is get list
+2021-08-28T17:01:47.630204+0300, INFO, GET requests
+2021-08-28T17:01:47.661449+0300, INFO, This is get list
+2021-08-28T17:01:47.667485+0300, INFO, GET requests
+2021-08-28T17:01:52.518243+0300, INFO, Нет рейтинга 'guestReviews'
+2021-08-28T17:01:52.521015+0300, INFO, Нет рейтинга 'guestReviews'
+2021-08-28T17:01:52.523005+0300, INFO, Нет рейтинга 'guestReviews'
+2021-08-28T17:01:52.524012+0300, INFO, Нет рейтинга 'guestReviews'
+2021-08-28T17:01:52.526007+0300, INFO, Нет рейтинга 'guestReviews'
+2021-08-28T17:01:52.531008+0300, INFO, Нет рейтинга 'guestReviews'
+2021-08-28T17:01:53.132422+0300, INFO, Нет рейтинга 'guestReviews'
+2021-08-28T17:01:53.135398+0300, INFO, Нет рейтинга 'guestReviews'
+2021-08-28T17:01:53.137401+0300, INFO, Нет рейтинга 'guestReviews'
+2021-08-28T17:01:53.138401+0300, INFO, Нет рейтинга 'guestReviews'
+2021-08-28T17:01:53.140401+0300, INFO, Нет рейтинга 'guestReviews'
+2021-08-28T17:01:53.141413+0300, INFO, Нет рейтинга 'guestReviews'
+2021-08-28T17:01:53.142422+0300, INFO, Нет рейтинга 'guestReviews'
+2021-08-28T20:18:39.057451+0300, INFO, callback_query run
+2021-08-28T20:18:41.549348+0300, INFO, Your address 17Е к3, улица Хусаина Мавлютова, Горки-1, Приволжский район, Казань, городской округ Казань, Татарстан, Приволжский федеральный округ, 420101, Россия
+2021-08-28T20:18:41.704481+0300, INFO, Selected city Казань
+2021-08-28T20:18:45.616076+0300, DEBUG, List city [{'city': 'Казань', 'caption': 'Казань, Республика Татарстан, Россия', 'city_id': '1215771'}, {'city': 'Казань (и окрестности)', 'caption': 'Казань (и окрестности), Республика Татарстан, Россия', 'city_id': '1794547'}, {'city': 'Центр города Казань', 'caption': 'Центр города Казань, Казань, Республика Татарстан, Россия', 'city_id': '10874035'}]
+2021-08-28T20:18:47.496172+0300, INFO, callback_query run
+2021-08-28T20:18:47.499171+0300, INFO, Выбран город: Казань id: 1215771
+2021-08-28T20:18:54.147646+0300, INFO, callback_query run
+2021-08-28T20:18:58.771716+0300, DEBUG, Количество отелей: 4 func: get_page_size
+2021-08-28T20:18:58.892702+0300, INFO, This is get list
+2021-08-28T20:18:58.895702+0300, INFO, GET requests
+2021-08-28T20:19:03.078978+0300, INFO, Нет рейтинга 'guestReviews'
+2021-08-28T20:19:03.080650+0300, INFO, Next_list : Yes,  page_number: 1
+2021-08-28T20:19:03.083642+0300, INFO, The transition to the page has been prepared 2. Param: page_size 4 len(list): 3
+2021-08-28T20:19:03.085638+0300, INFO, Data result_list ['Отель: Отель «Дон Кихот»\nРейтинг: 9,0\nЦена за сутки: 6,300 RUB\nАдрес: Россия, Казань, ул. Бурхана Шахиди, 11/16\nУдаленность от центра города 1.6 км.\nСсылка на страницу бронирования:\nhttps://ru.hotels.com/ho1836476608/', 'Отель: Хостел «Сарацин» на Большой Красной\nРейтинг: Без рейтинга\nЦена за сутки: 14,500 RUB\nАдрес: Россия, Казань, ул. Большая Красная, 20\nУдаленность от центра города 1.1 км.\nСсылка на страницу бронирования:\nhttps://ru.hotels.com/ho555550/', 'Отель: Отель Kazan Palace by Tasıgo\nРейтинг: 9,2\nЦена за сутки: 144,000 RUB\nАдрес: Россия, Казань, ул. Калинина, 5/24\nУдаленность от центра города 1.4 км.\nСсылка на страницу бронирования:\nhttps://ru.hotels.com/ho1030819072/']
+2021-08-28T20:19:03.088638+0300, INFO, GET requests
+2021-08-28T20:19:18.619171+0300, INFO, callback_query run
+2021-08-28T20:19:27.230032+0300, INFO, Патонг, Пхукет, 83150, Таиланд
+2021-08-28T20:19:27.758696+0300, INFO, {'place_id': 54621117, 'licence': 'Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright', 'osm_type': 'node', 'osm_id': 4615633795, 'lat': '7.8929007', 'lon': '98.2968706', 'display_name': "Rico's Hotel, Food Alley, Pa Tong, Phuket Province, 83150, Thailand", 'address': {'tourism': "Rico's Hotel", 'road': 'Food Alley', 'town': 'Pa Tong', 'state': 'Phuket Province', 'postcode': '83150', 'country': 'Thailand', 'country_code': 'th'}, 'boundingbox': ['7.8928507', '7.8929507', '98.2968206', '98.2969206']}
+2021-08-28T20:19:27.911451+0300, INFO, Selected city Pa Tong
+2021-08-28T20:19:30.568878+0300, DEBUG, List city [{'city': 'Батуми', 'caption': 'Батуми, Аджария, Грузия', 'city_id': '1644171'}, {'city': 'Патонг', 'caption': 'Патонг, Пхукет (провинция), Таиланд', 'city_id': '1806849'}, {'city': 'Сан-Патонг', 'caption': 'Сан-Патонг, Провинция Чианг-Май, Таиланд', 'city_id': '1643869'}, {'city': 'Тонг-Сала', 'caption': 'Тонг-Сала, Остров Пханган, Провинция Сураттани, Таиланд', 'city_id': '1714312'}, {'city': 'Район Гонконга Causeway Bay', 'caption': 'Район Гонконга Causeway Bay, Гонконг, САР Гонконг', 'city_id': '851'}, {'city': 'Стоун-Маунтин', 'caption': 'Стоун-Маунтин, Джорджия, США', 'city_id': '1461660'}]
+2021-08-28T20:19:33.937543+0300, INFO, callback_query run
+2021-08-28T20:19:33.940538+0300, INFO, Выбран город: Pa Tong id: 1806849
+2021-08-28T20:19:36.318001+0300, INFO, callback_query run
+2021-08-28T20:19:51.346855+0300, INFO, run get_result
+2021-08-28T20:19:51.348855+0300, INFO, run get_list_hotel
+2021-08-28T20:19:51.352850+0300, INFO, This is get list
+2021-08-28T20:19:51.358755+0300, INFO, GET requests
+2021-08-28T20:19:57.987770+0300, INFO, Run send_result
+2021-08-28T20:20:31.100915+0300, INFO, callback_query run
+2021-08-28T20:20:39.187311+0300, INFO, Пхукет, Таиланд
+2021-08-28T20:20:39.696498+0300, INFO, {'place_id': 110782212, 'licence': 'Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright', 'osm_type': 'way', 'osm_id': 89395597, 'lat': '7.938486387932948', 'lon': '98.35218866626495', 'display_name': 'Phuket, Phuket Province, 83120, Thailand', 'address': {'city': 'Phuket', 'state': 'Phuket Province', 'postcode': '83120', 'country': 'Thailand', 'country_code': 'th'}, 'boundingbox': ['7.937797', '7.944318', '98.350281', '98.363009']}
+2021-08-28T20:20:39.868643+0300, INFO, Selected city Phuket
+2021-08-28T20:20:42.607167+0300, DEBUG, List city [{'city': 'Пхукет (и округа)', 'caption': 'Пхукет (и округа), Пхукет (провинция), Таиланд', 'city_id': '1708722'}, {'city': 'Карон', 'caption': 'Карон, Пхукет (провинция), Таиланд', 'city_id': '1806864'}, {'city': 'Патонг', 'caption': 'Патонг, Пхукет (провинция), Таиланд', 'city_id': '1806849'}, {'city': 'Ката', 'caption': 'Ката, Карон, Пхукет (провинция), Таиланд', 'city_id': '1740931'}, {'city': 'Камала', 'caption': 'Камала, Пхукет (провинция), Таиланд', 'city_id': '1806850'}, {'city': 'Най-Харн', 'caption': 'Най-Харн, Равай, Пхукет (провинция), Таиланд', 'city_id': '1771989'}, {'city': 'Лагуна', 'caption': 'Лагуна, Чонг-Тхале, Пхукет (провинция), Таиланд', 'city_id': '1772729'}, {'city': 'Старый Пхукет', 'caption': 'Старый Пхукет, Пхукет (и округа), Пхукет (провинция), Таиланд', 'city_id': '1746494'}]
+2021-08-28T20:20:46.319489+0300, INFO, callback_query run
+2021-08-28T20:20:46.322488+0300, INFO, Выбран город: Phuket id: 1806849
+2021-08-28T20:20:48.965534+0300, INFO, callback_query run
+2021-08-28T20:20:51.166478+0300, DEBUG, Количество отелей: 10 func: get_page_size
+2021-08-28T20:20:51.358443+0300, INFO, This is get list
+2021-08-28T20:20:51.361277+0300, INFO, GET requests
+2021-08-28T20:21:28.958744+0300, INFO, callback_query run
+2021-08-28T20:21:35.405871+0300, INFO, Пхукет, Таиланд
+2021-08-28T20:21:35.917116+0300, INFO, {'place_id': 110782212, 'licence': 'Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright', 'osm_type': 'way', 'osm_id': 89395597, 'lat': '7.938486387932948', 'lon': '98.35218866626495', 'display_name': 'Phuket, Phuket Province, 83120, Thailand', 'address': {'city': 'Phuket', 'state': 'Phuket Province', 'postcode': '83120', 'country': 'Thailand', 'country_code': 'th'}, 'boundingbox': ['7.937797', '7.944318', '98.350281', '98.363009']}
+2021-08-28T20:21:36.076506+0300, INFO, Selected city Phuket
+2021-08-28T20:21:38.990875+0300, DEBUG, List city [{'city': 'Пхукет (и округа)', 'caption': 'Пхукет (и округа), Пхукет (провинция), Таиланд', 'city_id': '1708722'}, {'city': 'Карон', 'caption': 'Карон, Пхукет (провинция), Таиланд', 'city_id': '1806864'}, {'city': 'Патонг', 'caption': 'Патонг, Пхукет (провинция), Таиланд', 'city_id': '1806849'}, {'city': 'Ката', 'caption': 'Ката, Карон, Пхукет (провинция), Таиланд', 'city_id': '1740931'}, {'city': 'Камала', 'caption': 'Камала, Пхукет (провинция), Таиланд', 'city_id': '1806850'}, {'city': 'Най-Харн', 'caption': 'Най-Харн, Равай, Пхукет (провинция), Таиланд', 'city_id': '1771989'}, {'city': 'Лагуна', 'caption': 'Лагуна, Чонг-Тхале, Пхукет (провинция), Таиланд', 'city_id': '1772729'}, {'city': 'Старый Пхукет', 'caption': 'Старый Пхукет, Пхукет (и округа), Пхукет (провинция), Таиланд', 'city_id': '1746494'}]
+2021-08-28T20:21:43.716713+0300, INFO, callback_query run
+2021-08-28T20:21:43.718718+0300, INFO, Выбран город: Phuket id: 1806849
+2021-08-28T20:21:45.201007+0300, INFO, callback_query run
+2021-08-28T20:21:47.831728+0300, DEBUG, Количество отелей: 5 func: get_page_size
+2021-08-28T20:21:48.052668+0300, INFO, This is get list
+2021-08-28T20:21:48.055656+0300, INFO, GET requests
+2021-08-28T20:23:07.007919+0300, INFO, callback_query run
+2021-08-28T20:23:12.838879+0300, INFO, Пхукет, Таиланд
+2021-08-28T20:23:13.347759+0300, INFO, {'place_id': 110782212, 'licence': 'Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright', 'osm_type': 'way', 'osm_id': 89395597, 'lat': '7.938486387932948', 'lon': '98.35218866626495', 'display_name': 'Phuket, Phuket Province, 83120, Thailand', 'address': {'city': 'Phuket', 'state': 'Phuket Province', 'postcode': '83120', 'country': 'Thailand', 'country_code': 'th'}, 'boundingbox': ['7.937797', '7.944318', '98.350281', '98.363009']}
+2021-08-28T20:23:13.653905+0300, INFO, Selected city Phuket
+2021-08-28T20:23:17.101914+0300, DEBUG, List city [{'city': 'Пхукет (и округа)', 'caption': 'Пхукет (и округа), Пхукет (провинция), Таиланд', 'city_id': '1708722'}, {'city': 'Карон', 'caption': 'Карон, Пхукет (провинция), Таиланд', 'city_id': '1806864'}, {'city': 'Патонг', 'caption': 'Патонг, Пхукет (провинция), Таиланд', 'city_id': '1806849'}, {'city': 'Ката', 'caption': 'Ката, Карон, Пхукет (провинция), Таиланд', 'city_id': '1740931'}, {'city': 'Камала', 'caption': 'Камала, Пхукет (провинция), Таиланд', 'city_id': '1806850'}, {'city': 'Най-Харн', 'caption': 'Най-Харн, Равай, Пхукет (провинция), Таиланд', 'city_id': '1771989'}, {'city': 'Лагуна', 'caption': 'Лагуна, Чонг-Тхале, Пхукет (провинция), Таиланд', 'city_id': '1772729'}, {'city': 'Старый Пхукет', 'caption': 'Старый Пхукет, Пхукет (и округа), Пхукет (провинция), Таиланд', 'city_id': '1746494'}]
+2021-08-28T20:23:20.605498+0300, INFO, callback_query run
+2021-08-28T20:23:20.607498+0300, INFO, Выбран город: Phuket id: 1806849
+2021-08-28T20:23:21.842175+0300, INFO, callback_query run
+2021-08-28T20:23:23.571206+0300, DEBUG, Количество отелей: 5 func: get_page_size
+2021-08-28T20:23:23.695761+0300, INFO, This is get list
+2021-08-28T20:23:23.699771+0300, INFO, GET requests
+2021-08-28T20:25:23.007714+0300, INFO, callback_query run
+2021-08-28T20:25:27.018835+0300, INFO, Москва, Центральный федеральный округ, Россия
+2021-08-28T20:25:27.406571+0300, INFO, {'place_id': 259682628, 'licence': 'Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright', 'osm_type': 'relation', 'osm_id': 8857806, 'lat': '55.7520439', 'lon': '37.61850028109701', 'display_name': 'Kremlin and Red Square, Moscow, Дворцовая площадь, 19, Tverskoy District, Moscow, Central Federal District, 103073, Russia', 'address': {'historic': 'Kremlin and Red Square, Moscow', 'road': 'Дворцовая площадь', 'quarter': '19', 'suburb': 'Tverskoy District', 'city': 'Moscow', 'state': 'Moscow', 'region': 'Central Federal District', 'postcode': '103073', 'country': 'Russia', 'country_code': 'ru'}, 'boundingbox': ['55.7480503', '55.7560472', '37.6123958', '37.6254805']}
+2021-08-28T20:25:27.523653+0300, INFO, Selected city Moscow
+2021-08-28T20:25:31.315172+0300, DEBUG, List city [{'city': 'Москва', 'caption': 'Москва, Россия', 'city_id': '1153093'}, {'city': 'Центр Москвы', 'caption': 'Центр Москвы, Москва, Россия', 'city_id': '10565407'}, {'city': 'Москва', 'caption': 'Москва, Айдахо, США', 'city_id': '1449014'}, {'city': 'Домодедово, Московская область', 'caption': 'Домодедово, Московская область, Подмосковье (Московская область), Россия', 'city_id': '1118662'}]
+2021-08-28T20:25:33.590379+0300, INFO, callback_query run
+2021-08-28T20:25:33.593384+0300, INFO, Выбран город: Moscow id: 1153093
+2021-08-28T20:25:35.225334+0300, INFO, callback_query run
+2021-08-28T20:25:36.589564+0300, DEBUG, Количество отелей: 6 func: get_page_size
+2021-08-28T20:25:36.713045+0300, INFO, This is get list
+2021-08-28T20:25:36.717048+0300, INFO, GET requests
+2021-08-28T20:25:42.908285+0300, INFO, Нет рейтинга 'guestReviews'
+2021-08-28T20:25:42.910377+0300, INFO, Нет рейтинга 'guestReviews'
+2021-08-28T20:25:42.912662+0300, INFO, Нет рейтинга 'guestReviews'
+2021-08-28T20:25:42.914116+0300, INFO, Нет рейтинга 'guestReviews'
+2021-08-28T20:25:42.915136+0300, INFO, Нет рейтинга 'guestReviews'
+2021-08-28T20:25:42.917145+0300, INFO, Нет рейтинга 'guestReviews'
+2021-08-28T20:25:42.919135+0300, INFO, Нет рейтинга 'guestReviews'
+2021-08-28T20:25:42.924140+0300, INFO, Нет рейтинга 'guestReviews'
+2021-08-28T20:25:42.925148+0300, INFO, Нет рейтинга 'guestReviews'
+2021-08-28T20:25:42.927138+0300, INFO, Нет рейтинга 'guestReviews'
+2021-08-28T20:25:42.928137+0300, INFO, Нет рейтинга 'guestReviews'
+2021-08-28T20:25:42.929135+0300, INFO, Нет рейтинга 'guestReviews'
+2021-08-28T20:25:42.931619+0300, INFO, Нет рейтинга 'guestReviews'
+2021-08-28T20:25:42.932931+0300, INFO, Нет рейтинга 'guestReviews'
+2021-08-28T20:25:42.933950+0300, INFO, Нет рейтинга 'guestReviews'
+2021-08-28T20:25:42.937953+0300, INFO, Нет рейтинга 'guestReviews'
+2021-08-28T20:25:42.938952+0300, INFO, Нет рейтинга 'guestReviews'
+2021-08-28T20:26:02.473429+0300, INFO, callback_query run
+2021-08-28T20:26:12.731409+0300, INFO, Анталья, Муратпаша, Анталья, Средиземноморский регион, 07010, Турция
+2021-08-28T20:26:13.251312+0300, INFO, {'place_id': 190531672, 'licence': 'Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright', 'osm_type': 'way', 'osm_id': 436435055, 'lat': '36.90097335', 'lon': '30.695501049999997', 'display_name': 'Cumhuriyet Mahallesi, Antalya, Muratpaşa, Antalya, Mediterranean Region, Turkey', 'address': {'suburb': 'Cumhuriyet Mahallesi', 'city': 'Antalya', 'town': 'Muratpaşa', 'province': 'Antalya', 'region': 'Mediterranean Region', 'country': 'Turkey', 'country_code': 'tr'}, 'boundingbox': ['36.9008553', '36.9010914', '30.6953535', '30.6956486']}
+2021-08-28T20:26:13.379515+0300, INFO, Selected city Antalya
+2021-08-28T20:26:17.258011+0300, DEBUG, List city [{'city': 'Анталья', 'caption': 'Анталья, Анталья (провинция), Турция', 'city_id': '1355047'}, {'city': 'Кемер', 'caption': 'Кемер, Анталья (провинция), Турция', 'city_id': '1343725'}, {'city': 'Коньяалты', 'caption': 'Коньяалты, Анталья (провинция), Турция', 'city_id': '1798897'}, {'city': 'Белек', 'caption': 'Белек, Анталья (провинция), Турция', 'city_id': '1351110'}, {'city': 'Калейчи', 'caption': 'Калейчи, Анталья, Анталья (провинция), Турция', 'city_id': '1725097'}, {'city': 'Лара', 'caption': 'Лара, Анталья, Анталья (провинция), Турция', 'city_id': '1710603'}, {'city': 'Аланья', 'caption': 'Аланья, Анталья (провинция), Турция', 'city_id': '1340186'}, {'city': 'Сиде', 'caption': 'Сиде, Анталья (провинция), Турция', 'city_id': '1640749'}]
+2021-08-28T20:26:19.490897+0300, INFO, callback_query run
+2021-08-28T20:26:19.493888+0300, INFO, Выбран город: Antalya id: 1355047
+2021-08-28T20:26:21.491679+0300, INFO, callback_query run
+2021-08-28T20:26:24.356154+0300, DEBUG, Количество отелей: 5 func: get_page_size
+2021-08-28T20:26:24.472993+0300, INFO, This is get list
+2021-08-28T20:26:24.476996+0300, INFO, GET requests
+2021-08-28T20:26:31.000216+0300, INFO, callback_query run
+2021-08-28T20:26:34.778094+0300, INFO, Нижнее, Северодонецкий район, Луганская область, 93290, Украина
+2021-08-28T20:26:35.279433+0300, INFO, {'place_id': 231054402, 'licence': 'Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright', 'osm_type': 'way', 'osm_id': 692477725, 'lat': '48.77203880386022', 'lon': '38.62127713130661', 'display_name': 'Vyshneva Street, Nyzhnie, Sievierodonetsk Raion, Luhansk Oblast, 93290, Ukraine', 'address': {'road': 'Vyshneva Street', 'town': 'Nyzhnie', 'district': 'Sievierodonetsk Raion', 'state': 'Luhansk Oblast', 'postcode': '93290', 'country': 'Ukraine', 'country_code': 'ua'}, 'boundingbox': ['48.7631124', '48.7726897', '38.6027152', '38.6230676']}
+2021-08-28T20:26:35.398138+0300, INFO, Selected city Nyzhnie
+2021-08-28T20:26:38.379651+0300, DEBUG, List city []
+2021-08-28T20:26:55.505139+0300, INFO, Нижний Ист-Сайд, Манхэттен, округ Нью-Йорк, Нью-Йорк, Соединённые Штаты Америки
+2021-08-28T20:26:56.023202+0300, INFO, {'place_id': 54076808, 'licence': 'Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright', 'osm_type': 'node', 'osm_id': 4646776164, 'lat': '40.7161657', 'lon': '-73.986856', 'display_name': 'Target, 400, Grand Street, Lower East Side, Manhattan, New York County, New York, 10002, United States', 'address': {'shop': 'Target', 'house_number': '400', 'road': 'Grand Street', 'neighbourhood': 'Lower East Side', 'suburb': 'Manhattan', 'county': 'New York County', 'city': 'New York', 'state': 'New York', 'postcode': '10002', 'country': 'United States', 'country_code': 'us'}, 'boundingbox': ['40.7161157', '40.7162157', '-73.986906', '-73.986806']}
+2021-08-28T20:26:56.116902+0300, INFO, Selected city New York
+2021-08-28T20:26:59.272964+0300, DEBUG, List city [{'city': 'Нью-Йорк', 'caption': 'Нью-Йорк, Нью-Йорк, США (New York City)', 'city_id': '1506246'}, {'city': 'Центральный Нью-Йорк', 'caption': 'Центральный Нью-Йорк, Нью-Йорк, Нью-Йорк, США', 'city_id': '10819060'}, {'city': 'Манхэттен', 'caption': 'Манхэттен, Нью-Йорк, Нью-Йорк, США', 'city_id': '1535616'}, {'city': 'Бруклин', 'caption': 'Бруклин, Нью-Йорк, США', 'city_id': '1496773'}, {'city': 'Ист-Нью-Йорк', 'caption': 'Ист-Нью-Йорк, Бруклин, Нью-Йорк, США', 'city_id': '1748361'}, {'city': 'Мидтаун', 'caption': 'Мидтаун, Нью-Йорк, Нью-Йорк, США', 'city_id': '1737998'}]
+2021-08-28T20:27:16.278537+0300, INFO, Париж, Иль-де-Франс, Метрополия Франции, Франция
+2021-08-28T20:27:16.856882+0300, INFO, {'place_id': 69431973, 'licence': 'Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright', 'osm_type': 'node', 'osm_id': 6216912785, 'lat': '48.8565387', 'lon': '2.3518054', 'display_name': 'The Art, City Hall Plaza, Beaubourg, Quartier Saint-Merri, 4th Arrondissement, Paris, Ile-de-France, Metropolitan France, 75004, France', 'address': {'tourism': 'The Art', 'road': 'City Hall Plaza', 'neighbourhood': 'Beaubourg', 'suburb': '4th Arrondissement', 'city': 'Paris', 'municipality': 'Paris', 'county': 'Paris', 'state': 'Ile-de-France', 'country': 'France', 'postcode': '75004', 'country_code': 'fr'}, 'boundingbox': ['48.8564887', '48.8565887', '2.3517554', '2.3518554']}
+2021-08-28T20:27:17.038590+0300, INFO, Selected city Paris
+2021-08-28T20:27:19.942158+0300, DEBUG, List city [{'city': 'Париж', 'caption': 'Париж, Франция (Parisi)', 'city_id': '504261'}, {'city': 'Центр Парижа', 'caption': 'Центр Парижа, Париж, Франция', 'city_id': '1730997'}, {'city': '9-й округ', 'caption': '9-й округ, Париж, Франция', 'city_id': '1731375'}, {'city': '8-й округ', 'caption': '8-й округ, Париж, Франция', 'city_id': '1731373'}, {'city': 'Берси', 'caption': 'Берси, Париж, Франция', 'city_id': '1691967'}]
+2021-08-28T20:27:28.247010+0300, INFO, Нью-Йорк, Соединённые Штаты Америки
+2021-08-28T20:27:28.771831+0300, INFO, {'place_id': 212523510, 'licence': 'Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright', 'osm_type': 'way', 'osm_id': 575213527, 'lat': '40.712742950000006', 'lon': '-74.00595024412516', 'display_name': 'New York City Hall, 260, Broadway, Lower Manhattan, Civic Center, Manhattan, New York County, New York, 10000, United States', 'address': {'amenity': 'New York City Hall', 'house_number': '260', 'road': 'Broadway', 'quarter': 'Lower Manhattan', 'neighbourhood': 'Civic Center', 'suburb': 'Manhattan', 'county': 'New York County', 'city': 'New York', 'state': 'New York', 'postcode': '10000', 'country': 'United States', 'country_code': 'us'}, 'boundingbox': ['40.7124463', '40.7130195', '-74.0064366', '-74.0055703']}
+2021-08-28T20:27:28.909383+0300, INFO, Selected city New York
+2021-08-28T20:27:32.353547+0300, DEBUG, List city [{'city': 'Нью-Йорк', 'caption': 'Нью-Йорк, Нью-Йорк, США (New York City)', 'city_id': '1506246'}, {'city': 'Центральный Нью-Йорк', 'caption': 'Центральный Нью-Йорк, Нью-Йорк, Нью-Йорк, США', 'city_id': '10819060'}, {'city': 'Манхэттен', 'caption': 'Манхэттен, Нью-Йорк, Нью-Йорк, США', 'city_id': '1535616'}, {'city': 'Бруклин', 'caption': 'Бруклин, Нью-Йорк, США', 'city_id': '1496773'}, {'city': 'Ист-Нью-Йорк', 'caption': 'Ист-Нью-Йорк, Бруклин, Нью-Йорк, США', 'city_id': '1748361'}, {'city': 'Мидтаун', 'caption': 'Мидтаун, Нью-Йорк, Нью-Йорк, США', 'city_id': '1737998'}]
+2021-08-28T20:27:34.517961+0300, INFO, callback_query run
+2021-08-28T20:27:34.520932+0300, INFO, Выбран город: New York id: 1506246
+2021-08-28T20:27:36.467282+0300, INFO, callback_query run
+2021-08-28T20:27:38.130519+0300, DEBUG, Количество отелей: 4 func: get_page_size
+2021-08-28T20:27:38.246024+0300, INFO, This is get list
+2021-08-28T20:27:38.249025+0300, INFO, GET requests
+2021-08-28T20:28:20.457980+0300, INFO, Пхукет, Таиланд
+2021-08-28T20:28:20.945347+0300, INFO, {'place_id': 110782212, 'licence': 'Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright', 'osm_type': 'way', 'osm_id': 89395597, 'lat': '7.938486387932948', 'lon': '98.35218866626495', 'display_name': 'Phuket, Phuket Province, 83120, Thailand', 'address': {'city': 'Phuket', 'state': 'Phuket Province', 'postcode': '83120', 'country': 'Thailand', 'country_code': 'th'}, 'boundingbox': ['7.937797', '7.944318', '98.350281', '98.363009']}
+2021-08-28T20:28:21.065855+0300, INFO, Selected city Phuket
+2021-08-28T20:28:23.747695+0300, DEBUG, List city [{'city': 'Пхукет (и округа)', 'caption': 'Пхукет (и округа), Пхукет (провинция), Таиланд', 'city_id': '1708722'}, {'city': 'Карон', 'caption': 'Карон, Пхукет (провинция), Таиланд', 'city_id': '1806864'}, {'city': 'Патонг', 'caption': 'Патонг, Пхукет (провинция), Таиланд', 'city_id': '1806849'}, {'city': 'Ката', 'caption': 'Ката, Карон, Пхукет (провинция), Таиланд', 'city_id': '1740931'}, {'city': 'Камала', 'caption': 'Камала, Пхукет (провинция), Таиланд', 'city_id': '1806850'}, {'city': 'Най-Харн', 'caption': 'Най-Харн, Равай, Пхукет (провинция), Таиланд', 'city_id': '1771989'}, {'city': 'Лагуна', 'caption': 'Лагуна, Чонг-Тхале, Пхукет (провинция), Таиланд', 'city_id': '1772729'}, {'city': 'Старый Пхукет', 'caption': 'Старый Пхукет, Пхукет (и округа), Пхукет (провинция), Таиланд', 'city_id': '1746494'}]
+2021-08-28T20:28:25.433562+0300, INFO, callback_query run
+2021-08-28T20:28:25.436535+0300, INFO, Выбран город: Phuket id: 1806864
+2021-08-28T20:28:27.323636+0300, INFO, callback_query run
+2021-08-28T20:28:28.870001+0300, DEBUG, Количество отелей: 5 func: get_page_size
+2021-08-28T20:28:29.008699+0300, INFO, This is get list
+2021-08-28T20:28:29.011706+0300, INFO, GET requests
+2021-08-28T20:28:52.113427+0300, INFO, callback_query run
+2021-08-28T20:28:59.470829+0300, INFO, Пхукет, Таиланд
+2021-08-28T20:28:59.960323+0300, INFO, {'place_id': 110782212, 'licence': 'Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright', 'osm_type': 'way', 'osm_id': 89395597, 'lat': '7.938486387932948', 'lon': '98.35218866626495', 'display_name': 'Phuket, Phuket Province, 83120, Thailand', 'address': {'city': 'Phuket', 'state': 'Phuket Province', 'postcode': '83120', 'country': 'Thailand', 'country_code': 'th'}, 'boundingbox': ['7.937797', '7.944318', '98.350281', '98.363009']}
+2021-08-28T20:29:00.069124+0300, INFO, Selected city Phuket
+2021-08-28T20:29:04.108067+0300, DEBUG, List city [{'city': 'Пхукет (и округа)', 'caption': 'Пхукет (и округа), Пхукет (провинция), Таиланд', 'city_id': '1708722'}, {'city': 'Карон', 'caption': 'Карон, Пхукет (провинция), Таиланд', 'city_id': '1806864'}, {'city': 'Патонг', 'caption': 'Патонг, Пхукет (провинция), Таиланд', 'city_id': '1806849'}, {'city': 'Ката', 'caption': 'Ката, Карон, Пхукет (провинция), Таиланд', 'city_id': '1740931'}, {'city': 'Камала', 'caption': 'Камала, Пхукет (провинция), Таиланд', 'city_id': '1806850'}, {'city': 'Най-Харн', 'caption': 'Най-Харн, Равай, Пхукет (провинция), Таиланд', 'city_id': '1771989'}, {'city': 'Лагуна', 'caption': 'Лагуна, Чонг-Тхале, Пхукет (провинция), Таиланд', 'city_id': '1772729'}, {'city': 'Старый Пхукет', 'caption': 'Старый Пхукет, Пхукет (и округа), Пхукет (провинция), Таиланд', 'city_id': '1746494'}]
+2021-08-28T20:29:08.122965+0300, INFO, callback_query run
+2021-08-28T20:29:08.126223+0300, INFO, Выбран город: Phuket id: 1708722
+2021-08-28T20:29:10.744228+0300, INFO, callback_query run
+2021-08-28T20:29:12.929628+0300, DEBUG, Количество отелей: 5 func: get_page_size
+2021-08-28T20:29:13.065165+0300, INFO, This is get list
+2021-08-28T20:29:13.068144+0300, INFO, GET requests
+2021-08-28T20:29:31.705161+0300, INFO, Patong Thai, 7, Calle de la Cruz, Barrio de las Letras, Cortes, Мадрид, Área metropolitana de Madrid y Corredor del Henares, Мадрид, 28001, Испания
+2021-08-28T20:29:32.258466+0300, INFO, {'place_id': 151718995, 'licence': 'Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright', 'osm_type': 'way', 'osm_id': 254439922, 'lat': '40.415966600000004', 'lon': '-3.70094178430493', 'display_name': '7, Calle de la Cruz, Barrio de las Letras, Cortes, Madrid, Área metropolitana de Madrid y Corredor del Henares, Community of Madrid, 28012, Spain', 'address': {'house_number': '7', 'road': 'Calle de la Cruz', 'neighbourhood': 'Barrio de las Letras', 'suburb': 'Cortes', 'city': 'Madrid', 'municipality': 'Área metropolitana de Madrid y Corredor del Henares', 'state': 'Community of Madrid', 'postcode': '28012', 'country': 'Spain', 'country_code': 'es'}, 'boundingbox': ['40.4158145', '40.4161178', '-3.7010665', '-3.7008387']}
+2021-08-28T20:29:32.433467+0300, INFO, Selected city Madrid
+2021-08-28T20:29:35.278422+0300, DEBUG, List city [{'city': 'Мадрид', 'caption': 'Мадрид, Автономное сообщество Мадрид, Испания', 'city_id': '457987'}, {'city': 'Барахас', 'caption': 'Барахас, Мадрид, Автономное сообщество Мадрид, Испания', 'city_id': '1778443'}, {'city': 'Atocha (район)', 'caption': 'Atocha (район), Мадрид, Автономное сообщество Мадрид, Испания', 'city_id': '1649515'}, {'city': 'Южный Мадрид (область)', 'caption': 'Южный Мадрид (область), Испания', 'city_id': '1641644'}, {'city': 'Сентро', 'caption': 'Сентро, Мадрид, Автономное сообщество Мадрид, Испания', 'city_id': '10789818'}, {'city': 'Саламанка', 'caption': 'Саламанка, Мадрид, Автономное сообщество Мадрид, Испания', 'city_id': '1736870'}]
+2021-08-28T20:29:42.780693+0300, INFO, callback_query run
+2021-08-28T20:29:42.786732+0300, INFO, Выбран город: Madrid id: 457987
+2021-08-28T20:29:44.341558+0300, INFO, callback_query run
+2021-08-28T20:29:46.083738+0300, DEBUG, Количество отелей: 5 func: get_page_size
+2021-08-28T20:29:46.190339+0300, INFO, This is get list
+2021-08-28T20:29:46.193361+0300, INFO, GET requests
+2021-08-28T20:30:47.145690+0300, ERROR, An error has been caught in function 'get_page_size', process 'MainProcess' (9408), thread 'WorkerThread2' (16664):
+Traceback (most recent call last):
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 908, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x000002BA749175E0>
+    └ <WorkerThread(WorkerThread2, started daemon 16664)>
+
+  File "C:\Users\Ilnur\AppData\Local\Programs\Python\Python39\lib\threading.py", line 950, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x000002BA779BA0D0>
+    └ <WorkerThread(WorkerThread2, started daemon 16664)>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_django\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<telebot.types.Message object at 0x000002BA786A80D0>, 'PRICE')
+    └ <function Command.handle.<locals>.get_page_size at 0x000002BA785DA820>
+
+> File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\management\commands\bot.py", line 348, in get_page_size
+    result_list = get_list_hotel(message, page_size, sort)
+                  │              │        │          └ 'PRICE'
+                  │              │        └ 5
+                  │              └ <telebot.types.Message object at 0x000002BA786A80D0>
+                  └ <function get_list_hotel at 0x000002BA77D2FCA0>
+
+  File "C:\Users\Ilnur\PycharmProjects\python_basic_diploma\hotel\hotelapp\hotel_api.py", line 78, in get_list_hotel
+    for hotel in data['data']['body']['searchResults']['results']:
+                 └ {'messages': 'The request to the API has timed out. Please try again later, or if the issue persists, please contact the API ...
+
+KeyError: 'data'
+2021-08-29T16:42:19.726466+0300, INFO, callback_query run
+2021-08-29T16:42:26.383712+0300, INFO, Пхукет, Таиланд
+2021-08-29T16:42:26.891336+0300, INFO, {'place_id': 110782212, 'licence': 'Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright', 'osm_type': 'way', 'osm_id': 89395597, 'lat': '7.938486387932948', 'lon': '98.35218866626495', 'display_name': 'Phuket, Phuket Province, 83120, Thailand', 'address': {'city': 'Phuket', 'state': 'Phuket Province', 'postcode': '83120', 'country': 'Thailand', 'country_code': 'th'}, 'boundingbox': ['7.937797', '7.944318', '98.350281', '98.363009']}
+2021-08-29T16:42:27.198715+0300, INFO, Selected city Phuket
+2021-08-29T16:42:31.491304+0300, DEBUG, List city [{'city': 'Пхукет (и округа)', 'caption': 'Пхукет (и округа), Пхукет (провинция), Таиланд', 'city_id': '1708722'}, {'city': 'Карон', 'caption': 'Карон, Пхукет (провинция), Таиланд', 'city_id': '1806864'}, {'city': 'Патонг', 'caption': 'Патонг, Пхукет (провинция), Таиланд', 'city_id': '1806849'}, {'city': 'Ката', 'caption': 'Ката, Карон, Пхукет (провинция), Таиланд', 'city_id': '1740931'}, {'city': 'Камала', 'caption': 'Камала, Пхукет (провинция), Таиланд', 'city_id': '1806850'}, {'city': 'Най-Харн', 'caption': 'Най-Харн, Равай, Пхукет (провинция), Таиланд', 'city_id': '1771989'}, {'city': 'Лагуна', 'caption': 'Лагуна, Чонг-Тхале, Пхукет (провинция), Таиланд', 'city_id': '1772729'}, {'city': 'Старый Пхукет', 'caption': 'Старый Пхукет, Пхукет (и округа), Пхукет (провинция), Таиланд', 'city_id': '1746494'}]
+2021-08-29T16:42:34.546243+0300, INFO, callback_query run
+2021-08-29T16:42:34.549245+0300, INFO, Выбран город: Phuket id: 1806849
+2021-08-29T16:42:36.109398+0300, INFO, callback_query run
+2021-08-29T16:42:38.637308+0300, DEBUG, Количество отелей: 5 func: get_page_size
+2021-08-29T16:42:38.751650+0300, INFO, This is get list
+2021-08-29T16:42:38.754648+0300, INFO, GET requests
+2021-08-29T16:42:44.413897+0300, INFO, Нет рейтинга 'guestReviews'
+2021-08-29T16:42:44.416893+0300, INFO, Нет рейтинга 'guestReviews'
+2021-08-29T16:42:44.417893+0300, INFO, Нет рейтинга 'guestReviews'
+2021-08-29T16:42:44.419894+0300, INFO, Нет рейтинга 'guestReviews'
+2021-08-29T16:42:44.420894+0300, INFO, Нет рейтинга 'guestReviews'
+2021-08-29T16:42:44.422892+0300, INFO, Нет рейтинга 'guestReviews'
+2021-08-29T16:42:46.769103+0300, INFO, callback_query run
